@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>EcoBudget - Task-sufficient retrieval for greener 5G QA</title>
+<style>
+  :root{
+    --accent:#a8d946;
+    --bg:#ffffff;
+    --frame:#f6f5f0;
+    --fg:#151515;
+    --muted:#6b6b63;
+    --border:#e7e5dd;
+    --card-primary:#eef0df;
+    --card-secondary:#1c1c18;
+    --card-fg:#f3f3ee;
+    --card-fg-muted:#b9b9ae;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0c0c0a;
+      --frame:#131310;
+      --fg:#f3f3ee;
+      --muted:#98988c;
+      --border:#26261f;
+      --card-primary:#20241a;
+      --card-secondary:#f3f3ee;
+      --card-fg:#151510;
+      --card-fg-muted:#5c5c52;
+    }
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Inter","Segoe UI",Helvetica,Arial,sans-serif;
+    background:var(--bg);
+    color:var(--fg);
+    line-height:1.45;
+  }
+  img,svg{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 24px;}
+  code{background:var(--frame);border:1px solid var(--border);border-radius:6px;padding:2px 6px;font-size:13px;}
+  pre{background:#12160b;color:#d7e8ae;border-radius:14px;padding:20px;overflow-x:auto;font-size:13px;line-height:1.6;}
+  pre code{background:none;border:none;padding:0;color:inherit;}
+  table{width:100%;border-collapse:collapse;font-size:14px;}
+  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--border);}
+  th{font-weight:600;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.04em;}
+  .table-wrap{background:var(--frame);border-radius:16px;padding:8px 20px;overflow-x:auto;}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:12px 22px;border-radius:12px;
+    font-weight:600;font-size:14px;cursor:pointer;border:none;
+    transition:transform .15s ease, opacity .15s ease;
+  }
+  .btn:hover{transform:translateY(-1px);}
+  .btn-dark{background:var(--fg);color:var(--bg);}
+  .btn-outline{background:transparent;border:1px solid var(--border);color:var(--fg);}
+  .btn-accent{background:var(--accent);color:#12180a;}
+
+  /* Header */
+  header{
+    position:sticky;top:12px;z-index:50;
+    max-width:1040px;margin:12px auto 0;
+    background:var(--frame);
+    border-radius:24px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+  }
+  .header-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;}
+  .logo{display:flex;align-items:center;gap:8px;font-weight:600;font-size:17px;}
+  .logo-dot{width:22px;height:22px;border-radius:50%;background:var(--fg);}
+  nav.links{display:flex;gap:4px;}
+  nav.links a{padding:8px 14px;border-radius:999px;font-size:14px;color:var(--muted);font-weight:500;}
+  nav.links a:hover{background:rgba(0,0,0,.05);color:var(--fg);}
+  .header-right{display:flex;align-items:center;gap:14px;}
+  .header-right a.signin{font-size:14px;font-weight:500;color:var(--muted);}
+  .menu-btn{display:none;background:none;border:none;cursor:pointer;padding:8px;}
+  .menu-btn span{display:block;width:22px;height:2px;background:var(--fg);margin:5px 0;}
+  @media (max-width:850px){
+    nav.links,.header-right{display:none;}
+    .menu-btn{display:block;}
+  }
+
+  /* Hero - full-screen video background with the headline over it */
+  .hero{
+    position:relative;overflow:hidden;
+    min-height:100vh;min-height:100svh;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;padding:120px 24px 40px;
+    color:#f4f6ec;                    /* light text over the video, both themes */
+  }
+  .hero-bg{position:absolute;inset:0;z-index:0;overflow:hidden;}
+  .hero-video-stage{position:absolute;inset:0;width:100%;height:100%;background:#0b0d08;}
+  .hero-video{
+    position:absolute;inset:0;width:100%;height:100%;
+    object-fit:cover;                 /* fill the whole window, no letterboxing */
+    opacity:0;transition:opacity .6s ease;background:#0b0d08;
+  }
+  .hero-video.is-active{opacity:1;}
+  /* dark scrim + soft blurred edge vignette for text legibility */
+  .hero-scrim{
+    position:absolute;inset:0;z-index:1;pointer-events:none;
+    background:
+      linear-gradient(180deg, rgba(8,10,5,.72) 0%, rgba(8,10,5,.34) 32%, rgba(8,10,5,.44) 66%, rgba(8,10,5,.86) 100%),
+      radial-gradient(120% 90% at 50% 42%, rgba(0,0,0,0) 40%, rgba(6,8,4,.55) 100%);
+    box-shadow:inset 0 0 120px 40px rgba(6,8,4,.6);
+    backdrop-filter:blur(0.5px);
+  }
+  .hero-content{position:relative;z-index:2;max-width:760px;}
+  .badge{
+    display:inline-flex;align-items:center;gap:6px;
+    padding:8px 16px;border-radius:999px;border:1px solid rgba(255,255,255,.22);
+    background:rgba(255,255,255,.08);backdrop-filter:blur(10px);
+    font-size:13px;font-weight:500;margin-bottom:24px;color:#eef3df;
+  }
+  .badge span{color:var(--accent);}
+  h1.hero-title{font-size:64px;font-weight:600;letter-spacing:-0.03em;line-height:1.08;margin:0 0 22px;
+                text-shadow:0 2px 30px rgba(0,0,0,.45);}
+  h1.hero-title em{font-style:italic;font-family:Georgia,"Times New Roman",serif;color:#bfe86a;}
+  .hero p.sub{font-size:18px;color:rgba(244,246,236,.86);max-width:620px;margin:0 auto 32px;
+              text-shadow:0 1px 16px rgba(0,0,0,.4);}
+  .hero .btnrow{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;}
+  .btn-glass{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.28);
+             color:#f4f6ec;backdrop-filter:blur(10px);}
+  .btn-glass:hover{background:rgba(255,255,255,.2);}
+  /* local-models strip pinned to the bottom of the hero */
+  .hero-logos{position:relative;z-index:2;margin-top:auto;padding-top:48px;width:100%;}
+  .hero-logos .logos-label{text-align:center;font-size:12px;text-transform:uppercase;
+                           letter-spacing:.08em;color:rgba(244,246,236,.6);margin-bottom:16px;}
+  .hero-logos ul{display:flex;gap:40px;list-style:none;padding:0;margin:0;justify-content:center;
+                 flex-wrap:wrap;opacity:.82;font-weight:600;font-size:14px;color:#e7ecd6;}
+  @media (max-width:850px){ h1.hero-title{font-size:38px;} .hero{padding-top:100px;} .hero-logos ul{gap:20px;font-size:12px;} }
+
+  /* ===== Interactive demo: iPhone mockup + task-sufficient loading ===== */
+  .demo{padding:100px 24px;background:var(--frame);border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+  .demo-grid{display:grid;grid-template-columns:1fr 360px;gap:64px;align-items:center;max-width:1000px;margin:0 auto;}
+  @media (max-width:900px){.demo-grid{grid-template-columns:1fr;gap:40px;justify-items:center;}}
+  .demo-copy h2{font-size:38px;letter-spacing:-0.02em;margin:0 0 14px;}
+  .demo-copy p{color:var(--muted);font-size:16px;max-width:420px;margin:0 0 24px;}
+  .demo-chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px;}
+  .demo-chip{
+    padding:9px 14px;border-radius:999px;border:1px solid var(--border);
+    background:var(--bg);font-size:13px;font-weight:500;cursor:pointer;color:var(--fg);
+    transition:all .15s ease;
+  }
+  .demo-chip:hover{border-color:var(--accent);}
+  .demo-chip.active{background:var(--fg);color:var(--bg);border-color:var(--fg);}
+  .demo-readout{display:flex;gap:20px;flex-wrap:wrap;}
+  .demo-readout .r{min-width:120px;}
+  .demo-readout .r .n{font-size:30px;font-weight:700;letter-spacing:-0.02em;color:#5f8a1f;}
+  @media(prefers-color-scheme:dark){.demo-readout .r .n{color:var(--accent);}}
+  .demo-readout .r .l{font-size:12px;color:var(--muted);margin-top:2px;}
+
+  /* ---- Realistic iPhone mockup ---- */
+  .iphone{
+    position:relative;width:318px;height:648px;border-radius:60px;
+    padding:13px;box-sizing:border-box;
+    background:linear-gradient(150deg,#43454c 0%,#25272c 22%,#0e0f12 60%,#25272c 100%);
+    box-shadow:0 40px 90px rgba(0,0,0,.5),0 6px 16px rgba(0,0,0,.35),
+               inset 0 0 0 2px rgba(255,255,255,.05);
+    flex:none;
+  }
+  /* titanium side buttons */
+  .iphone::before,.iphone::after{content:"";position:absolute;left:-2px;width:3px;border-radius:3px;
+    background:linear-gradient(180deg,#3a3c42,#17181c);}
+  .iphone::before{top:150px;height:56px;box-shadow:0 78px 0 #17181c, 0 78px 0 2px transparent;}
+  .iphone::after{top:110px;height:28px;}
+  .iphone-screen{
+    position:relative;width:100%;height:100%;border-radius:47px;overflow:hidden;
+    background:radial-gradient(120% 80% at 50% 0%, #10140b 0%, #0a0c07 60%);
+    box-shadow:inset 0 0 0 2px #000, inset 0 0 0 3px rgba(255,255,255,.03);
+    display:flex;flex-direction:column;color:#f3f3ee;
+  }
+  .iphone-island{
+    position:absolute;top:13px;left:50%;transform:translateX(-50%);
+    width:116px;height:33px;background:#000;border-radius:20px;z-index:20;
+    box-shadow:0 1px 3px rgba(0,0,0,.8);
+  }
+  .iphone-island::after{content:"";position:absolute;right:12px;top:50%;transform:translateY(-50%);
+    width:8px;height:8px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#1b2b3a,#050708);}
+
+  /* status bar */
+  .phone-status{display:flex;justify-content:space-between;align-items:center;
+    padding:16px 26px 6px;font-size:13px;font-weight:600;color:#f3f3ee;z-index:10;}
+  .phone-status .ps-right{display:flex;align-items:center;gap:6px;}
+  .phone-status .ps-5g{font-size:11px;font-weight:700;letter-spacing:.02em;}
+  .ps-batt{width:22px;height:11px;border:1px solid rgba(243,243,238,.6);border-radius:3px;padding:1.5px;
+    position:relative;display:inline-block;}
+  .ps-batt::after{content:"";position:absolute;right:-3px;top:3px;width:2px;height:4px;border-radius:0 1px 1px 0;background:rgba(243,243,238,.6);}
+  .ps-batt-fill{display:block;height:100%;width:82%;border-radius:1px;background:var(--accent);}
+
+  /* app */
+  .phone-app{flex:1;display:flex;flex-direction:column;min-height:0;padding:6px 15px 12px;}
+  .pa-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;}
+  .pa-brand{display:flex;align-items:center;gap:7px;font-weight:700;font-size:15px;}
+  .pa-brand-dot{width:16px;height:16px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px rgba(168,217,70,.6);}
+  .pa-net{font-size:10px;font-weight:600;color:#8a9770;text-transform:uppercase;letter-spacing:.05em;
+    display:flex;align-items:center;gap:5px;}
+  .pa-net::before{content:"";width:6px;height:6px;border-radius:50%;background:#4a5238;}
+  .pa-net.live::before{background:var(--accent);box-shadow:0 0 8px var(--accent);animation:pulse 1s infinite;}
+  @keyframes pulse{50%{opacity:.4;}}
+  .pa-searchbar{display:flex;align-items:center;gap:8px;background:#161a0f;border:1px solid #2a3019;
+    border-radius:13px;padding:11px 13px;color:#e9f5c9;font-size:13px;min-height:42px;}
+  .pa-searchbar.focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(168,217,70,.12);}
+  .pa-mag{color:#8a9770;flex:none;}
+  .pa-query{white-space:nowrap;overflow:hidden;}
+  .pa-caret{width:2px;height:16px;background:var(--accent);border-radius:1px;opacity:0;flex:none;}
+  .pa-caret.blink{opacity:1;animation:caret 1s steps(1) infinite;}
+  @keyframes caret{50%{opacity:0;}}
+
+  .pa-body{flex:1;min-height:0;overflow:hidden;margin-top:12px;position:relative;}
+  .pa-hint{font-size:12px;color:#9aa87a;line-height:1.5;padding:10px 2px;}
+  .pa-scroll{height:100%;overflow:hidden;display:flex;flex-direction:column;gap:9px;}
+
+  /* conventional full-page skeleton loader */
+  .pa-fullload{background:#12160b;border:1px solid #242a15;border-radius:12px;padding:11px;}
+  .pa-fullload .fl-head{display:flex;justify-content:space-between;font-size:10px;color:#c9a08f;font-weight:600;margin-bottom:9px;}
+  .pa-fullload .fl-bytes{color:#e76f51;font-variant-numeric:tabular-nums;}
+  .sk{height:8px;border-radius:5px;background:linear-gradient(90deg,#20260f,#2c3418,#20260f);
+    background-size:200% 100%;animation:sk 1.1s linear infinite;margin-bottom:7px;}
+  @keyframes sk{to{background-position:-200% 0;}}
+  .sk.w60{width:60%;} .sk.w80{width:80%;} .sk.w40{width:40%;} .sk.img{height:46px;}
+
+  /* pipeline steps */
+  .pa-step{display:flex;align-items:flex-start;gap:9px;opacity:0;transform:translateY(8px);
+    transition:opacity .35s ease,transform .35s ease;}
+  .pa-step.show{opacity:1;transform:none;}
+  .pa-step .dot{width:22px;height:22px;border-radius:50%;background:var(--accent);color:#12180a;flex:none;
+    display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;}
+  .pa-step .stx{flex:1;min-width:0;}
+  .pa-step .stt{font-size:12px;font-weight:700;}
+  .pa-step .sts{font-size:11px;color:#b9c39a;margin-top:2px;line-height:1.4;}
+  .pill{display:inline-block;background:rgba(168,217,70,.15);border:1px solid rgba(168,217,70,.4);
+        color:#cfe3a0;border-radius:8px;padding:2px 8px;font-size:10px;margin:4px 4px 0 0;font-weight:600;}
+  .passage{background:#14180d;border:1px solid #262c15;border-radius:9px;padding:7px 9px;margin-top:5px;
+           font-size:10.5px;color:#c7d3a6;line-height:1.4;}
+  .passage b{color:#e9f5c9;}
+  .pa-stop{margin-top:6px;font-size:11px;color:var(--accent);font-weight:700;display:flex;align-items:center;gap:5px;}
+
+  /* answer card */
+  .pa-answer{background:linear-gradient(135deg,#2b3d1a,#1a2412);border:1px solid rgba(168,217,70,.45);
+    border-radius:13px;padding:11px 13px;opacity:0;transform:translateY(8px);
+    transition:opacity .4s ease,transform .4s ease;}
+  .pa-answer.show{opacity:1;transform:none;}
+  .pa-answer .albl{font-size:9px;text-transform:uppercase;letter-spacing:.08em;color:#a8d946;font-weight:700;}
+  .pa-answer .aval{font-size:16px;font-weight:700;color:#eef8d6;margin-top:3px;}
+
+  /* savings panel slides up */
+  .pa-savings{background:linear-gradient(160deg,#1c2312,#12160b);border:1px solid #2c3419;
+    border-radius:14px;padding:13px;opacity:0;transform:translateY(20px);
+    transition:opacity .45s ease,transform .45s ease;}
+  .pa-savings.show{opacity:1;transform:none;}
+  .pa-savings .sv-big{font-size:26px;font-weight:800;letter-spacing:-.02em;color:var(--accent);
+    font-variant-numeric:tabular-nums;line-height:1;}
+  .pa-savings .sv-cap{font-size:10.5px;color:#9aa87a;margin-top:2px;}
+  .pa-savings .sv-rows{margin-top:11px;display:flex;flex-direction:column;gap:8px;}
+  .sv-bar .sv-bl{display:flex;justify-content:space-between;font-size:10px;color:#b9c39a;margin-bottom:3px;}
+  .sv-bar .sv-bl b{font-variant-numeric:tabular-nums;}
+  .sv-track{height:8px;border-radius:5px;background:#0c0f07;overflow:hidden;}
+  .sv-fill{height:100%;width:0;border-radius:5px;transition:width 1.2s cubic-bezier(.4,0,.2,1);}
+  .sv-fill.full{background:linear-gradient(90deg,#e76f51,#c14f34);}
+  .sv-fill.task{background:linear-gradient(90deg,#a8d946,#7fb52f);}
+
+  .pa-run{margin-top:12px;}
+  .pa-run button{
+    width:100%;padding:13px;border-radius:15px;border:none;cursor:pointer;position:relative;overflow:hidden;
+    background:var(--accent);color:#12180a;font-weight:700;font-size:14px;
+    transition:transform .12s ease,opacity .2s ease;
+  }
+  .pa-run button:active{transform:scale(.98);}
+  .pa-run button:disabled{opacity:.55;cursor:default;}
+  .phone-home{position:absolute;bottom:9px;left:50%;transform:translateX(-50%);
+    width:112px;height:5px;border-radius:3px;background:rgba(255,255,255,.6);z-index:15;}
+
+  .logos{padding:56px 24px;overflow:hidden;}
+  .logos-label{text-align:center;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:20px;}
+  .logos ul{display:flex;gap:48px;list-style:none;padding:0;margin:0;justify-content:center;flex-wrap:wrap;opacity:.6;font-weight:600;font-size:14px;letter-spacing:.02em;}
+
+  /* Statement */
+  .statement{padding:96px 24px;}
+  .statement p{font-size:30px;font-weight:500;letter-spacing:-0.02em;line-height:1.4;color:var(--fg);max-width:820px;}
+  .statement .lede{font-size:14px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:16px;}
+  .statement ol{margin-top:32px;padding-left:20px;color:var(--muted);font-size:16px;line-height:1.9;}
+  .statement ol li strong{color:var(--fg);}
+
+  /* Bento */
+  .bento{padding:0 24px 100px;}
+  .bento-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media (max-width:850px){ .bento-grid{grid-template-columns:1fr;} }
+  .card{border-radius:24px;padding:28px;}
+  .card-primary{background:var(--card-primary);color:#151a0d;}
+  @media (prefers-color-scheme: dark){ .card-primary{color:var(--fg);} }
+  .card h3{font-size:19px;font-weight:600;margin:0 0 8px;letter-spacing:-0.01em;}
+  .card p{font-size:14px;opacity:.75;margin:0;}
+  .card code{background:rgba(0,0,0,.08);border:none;}
+
+  /* How it works / phases */
+  .howitworks{padding:100px 24px;}
+  .hiw-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;}
+  @media (max-width:900px){.hiw-grid{grid-template-columns:1fr;}}
+  .hiw-grid h2{font-size:40px;letter-spacing:-0.02em;margin:0 0 16px;}
+  .hiw-grid > div:first-child p{color:var(--muted);max-width:380px;font-size:17px;}
+  .step{display:flex;gap:20px;padding-bottom:40px;position:relative;}
+  .step:last-child{padding-bottom:0;}
+  .step::before{content:"";position:absolute;left:23px;top:48px;bottom:0;width:2px;background:var(--border);}
+  .step:last-child::before{display:none;}
+  .step-icon{width:48px;height:48px;border-radius:50%;background:var(--accent);flex:none;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:#12180a;z-index:1;}
+  .step-icon.done{background:var(--accent);}
+  .step-icon.pending{background:var(--border);color:var(--muted);}
+  .step h3{margin:0 0 6px;font-size:18px;display:flex;align-items:center;gap:10px;}
+  .step .tag{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;padding:3px 8px;border-radius:999px;background:var(--accent);color:#12180a;}
+  .step .tag.pending{background:var(--border);color:var(--muted);}
+  .step p{margin:0;color:var(--muted);font-size:14px;max-width:460px;line-height:1.7;}
+
+  /* Results */
+  .results{padding:100px 24px;background:var(--frame);border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+  .section-head{text-align:center;margin-bottom:56px;}
+  .section-head .eyebrow{font-size:14px;color:var(--muted);font-weight:500;}
+  .section-head h2{font-size:38px;letter-spacing:-0.02em;margin:10px 0;}
+  .section-head p{color:var(--muted);max-width:560px;margin:0 auto;}
+  .results-block{margin-bottom:48px;}
+  .results-block:last-child{margin-bottom:0;}
+  .results-block h3{font-size:20px;margin:0 0 6px;}
+  .results-block .desc{color:var(--muted);font-size:14px;margin:0 0 18px;max-width:640px;}
+  .stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:20px;}
+  @media (max-width:850px){.stat-grid{grid-template-columns:repeat(2,1fr);}}
+  .stat{background:var(--bg);border-radius:14px;padding:18px;border:1px solid var(--border);}
+  .stat .num{font-size:26px;font-weight:700;letter-spacing:-0.02em;}
+  .stat .label{font-size:12px;color:var(--muted);margin-top:4px;}
+
+  /* FAQ */
+  .faq{padding:100px 24px;max-width:720px;margin:0 auto;}
+  .faq-item{background:var(--frame);border-radius:16px;margin-bottom:10px;overflow:hidden;}
+  .faq-q{display:flex;align-items:center;justify-content:space-between;padding:20px;cursor:pointer;font-weight:500;font-size:15px;gap:16px;}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .25s ease;}
+  .faq-a p{padding:0 20px 20px;margin:0;color:var(--muted);font-size:14px;line-height:1.6;}
+  .faq-item.open .faq-a{max-height:260px;}
+  .faq-item .chevron{transition:transform .2s ease;flex:none;}
+  .faq-item.open .chevron{transform:rotate(180deg);}
+
+  /* Footer CTA */
+  .cta-banner{
+    max-width:1040px;margin:0 auto;padding:64px 40px;text-align:center;border-radius:28px;
+    background:radial-gradient(120% 140% at 50% 0%, #eef5cf, #f4f5e6);
+  }
+  @media(prefers-color-scheme:dark){ .cta-banner{background:radial-gradient(120% 140% at 50% 0%, #262c15, #1a1c12);} }
+  .cta-banner h2{font-size:38px;letter-spacing:-0.02em;color:#151a0d;margin:0 0 14px;}
+  .cta-banner p{color:#4a4a3f;max-width:480px;margin:0 auto 32px;}
+  @media(prefers-color-scheme:dark){ .cta-banner h2{color:var(--fg);} .cta-banner p{color:var(--muted);} }
+  @media (max-width:850px){.cta-banner h2{font-size:26px;}}
+  .cta-banner .btnrow{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;}
+
+  footer{background:var(--accent);border-radius:32px 32px 0 0;margin-top:40px;padding:56px 24px 32px;color:#151a0d;}
+  .footer-top{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;}
+  .footer-nav{display:flex;gap:56px;flex-wrap:wrap;}
+  .footer-nav h4{font-size:12px;text-transform:uppercase;letter-spacing:.06em;opacity:.5;margin:0 0 12px;}
+  .footer-nav ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;font-size:14px;}
+  .footer-bottom{margin-top:48px;padding-top:20px;border-top:1px solid rgba(0,0,0,.1);text-align:center;font-size:13px;opacity:.6;}
+
+  /* ===== Scroll reveal ===== */
+  .reveal{opacity:0;transform:translateY(28px);
+    transition:opacity .75s cubic-bezier(.16,1,.3,1),transform .75s cubic-bezier(.16,1,.3,1);}
+  .reveal.in-view{opacity:1;transform:none;}
+  .bento-grid .card{transition-delay:.04s;}
+  .bento-grid .card:nth-child(2){transition-delay:.08s;}
+  .bento-grid .card:nth-child(3){transition-delay:.12s;}
+  .bento-grid .card:nth-child(4){transition-delay:.16s;}
+  @media (prefers-reduced-motion: reduce){ .reveal{opacity:1;transform:none;transition:none;} }
+  /* let Lenis own the scrolling */
+  html.lenis, html.lenis body{ height:auto; }
+  .lenis.lenis-smooth{ scroll-behavior:auto !important; }
+
+  /* ===== Highlights + CardSwap (vanilla port, GSAP) ===== */
+  .highlights{padding:110px 24px;overflow:hidden;}
+  .highlights-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;max-width:1040px;margin:0 auto;}
+  @media (max-width:900px){ .highlights-grid{grid-template-columns:1fr;gap:60px;} }
+  .cardswap-copy h2{font-size:38px;letter-spacing:-0.02em;margin:0 0 14px;}
+  .cardswap-copy p{color:var(--muted);font-size:16px;max-width:420px;}
+  .card-swap-stage{position:relative;height:380px;perspective:1000px;overflow:visible;}
+  .cs-card{position:absolute;top:50%;left:50%;width:300px;height:340px;
+    border-radius:20px;border:1px solid rgba(255,255,255,.14);
+    background:linear-gradient(160deg,#1b2012,#12160b);color:#eef3df;
+    transform-style:preserve-3d;will-change:transform;backface-visibility:hidden;
+    box-shadow:0 30px 60px rgba(0,0,0,.4);padding:24px;box-sizing:border-box;
+    display:flex;flex-direction:column;justify-content:space-between;cursor:pointer;}
+  .cs-card .cs-tag{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#a8d946;}
+  .cs-card .cs-num{font-size:52px;font-weight:800;letter-spacing:-0.03em;line-height:1;margin:14px 0 8px;}
+  .cs-card .cs-desc{font-size:14px;color:#b9c39a;line-height:1.5;}
+  .cs-card .cs-foot{font-size:11px;color:#7f8a63;}
+
+  /* ===== ScrollExpand (vanilla port) ===== */
+  .scroll-expand{position:relative;width:100%;height:100%;}
+  .scroll-expand__track{position:relative;width:100%;}
+  .scroll-expand__stage{position:sticky;top:0;width:100%;height:100vh;overflow:hidden;--se-title-size:4rem;background:#0a0c07;}
+  .scroll-expand__frame{position:absolute;inset:0;clip-path:inset(21% 29% 21% 29% round 24px);will-change:clip-path;}
+  .scroll-expand__media{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+    will-change:transform;transform-origin:center;user-select:none;-webkit-user-drag:none;background:#0a0c07;}
+  .scroll-expand__scrim{position:absolute;inset:0;pointer-events:none;opacity:0;
+    background:linear-gradient(to top,rgba(0,0,0,.8),rgba(0,0,0,.15) 45%,rgba(0,0,0,.5));}
+  .scroll-expand__overlay{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;
+    justify-content:center;text-align:center;padding:6%;opacity:0;will-change:opacity,transform;color:#f4f6ec;}
+  .scroll-expand__overlay h2{font-size:34px;letter-spacing:-0.02em;margin:0 0 12px;text-shadow:0 2px 24px rgba(0,0,0,.5);}
+  .scroll-expand__overlay p{max-width:520px;color:rgba(244,246,236,.9);text-shadow:0 1px 14px rgba(0,0,0,.5);}
+  .scroll-expand__title{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+    margin:0;padding:0 6%;text-align:center;font-size:var(--se-title-size);font-weight:700;letter-spacing:-0.03em;
+    line-height:1;color:#fff;text-shadow:0 2px 24px rgba(0,0,0,.5);pointer-events:none;will-change:opacity,transform;}
+  .scroll-expand__hint{position:absolute;left:0;right:0;bottom:1.5rem;text-align:center;font-size:.8125rem;
+    letter-spacing:.02em;color:rgba(255,255,255,.6);pointer-events:none;will-change:opacity,transform;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo"><span class="logo-dot"></span>EcoBudget</a>
+    <nav class="links">
+      <a href="#overview">Overview</a>
+      <a href="#try">Demo</a>
+      <a href="#architecture">Architecture</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#results">Results</a>
+    </nav>
+    <div class="header-right">
+      <a href="#" class="signin">Docs</a>
+      <button class="btn btn-dark">View code</button>
+    </div>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu"><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="hero" id="overview">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="hero-video-stage" id="videoStage">
+      <video class="hero-video is-active" id="heroVidA" muted playsinline preload="auto"
+             autoplay aria-label="EcoBudget concept animation">
+        <source src="public/Animate_this_exact_landscape_i.mp4" type="video/mp4" />
+      </video>
+      <video class="hero-video" id="heroVidB" muted playsinline preload="auto" aria-hidden="true">
+        <source src="public/Animate_this_exact_landscape_i.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="hero-scrim"></div>
+  </div>
+
+  <div class="hero-content">
+    <div class="badge">Targeting a 5G-green venue <span>✦</span></div>
+    <h1 class="hero-title">Task-sufficient retrieval<br/>for <em>greener</em> 5G QA</h1>
+    <p class="sub">A question answering system that decides, per question, exactly how much web evidence it needs, stops as soon as it has enough, and moves fewer bytes and spends less energy over a 5G link, without losing answer quality. Built entirely on local models, no hosted LLM API anywhere in the pipeline.</p>
+    <div class="btnrow">
+      <button class="btn btn-accent">Read the docs →</button>
+      <button class="btn btn-glass">Browse the repo</button>
+    </div>
+  </div>
+
+  <div class="hero-logos">
+    <div class="logos-label">Built on local, open models</div>
+    <ul>
+      <li>flan-t5-base + LoRA</li><li>MiniLM bi-encoder</li><li>RoBERTa QA</li>
+      <li>scikit-learn SGD</li><li>LinUCB</li><li>Linear Thompson sampling</li>
+    </ul>
+  </div>
+</section>
+
+<section class="statement">
+  <div class="wrap">
+    <div class="lede">The idea, in plain terms</div>
+    <p>Most retrieval-augmented systems either load a fixed amount of context or load everything they can and let the model sort it out. Both waste data. EcoBudget asks a more careful question: not "can it answer," but what is the smallest amount of loading that still answers correctly - and whether the energy saved by loading less actually beats the energy spent running the models.</p>
+    <ol>
+      <li><strong>Decompose.</strong> Break a question into small, explicit information needs - a requirement, written as an (entity, attribute) pair, for example (iPhone 16, price).</li>
+      <li><strong>Retrieve.</strong> For each requirement, gate candidate passages to the right entity first, then rank by the attribute.</li>
+      <li><strong>Decide.</strong> A learned stopping policy decides after each retrieval whether it already has enough evidence (STOP) or should pull one more passage (RETRIEVE).</li>
+      <li><strong>Answer and measure.</strong> Generate the answer from only the evidence actually gathered, then measure the bytes moved and the energy that implies on a 5G access path.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="highlights">
+  <div class="highlights-grid">
+    <div class="cardswap-copy">
+      <div class="lede" style="font-size:14px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:16px;">By the numbers</div>
+      <h2>Fewer bytes, same answers</h2>
+      <p>The headline results our team measured, on a frozen test set and on real web pages. The cards keep cycling, or hover to hold one still.</p>
+    </div>
+    <div class="card-swap-stage" id="cardSwap">
+      <div class="cs-card"><div class="cs-tag">Retrieval</div><div><div class="cs-num">0.989</div><div class="cs-desc">recall@1 for entity-aware retrieval, up from 0.914; recall@5 reaches a perfect 1.000.</div></div><div class="cs-foot">175 unique requirements</div></div>
+      <div class="cs-card"><div class="cs-tag">Data transfer</div><div><div class="cs-num">−75%</div><div class="cs-desc">fewer bytes than full-page loading at statistically equal answer success on the frozen test set.</div></div><div class="cs-foot">106 B vs 420 B per query</div></div>
+      <div class="cs-card"><div class="cs-tag">Energy</div><div><div class="cs-num">−109 J</div><div class="cs-desc">per query versus full-page loading at the measured 506 KB page scale, transfer is 95% of energy.</div></div><div class="cs-foot">95% CI [75, 148]</div></div>
+      <div class="cs-card"><div class="cs-tag">Real pages</div><div><div class="cs-num">92-98%</div><div class="cs-desc">fewer bytes measured end to end on live web pages, roughly 14x less transfer energy.</div></div><div class="cs-foot">live gsmarena.com</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="demo" id="try">
+  <div class="demo-grid">
+    <div class="demo-copy">
+      <div class="lede" style="font-size:14px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:16px;">See it work</div>
+      <h2>Load only what the task needs</h2>
+      <p>Pick a question and tap load. Watch the pipeline decompose it, retrieve just enough evidence, stop early, and answer, while a full-page load hauls the entire page. The numbers are the ones measured on real pages.</p>
+      <div class="demo-chips" id="demoChips">
+        <button class="demo-chip active" data-i="0">iPhone 16 refresh rate?</button>
+        <button class="demo-chip" data-i="1">Galaxy S24 Ultra weight?</button>
+        <button class="demo-chip" data-i="2">Pixel 9 vs OnePlus 12 battery?</button>
+      </div>
+      <div class="demo-readout">
+        <div class="r"><div class="n" id="roBytes">-</div><div class="l">bytes vs full page</div></div>
+        <div class="r"><div class="n" id="roEnergy">-</div><div class="l">transfer energy saved</div></div>
+        <div class="r"><div class="n" id="roFetch">-</div><div class="l">passages loaded</div></div>
+      </div>
+    </div>
+
+    <div class="iphone" aria-label="Interactive EcoBudget demo on an iPhone">
+      <div class="iphone-island"></div>
+      <div class="iphone-screen">
+        <!-- status bar -->
+        <div class="phone-status">
+          <span class="ps-time">9:41</span>
+          <span class="ps-right">
+            <span class="ps-5g">5G</span>
+            <svg width="17" height="11" viewBox="0 0 17 11" fill="currentColor"><rect x="0" y="7" width="3" height="4" rx="1"/><rect x="4.5" y="5" width="3" height="6" rx="1"/><rect x="9" y="2.5" width="3" height="8.5" rx="1"/><rect x="13.5" y="0" width="3" height="11" rx="1"/></svg>
+            <svg width="16" height="11" viewBox="0 0 16 11" fill="currentColor"><path d="M8 2.2c2 0 3.9.8 5.3 2.1l1.2-1.3A9.4 9.4 0 0 0 8 .3 9.4 9.4 0 0 0 1.5 3l1.2 1.3A7.4 7.4 0 0 1 8 2.2Z"/><path d="M8 5.4c1.1 0 2.2.4 3 1.2l1.2-1.3A6 6 0 0 0 8 3.6a6 6 0 0 0-4.2 1.7L5 6.6c.8-.8 1.9-1.2 3-1.2Z"/><circle cx="8" cy="9" r="1.6"/></svg>
+            <span class="ps-batt"><span class="ps-batt-fill"></span></span>
+          </span>
+        </div>
+
+        <!-- EcoBudget search app -->
+        <div class="phone-app">
+          <div class="pa-top">
+            <div class="pa-brand"><span class="pa-brand-dot"></span>EcoBudget</div>
+            <div class="pa-net" id="paNet">idle</div>
+          </div>
+          <div class="pa-searchbar" id="paSearchbar">
+            <svg class="pa-mag" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
+            <span class="pa-query" id="paQuery"></span><span class="pa-caret" id="paCaret"></span>
+          </div>
+
+          <div class="pa-body" id="paBody">
+            <!-- populated by JS: skeleton load, pipeline, answer, savings -->
+            <div class="pa-hint" id="paHint">Pick a question, then tap Search to watch EcoBudget load only what the answer needs.</div>
+          </div>
+
+          <div class="pa-run"><button id="runBtn"><span class="pa-run-label">Search</span></button></div>
+        </div>
+        <div class="phone-home"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bento" id="architecture">
+  <div class="wrap">
+    <div class="section-head" style="margin-bottom:40px;">
+      <div class="eyebrow">System</div>
+      <h2>What the pipeline is made of</h2>
+      <p>A chain of small, independent, dependency-injected components, each unit tested without downloading a model.</p>
+    </div>
+    <div class="bento-grid">
+      <div class="card card-primary">
+        <h3>Decomposer</h3>
+        <p><code>decomposer.py</code> - a fine-tuned flan-t5-base with a LoRA adapter that turns a question into requirements, snapped to a closed vocabulary of 35 attributes.</p>
+      </div>
+      <div class="card card-primary">
+        <h3>Retriever</h3>
+        <p><code>retriever.py</code> - a MiniLM bi-encoder over a pre-embedded corpus. Production retriever is the entity-aware two-stage version: gate to the entity, then rank by the attribute.</p>
+      </div>
+      <div class="card card-primary">
+        <h3>Evidence tracker</h3>
+        <p><code>evidence.py</code> - scores whether gathered passages satisfy each requirement using a RoBERTa QA confidence signal, since raw similarity is fooled by passages that mention the entity but not the attribute.</p>
+      </div>
+      <div class="card card-primary">
+        <h3>Stopping policy</h3>
+        <p><code>bandit.py</code> - a per-action contextual bandit (linear SGD classifier) trained with a per-step reward that trades marginal evidence coverage against byte cost.</p>
+      </div>
+      <div class="card card-primary">
+        <h3>Answer generator</h3>
+        <p><code>answer.py</code> - a fine-tuned flan-t5-base with a LoRA adapter, called once per requirement, with an abstain path.</p>
+      </div>
+      <div class="card card-primary">
+        <h3>Judge</h3>
+        <p><code>judge.py</code> - an answer-type-aware checker with a symmetric formatting normalizer, reporting judge_success (binary) and fact_f1 separately.</p>
+      </div>
+      <div class="card card-primary">
+        <h3>Energy model</h3>
+        <p><code>energy.py</code> - model FLOPs, 5G per-bit transfer energy, realistic payload scenarios, and an RRC radio-state and tail energy model.</p>
+      </div>
+      <div class="card card-primary">
+        <h3>System orchestrator</h3>
+        <p><code>system.py</code> - the end-to-end deployed path that wires every component above together.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="howitworks" id="roadmap">
+  <div class="wrap hiw-grid">
+    <div>
+      <h2>Roadmap, phase by phase</h2>
+      <p>The work is planned as phases A through H. Here is the honest status of each one, including the parts that didn't go as first expected.</p>
+      <button class="btn btn-dark" style="margin-top:28px;">Read eval_notes.md</button>
+    </div>
+    <div>
+      <div class="step">
+        <div class="step-icon done">A</div>
+        <div><h3>Compute vs. transfer accounting <span class="tag">done</span></h3><p>At short-snippet payloads compute dominates transfer by roughly 100×, so saving bytes alone saves almost nothing at that scale - yet the policy still wins on total energy via fewer evidence-scoring inferences.</p></div>
+      </div>
+      <div class="step">
+        <div class="step-icon done">B</div>
+        <div><h3>A defensible 5G energy model <span class="tag">done</span></h3><p>Replaced a generic web-CO2 number with a 5G per-bit model split into radio access, transport, and device modem receive. At realistic page scale, transfer dominates and loading fewer pages becomes the primary lever.</p></div>
+      </div>
+      <div class="step">
+        <div class="step-icon done">C</div>
+        <div><h3>Dataset scale-up <span class="tag">done</span></h3><p>186 passages, 344 hand-authored seed tasks, 1376 total tasks, frozen train/val/test splits grouped by seed with a coverage invariant enforced in code.</p></div>
+      </div>
+      <div class="step">
+        <div class="step-icon done">D</div>
+        <div><h3>Entity-aware retriever <span class="tag">done</span></h3><p>Fixed entity dominance with a two-stage retriever - gate to the entity, then rank by attribute. recall@1 rose from 0.914 to 0.989, recall@5 reached a perfect 1.000.</p></div>
+      </div>
+      <div class="step">
+        <div class="step-icon done">E</div>
+        <div><h3>External baselines &amp; frozen test run <span class="tag">done</span></h3><p>Added LinUCB, linear Thompson sampling, and an Adaptive-RAG analog. All adaptive methods converge to the same success at the same bytes - the SGD bandit is unstable across seeds, so LinUCB is recommended as the headline learned policy.</p></div>
+      </div>
+      <div class="step">
+        <div class="step-icon done">F</div>
+        <div><h3>Radio-state &amp; tail energy <span class="tag">done</span></h3><p>Added an RRC radio-state model - one promotion per query, radio held active across the retrieval loop, then a tail at tail power. Fewer fetches win on both energy and latency, with no tradeoff between the two.</p></div>
+      </div>
+      <div class="step">
+        <div class="step-icon done">G</div>
+        <div><h3>Consolidation <span class="tag">partly done</span></h3><p>Re-ran the headline experiment on the entity-aware retriever, found and honestly fixed a byte-penalty regression, and re-selected lambda by a pre-registered sweep. A consolidated ablation table and reproducibility appendix remain.</p></div>
+      </div>
+      <div class="step">
+        <div class="step-icon pending">H</div>
+        <div><h3>Paper writeup <span class="tag pending">not started</span></h3><p>Related work, the Pareto and radio figures, and limitations.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="results" id="results">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Results</div>
+      <h2>Key results at a glance</h2>
+      <p>Measured on my own machine and reproducible with the commands in the repository.</p>
+    </div>
+
+    <div class="stat-grid">
+      <div class="stat"><div class="num">0.989</div><div class="label">retriever recall@1 (from 0.914)</div></div>
+      <div class="stat"><div class="num">1.000</div><div class="label">retriever recall@5 (from 0.983)</div></div>
+      <div class="stat"><div class="num">0.946</div><div class="label">headline validation success</div></div>
+      <div class="stat"><div class="num">−75%</div><div class="label">bytes vs. fixed / full-load baselines</div></div>
+    </div>
+
+    <div class="results-block">
+      <h3>Retriever recall (Phase D)</h3>
+      <p class="desc">On 175 unique seed requirements, comparing the whole-question baseline against the per-requirement and entity-aware retrievers.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Retriever</th><th>recall@1</th><th>recall@5</th></tr></thead>
+          <tbody>
+            <tr><td>Whole-question baseline</td><td>0.589</td><td>0.931</td></tr>
+            <tr><td>Per-requirement bi-encoder (old)</td><td>0.914</td><td>0.983</td></tr>
+            <tr><td>Entity-aware, attribute-ranked (new)</td><td>0.989</td><td>1.000</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="results-block">
+      <h3>Frozen test-split run (Phase E, 124 headline tasks)</h3>
+      <p class="desc">The single final run against the frozen test set, after every configuration was locked on validation.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Condition</th><th>Success</th><th>Fact F1</th><th>Avg bytes</th><th>Fetches</th></tr></thead>
+          <tbody>
+            <tr><td>Bandit</td><td>0.895</td><td>0.944</td><td>106</td><td>1.84</td></tr>
+            <tr><td>LinUCB</td><td>0.895</td><td>0.944</td><td>108</td><td>1.87</td></tr>
+            <tr><td>Heuristic</td><td>0.895</td><td>0.944</td><td>136</td><td>2.29</td></tr>
+            <tr><td>One per requirement</td><td>0.831</td><td>0.911</td><td>101</td><td>1.74</td></tr>
+            <tr><td>Full load</td><td>0.903</td><td>0.919</td><td>420</td><td>7.56</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="results-block">
+      <h3>Radio and latency (validation, 92 headline tasks)</h3>
+      <p class="desc">5G energy is dominated by keeping the modem in the high-power RRC_CONNECTED state, not only by bytes moved. The differentiator across conditions is the number of fetches.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Condition</th><th>Fetches</th><th>Radio J (tight loop)</th><th>Radio J (fast dormancy)</th><th>Latency (s)</th></tr></thead>
+          <tbody>
+            <tr><td>Bandit</td><td>1.98</td><td>10.33</td><td>19.94</td><td>1.51</td></tr>
+            <tr><td>Heuristic</td><td>1.98</td><td>10.33</td><td>19.94</td><td>1.51</td></tr>
+            <tr><td>Fixed-1000B</td><td>8.92</td><td>12.09</td><td>89.90</td><td>3.28</td></tr>
+            <tr><td>Full</td><td>9.05</td><td>12.12</td><td>91.22</td><td>3.31</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="scroll-expand" id="paretoExpand" style="--se:1;">
+  <div class="scroll-expand__track">
+    <div class="scroll-expand__stage">
+      <div class="scroll-expand__frame">
+        <img class="scroll-expand__media" src="public/figures/fig1_pareto.png" alt="Pareto plot of success versus energy" draggable="false" />
+        <div class="scroll-expand__scrim"></div>
+        <div class="scroll-expand__overlay">
+          <h2>The sweet spot</h2>
+          <p>Adaptive methods sit at the low-energy, high-success corner. Fixed budgets and full-page loading pay far more energy for no more success.</p>
+        </div>
+      </div>
+      <div class="scroll-expand__title">Pareto-optimal</div>
+      <div class="scroll-expand__hint">Scroll</div>
+    </div>
+  </div>
+</div>
+
+<section class="faq">
+  <div class="section-head">
+    <div class="eyebrow">Honesty, by design</div>
+    <h2>What I report plainly, not just the wins</h2>
+    <p>The point of this project is a defensible energy story, not a flattering one.</p>
+  </div>
+
+  <div class="faq-item open">
+    <div class="faq-q">Does the learned policy beat a hand-tuned heuristic?<span class="chevron">▾</span></div>
+    <div class="faq-a"><p>Not under the entity-aware retriever. With recall@1 at 0.989 there is little uncertainty left to exploit, so the bandit converges to the same policy as the heuristic (difference 0, confidence interval [0, 0]). It still clearly dominates fixed budgets and full-load, and its edge over the heuristic grows with retrieval uncertainty - that relationship is characterized directly in the noise sweep.</p></div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Is the custom SGD bandit a better algorithm than standard baselines?<span class="chevron">▾</span></div>
+    <div class="faq-a"><p>No. On validation, the SGD bandit, LinUCB, LinTS, and the heuristic all reach the same success at the same bytes. Over five seeds the SGD bandit is unstable (0.790 ± 0.283, collapsing on some seeds), while LinUCB (0.913 ± 0.007) and LinTS (0.897 ± 0.014) are stable. LinUCB is recommended as the headline learned policy for that reason.</p></div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Does compute or transfer energy dominate?<span class="desc chevron">▾</span></div>
+    <div class="faq-a"><p>It depends on payload realism. At short-snippet scale, compute dominates transfer by roughly 100×. At realistic web-page scale, transfer dominates and loading fewer pages becomes the primary energy lever. The policy wins in both regimes, for different reasons.</p></div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Does any part of this depend on a hosted LLM API?<span class="chevron">▾</span></div>
+    <div class="faq-a"><p>No. Every model runs locally - flan-t5-base with LoRA, a MiniLM bi-encoder, and a RoBERTa QA confidence model. This is enforced in code: a script scans for banned imports and known API hosts, and a test runs it as part of the suite.</p></div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">What's still open?<span class="chevron">▾</span></div>
+    <div class="faq-a"><p>A consolidated ablation table and reproducibility appendix for Phase G, and the paper writeup itself in Phase H. Two known ceilings: narrative tasks have no training coverage and currently fail, and two retrieval near-synonyms still miss at rank 1.</p></div>
+  </div>
+</section>
+
+<div class="cta-banner">
+  <h2>Reproduce it, or read the details</h2>
+  <p>Every number above was produced on one machine and is reproducible with the commands in the repository. 169 tests pass, and the no-hosted-LLM-API guard is green.</p>
+  <div class="btnrow">
+    <button class="btn btn-dark">View the repository →</button>
+    <button class="btn btn-outline">Read eval_notes.md</button>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap footer-top">
+    <a href="#" class="logo" style="color:#151a0d;"><span class="logo-dot" style="background:#151a0d;"></span>EcoBudget</a>
+    <nav class="footer-nav">
+      <div>
+        <h4>Docs</h4>
+        <ul><li><a href="#">roadmap_5g_green.md</a></li><li><a href="#">energy_model.md</a></li><li><a href="#">eval_notes.md</a></li></ul>
+      </div>
+      <div>
+        <h4>Project</h4>
+        <ul><li><a href="#">Repository</a></li><li><a href="#">Tests (169 passing)</a></li><li><a href="#">License</a></li></ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul><li><a href="#">GitHub</a></li><li><a href="#">Email</a></li></ul>
+      </div>
+    </nav>
+  </div>
+  <div class="wrap footer-bottom">© 2026 EcoBudget. Research project - results reproducible from the commands above.</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+<script>
+  /* ===== Lenis smooth scroll ===== */
+  var lenis = null;
+  if (window.Lenis && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    lenis = new Lenis({ duration: 1.15, smoothWheel: true, wheelMultiplier: 1 });
+    var rafLoop = function(t){ lenis.raf(t); requestAnimationFrame(rafLoop); };
+    requestAnimationFrame(rafLoop);
+    document.querySelectorAll('a[href^="#"]').forEach(function(a){
+      a.addEventListener('click', function(e){
+        var id = a.getAttribute('href');
+        if (id.length > 1){ var el = document.querySelector(id); if (el){ e.preventDefault(); lenis.scrollTo(el, { offset: -80 }); } }
+      });
+    });
+  }
+
+  /* ===== Scroll reveal (staggered) ===== */
+  (function(){
+    var sel = '.statement .wrap, .demo-copy, .demo .iphone, .card, .results-block, .step, .faq-item, .cta-banner, .section-head, .cardswap-copy, .highlights .card-swap-stage';
+    var els = Array.prototype.slice.call(document.querySelectorAll(sel));
+    els.forEach(function(el){ el.classList.add('reveal'); });
+    if (!('IntersectionObserver' in window)) { els.forEach(function(el){ el.classList.add('in-view'); }); return; }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if (en.isIntersecting){ en.target.classList.add('in-view'); io.unobserve(en.target); } });
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+    els.forEach(function(el){ io.observe(el); });
+  })();
+
+  document.querySelectorAll('.faq-item').forEach(function(item){
+    item.querySelector('.faq-q').addEventListener('click', function(){
+      var wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(function(i){ i.classList.remove('open'); });
+      if(!wasOpen) item.classList.add('open');
+    });
+  });
+
+  /* ===== Seamless hero-video loop (crossfade two copies to hide the seam) ===== */
+  (function(){
+    var A=document.getElementById('heroVidA'), B=document.getElementById('heroVidB');
+    if(!A||!B) return;
+    var vids=[A,B], active=0, FADE=0.55, swapping=false;
+    vids.forEach(function(v){ v.muted=true; v.loop=false; v.playbackRate=1; });
+    A.play().catch(function(){});
+    function maybeSwap(v){
+      var cur=vids[active];
+      if(v!==cur || swapping || !cur.duration) return;
+      if(cur.currentTime < cur.duration - FADE) return;
+      swapping=true;
+      var nxt=vids[1-active], old=cur;
+      try{ nxt.currentTime=0; }catch(e){}
+      nxt.play().catch(function(){});
+      nxt.classList.add('is-active');
+      old.classList.remove('is-active');
+      active=1-active;
+      setTimeout(function(){ try{old.pause();}catch(e){} swapping=false; }, FADE*1000+80);
+    }
+    // timeupdate fires during playback regardless of tab visibility (unlike rAF);
+    // 'ended' is a safety net in case a browser skips the last timeupdate.
+    vids.forEach(function(v){
+      v.addEventListener('timeupdate', function(){ maybeSwap(v); });
+      v.addEventListener('ended', function(){
+        if(vids[active]===v && !swapping){ v.currentTime=Math.max(0,(v.duration||1)-FADE); maybeSwap(v); }
+      });
+    });
+  })();
+
+  /* ===== Realistic phone: search -> full-page load vs EcoBudget (real numbers) ===== */
+  var DEMO = [
+    { q:"iPhone 16 refresh rate?", full:"What is the display refresh rate of the iPhone 16?",
+      pills:["iPhone 16","display refresh rate"],
+      passages:["The iPhone 16 has a display with a <b>60Hz</b> refresh rate."],
+      answer:"60Hz", fullKB:54.0, taskKB:3.9, reduction:92.8, jFull:9.89, jTask:0.71, reqs:1 },
+    { q:"Galaxy S24 Ultra weight?", full:"What is the weight of the Samsung Galaxy S24 Ultra?",
+      pills:["Samsung Galaxy S24 Ultra","weight"],
+      passages:["The Samsung Galaxy S24 Ultra weighs about <b>232 grams</b>."],
+      answer:"232 g", fullKB:56.3, taskKB:1.2, reduction:97.8, jFull:10.31, jTask:0.23, reqs:1 },
+    { q:"Pixel 9 vs OnePlus 12 battery?", full:"Compare the Google Pixel 9 and OnePlus 12 on battery.",
+      pills:["Google Pixel 9","battery","OnePlus 12","battery"],
+      passages:["The Google Pixel 9 has a <b>4700 mAh</b> battery.","The OnePlus 12 has a <b>5400 mAh</b> battery."],
+      answer:"4700 mAh, 5400 mAh", fullKB:108.0, taskKB:0.2, reduction:99.8, jFull:19.8, jTask:0.04, reqs:2 }
+  ];
+  var cur = 0, runToken = 0;
+  var $ = function(id){ return document.getElementById(id); };
+  var sleep = function(ms){ return new Promise(function(r){ setTimeout(r, ms); }); };
+
+  function resetPhone(){
+    $('paQuery').textContent = "";
+    $('paCaret').className = "pa-caret";
+    $('paSearchbar').classList.remove('focus');
+    $('paNet').className = "pa-net"; $('paNet').textContent = "idle";
+    $('paBody').innerHTML = '<div class="pa-hint">Pick a question, then tap Search to watch EcoBudget load only what the answer needs.</div>';
+    $('roBytes').textContent = "-"; $('roEnergy').textContent = "-"; $('roFetch').textContent = "-";
+  }
+  function selectQ(i){
+    cur = i; runToken++; resetPhone();
+    document.querySelectorAll('#demoChips .demo-chip').forEach(function(c){ c.classList.toggle('active', +c.dataset.i === i); });
+    $('.pa-run-label'); var lbl=document.querySelector('.pa-run-label'); if(lbl) lbl.textContent="Search";
+    $('runBtn').disabled = false;
+  }
+  // animate a number from a->b into el, formatted by fmt
+  function countTo(el, a, b, ms, fmt, token){
+    var t0=null;
+    function step(t){ if(token!==runToken) return; if(!t0)t0=t;
+      var p=Math.min((t-t0)/ms,1); var v=a+(b-a)*(1-Math.pow(1-p,3));
+      el.textContent=fmt(v); if(p<1) requestAnimationFrame(step); }
+    requestAnimationFrame(step);
+  }
+
+  async function run(){
+    var token = ++runToken;
+    var d = DEMO[cur], b = $('runBtn'), lbl = document.querySelector('.pa-run-label');
+    b.disabled = true; if(lbl) lbl.textContent = "Searching…";
+    resetPhone(); await sleep(40); if(token!==runToken) return;
+
+    // 1) focus + type the query
+    $('paSearchbar').classList.add('focus'); $('paCaret').classList.add('blink');
+    var q = d.full;
+    for(var i=0;i<q.length;i++){ if(token!==runToken) return; $('paQuery').textContent = q.slice(0,i+1); await sleep(22); }
+    await sleep(250); if(token!==runToken) return;
+    $('paNet').className = "pa-net live"; $('paNet').textContent = "5G · connecting";
+
+    var body = $('paBody');
+    body.innerHTML = '<div class="pa-scroll" id="paScroll"></div>';
+    var scroll = $('paScroll');
+
+    // 2) what a normal browser does: haul the whole page (skeleton + byte race)
+    var fl = document.createElement('div'); fl.className='pa-fullload';
+    fl.innerHTML = '<div class="fl-head"><span>Normal browser · full page</span><span class="fl-bytes" id="flBytes">0 KB</span></div>'
+      + '<div class="sk img"></div><div class="sk w80"></div><div class="sk w60"></div><div class="sk w40"></div>';
+    scroll.appendChild(fl);
+    countTo($('flBytes'), 0, d.fullKB, 1200, function(v){ return v.toFixed(0)+" KB"; }, token);
+    await sleep(1350); if(token!==runToken) return;
+    $('paNet').textContent = "5G · EcoBudget";
+
+    // 3) EcoBudget takes over: fade the full-load card back, run the pipeline
+    fl.style.transition='opacity .4s ease,height .4s ease'; fl.style.opacity='.35';
+
+    function addStep(n, title, subHtml){
+      var s=document.createElement('div'); s.className='pa-step';
+      s.innerHTML='<div class="dot">'+n+'</div><div class="stx"><div class="stt">'+title+'</div><div class="sts">'+subHtml+'</div></div>';
+      scroll.appendChild(s); requestAnimationFrame(function(){ s.classList.add('show'); }); scroll.scrollTop=scroll.scrollHeight; return s;
+    }
+    // decompose
+    addStep(1,'Decompose', d.pills.map(function(p){return '<span class="pill">'+p+'</span>';}).join(''));
+    await sleep(650); if(token!==runToken) return;
+    // retrieve
+    var rs = addStep(2,'Retrieve &amp; decide','gate to entity, rank by attribute');
+    var sub = rs.querySelector('.sts');
+    for(var k=0;k<d.passages.length;k++){ if(token!==runToken) return;
+      var pz=document.createElement('div'); pz.className='passage'; pz.innerHTML=d.passages[k]; sub.appendChild(pz);
+      await sleep(500); }
+    var stop=document.createElement('div'); stop.className='pa-stop'; stop.innerHTML='✓ Evidence sufficient - STOP'; sub.appendChild(stop);
+    await sleep(500); if(token!==runToken) return;
+    // answer
+    var ans=document.createElement('div'); ans.className='pa-answer';
+    ans.innerHTML='<div class="albl">Answer</div><div class="aval">'+d.answer+'</div>'; scroll.appendChild(ans);
+    requestAnimationFrame(function(){ ans.classList.add('show'); }); scroll.scrollTop=scroll.scrollHeight;
+    await sleep(600); if(token!==runToken) return;
+
+    // 4) savings panel slides up with animated counters + bars
+    var sv=document.createElement('div'); sv.className='pa-savings';
+    sv.innerHTML =
+      '<div class="sv-big" id="svBig">0%</div><div class="sv-cap">fewer bytes than loading the whole page</div>'
+      + '<div class="sv-rows">'
+      + '<div class="sv-bar"><div class="sv-bl"><span>Full page</span><b id="svFullB">'+d.fullKB.toFixed(0)+' KB</b></div><div class="sv-track"><div class="sv-fill full" id="svFull"></div></div></div>'
+      + '<div class="sv-bar"><div class="sv-bl"><span>EcoBudget</span><b id="svTaskB">'+d.taskKB+' KB</b></div><div class="sv-track"><div class="sv-fill task" id="svTask"></div></div></div>'
+      + '</div>';
+    scroll.appendChild(sv); requestAnimationFrame(function(){ sv.classList.add('show'); }); scroll.scrollTop=scroll.scrollHeight;
+    await sleep(120); if(token!==runToken) return;
+    countTo($('svBig'), 0, d.reduction, 1100, function(v){ return "−"+v.toFixed(1)+"%"; }, token);
+    $('svFull').style.width='100%';
+    $('svTask').style.width = Math.max(d.taskKB/d.fullKB*100, 2) + "%";
+
+    // demo-copy readouts
+    countTo($('roBytes'), 0, d.reduction, 1100, function(v){ return "−"+v.toFixed(1)+"%"; }, token);
+    countTo($('roEnergy'), 0, d.jFull-d.jTask, 1100, function(v){ return v.toFixed(1)+" J"; }, token);
+    $('roFetch').textContent = d.passages.length + " of " + d.reqs;
+
+    $('paNet').className="pa-net"; $('paNet').textContent="done";
+    $('paCaret').className="pa-caret";
+    if(lbl) lbl.textContent = "Search again"; b.disabled = false;
+  }
+
+  document.querySelectorAll('#demoChips .demo-chip').forEach(function(c){
+    c.addEventListener('click', function(){ selectQ(+c.dataset.i); });
+  });
+  $('runBtn').addEventListener('click', function(){ run(); });
+  selectQ(0);
+
+  /* ===== CardSwap (vanilla port of the React Bits component, GSAP) ===== */
+  (function(){
+    if(!window.gsap) return;
+    var stage=document.getElementById('cardSwap'); if(!stage) return;
+    var cards=Array.prototype.slice.call(stage.querySelectorAll('.cs-card'));
+    if(cards.length<2) return;
+    var cardDistance=50, verticalDistance=56, skew=6, delay=3400, total=cards.length;
+    var config={ease:'elastic.out(0.6,0.9)',durDrop:2,durMove:2,durReturn:2,promoteOverlap:0.9,returnDelay:0.05};
+    function makeSlot(i){return {x:i*cardDistance,y:-i*verticalDistance,z:-i*cardDistance*1.5,zIndex:total-i};}
+    function placeNow(el,slot){gsap.set(el,{x:slot.x,y:slot.y,z:slot.z,xPercent:-50,yPercent:-50,skewY:skew,transformOrigin:'center center',zIndex:slot.zIndex,force3D:true});}
+    var order=cards.map(function(_,i){return i;}), tl=null, interval=null;
+    cards.forEach(function(el,i){placeNow(el,makeSlot(i));});
+    function swap(){
+      if(order.length<2) return;
+      var front=order[0], rest=order.slice(1), elFront=cards[front];
+      tl=gsap.timeline();
+      tl.to(elFront,{y:'+=400',duration:config.durDrop,ease:config.ease});
+      tl.addLabel('promote','-='+(config.durDrop*config.promoteOverlap));
+      rest.forEach(function(idx,i){var el=cards[idx],slot=makeSlot(i);
+        tl.set(el,{zIndex:slot.zIndex},'promote');
+        tl.to(el,{x:slot.x,y:slot.y,z:slot.z,duration:config.durMove,ease:config.ease},'promote+='+(i*0.15));});
+      var backSlot=makeSlot(total-1);
+      tl.addLabel('return','promote+='+(config.durMove*config.returnDelay));
+      tl.call(function(){gsap.set(elFront,{zIndex:backSlot.zIndex});},undefined,'return');
+      tl.to(elFront,{x:backSlot.x,y:backSlot.y,z:backSlot.z,duration:config.durReturn,ease:config.ease},'return');
+      tl.call(function(){order=rest.concat([front]);});
+    }
+    swap(); interval=setInterval(swap,delay);
+    stage.addEventListener('mouseenter',function(){ if(tl)tl.pause(); clearInterval(interval); });
+    stage.addEventListener('mouseleave',function(){ if(tl)tl.play(); clearInterval(interval); interval=setInterval(swap,delay); });
+  })();
+
+  /* ===== ScrollExpand (vanilla port of the React Bits component) ===== */
+  (function(){
+    var root=document.getElementById('paretoExpand'); if(!root) return;
+    var track=root.querySelector('.scroll-expand__track');
+    var stage=root.querySelector('.scroll-expand__stage');
+    var frame=root.querySelector('.scroll-expand__frame');
+    var media=root.querySelector('.scroll-expand__media');
+    var scrim=root.querySelector('.scroll-expand__scrim');
+    var overlay=root.querySelector('.scroll-expand__overlay');
+    var title=root.querySelector('.scroll-expand__title');
+    var hint=root.querySelector('.scroll-expand__hint');
+    var C={startWidth:44,startHeight:60,startRadius:24,endRadius:0,mediaZoom:1.3,scrollDistance:1.1,holdDistance:0.3,overlayScrim:0.5};
+    function clamp(v,a,b){return v<a?a:v>b?b:v;}
+    function smoothstep(e0,e1,x){var t=clamp((x-e0)/((e1-e0)||1e-6),0,1);return t*t*(3-2*t);}
+    function measure(){var h=window.innerHeight;
+      track.style.height=(h*(1+C.scrollDistance+C.holdDistance))+'px';
+      stage.style.setProperty('--se-title-size', clamp(root.clientWidth*0.075,20,72)+'px');}
+    function progress(){var span=window.innerHeight*Math.max(0.01,C.scrollDistance);
+      var top=track.getBoundingClientRect().top; return clamp(-top/span,0,1);}
+    function apply(p){var e=smoothstep(0,1,p);
+      var w=C.startWidth+(100-C.startWidth)*e, h=C.startHeight+(100-C.startHeight)*e;
+      var ix=Math.max(0,(100-w)/2), iy=Math.max(0,(100-h)/2);
+      var r=C.startRadius+(C.endRadius-C.startRadius)*e;
+      frame.style.clipPath='inset('+iy+'% '+ix+'% '+iy+'% '+ix+'% round '+r+'px)';
+      media.style.transform='scale('+(C.mediaZoom+(1-C.mediaZoom)*e)+')';
+      if(scrim)scrim.style.opacity=(C.overlayScrim*e);
+      if(title){var out=smoothstep(0.4,0.88,p);title.style.opacity=(1-out);title.style.transform='translate3d(0,'+(-28*out)+'px,0) scale('+(1+0.06*out)+')';}
+      if(hint){var g=smoothstep(0,0.12,p);hint.style.opacity=(1-g);}
+      if(overlay){var inn=smoothstep(0.68,1,p);overlay.style.opacity=inn;overlay.style.transform='translate3d(0,'+(18*(1-inn))+'px,0)';}
+    }
+    measure(); apply(progress());
+    window.addEventListener('scroll',function(){apply(progress());},{passive:true});
+    window.addEventListener('resize',function(){measure();apply(progress());});
+    if(lenis&&lenis.on) lenis.on('scroll',function(){apply(progress());});
+  })();
+</script>
+</body>
+</html>

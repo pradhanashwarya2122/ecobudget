@@ -1,0 +1,24 @@
+[
+  {
+    "question": "What is the display refresh rate of the iPhone 16?",
+    "url": "https://www.gsmarena.com/apple_iphone_16-13317.php",
+    "source": "live:https://www.gsmarena.com/apple_iphone_16-13317.php",
+    "full_bytes": 54002,
+    "task_bytes": 3878,
+    "byte_reduction_pct": 92.82,
+    "transfer_j_full": 9.8931664,
+    "transfer_j_task": 0.7104496,
+    "answer": "1280p"
+  },
+  {
+    "question": "What is the weight of the Samsung Galaxy S24 Ultra?",
+    "url": "https://www.gsmarena.com/samsung_galaxy_s24_ultra-12771.php",
+    "source": "live:https://www.gsmarena.com/samsung_galaxy_s24_ultra-12771.php",
+    "full_bytes": 56301,
+    "task_bytes": 1228,
+    "byte_reduction_pct": 97.82,
+    "transfer_j_full": 10.3143432,
+    "transfer_j_task": 0.22496960000000002,
+    "answer": "8.6mm"
+  }
+]

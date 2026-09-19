@@ -1,0 +1,1008 @@
+{"task_id": "T1", "question": "What is the battery capacity of the iPhone 15?", "target": "iPhone 15|battery"}
+{"task_id": "T1-s01", "question": "What is the battery capacity of iPhone 15?", "target": "iPhone 15|battery"}
+{"task_id": "T1-s02", "question": "Can you tell me the battery capacity of iPhone 15?", "target": "iPhone 15|battery"}
+{"task_id": "T1-s03", "question": "How would you describe the battery capacity of iPhone 15?", "target": "iPhone 15|battery"}
+{"task_id": "T2", "question": "What is the starting price of the Samsung Galaxy S24?", "target": "Samsung Galaxy S24|price"}
+{"task_id": "T2-s01", "question": "What is the price of Samsung Galaxy S24?", "target": "Samsung Galaxy S24|price"}
+{"task_id": "T2-s02", "question": "Can you tell me the price of Samsung Galaxy S24?", "target": "Samsung Galaxy S24|price"}
+{"task_id": "T2-s03", "question": "How would you describe the price of Samsung Galaxy S24?", "target": "Samsung Galaxy S24|price"}
+{"task_id": "T4", "question": "Compare the iPhone 15 and Samsung Galaxy S24 on price and battery capacity.", "target": "iPhone 15|price ## iPhone 15|battery ## Samsung Galaxy S24|price ## Samsung Galaxy S24|battery"}
+{"task_id": "T4-s01", "question": "Compare iPhone 15 and Samsung Galaxy S24 on price and battery capacity.", "target": "iPhone 15|price ## iPhone 15|battery ## Samsung Galaxy S24|price ## Samsung Galaxy S24|battery"}
+{"task_id": "T4-s02", "question": "How do iPhone 15 and Samsung Galaxy S24 differ in price and battery capacity?", "target": "iPhone 15|price ## iPhone 15|battery ## Samsung Galaxy S24|price ## Samsung Galaxy S24|battery"}
+{"task_id": "T4-s03", "question": "I'm choosing between iPhone 15 and Samsung Galaxy S24 -- how do they compare on price and battery capacity?", "target": "iPhone 15|price ## iPhone 15|battery ## Samsung Galaxy S24|price ## Samsung Galaxy S24|battery"}
+{"task_id": "T5", "question": "What is the starting price of the MacBook Air 13 M3?", "target": "MacBook Air 13 M3|price"}
+{"task_id": "T5-s01", "question": "What is the price of MacBook Air 13 M3?", "target": "MacBook Air 13 M3|price"}
+{"task_id": "T5-s02", "question": "Can you tell me the price of MacBook Air 13 M3?", "target": "MacBook Air 13 M3|price"}
+{"task_id": "T5-s03", "question": "How would you describe the price of MacBook Air 13 M3?", "target": "MacBook Air 13 M3|price"}
+{"task_id": "T6", "question": "What is the battery life of the Dell XPS 13 (2024)?", "target": "Dell XPS 13 2024|battery"}
+{"task_id": "T6-s01", "question": "What is the battery capacity of Dell XPS 13 2024?", "target": "Dell XPS 13 2024|battery"}
+{"task_id": "T6-s02", "question": "Can you tell me the battery capacity of Dell XPS 13 2024?", "target": "Dell XPS 13 2024|battery"}
+{"task_id": "T6-s03", "question": "How would you describe the battery capacity of Dell XPS 13 2024?", "target": "Dell XPS 13 2024|battery"}
+{"task_id": "T8", "question": "Compare the MacBook Air 13 M3 and the Dell XPS 13 (2024) on price and weight.", "target": "MacBook Air 13 M3|price ## MacBook Air 13 M3|weight ## Dell XPS 13 2024|price ## Dell XPS 13 2024|weight"}
+{"task_id": "T8-s01", "question": "Compare MacBook Air 13 M3 and Dell XPS 13 2024 on price and weight.", "target": "MacBook Air 13 M3|price ## MacBook Air 13 M3|weight ## Dell XPS 13 2024|price ## Dell XPS 13 2024|weight"}
+{"task_id": "T8-s02", "question": "How do MacBook Air 13 M3 and Dell XPS 13 2024 differ in price and weight?", "target": "MacBook Air 13 M3|price ## MacBook Air 13 M3|weight ## Dell XPS 13 2024|price ## Dell XPS 13 2024|weight"}
+{"task_id": "T8-s03", "question": "I'm choosing between MacBook Air 13 M3 and Dell XPS 13 2024 -- how do they compare on price and weight?", "target": "MacBook Air 13 M3|price ## MacBook Air 13 M3|weight ## Dell XPS 13 2024|price ## Dell XPS 13 2024|weight"}
+{"task_id": "T9", "question": "What is the best time of year to visit Jaipur?", "target": "Jaipur|best_time_to_visit"}
+{"task_id": "T9-s01", "question": "What is the recommended travel season of Jaipur?", "target": "Jaipur|best_time_to_visit"}
+{"task_id": "T9-s02", "question": "Can you tell me the recommended travel season of Jaipur?", "target": "Jaipur|best_time_to_visit"}
+{"task_id": "T9-s03", "question": "How would you describe the recommended travel season of Jaipur?", "target": "Jaipur|best_time_to_visit"}
+{"task_id": "T11", "question": "Compare Jaipur and Kyoto on typical daily travel budget.", "target": "Jaipur|daily_budget ## Kyoto|daily_budget"}
+{"task_id": "T11-s01", "question": "Compare Jaipur and Kyoto on daily travel budget.", "target": "Jaipur|daily_budget ## Kyoto|daily_budget"}
+{"task_id": "T11-s02", "question": "Which is better in terms of daily travel budget: Jaipur or Kyoto?", "target": "Jaipur|daily_budget ## Kyoto|daily_budget"}
+{"task_id": "T11-s03", "question": "How does Jaipur's daily travel budget compare to Kyoto's?", "target": "Jaipur|daily_budget ## Kyoto|daily_budget"}
+{"task_id": "T13", "question": "What chip powers the iPhone 15?", "target": "iPhone 15|chip"}
+{"task_id": "T13-s01", "question": "What is the chip of iPhone 15?", "target": "iPhone 15|chip"}
+{"task_id": "T13-s02", "question": "Can you tell me the chip of iPhone 15?", "target": "iPhone 15|chip"}
+{"task_id": "T13-s03", "question": "How would you describe the chip of iPhone 15?", "target": "iPhone 15|chip"}
+{"task_id": "T14", "question": "What processor options are available for the Dell XPS 13 (2024)?", "target": "Dell XPS 13 2024|chip"}
+{"task_id": "T14-s01", "question": "What is the chip of Dell XPS 13 2024?", "target": "Dell XPS 13 2024|chip"}
+{"task_id": "T14-s02", "question": "Can you tell me the chip of Dell XPS 13 2024?", "target": "Dell XPS 13 2024|chip"}
+{"task_id": "T14-s03", "question": "How would you describe the chip of Dell XPS 13 2024?", "target": "Dell XPS 13 2024|chip"}
+{"task_id": "T16", "question": "How many rooms does The Oberoi Rajvilas Jaipur have?", "target": "Oberoi Rajvilas Jaipur|room_count"}
+{"task_id": "T16-s01", "question": "What is the room count of Oberoi Rajvilas Jaipur?", "target": "Oberoi Rajvilas Jaipur|room_count"}
+{"task_id": "T16-s02", "question": "Can you tell me the room count of Oberoi Rajvilas Jaipur?", "target": "Oberoi Rajvilas Jaipur|room_count"}
+{"task_id": "T16-s03", "question": "How would you describe the room count of Oberoi Rajvilas Jaipur?", "target": "Oberoi Rajvilas Jaipur|room_count"}
+{"task_id": "T18", "question": "Compare The Oberoi Rajvilas Jaipur and Ibis Jaipur City Centre on price per night and amenities.", "target": "Oberoi Rajvilas Jaipur|price_per_night ## Oberoi Rajvilas Jaipur|amenities ## Ibis Jaipur City Centre|price_per_night ## Ibis Jaipur City Centre|amenities"}
+{"task_id": "T18-s01", "question": "Compare Oberoi Rajvilas Jaipur and Ibis Jaipur City Centre on price per night and amenities.", "target": "Oberoi Rajvilas Jaipur|price_per_night ## Oberoi Rajvilas Jaipur|amenities ## Ibis Jaipur City Centre|price_per_night ## Ibis Jaipur City Centre|amenities"}
+{"task_id": "T18-s02", "question": "How do Oberoi Rajvilas Jaipur and Ibis Jaipur City Centre differ in price per night and amenities?", "target": "Oberoi Rajvilas Jaipur|price_per_night ## Oberoi Rajvilas Jaipur|amenities ## Ibis Jaipur City Centre|price_per_night ## Ibis Jaipur City Centre|amenities"}
+{"task_id": "T18-s03", "question": "I'm choosing between Oberoi Rajvilas Jaipur and Ibis Jaipur City Centre -- how do they compare on price per night and amenities?", "target": "Oberoi Rajvilas Jaipur|price_per_night ## Oberoi Rajvilas Jaipur|amenities ## Ibis Jaipur City Centre|price_per_night ## Ibis Jaipur City Centre|amenities"}
+{"task_id": "T19", "question": "What is the battery life of the Sony WF-1000XM5?", "target": "Sony WF-1000XM5|battery_life"}
+{"task_id": "T19-s01", "question": "What is the battery life of Sony WF-1000XM5?", "target": "Sony WF-1000XM5|battery_life"}
+{"task_id": "T19-s02", "question": "Can you tell me the battery life of Sony WF-1000XM5?", "target": "Sony WF-1000XM5|battery_life"}
+{"task_id": "T19-s03", "question": "How would you describe the battery life of Sony WF-1000XM5?", "target": "Sony WF-1000XM5|battery_life"}
+{"task_id": "T21", "question": "Compare AirPods Pro 2 and Sony WF-1000XM5 on price and battery life.", "target": "AirPods Pro 2|price ## AirPods Pro 2|battery_life ## Sony WF-1000XM5|price ## Sony WF-1000XM5|battery_life"}
+{"task_id": "T21-s01", "question": "Compare AirPods Pro 2 and Sony WF-1000XM5 on price and battery life.", "target": "AirPods Pro 2|price ## AirPods Pro 2|battery_life ## Sony WF-1000XM5|price ## Sony WF-1000XM5|battery_life"}
+{"task_id": "T21-s02", "question": "How do AirPods Pro 2 and Sony WF-1000XM5 differ in price and battery life?", "target": "AirPods Pro 2|price ## AirPods Pro 2|battery_life ## Sony WF-1000XM5|price ## Sony WF-1000XM5|battery_life"}
+{"task_id": "T21-s03", "question": "I'm choosing between AirPods Pro 2 and Sony WF-1000XM5 -- how do they compare on price and battery life?", "target": "AirPods Pro 2|price ## AirPods Pro 2|battery_life ## Sony WF-1000XM5|price ## Sony WF-1000XM5|battery_life"}
+{"task_id": "T22", "question": "How tall is the Burj Khalifa?", "target": "Burj Khalifa|height"}
+{"task_id": "T22-s01", "question": "What is the height of Burj Khalifa?", "target": "Burj Khalifa|height"}
+{"task_id": "T22-s02", "question": "Can you tell me the height of Burj Khalifa?", "target": "Burj Khalifa|height"}
+{"task_id": "T22-s03", "question": "How would you describe the height of Burj Khalifa?", "target": "Burj Khalifa|height"}
+{"task_id": "T24", "question": "Compare the Burj Khalifa and the Empire State Building on height and completion year.", "target": "Burj Khalifa|height ## Burj Khalifa|completion_year ## Empire State Building|height ## Empire State Building|completion_year"}
+{"task_id": "T24-s01", "question": "Compare Burj Khalifa and Empire State Building on height and completion year.", "target": "Burj Khalifa|height ## Burj Khalifa|completion_year ## Empire State Building|height ## Empire State Building|completion_year"}
+{"task_id": "T24-s02", "question": "How do Burj Khalifa and Empire State Building differ in height and completion year?", "target": "Burj Khalifa|height ## Burj Khalifa|completion_year ## Empire State Building|height ## Empire State Building|completion_year"}
+{"task_id": "T24-s03", "question": "I'm choosing between Burj Khalifa and Empire State Building -- how do they compare on height and completion year?", "target": "Burj Khalifa|height ## Burj Khalifa|completion_year ## Empire State Building|height ## Empire State Building|completion_year"}
+{"task_id": "T25", "question": "What is the elevation of Mount Everest?", "target": "Mount Everest|elevation"}
+{"task_id": "T25-s01", "question": "What is the elevation of Mount Everest?", "target": "Mount Everest|elevation"}
+{"task_id": "T25-s02", "question": "Can you tell me the elevation of Mount Everest?", "target": "Mount Everest|elevation"}
+{"task_id": "T25-s03", "question": "How would you describe the elevation of Mount Everest?", "target": "Mount Everest|elevation"}
+{"task_id": "T27", "question": "Compare Mount Everest and K2 on elevation and location.", "target": "Mount Everest|elevation ## Mount Everest|location ## K2|elevation ## K2|location"}
+{"task_id": "T27-s01", "question": "Compare Mount Everest and K2 on elevation and location.", "target": "Mount Everest|elevation ## Mount Everest|location ## K2|elevation ## K2|location"}
+{"task_id": "T27-s02", "question": "How do Mount Everest and K2 differ in elevation and location?", "target": "Mount Everest|elevation ## Mount Everest|location ## K2|elevation ## K2|location"}
+{"task_id": "T27-s03", "question": "I'm choosing between Mount Everest and K2 -- how do they compare on elevation and location?", "target": "Mount Everest|elevation ## Mount Everest|location ## K2|elevation ## K2|location"}
+{"task_id": "T28", "question": "What is the capital of Japan?", "target": "Japan|capital"}
+{"task_id": "T28-s01", "question": "What is the capital of Japan?", "target": "Japan|capital"}
+{"task_id": "T28-s02", "question": "Can you tell me the capital of Japan?", "target": "Japan|capital"}
+{"task_id": "T28-s03", "question": "How would you describe the capital of Japan?", "target": "Japan|capital"}
+{"task_id": "T30", "question": "Compare India and Japan on population and land area.", "target": "India|population ## India|area ## Japan|population ## Japan|area"}
+{"task_id": "T30-s01", "question": "Compare India and Japan on population and land area.", "target": "India|population ## India|area ## Japan|population ## Japan|area"}
+{"task_id": "T30-s02", "question": "How do India and Japan differ in population and land area?", "target": "India|population ## India|area ## Japan|population ## Japan|area"}
+{"task_id": "T30-s03", "question": "I'm choosing between India and Japan -- how do they compare on population and land area?", "target": "India|population ## India|area ## Japan|population ## Japan|area"}
+{"task_id": "T31", "question": "What is the price of the Nike Pegasus 41?", "target": "Nike Pegasus 41|price"}
+{"task_id": "T31-s01", "question": "What is the price of Nike Pegasus 41?", "target": "Nike Pegasus 41|price"}
+{"task_id": "T31-s02", "question": "Can you tell me the price of Nike Pegasus 41?", "target": "Nike Pegasus 41|price"}
+{"task_id": "T31-s03", "question": "How would you describe the price of Nike Pegasus 41?", "target": "Nike Pegasus 41|price"}
+{"task_id": "T33", "question": "Compare the Nike Pegasus 41 and Hoka Clifton 9 on cushioning and recommended use.", "target": "Nike Pegasus 41|cushioning ## Nike Pegasus 41|best_for ## Hoka Clifton 9|cushioning ## Hoka Clifton 9|best_for"}
+{"task_id": "T33-s01", "question": "Compare Nike Pegasus 41 and Hoka Clifton 9 on cushioning and recommended use.", "target": "Nike Pegasus 41|cushioning ## Nike Pegasus 41|best_for ## Hoka Clifton 9|cushioning ## Hoka Clifton 9|best_for"}
+{"task_id": "T33-s02", "question": "How do Nike Pegasus 41 and Hoka Clifton 9 differ in cushioning and recommended use?", "target": "Nike Pegasus 41|cushioning ## Nike Pegasus 41|best_for ## Hoka Clifton 9|cushioning ## Hoka Clifton 9|best_for"}
+{"task_id": "T33-s03", "question": "I'm choosing between Nike Pegasus 41 and Hoka Clifton 9 -- how do they compare on cushioning and recommended use?", "target": "Nike Pegasus 41|cushioning ## Nike Pegasus 41|best_for ## Hoka Clifton 9|cushioning ## Hoka Clifton 9|best_for"}
+{"task_id": "T34", "question": "What is the EPA-estimated range of the Tesla Model 3?", "target": "Tesla Model 3|range"}
+{"task_id": "T34-s01", "question": "What is the driving range of Tesla Model 3?", "target": "Tesla Model 3|range"}
+{"task_id": "T34-s02", "question": "Can you tell me the driving range of Tesla Model 3?", "target": "Tesla Model 3|range"}
+{"task_id": "T34-s03", "question": "How would you describe the driving range of Tesla Model 3?", "target": "Tesla Model 3|range"}
+{"task_id": "T36", "question": "Compare the Tesla Model 3 and Nissan Leaf on price and battery capacity.", "target": "Tesla Model 3|price ## Tesla Model 3|battery_capacity ## Nissan Leaf|price ## Nissan Leaf|battery_capacity"}
+{"task_id": "T36-s01", "question": "Compare Tesla Model 3 and Nissan Leaf on price and battery capacity.", "target": "Tesla Model 3|price ## Tesla Model 3|battery_capacity ## Nissan Leaf|price ## Nissan Leaf|battery_capacity"}
+{"task_id": "T36-s02", "question": "How do Tesla Model 3 and Nissan Leaf differ in price and battery capacity?", "target": "Tesla Model 3|price ## Tesla Model 3|battery_capacity ## Nissan Leaf|price ## Nissan Leaf|battery_capacity"}
+{"task_id": "T36-s03", "question": "I'm choosing between Tesla Model 3 and Nissan Leaf -- how do they compare on price and battery capacity?", "target": "Tesla Model 3|price ## Tesla Model 3|battery_capacity ## Nissan Leaf|price ## Nissan Leaf|battery_capacity"}
+{"task_id": "T37", "question": "Does the Tesla Model 3 have a longer EPA-estimated range than the Nissan Leaf?", "target": "Tesla Model 3|range ## Nissan Leaf|range"}
+{"task_id": "T37-s01", "question": "Is Tesla Model 3's driving range higher than Nissan Leaf's?", "target": "Tesla Model 3|range ## Nissan Leaf|range"}
+{"task_id": "T37-s02", "question": "Does Tesla Model 3 have a greater driving range than Nissan Leaf?", "target": "Tesla Model 3|range ## Nissan Leaf|range"}
+{"task_id": "T37-s03", "question": "Is Tesla Model 3 ahead of Nissan Leaf on driving range?", "target": "Tesla Model 3|range ## Nissan Leaf|range"}
+{"task_id": "T39", "question": "What are the capital and official languages of India?", "target": "India|capital ## India|official_language"}
+{"task_id": "T39-s01", "question": "What are India's capital and official languages?", "target": "India|capital ## India|official_language"}
+{"task_id": "T39-s02", "question": "Tell me the capital and official languages for India.", "target": "India|capital ## India|official_language"}
+{"task_id": "T39-s03", "question": "Provide India's capital along with its official languages.", "target": "India|capital ## India|official_language"}
+{"task_id": "T42", "question": "What is the top attraction to visit in Jaipur?", "target": "Jaipur|top_attraction"}
+{"task_id": "T42-s01", "question": "What is the top attraction of Jaipur?", "target": "Jaipur|top_attraction"}
+{"task_id": "T42-s02", "question": "Can you tell me the top attraction of Jaipur?", "target": "Jaipur|top_attraction"}
+{"task_id": "T42-s03", "question": "How would you describe the top attraction of Jaipur?", "target": "Jaipur|top_attraction"}
+{"task_id": "T43", "question": "What amenities does the Ibis Jaipur City Centre offer?", "target": "Ibis Jaipur City Centre|amenities"}
+{"task_id": "T43-s01", "question": "List the amenities offered by Ibis Jaipur City Centre.", "target": "Ibis Jaipur City Centre|amenities"}
+{"task_id": "T43-s02", "question": "What amenities are available at Ibis Jaipur City Centre?", "target": "Ibis Jaipur City Centre|amenities"}
+{"task_id": "T43-s03", "question": "Name the amenities at Ibis Jaipur City Centre.", "target": "Ibis Jaipur City Centre|amenities"}
+{"task_id": "T44", "question": "Summarize the premise of Titanic (1997).", "target": "Titanic|summary"}
+{"task_id": "T44-s01", "question": "Give me a brief summary of Titanic.", "target": "Titanic|summary"}
+{"task_id": "T44-s02", "question": "What is the premise of Titanic?", "target": "Titanic|summary"}
+{"task_id": "T44-s03", "question": "Briefly describe the story of Titanic.", "target": "Titanic|summary"}
+{"task_id": "T45", "question": "What is the noise cancellation of the Bose QuietComfort Ultra?", "target": "Bose QuietComfort Ultra|noise_cancellation"}
+{"task_id": "T45-s01", "question": "What is the noise cancellation of Bose QuietComfort Ultra?", "target": "Bose QuietComfort Ultra|noise_cancellation"}
+{"task_id": "T45-s02", "question": "Can you tell me the noise cancellation of Bose QuietComfort Ultra?", "target": "Bose QuietComfort Ultra|noise_cancellation"}
+{"task_id": "T45-s03", "question": "How would you describe the noise cancellation of Bose QuietComfort Ultra?", "target": "Bose QuietComfort Ultra|noise_cancellation"}
+{"task_id": "T46", "question": "What is the year of first ascent of Kangchenjunga?", "target": "Kangchenjunga|first_ascent_year"}
+{"task_id": "T46-s01", "question": "What is the year of first ascent of Kangchenjunga?", "target": "Kangchenjunga|first_ascent_year"}
+{"task_id": "T46-s02", "question": "Can you tell me the year of first ascent of Kangchenjunga?", "target": "Kangchenjunga|first_ascent_year"}
+{"task_id": "T46-s03", "question": "How would you describe the year of first ascent of Kangchenjunga?", "target": "Kangchenjunga|first_ascent_year"}
+{"task_id": "T47", "question": "What are the main camera resolution and display refresh rate of the Google Pixel 8?", "target": "Google Pixel 8|camera ## Google Pixel 8|display_refresh_rate"}
+{"task_id": "T47-s01", "question": "What are Google Pixel 8's main camera resolution and display refresh rate?", "target": "Google Pixel 8|camera ## Google Pixel 8|display_refresh_rate"}
+{"task_id": "T47-s02", "question": "Tell me the main camera resolution and display refresh rate for Google Pixel 8.", "target": "Google Pixel 8|camera ## Google Pixel 8|display_refresh_rate"}
+{"task_id": "T47-s03", "question": "Provide Google Pixel 8's main camera resolution along with its display refresh rate.", "target": "Google Pixel 8|camera ## Google Pixel 8|display_refresh_rate"}
+{"task_id": "T48", "question": "What is the typical trip length for Bali?", "target": "Bali|typical_trip_length"}
+{"task_id": "T48-s01", "question": "What is the typical trip length of Bali?", "target": "Bali|typical_trip_length"}
+{"task_id": "T48-s02", "question": "Can you tell me the typical trip length of Bali?", "target": "Bali|typical_trip_length"}
+{"task_id": "T48-s03", "question": "How would you describe the typical trip length of Bali?", "target": "Bali|typical_trip_length"}
+{"task_id": "T49", "question": "What is the battery life of AirPods Pro 2?", "target": "AirPods Pro 2|battery_life"}
+{"task_id": "T49-s01", "question": "What is the battery life of AirPods Pro 2?", "target": "AirPods Pro 2|battery_life"}
+{"task_id": "T49-s02", "question": "Can you tell me the battery life of AirPods Pro 2?", "target": "AirPods Pro 2|battery_life"}
+{"task_id": "T49-s03", "question": "How would you describe the battery life of AirPods Pro 2?", "target": "AirPods Pro 2|battery_life"}
+{"task_id": "T50", "question": "What is the audio codec support of AirPods Pro 2?", "target": "AirPods Pro 2|codec_support"}
+{"task_id": "T50-s01", "question": "What is the audio codec support of AirPods Pro 2?", "target": "AirPods Pro 2|codec_support"}
+{"task_id": "T50-s02", "question": "Can you tell me the audio codec support of AirPods Pro 2?", "target": "AirPods Pro 2|codec_support"}
+{"task_id": "T50-s03", "question": "How would you describe the audio codec support of AirPods Pro 2?", "target": "AirPods Pro 2|codec_support"}
+{"task_id": "T51", "question": "What is the price of AirPods Pro 2?", "target": "AirPods Pro 2|price"}
+{"task_id": "T51-s01", "question": "What is the price of AirPods Pro 2?", "target": "AirPods Pro 2|price"}
+{"task_id": "T51-s02", "question": "Can you tell me the price of AirPods Pro 2?", "target": "AirPods Pro 2|price"}
+{"task_id": "T51-s03", "question": "How would you describe the price of AirPods Pro 2?", "target": "AirPods Pro 2|price"}
+{"task_id": "T52", "question": "What is the typical trip length of Bali?", "target": "Bali|typical_trip_length"}
+{"task_id": "T52-s01", "question": "What is the typical trip length of Bali?", "target": "Bali|typical_trip_length"}
+{"task_id": "T52-s02", "question": "Can you tell me the typical trip length of Bali?", "target": "Bali|typical_trip_length"}
+{"task_id": "T52-s03", "question": "How would you describe the typical trip length of Bali?", "target": "Bali|typical_trip_length"}
+{"task_id": "T53", "question": "What is the noise cancellation of Bose QuietComfort Ultra?", "target": "Bose QuietComfort Ultra|noise_cancellation"}
+{"task_id": "T53-s01", "question": "What is the noise cancellation of Bose QuietComfort Ultra?", "target": "Bose QuietComfort Ultra|noise_cancellation"}
+{"task_id": "T53-s02", "question": "Can you tell me the noise cancellation of Bose QuietComfort Ultra?", "target": "Bose QuietComfort Ultra|noise_cancellation"}
+{"task_id": "T53-s03", "question": "How would you describe the noise cancellation of Bose QuietComfort Ultra?", "target": "Bose QuietComfort Ultra|noise_cancellation"}
+{"task_id": "T54", "question": "What is the architect of Burj Khalifa?", "target": "Burj Khalifa|architect"}
+{"task_id": "T54-s01", "question": "What is the architect of Burj Khalifa?", "target": "Burj Khalifa|architect"}
+{"task_id": "T54-s02", "question": "Can you tell me the architect of Burj Khalifa?", "target": "Burj Khalifa|architect"}
+{"task_id": "T54-s03", "question": "How would you describe the architect of Burj Khalifa?", "target": "Burj Khalifa|architect"}
+{"task_id": "T55", "question": "Compare Burj Khalifa and Empire State Building on architect.", "target": "Burj Khalifa|architect ## Empire State Building|architect"}
+{"task_id": "T55-s01", "question": "Compare Burj Khalifa and Empire State Building on architect.", "target": "Burj Khalifa|architect ## Empire State Building|architect"}
+{"task_id": "T55-s02", "question": "Which is better in terms of architect: Burj Khalifa or Empire State Building?", "target": "Burj Khalifa|architect ## Empire State Building|architect"}
+{"task_id": "T55-s03", "question": "How does Burj Khalifa's architect compare to Empire State Building's?", "target": "Burj Khalifa|architect ## Empire State Building|architect"}
+{"task_id": "T56", "question": "Compare India and Japan on land area.", "target": "India|area ## Japan|area"}
+{"task_id": "T56-s01", "question": "Compare India and Japan on land area.", "target": "India|area ## Japan|area"}
+{"task_id": "T56-s02", "question": "Which is better in terms of land area: India or Japan?", "target": "India|area ## Japan|area"}
+{"task_id": "T56-s03", "question": "How does India's land area compare to Japan's?", "target": "India|area ## Japan|area"}
+{"task_id": "T57", "question": "Compare Dell XPS 13 2024 and MacBook Air 13 M3 on battery capacity.", "target": "Dell XPS 13 2024|battery ## MacBook Air 13 M3|battery"}
+{"task_id": "T57-s01", "question": "Compare Dell XPS 13 2024 and MacBook Air 13 M3 on battery capacity.", "target": "Dell XPS 13 2024|battery ## MacBook Air 13 M3|battery"}
+{"task_id": "T57-s02", "question": "Which is better in terms of battery capacity: Dell XPS 13 2024 or MacBook Air 13 M3?", "target": "Dell XPS 13 2024|battery ## MacBook Air 13 M3|battery"}
+{"task_id": "T57-s03", "question": "How does Dell XPS 13 2024's battery capacity compare to MacBook Air 13 M3's?", "target": "Dell XPS 13 2024|battery ## MacBook Air 13 M3|battery"}
+{"task_id": "T58", "question": "Compare Nissan Leaf and Tesla Model 3 on battery capacity.", "target": "Nissan Leaf|battery_capacity ## Tesla Model 3|battery_capacity"}
+{"task_id": "T58-s01", "question": "Compare Nissan Leaf and Tesla Model 3 on battery capacity.", "target": "Nissan Leaf|battery_capacity ## Tesla Model 3|battery_capacity"}
+{"task_id": "T58-s02", "question": "Which is better in terms of battery capacity: Nissan Leaf or Tesla Model 3?", "target": "Nissan Leaf|battery_capacity ## Tesla Model 3|battery_capacity"}
+{"task_id": "T58-s03", "question": "How does Nissan Leaf's battery capacity compare to Tesla Model 3's?", "target": "Nissan Leaf|battery_capacity ## Tesla Model 3|battery_capacity"}
+{"task_id": "T59", "question": "Is India's land area higher than Japan's?", "target": "India|area ## Japan|area"}
+{"task_id": "T59-s01", "question": "Is India's land area higher than Japan's?", "target": "India|area ## Japan|area"}
+{"task_id": "T59-s02", "question": "Does India have a greater land area than Japan?", "target": "India|area ## Japan|area"}
+{"task_id": "T59-s03", "question": "Is India ahead of Japan on land area?", "target": "India|area ## Japan|area"}
+{"task_id": "T60", "question": "Is Dell XPS 13 2024's battery capacity higher than MacBook Air 13 M3's?", "target": "Dell XPS 13 2024|battery ## MacBook Air 13 M3|battery"}
+{"task_id": "T60-s01", "question": "Is Dell XPS 13 2024's battery capacity higher than MacBook Air 13 M3's?", "target": "Dell XPS 13 2024|battery ## MacBook Air 13 M3|battery"}
+{"task_id": "T60-s02", "question": "Does Dell XPS 13 2024 have a greater battery capacity than MacBook Air 13 M3?", "target": "Dell XPS 13 2024|battery ## MacBook Air 13 M3|battery"}
+{"task_id": "T60-s03", "question": "Is Dell XPS 13 2024 ahead of MacBook Air 13 M3 on battery capacity?", "target": "Dell XPS 13 2024|battery ## MacBook Air 13 M3|battery"}
+{"task_id": "T61", "question": "Is Dell XPS 13 2024's battery capacity higher than Samsung Galaxy S24's?", "target": "Dell XPS 13 2024|battery ## Samsung Galaxy S24|battery"}
+{"task_id": "T61-s01", "question": "Is Dell XPS 13 2024's battery capacity higher than Samsung Galaxy S24's?", "target": "Dell XPS 13 2024|battery ## Samsung Galaxy S24|battery"}
+{"task_id": "T61-s02", "question": "Does Dell XPS 13 2024 have a greater battery capacity than Samsung Galaxy S24?", "target": "Dell XPS 13 2024|battery ## Samsung Galaxy S24|battery"}
+{"task_id": "T61-s03", "question": "Is Dell XPS 13 2024 ahead of Samsung Galaxy S24 on battery capacity?", "target": "Dell XPS 13 2024|battery ## Samsung Galaxy S24|battery"}
+{"task_id": "T62", "question": "Is Dell XPS 13 2024's battery capacity higher than iPhone 15's?", "target": "Dell XPS 13 2024|battery ## iPhone 15|battery"}
+{"task_id": "T62-s01", "question": "Is Dell XPS 13 2024's battery capacity higher than iPhone 15's?", "target": "Dell XPS 13 2024|battery ## iPhone 15|battery"}
+{"task_id": "T62-s02", "question": "Does Dell XPS 13 2024 have a greater battery capacity than iPhone 15?", "target": "Dell XPS 13 2024|battery ## iPhone 15|battery"}
+{"task_id": "T62-s03", "question": "Is Dell XPS 13 2024 ahead of iPhone 15 on battery capacity?", "target": "Dell XPS 13 2024|battery ## iPhone 15|battery"}
+{"task_id": "T63", "question": "Is MacBook Air 13 M3's battery capacity higher than Samsung Galaxy S24's?", "target": "MacBook Air 13 M3|battery ## Samsung Galaxy S24|battery"}
+{"task_id": "T63-s01", "question": "Is MacBook Air 13 M3's battery capacity higher than Samsung Galaxy S24's?", "target": "MacBook Air 13 M3|battery ## Samsung Galaxy S24|battery"}
+{"task_id": "T63-s02", "question": "Does MacBook Air 13 M3 have a greater battery capacity than Samsung Galaxy S24?", "target": "MacBook Air 13 M3|battery ## Samsung Galaxy S24|battery"}
+{"task_id": "T63-s03", "question": "Is MacBook Air 13 M3 ahead of Samsung Galaxy S24 on battery capacity?", "target": "MacBook Air 13 M3|battery ## Samsung Galaxy S24|battery"}
+{"task_id": "T64", "question": "Is MacBook Air 13 M3's battery capacity higher than iPhone 15's?", "target": "MacBook Air 13 M3|battery ## iPhone 15|battery"}
+{"task_id": "T64-s01", "question": "Is MacBook Air 13 M3's battery capacity higher than iPhone 15's?", "target": "MacBook Air 13 M3|battery ## iPhone 15|battery"}
+{"task_id": "T64-s02", "question": "Does MacBook Air 13 M3 have a greater battery capacity than iPhone 15?", "target": "MacBook Air 13 M3|battery ## iPhone 15|battery"}
+{"task_id": "T64-s03", "question": "Is MacBook Air 13 M3 ahead of iPhone 15 on battery capacity?", "target": "MacBook Air 13 M3|battery ## iPhone 15|battery"}
+{"task_id": "T65", "question": "Is Samsung Galaxy S24's battery capacity higher than iPhone 15's?", "target": "Samsung Galaxy S24|battery ## iPhone 15|battery"}
+{"task_id": "T65-s01", "question": "Is Samsung Galaxy S24's battery capacity higher than iPhone 15's?", "target": "Samsung Galaxy S24|battery ## iPhone 15|battery"}
+{"task_id": "T65-s02", "question": "Does Samsung Galaxy S24 have a greater battery capacity than iPhone 15?", "target": "Samsung Galaxy S24|battery ## iPhone 15|battery"}
+{"task_id": "T65-s03", "question": "Is Samsung Galaxy S24 ahead of iPhone 15 on battery capacity?", "target": "Samsung Galaxy S24|battery ## iPhone 15|battery"}
+{"task_id": "T66", "question": "Is Nissan Leaf's battery capacity higher than Tesla Model 3's?", "target": "Nissan Leaf|battery_capacity ## Tesla Model 3|battery_capacity"}
+{"task_id": "T66-s01", "question": "Is Nissan Leaf's battery capacity higher than Tesla Model 3's?", "target": "Nissan Leaf|battery_capacity ## Tesla Model 3|battery_capacity"}
+{"task_id": "T66-s02", "question": "Does Nissan Leaf have a greater battery capacity than Tesla Model 3?", "target": "Nissan Leaf|battery_capacity ## Tesla Model 3|battery_capacity"}
+{"task_id": "T66-s03", "question": "Is Nissan Leaf ahead of Tesla Model 3 on battery capacity?", "target": "Nissan Leaf|battery_capacity ## Tesla Model 3|battery_capacity"}
+{"task_id": "T67", "question": "Is Burj Khalifa's completion year higher than Empire State Building's?", "target": "Burj Khalifa|completion_year ## Empire State Building|completion_year"}
+{"task_id": "T67-s01", "question": "Is Burj Khalifa's completion year higher than Empire State Building's?", "target": "Burj Khalifa|completion_year ## Empire State Building|completion_year"}
+{"task_id": "T67-s02", "question": "Does Burj Khalifa have a greater completion year than Empire State Building?", "target": "Burj Khalifa|completion_year ## Empire State Building|completion_year"}
+{"task_id": "T67-s03", "question": "Is Burj Khalifa ahead of Empire State Building on completion year?", "target": "Burj Khalifa|completion_year ## Empire State Building|completion_year"}
+{"task_id": "T68", "question": "Is K2's elevation higher than Mount Everest's?", "target": "K2|elevation ## Mount Everest|elevation"}
+{"task_id": "T68-s01", "question": "Is K2's elevation higher than Mount Everest's?", "target": "K2|elevation ## Mount Everest|elevation"}
+{"task_id": "T68-s02", "question": "Does K2 have a greater elevation than Mount Everest?", "target": "K2|elevation ## Mount Everest|elevation"}
+{"task_id": "T68-s03", "question": "Is K2 ahead of Mount Everest on elevation?", "target": "K2|elevation ## Mount Everest|elevation"}
+{"task_id": "T69", "question": "Is Burj Khalifa's floor count higher than Empire State Building's?", "target": "Burj Khalifa|floors ## Empire State Building|floors"}
+{"task_id": "T69-s01", "question": "Is Burj Khalifa's floor count higher than Empire State Building's?", "target": "Burj Khalifa|floors ## Empire State Building|floors"}
+{"task_id": "T69-s02", "question": "Does Burj Khalifa have a greater floor count than Empire State Building?", "target": "Burj Khalifa|floors ## Empire State Building|floors"}
+{"task_id": "T69-s03", "question": "Is Burj Khalifa ahead of Empire State Building on floor count?", "target": "Burj Khalifa|floors ## Empire State Building|floors"}
+{"task_id": "T70", "question": "Is AirPods Pro 2's price higher than Dell XPS 13 2024's?", "target": "AirPods Pro 2|price ## Dell XPS 13 2024|price"}
+{"task_id": "T70-s01", "question": "Is AirPods Pro 2's price higher than Dell XPS 13 2024's?", "target": "AirPods Pro 2|price ## Dell XPS 13 2024|price"}
+{"task_id": "T70-s02", "question": "Does AirPods Pro 2 have a greater price than Dell XPS 13 2024?", "target": "AirPods Pro 2|price ## Dell XPS 13 2024|price"}
+{"task_id": "T70-s03", "question": "Is AirPods Pro 2 ahead of Dell XPS 13 2024 on price?", "target": "AirPods Pro 2|price ## Dell XPS 13 2024|price"}
+{"task_id": "T71", "question": "Is AirPods Pro 2's price higher than Hoka Clifton 9's?", "target": "AirPods Pro 2|price ## Hoka Clifton 9|price"}
+{"task_id": "T71-s01", "question": "Is AirPods Pro 2's price higher than Hoka Clifton 9's?", "target": "AirPods Pro 2|price ## Hoka Clifton 9|price"}
+{"task_id": "T71-s02", "question": "Does AirPods Pro 2 have a greater price than Hoka Clifton 9?", "target": "AirPods Pro 2|price ## Hoka Clifton 9|price"}
+{"task_id": "T71-s03", "question": "Is AirPods Pro 2 ahead of Hoka Clifton 9 on price?", "target": "AirPods Pro 2|price ## Hoka Clifton 9|price"}
+{"task_id": "T72", "question": "What are AirPods Pro 2's battery life and audio codec support?", "target": "AirPods Pro 2|battery_life ## AirPods Pro 2|codec_support"}
+{"task_id": "T72-s01", "question": "What are AirPods Pro 2's battery life and audio codec support?", "target": "AirPods Pro 2|battery_life ## AirPods Pro 2|codec_support"}
+{"task_id": "T72-s02", "question": "Tell me the battery life and audio codec support for AirPods Pro 2.", "target": "AirPods Pro 2|battery_life ## AirPods Pro 2|codec_support"}
+{"task_id": "T72-s03", "question": "Provide AirPods Pro 2's battery life along with its audio codec support.", "target": "AirPods Pro 2|battery_life ## AirPods Pro 2|codec_support"}
+{"task_id": "T73", "question": "What are Burj Khalifa's architect and completion year?", "target": "Burj Khalifa|architect ## Burj Khalifa|completion_year"}
+{"task_id": "T73-s01", "question": "What are Burj Khalifa's architect and completion year?", "target": "Burj Khalifa|architect ## Burj Khalifa|completion_year"}
+{"task_id": "T73-s02", "question": "Tell me the architect and completion year for Burj Khalifa.", "target": "Burj Khalifa|architect ## Burj Khalifa|completion_year"}
+{"task_id": "T73-s03", "question": "Provide Burj Khalifa's architect along with its completion year.", "target": "Burj Khalifa|architect ## Burj Khalifa|completion_year"}
+{"task_id": "T74", "question": "What are Dell XPS 13 2024's battery capacity and chip?", "target": "Dell XPS 13 2024|battery ## Dell XPS 13 2024|chip"}
+{"task_id": "T74-s01", "question": "What are Dell XPS 13 2024's battery capacity and chip?", "target": "Dell XPS 13 2024|battery ## Dell XPS 13 2024|chip"}
+{"task_id": "T74-s02", "question": "Tell me the battery capacity and chip for Dell XPS 13 2024.", "target": "Dell XPS 13 2024|battery ## Dell XPS 13 2024|chip"}
+{"task_id": "T74-s03", "question": "Provide Dell XPS 13 2024's battery capacity along with its chip.", "target": "Dell XPS 13 2024|battery ## Dell XPS 13 2024|chip"}
+{"task_id": "T75", "question": "What are Empire State Building's architect and completion year?", "target": "Empire State Building|architect ## Empire State Building|completion_year"}
+{"task_id": "T75-s01", "question": "What are Empire State Building's architect and completion year?", "target": "Empire State Building|architect ## Empire State Building|completion_year"}
+{"task_id": "T75-s02", "question": "Tell me the architect and completion year for Empire State Building.", "target": "Empire State Building|architect ## Empire State Building|completion_year"}
+{"task_id": "T75-s03", "question": "Provide Empire State Building's architect along with its completion year.", "target": "Empire State Building|architect ## Empire State Building|completion_year"}
+{"task_id": "T76", "question": "What are Google Pixel 8's main camera resolution and display refresh rate?", "target": "Google Pixel 8|camera ## Google Pixel 8|display_refresh_rate"}
+{"task_id": "T76-s01", "question": "What are Google Pixel 8's main camera resolution and display refresh rate?", "target": "Google Pixel 8|camera ## Google Pixel 8|display_refresh_rate"}
+{"task_id": "T76-s02", "question": "Tell me the main camera resolution and display refresh rate for Google Pixel 8.", "target": "Google Pixel 8|camera ## Google Pixel 8|display_refresh_rate"}
+{"task_id": "T76-s03", "question": "Provide Google Pixel 8's main camera resolution along with its display refresh rate.", "target": "Google Pixel 8|camera ## Google Pixel 8|display_refresh_rate"}
+{"task_id": "T77", "question": "What are Hoka Clifton 9's recommended use and cushioning?", "target": "Hoka Clifton 9|best_for ## Hoka Clifton 9|cushioning"}
+{"task_id": "T77-s01", "question": "What are Hoka Clifton 9's recommended use and cushioning?", "target": "Hoka Clifton 9|best_for ## Hoka Clifton 9|cushioning"}
+{"task_id": "T77-s02", "question": "Tell me the recommended use and cushioning for Hoka Clifton 9.", "target": "Hoka Clifton 9|best_for ## Hoka Clifton 9|cushioning"}
+{"task_id": "T77-s03", "question": "Provide Hoka Clifton 9's recommended use along with its cushioning.", "target": "Hoka Clifton 9|best_for ## Hoka Clifton 9|cushioning"}
+{"task_id": "T78", "question": "What are Ibis Jaipur City Centre's amenities and guest rating?", "target": "Ibis Jaipur City Centre|amenities ## Ibis Jaipur City Centre|rating"}
+{"task_id": "T78-s01", "question": "What are Ibis Jaipur City Centre's amenities and guest rating?", "target": "Ibis Jaipur City Centre|amenities ## Ibis Jaipur City Centre|rating"}
+{"task_id": "T78-s02", "question": "Tell me the amenities and guest rating for Ibis Jaipur City Centre.", "target": "Ibis Jaipur City Centre|amenities ## Ibis Jaipur City Centre|rating"}
+{"task_id": "T78-s03", "question": "Provide Ibis Jaipur City Centre's amenities along with its guest rating.", "target": "Ibis Jaipur City Centre|amenities ## Ibis Jaipur City Centre|rating"}
+{"task_id": "T79", "question": "What are India's land area and capital?", "target": "India|area ## India|capital"}
+{"task_id": "T79-s01", "question": "What are India's land area and capital?", "target": "India|area ## India|capital"}
+{"task_id": "T79-s02", "question": "Tell me the land area and capital for India.", "target": "India|area ## India|capital"}
+{"task_id": "T79-s03", "question": "Provide India's land area along with its capital.", "target": "India|area ## India|capital"}
+{"task_id": "T80", "question": "What are Jaipur's recommended travel season and daily travel budget?", "target": "Jaipur|best_time_to_visit ## Jaipur|daily_budget"}
+{"task_id": "T80-s01", "question": "What are Jaipur's recommended travel season and daily travel budget?", "target": "Jaipur|best_time_to_visit ## Jaipur|daily_budget"}
+{"task_id": "T80-s02", "question": "Tell me the recommended travel season and daily travel budget for Jaipur.", "target": "Jaipur|best_time_to_visit ## Jaipur|daily_budget"}
+{"task_id": "T80-s03", "question": "Provide Jaipur's recommended travel season along with its daily travel budget.", "target": "Jaipur|best_time_to_visit ## Jaipur|daily_budget"}
+{"task_id": "T81", "question": "What are Japan's land area and capital?", "target": "Japan|area ## Japan|capital"}
+{"task_id": "T81-s01", "question": "What are Japan's land area and capital?", "target": "Japan|area ## Japan|capital"}
+{"task_id": "T81-s02", "question": "Tell me the land area and capital for Japan.", "target": "Japan|area ## Japan|capital"}
+{"task_id": "T81-s03", "question": "Provide Japan's land area along with its capital.", "target": "Japan|area ## Japan|capital"}
+{"task_id": "T82", "question": "What are K2's elevation and location?", "target": "K2|elevation ## K2|location"}
+{"task_id": "T82-s01", "question": "What are K2's elevation and location?", "target": "K2|elevation ## K2|location"}
+{"task_id": "T82-s02", "question": "Tell me the elevation and location for K2.", "target": "K2|elevation ## K2|location"}
+{"task_id": "T82-s03", "question": "Provide K2's elevation along with its location.", "target": "K2|elevation ## K2|location"}
+{"task_id": "T83", "question": "What are Kyoto's recommended travel season and daily travel budget?", "target": "Kyoto|best_time_to_visit ## Kyoto|daily_budget"}
+{"task_id": "T83-s01", "question": "What are Kyoto's recommended travel season and daily travel budget?", "target": "Kyoto|best_time_to_visit ## Kyoto|daily_budget"}
+{"task_id": "T83-s02", "question": "Tell me the recommended travel season and daily travel budget for Kyoto.", "target": "Kyoto|best_time_to_visit ## Kyoto|daily_budget"}
+{"task_id": "T83-s03", "question": "Provide Kyoto's recommended travel season along with its daily travel budget.", "target": "Kyoto|best_time_to_visit ## Kyoto|daily_budget"}
+{"task_id": "T84", "question": "List the amenities of Ibis Jaipur City Centre.", "target": "Ibis Jaipur City Centre|amenities"}
+{"task_id": "T84-s01", "question": "List the amenities offered by Ibis Jaipur City Centre.", "target": "Ibis Jaipur City Centre|amenities"}
+{"task_id": "T84-s02", "question": "What amenities are available at Ibis Jaipur City Centre?", "target": "Ibis Jaipur City Centre|amenities"}
+{"task_id": "T84-s03", "question": "Name the amenities at Ibis Jaipur City Centre.", "target": "Ibis Jaipur City Centre|amenities"}
+{"task_id": "T85", "question": "List the audio codec support of AirPods Pro 2.", "target": "AirPods Pro 2|codec_support"}
+{"task_id": "T85-s01", "question": "List the audio codec support offered by AirPods Pro 2.", "target": "AirPods Pro 2|codec_support"}
+{"task_id": "T85-s02", "question": "What audio codec support are available at AirPods Pro 2?", "target": "AirPods Pro 2|codec_support"}
+{"task_id": "T85-s03", "question": "Name the audio codec support at AirPods Pro 2.", "target": "AirPods Pro 2|codec_support"}
+{"task_id": "T86", "question": "List the audio codec support of Sony WF-1000XM5.", "target": "Sony WF-1000XM5|codec_support"}
+{"task_id": "T86-s01", "question": "List the audio codec support offered by Sony WF-1000XM5.", "target": "Sony WF-1000XM5|codec_support"}
+{"task_id": "T86-s02", "question": "What audio codec support are available at Sony WF-1000XM5?", "target": "Sony WF-1000XM5|codec_support"}
+{"task_id": "T86-s03", "question": "Name the audio codec support at Sony WF-1000XM5.", "target": "Sony WF-1000XM5|codec_support"}
+{"task_id": "T87", "question": "Give me a brief summary of Inception.", "target": "Inception|summary"}
+{"task_id": "T87-s01", "question": "Give me a brief summary of Inception.", "target": "Inception|summary"}
+{"task_id": "T87-s02", "question": "What is the premise of Inception?", "target": "Inception|summary"}
+{"task_id": "T87-s03", "question": "Briefly describe the story of Inception.", "target": "Inception|summary"}
+{"task_id": "T88", "question": "Give me a brief summary of The Lion King.", "target": "The Lion King|summary"}
+{"task_id": "T88-s01", "question": "Give me a brief summary of The Lion King.", "target": "The Lion King|summary"}
+{"task_id": "T88-s02", "question": "What is the premise of The Lion King?", "target": "The Lion King|summary"}
+{"task_id": "T88-s03", "question": "Briefly describe the story of The Lion King.", "target": "The Lion King|summary"}
+{"task_id": "T89", "question": "Give me a brief summary of Finding Nemo.", "target": "Finding Nemo|summary"}
+{"task_id": "T89-s01", "question": "Give me a brief summary of Finding Nemo.", "target": "Finding Nemo|summary"}
+{"task_id": "T89-s02", "question": "What is the premise of Finding Nemo?", "target": "Finding Nemo|summary"}
+{"task_id": "T89-s03", "question": "Briefly describe the story of Finding Nemo.", "target": "Finding Nemo|summary"}
+{"task_id": "T90", "question": "Give me a brief summary of Jurassic Park.", "target": "Jurassic Park|summary"}
+{"task_id": "T90-s01", "question": "Give me a brief summary of Jurassic Park.", "target": "Jurassic Park|summary"}
+{"task_id": "T90-s02", "question": "What is the premise of Jurassic Park?", "target": "Jurassic Park|summary"}
+{"task_id": "T90-s03", "question": "Briefly describe the story of Jurassic Park.", "target": "Jurassic Park|summary"}
+{"task_id": "T93", "question": "What is the price of the Google Pixel 9?", "target": "Google Pixel 9|price"}
+{"task_id": "T93-s01", "question": "What is the price of Google Pixel 9?", "target": "Google Pixel 9|price"}
+{"task_id": "T93-s02", "question": "Can you tell me the price of Google Pixel 9?", "target": "Google Pixel 9|price"}
+{"task_id": "T93-s03", "question": "How would you describe the price of Google Pixel 9?", "target": "Google Pixel 9|price"}
+{"task_id": "T94", "question": "What is the weight of the Google Pixel 9?", "target": "Google Pixel 9|weight"}
+{"task_id": "T94-s01", "question": "What is the weight of Google Pixel 9?", "target": "Google Pixel 9|weight"}
+{"task_id": "T94-s02", "question": "Can you tell me the weight of Google Pixel 9?", "target": "Google Pixel 9|weight"}
+{"task_id": "T94-s03", "question": "How would you describe the weight of Google Pixel 9?", "target": "Google Pixel 9|weight"}
+{"task_id": "T95", "question": "What is the price of the OnePlus 12?", "target": "OnePlus 12|price"}
+{"task_id": "T95-s01", "question": "What is the price of OnePlus 12?", "target": "OnePlus 12|price"}
+{"task_id": "T95-s02", "question": "Can you tell me the price of OnePlus 12?", "target": "OnePlus 12|price"}
+{"task_id": "T95-s03", "question": "How would you describe the price of OnePlus 12?", "target": "OnePlus 12|price"}
+{"task_id": "T96", "question": "What is the weight of the OnePlus 12?", "target": "OnePlus 12|weight"}
+{"task_id": "T96-s01", "question": "What is the weight of OnePlus 12?", "target": "OnePlus 12|weight"}
+{"task_id": "T96-s02", "question": "Can you tell me the weight of OnePlus 12?", "target": "OnePlus 12|weight"}
+{"task_id": "T96-s03", "question": "How would you describe the weight of OnePlus 12?", "target": "OnePlus 12|weight"}
+{"task_id": "T97", "question": "What is the price of the Samsung Galaxy S24 Ultra?", "target": "Samsung Galaxy S24 Ultra|price"}
+{"task_id": "T97-s01", "question": "What is the price of Samsung Galaxy S24 Ultra?", "target": "Samsung Galaxy S24 Ultra|price"}
+{"task_id": "T97-s02", "question": "Can you tell me the price of Samsung Galaxy S24 Ultra?", "target": "Samsung Galaxy S24 Ultra|price"}
+{"task_id": "T97-s03", "question": "How would you describe the price of Samsung Galaxy S24 Ultra?", "target": "Samsung Galaxy S24 Ultra|price"}
+{"task_id": "T98", "question": "What is the weight of the Samsung Galaxy S24 Ultra?", "target": "Samsung Galaxy S24 Ultra|weight"}
+{"task_id": "T98-s01", "question": "What is the weight of Samsung Galaxy S24 Ultra?", "target": "Samsung Galaxy S24 Ultra|weight"}
+{"task_id": "T98-s02", "question": "Can you tell me the weight of Samsung Galaxy S24 Ultra?", "target": "Samsung Galaxy S24 Ultra|weight"}
+{"task_id": "T98-s03", "question": "How would you describe the weight of Samsung Galaxy S24 Ultra?", "target": "Samsung Galaxy S24 Ultra|weight"}
+{"task_id": "T99", "question": "Compare the iPhone 16 and the Google Pixel 9 on price.", "target": "iPhone 16|price ## Google Pixel 9|price"}
+{"task_id": "T99-s01", "question": "Compare iPhone 16 and Google Pixel 9 on price.", "target": "iPhone 16|price ## Google Pixel 9|price"}
+{"task_id": "T99-s02", "question": "Which is better in terms of price: iPhone 16 or Google Pixel 9?", "target": "iPhone 16|price ## Google Pixel 9|price"}
+{"task_id": "T99-s03", "question": "How does iPhone 16's price compare to Google Pixel 9's?", "target": "iPhone 16|price ## Google Pixel 9|price"}
+{"task_id": "T103", "question": "Compare the iPhone 16 and the Samsung Galaxy S24 Ultra on price.", "target": "iPhone 16|price ## Samsung Galaxy S24 Ultra|price"}
+{"task_id": "T103-s01", "question": "Compare iPhone 16 and Samsung Galaxy S24 Ultra on price.", "target": "iPhone 16|price ## Samsung Galaxy S24 Ultra|price"}
+{"task_id": "T103-s02", "question": "Which is better in terms of price: iPhone 16 or Samsung Galaxy S24 Ultra?", "target": "iPhone 16|price ## Samsung Galaxy S24 Ultra|price"}
+{"task_id": "T103-s03", "question": "How does iPhone 16's price compare to Samsung Galaxy S24 Ultra's?", "target": "iPhone 16|price ## Samsung Galaxy S24 Ultra|price"}
+{"task_id": "T104", "question": "Does the iPhone 16 have a higher price than the Samsung Galaxy S24 Ultra?", "target": "iPhone 16|price ## Samsung Galaxy S24 Ultra|price"}
+{"task_id": "T104-s01", "question": "Is iPhone 16's price higher than Samsung Galaxy S24 Ultra's?", "target": "iPhone 16|price ## Samsung Galaxy S24 Ultra|price"}
+{"task_id": "T104-s02", "question": "Does iPhone 16 have a greater price than Samsung Galaxy S24 Ultra?", "target": "iPhone 16|price ## Samsung Galaxy S24 Ultra|price"}
+{"task_id": "T104-s03", "question": "Is iPhone 16 ahead of Samsung Galaxy S24 Ultra on price?", "target": "iPhone 16|price ## Samsung Galaxy S24 Ultra|price"}
+{"task_id": "T105", "question": "Compare the Google Pixel 9 and the OnePlus 12 on price.", "target": "Google Pixel 9|price ## OnePlus 12|price"}
+{"task_id": "T105-s01", "question": "Compare Google Pixel 9 and OnePlus 12 on price.", "target": "Google Pixel 9|price ## OnePlus 12|price"}
+{"task_id": "T105-s02", "question": "Which is better in terms of price: Google Pixel 9 or OnePlus 12?", "target": "Google Pixel 9|price ## OnePlus 12|price"}
+{"task_id": "T105-s03", "question": "How does Google Pixel 9's price compare to OnePlus 12's?", "target": "Google Pixel 9|price ## OnePlus 12|price"}
+{"task_id": "T106", "question": "Does the Google Pixel 9 have a higher price than the OnePlus 12?", "target": "Google Pixel 9|price ## OnePlus 12|price"}
+{"task_id": "T106-s01", "question": "Is Google Pixel 9's price higher than OnePlus 12's?", "target": "Google Pixel 9|price ## OnePlus 12|price"}
+{"task_id": "T106-s02", "question": "Does Google Pixel 9 have a greater price than OnePlus 12?", "target": "Google Pixel 9|price ## OnePlus 12|price"}
+{"task_id": "T106-s03", "question": "Is Google Pixel 9 ahead of OnePlus 12 on price?", "target": "Google Pixel 9|price ## OnePlus 12|price"}
+{"task_id": "T107", "question": "Compare the Google Pixel 9 and the Samsung Galaxy S24 Ultra on price.", "target": "Google Pixel 9|price ## Samsung Galaxy S24 Ultra|price"}
+{"task_id": "T107-s01", "question": "Compare Google Pixel 9 and Samsung Galaxy S24 Ultra on price.", "target": "Google Pixel 9|price ## Samsung Galaxy S24 Ultra|price"}
+{"task_id": "T107-s02", "question": "Which is better in terms of price: Google Pixel 9 or Samsung Galaxy S24 Ultra?", "target": "Google Pixel 9|price ## Samsung Galaxy S24 Ultra|price"}
+{"task_id": "T107-s03", "question": "How does Google Pixel 9's price compare to Samsung Galaxy S24 Ultra's?", "target": "Google Pixel 9|price ## Samsung Galaxy S24 Ultra|price"}
+{"task_id": "T108", "question": "Does the Google Pixel 9 have a higher price than the Samsung Galaxy S24 Ultra?", "target": "Google Pixel 9|price ## Samsung Galaxy S24 Ultra|price"}
+{"task_id": "T108-s01", "question": "Is Google Pixel 9's price higher than Samsung Galaxy S24 Ultra's?", "target": "Google Pixel 9|price ## Samsung Galaxy S24 Ultra|price"}
+{"task_id": "T108-s02", "question": "Does Google Pixel 9 have a greater price than Samsung Galaxy S24 Ultra?", "target": "Google Pixel 9|price ## Samsung Galaxy S24 Ultra|price"}
+{"task_id": "T108-s03", "question": "Is Google Pixel 9 ahead of Samsung Galaxy S24 Ultra on price?", "target": "Google Pixel 9|price ## Samsung Galaxy S24 Ultra|price"}
+{"task_id": "T109", "question": "Compare the OnePlus 12 and the Samsung Galaxy S24 Ultra on price.", "target": "OnePlus 12|price ## Samsung Galaxy S24 Ultra|price"}
+{"task_id": "T109-s01", "question": "Compare OnePlus 12 and Samsung Galaxy S24 Ultra on price.", "target": "OnePlus 12|price ## Samsung Galaxy S24 Ultra|price"}
+{"task_id": "T109-s02", "question": "Which is better in terms of price: OnePlus 12 or Samsung Galaxy S24 Ultra?", "target": "OnePlus 12|price ## Samsung Galaxy S24 Ultra|price"}
+{"task_id": "T109-s03", "question": "How does OnePlus 12's price compare to Samsung Galaxy S24 Ultra's?", "target": "OnePlus 12|price ## Samsung Galaxy S24 Ultra|price"}
+{"task_id": "T113", "question": "Compare the iPhone 16 and the OnePlus 12 on weight.", "target": "iPhone 16|weight ## OnePlus 12|weight"}
+{"task_id": "T113-s01", "question": "Compare iPhone 16 and OnePlus 12 on weight.", "target": "iPhone 16|weight ## OnePlus 12|weight"}
+{"task_id": "T113-s02", "question": "Which is better in terms of weight: iPhone 16 or OnePlus 12?", "target": "iPhone 16|weight ## OnePlus 12|weight"}
+{"task_id": "T113-s03", "question": "How does iPhone 16's weight compare to OnePlus 12's?", "target": "iPhone 16|weight ## OnePlus 12|weight"}
+{"task_id": "T114", "question": "Does the iPhone 16 have a higher weight than the OnePlus 12?", "target": "iPhone 16|weight ## OnePlus 12|weight"}
+{"task_id": "T114-s01", "question": "Is iPhone 16's weight higher than OnePlus 12's?", "target": "iPhone 16|weight ## OnePlus 12|weight"}
+{"task_id": "T114-s02", "question": "Does iPhone 16 have a greater weight than OnePlus 12?", "target": "iPhone 16|weight ## OnePlus 12|weight"}
+{"task_id": "T114-s03", "question": "Is iPhone 16 ahead of OnePlus 12 on weight?", "target": "iPhone 16|weight ## OnePlus 12|weight"}
+{"task_id": "T115", "question": "Compare the iPhone 16 and the Samsung Galaxy S24 Ultra on weight.", "target": "iPhone 16|weight ## Samsung Galaxy S24 Ultra|weight"}
+{"task_id": "T115-s01", "question": "Compare iPhone 16 and Samsung Galaxy S24 Ultra on weight.", "target": "iPhone 16|weight ## Samsung Galaxy S24 Ultra|weight"}
+{"task_id": "T115-s02", "question": "Which is better in terms of weight: iPhone 16 or Samsung Galaxy S24 Ultra?", "target": "iPhone 16|weight ## Samsung Galaxy S24 Ultra|weight"}
+{"task_id": "T115-s03", "question": "How does iPhone 16's weight compare to Samsung Galaxy S24 Ultra's?", "target": "iPhone 16|weight ## Samsung Galaxy S24 Ultra|weight"}
+{"task_id": "T116", "question": "Does the iPhone 16 have a higher weight than the Samsung Galaxy S24 Ultra?", "target": "iPhone 16|weight ## Samsung Galaxy S24 Ultra|weight"}
+{"task_id": "T116-s01", "question": "Is iPhone 16's weight higher than Samsung Galaxy S24 Ultra's?", "target": "iPhone 16|weight ## Samsung Galaxy S24 Ultra|weight"}
+{"task_id": "T116-s02", "question": "Does iPhone 16 have a greater weight than Samsung Galaxy S24 Ultra?", "target": "iPhone 16|weight ## Samsung Galaxy S24 Ultra|weight"}
+{"task_id": "T116-s03", "question": "Is iPhone 16 ahead of Samsung Galaxy S24 Ultra on weight?", "target": "iPhone 16|weight ## Samsung Galaxy S24 Ultra|weight"}
+{"task_id": "T117", "question": "Compare the Google Pixel 9 and the OnePlus 12 on weight.", "target": "Google Pixel 9|weight ## OnePlus 12|weight"}
+{"task_id": "T117-s01", "question": "Compare Google Pixel 9 and OnePlus 12 on weight.", "target": "Google Pixel 9|weight ## OnePlus 12|weight"}
+{"task_id": "T117-s02", "question": "Which is better in terms of weight: Google Pixel 9 or OnePlus 12?", "target": "Google Pixel 9|weight ## OnePlus 12|weight"}
+{"task_id": "T117-s03", "question": "How does Google Pixel 9's weight compare to OnePlus 12's?", "target": "Google Pixel 9|weight ## OnePlus 12|weight"}
+{"task_id": "T118", "question": "Does the Google Pixel 9 have a higher weight than the OnePlus 12?", "target": "Google Pixel 9|weight ## OnePlus 12|weight"}
+{"task_id": "T118-s01", "question": "Is Google Pixel 9's weight higher than OnePlus 12's?", "target": "Google Pixel 9|weight ## OnePlus 12|weight"}
+{"task_id": "T118-s02", "question": "Does Google Pixel 9 have a greater weight than OnePlus 12?", "target": "Google Pixel 9|weight ## OnePlus 12|weight"}
+{"task_id": "T118-s03", "question": "Is Google Pixel 9 ahead of OnePlus 12 on weight?", "target": "Google Pixel 9|weight ## OnePlus 12|weight"}
+{"task_id": "T119", "question": "Compare the Google Pixel 9 and the Samsung Galaxy S24 Ultra on weight.", "target": "Google Pixel 9|weight ## Samsung Galaxy S24 Ultra|weight"}
+{"task_id": "T119-s01", "question": "Compare Google Pixel 9 and Samsung Galaxy S24 Ultra on weight.", "target": "Google Pixel 9|weight ## Samsung Galaxy S24 Ultra|weight"}
+{"task_id": "T119-s02", "question": "Which is better in terms of weight: Google Pixel 9 or Samsung Galaxy S24 Ultra?", "target": "Google Pixel 9|weight ## Samsung Galaxy S24 Ultra|weight"}
+{"task_id": "T119-s03", "question": "How does Google Pixel 9's weight compare to Samsung Galaxy S24 Ultra's?", "target": "Google Pixel 9|weight ## Samsung Galaxy S24 Ultra|weight"}
+{"task_id": "T123", "question": "Compare the iPhone 16 and the Google Pixel 9 on battery.", "target": "iPhone 16|battery ## Google Pixel 9|battery"}
+{"task_id": "T123-s01", "question": "Compare iPhone 16 and Google Pixel 9 on battery capacity.", "target": "iPhone 16|battery ## Google Pixel 9|battery"}
+{"task_id": "T123-s02", "question": "Which is better in terms of battery capacity: iPhone 16 or Google Pixel 9?", "target": "iPhone 16|battery ## Google Pixel 9|battery"}
+{"task_id": "T123-s03", "question": "How does iPhone 16's battery capacity compare to Google Pixel 9's?", "target": "iPhone 16|battery ## Google Pixel 9|battery"}
+{"task_id": "T124", "question": "Does the iPhone 16 have a higher battery than the Google Pixel 9?", "target": "iPhone 16|battery ## Google Pixel 9|battery"}
+{"task_id": "T124-s01", "question": "Is iPhone 16's battery capacity higher than Google Pixel 9's?", "target": "iPhone 16|battery ## Google Pixel 9|battery"}
+{"task_id": "T124-s02", "question": "Does iPhone 16 have a greater battery capacity than Google Pixel 9?", "target": "iPhone 16|battery ## Google Pixel 9|battery"}
+{"task_id": "T124-s03", "question": "Is iPhone 16 ahead of Google Pixel 9 on battery capacity?", "target": "iPhone 16|battery ## Google Pixel 9|battery"}
+{"task_id": "T125", "question": "Compare the iPhone 16 and the OnePlus 12 on battery.", "target": "iPhone 16|battery ## OnePlus 12|battery"}
+{"task_id": "T125-s01", "question": "Compare iPhone 16 and OnePlus 12 on battery capacity.", "target": "iPhone 16|battery ## OnePlus 12|battery"}
+{"task_id": "T125-s02", "question": "Which is better in terms of battery capacity: iPhone 16 or OnePlus 12?", "target": "iPhone 16|battery ## OnePlus 12|battery"}
+{"task_id": "T125-s03", "question": "How does iPhone 16's battery capacity compare to OnePlus 12's?", "target": "iPhone 16|battery ## OnePlus 12|battery"}
+{"task_id": "T126", "question": "Does the iPhone 16 have a higher battery than the OnePlus 12?", "target": "iPhone 16|battery ## OnePlus 12|battery"}
+{"task_id": "T126-s01", "question": "Is iPhone 16's battery capacity higher than OnePlus 12's?", "target": "iPhone 16|battery ## OnePlus 12|battery"}
+{"task_id": "T126-s02", "question": "Does iPhone 16 have a greater battery capacity than OnePlus 12?", "target": "iPhone 16|battery ## OnePlus 12|battery"}
+{"task_id": "T126-s03", "question": "Is iPhone 16 ahead of OnePlus 12 on battery capacity?", "target": "iPhone 16|battery ## OnePlus 12|battery"}
+{"task_id": "T127", "question": "Compare the iPhone 16 and the Samsung Galaxy S24 Ultra on battery.", "target": "iPhone 16|battery ## Samsung Galaxy S24 Ultra|battery"}
+{"task_id": "T127-s01", "question": "Compare iPhone 16 and Samsung Galaxy S24 Ultra on battery capacity.", "target": "iPhone 16|battery ## Samsung Galaxy S24 Ultra|battery"}
+{"task_id": "T127-s02", "question": "Which is better in terms of battery capacity: iPhone 16 or Samsung Galaxy S24 Ultra?", "target": "iPhone 16|battery ## Samsung Galaxy S24 Ultra|battery"}
+{"task_id": "T127-s03", "question": "How does iPhone 16's battery capacity compare to Samsung Galaxy S24 Ultra's?", "target": "iPhone 16|battery ## Samsung Galaxy S24 Ultra|battery"}
+{"task_id": "T128", "question": "Does the iPhone 16 have a higher battery than the Samsung Galaxy S24 Ultra?", "target": "iPhone 16|battery ## Samsung Galaxy S24 Ultra|battery"}
+{"task_id": "T128-s01", "question": "Is iPhone 16's battery capacity higher than Samsung Galaxy S24 Ultra's?", "target": "iPhone 16|battery ## Samsung Galaxy S24 Ultra|battery"}
+{"task_id": "T128-s02", "question": "Does iPhone 16 have a greater battery capacity than Samsung Galaxy S24 Ultra?", "target": "iPhone 16|battery ## Samsung Galaxy S24 Ultra|battery"}
+{"task_id": "T128-s03", "question": "Is iPhone 16 ahead of Samsung Galaxy S24 Ultra on battery capacity?", "target": "iPhone 16|battery ## Samsung Galaxy S24 Ultra|battery"}
+{"task_id": "T129", "question": "Compare the Google Pixel 9 and the OnePlus 12 on battery.", "target": "Google Pixel 9|battery ## OnePlus 12|battery"}
+{"task_id": "T129-s01", "question": "Compare Google Pixel 9 and OnePlus 12 on battery capacity.", "target": "Google Pixel 9|battery ## OnePlus 12|battery"}
+{"task_id": "T129-s02", "question": "Which is better in terms of battery capacity: Google Pixel 9 or OnePlus 12?", "target": "Google Pixel 9|battery ## OnePlus 12|battery"}
+{"task_id": "T129-s03", "question": "How does Google Pixel 9's battery capacity compare to OnePlus 12's?", "target": "Google Pixel 9|battery ## OnePlus 12|battery"}
+{"task_id": "T133", "question": "Compare the OnePlus 12 and the Samsung Galaxy S24 Ultra on battery.", "target": "OnePlus 12|battery ## Samsung Galaxy S24 Ultra|battery"}
+{"task_id": "T133-s01", "question": "Compare OnePlus 12 and Samsung Galaxy S24 Ultra on battery capacity.", "target": "OnePlus 12|battery ## Samsung Galaxy S24 Ultra|battery"}
+{"task_id": "T133-s02", "question": "Which is better in terms of battery capacity: OnePlus 12 or Samsung Galaxy S24 Ultra?", "target": "OnePlus 12|battery ## Samsung Galaxy S24 Ultra|battery"}
+{"task_id": "T133-s03", "question": "How does OnePlus 12's battery capacity compare to Samsung Galaxy S24 Ultra's?", "target": "OnePlus 12|battery ## Samsung Galaxy S24 Ultra|battery"}
+{"task_id": "T134", "question": "Does the OnePlus 12 have a higher battery than the Samsung Galaxy S24 Ultra?", "target": "OnePlus 12|battery ## Samsung Galaxy S24 Ultra|battery"}
+{"task_id": "T134-s01", "question": "Is OnePlus 12's battery capacity higher than Samsung Galaxy S24 Ultra's?", "target": "OnePlus 12|battery ## Samsung Galaxy S24 Ultra|battery"}
+{"task_id": "T134-s02", "question": "Does OnePlus 12 have a greater battery capacity than Samsung Galaxy S24 Ultra?", "target": "OnePlus 12|battery ## Samsung Galaxy S24 Ultra|battery"}
+{"task_id": "T134-s03", "question": "Is OnePlus 12 ahead of Samsung Galaxy S24 Ultra on battery capacity?", "target": "OnePlus 12|battery ## Samsung Galaxy S24 Ultra|battery"}
+{"task_id": "T135", "question": "Compare the iPhone 16 and the Google Pixel 9 on camera.", "target": "iPhone 16|camera ## Google Pixel 9|camera"}
+{"task_id": "T135-s01", "question": "Compare iPhone 16 and Google Pixel 9 on main camera resolution.", "target": "iPhone 16|camera ## Google Pixel 9|camera"}
+{"task_id": "T135-s02", "question": "Which is better in terms of main camera resolution: iPhone 16 or Google Pixel 9?", "target": "iPhone 16|camera ## Google Pixel 9|camera"}
+{"task_id": "T135-s03", "question": "How does iPhone 16's main camera resolution compare to Google Pixel 9's?", "target": "iPhone 16|camera ## Google Pixel 9|camera"}
+{"task_id": "T136", "question": "Does the iPhone 16 have a higher camera than the Google Pixel 9?", "target": "iPhone 16|camera ## Google Pixel 9|camera"}
+{"task_id": "T136-s01", "question": "Is iPhone 16's main camera resolution higher than Google Pixel 9's?", "target": "iPhone 16|camera ## Google Pixel 9|camera"}
+{"task_id": "T136-s02", "question": "Does iPhone 16 have a greater main camera resolution than Google Pixel 9?", "target": "iPhone 16|camera ## Google Pixel 9|camera"}
+{"task_id": "T136-s03", "question": "Is iPhone 16 ahead of Google Pixel 9 on main camera resolution?", "target": "iPhone 16|camera ## Google Pixel 9|camera"}
+{"task_id": "T137", "question": "Compare the iPhone 16 and the OnePlus 12 on camera.", "target": "iPhone 16|camera ## OnePlus 12|camera"}
+{"task_id": "T137-s01", "question": "Compare iPhone 16 and OnePlus 12 on main camera resolution.", "target": "iPhone 16|camera ## OnePlus 12|camera"}
+{"task_id": "T137-s02", "question": "Which is better in terms of main camera resolution: iPhone 16 or OnePlus 12?", "target": "iPhone 16|camera ## OnePlus 12|camera"}
+{"task_id": "T137-s03", "question": "How does iPhone 16's main camera resolution compare to OnePlus 12's?", "target": "iPhone 16|camera ## OnePlus 12|camera"}
+{"task_id": "T138", "question": "Does the iPhone 16 have a higher camera than the OnePlus 12?", "target": "iPhone 16|camera ## OnePlus 12|camera"}
+{"task_id": "T138-s01", "question": "Is iPhone 16's main camera resolution higher than OnePlus 12's?", "target": "iPhone 16|camera ## OnePlus 12|camera"}
+{"task_id": "T138-s02", "question": "Does iPhone 16 have a greater main camera resolution than OnePlus 12?", "target": "iPhone 16|camera ## OnePlus 12|camera"}
+{"task_id": "T138-s03", "question": "Is iPhone 16 ahead of OnePlus 12 on main camera resolution?", "target": "iPhone 16|camera ## OnePlus 12|camera"}
+{"task_id": "T139", "question": "Compare the iPhone 16 and the Samsung Galaxy S24 Ultra on camera.", "target": "iPhone 16|camera ## Samsung Galaxy S24 Ultra|camera"}
+{"task_id": "T139-s01", "question": "Compare iPhone 16 and Samsung Galaxy S24 Ultra on main camera resolution.", "target": "iPhone 16|camera ## Samsung Galaxy S24 Ultra|camera"}
+{"task_id": "T139-s02", "question": "Which is better in terms of main camera resolution: iPhone 16 or Samsung Galaxy S24 Ultra?", "target": "iPhone 16|camera ## Samsung Galaxy S24 Ultra|camera"}
+{"task_id": "T139-s03", "question": "How does iPhone 16's main camera resolution compare to Samsung Galaxy S24 Ultra's?", "target": "iPhone 16|camera ## Samsung Galaxy S24 Ultra|camera"}
+{"task_id": "T143", "question": "Compare the Google Pixel 9 and the Samsung Galaxy S24 Ultra on camera.", "target": "Google Pixel 9|camera ## Samsung Galaxy S24 Ultra|camera"}
+{"task_id": "T143-s01", "question": "Compare Google Pixel 9 and Samsung Galaxy S24 Ultra on main camera resolution.", "target": "Google Pixel 9|camera ## Samsung Galaxy S24 Ultra|camera"}
+{"task_id": "T143-s02", "question": "Which is better in terms of main camera resolution: Google Pixel 9 or Samsung Galaxy S24 Ultra?", "target": "Google Pixel 9|camera ## Samsung Galaxy S24 Ultra|camera"}
+{"task_id": "T143-s03", "question": "How does Google Pixel 9's main camera resolution compare to Samsung Galaxy S24 Ultra's?", "target": "Google Pixel 9|camera ## Samsung Galaxy S24 Ultra|camera"}
+{"task_id": "T144", "question": "Does the Google Pixel 9 have a higher camera than the Samsung Galaxy S24 Ultra?", "target": "Google Pixel 9|camera ## Samsung Galaxy S24 Ultra|camera"}
+{"task_id": "T144-s01", "question": "Is Google Pixel 9's main camera resolution higher than Samsung Galaxy S24 Ultra's?", "target": "Google Pixel 9|camera ## Samsung Galaxy S24 Ultra|camera"}
+{"task_id": "T144-s02", "question": "Does Google Pixel 9 have a greater main camera resolution than Samsung Galaxy S24 Ultra?", "target": "Google Pixel 9|camera ## Samsung Galaxy S24 Ultra|camera"}
+{"task_id": "T144-s03", "question": "Is Google Pixel 9 ahead of Samsung Galaxy S24 Ultra on main camera resolution?", "target": "Google Pixel 9|camera ## Samsung Galaxy S24 Ultra|camera"}
+{"task_id": "T145", "question": "Compare the OnePlus 12 and the Samsung Galaxy S24 Ultra on camera.", "target": "OnePlus 12|camera ## Samsung Galaxy S24 Ultra|camera"}
+{"task_id": "T145-s01", "question": "Compare OnePlus 12 and Samsung Galaxy S24 Ultra on main camera resolution.", "target": "OnePlus 12|camera ## Samsung Galaxy S24 Ultra|camera"}
+{"task_id": "T145-s02", "question": "Which is better in terms of main camera resolution: OnePlus 12 or Samsung Galaxy S24 Ultra?", "target": "OnePlus 12|camera ## Samsung Galaxy S24 Ultra|camera"}
+{"task_id": "T145-s03", "question": "How does OnePlus 12's main camera resolution compare to Samsung Galaxy S24 Ultra's?", "target": "OnePlus 12|camera ## Samsung Galaxy S24 Ultra|camera"}
+{"task_id": "T146", "question": "Does the OnePlus 12 have a higher camera than the Samsung Galaxy S24 Ultra?", "target": "OnePlus 12|camera ## Samsung Galaxy S24 Ultra|camera"}
+{"task_id": "T146-s01", "question": "Is OnePlus 12's main camera resolution higher than Samsung Galaxy S24 Ultra's?", "target": "OnePlus 12|camera ## Samsung Galaxy S24 Ultra|camera"}
+{"task_id": "T146-s02", "question": "Does OnePlus 12 have a greater main camera resolution than Samsung Galaxy S24 Ultra?", "target": "OnePlus 12|camera ## Samsung Galaxy S24 Ultra|camera"}
+{"task_id": "T146-s03", "question": "Is OnePlus 12 ahead of Samsung Galaxy S24 Ultra on main camera resolution?", "target": "OnePlus 12|camera ## Samsung Galaxy S24 Ultra|camera"}
+{"task_id": "T147", "question": "Compare the iPhone 16 and the Google Pixel 9 on display refresh rate.", "target": "iPhone 16|display_refresh_rate ## Google Pixel 9|display_refresh_rate"}
+{"task_id": "T147-s01", "question": "Compare iPhone 16 and Google Pixel 9 on display refresh rate.", "target": "iPhone 16|display_refresh_rate ## Google Pixel 9|display_refresh_rate"}
+{"task_id": "T147-s02", "question": "Which is better in terms of display refresh rate: iPhone 16 or Google Pixel 9?", "target": "iPhone 16|display_refresh_rate ## Google Pixel 9|display_refresh_rate"}
+{"task_id": "T147-s03", "question": "How does iPhone 16's display refresh rate compare to Google Pixel 9's?", "target": "iPhone 16|display_refresh_rate ## Google Pixel 9|display_refresh_rate"}
+{"task_id": "T148", "question": "Does the iPhone 16 have a higher display refresh rate than the Google Pixel 9?", "target": "iPhone 16|display_refresh_rate ## Google Pixel 9|display_refresh_rate"}
+{"task_id": "T148-s01", "question": "Is iPhone 16's display refresh rate higher than Google Pixel 9's?", "target": "iPhone 16|display_refresh_rate ## Google Pixel 9|display_refresh_rate"}
+{"task_id": "T148-s02", "question": "Does iPhone 16 have a greater display refresh rate than Google Pixel 9?", "target": "iPhone 16|display_refresh_rate ## Google Pixel 9|display_refresh_rate"}
+{"task_id": "T148-s03", "question": "Is iPhone 16 ahead of Google Pixel 9 on display refresh rate?", "target": "iPhone 16|display_refresh_rate ## Google Pixel 9|display_refresh_rate"}
+{"task_id": "T149", "question": "Compare the iPhone 16 and the OnePlus 12 on display refresh rate.", "target": "iPhone 16|display_refresh_rate ## OnePlus 12|display_refresh_rate"}
+{"task_id": "T149-s01", "question": "Compare iPhone 16 and OnePlus 12 on display refresh rate.", "target": "iPhone 16|display_refresh_rate ## OnePlus 12|display_refresh_rate"}
+{"task_id": "T149-s02", "question": "Which is better in terms of display refresh rate: iPhone 16 or OnePlus 12?", "target": "iPhone 16|display_refresh_rate ## OnePlus 12|display_refresh_rate"}
+{"task_id": "T149-s03", "question": "How does iPhone 16's display refresh rate compare to OnePlus 12's?", "target": "iPhone 16|display_refresh_rate ## OnePlus 12|display_refresh_rate"}
+{"task_id": "T153", "question": "Compare the Google Pixel 9 and the OnePlus 12 on display refresh rate.", "target": "Google Pixel 9|display_refresh_rate ## OnePlus 12|display_refresh_rate"}
+{"task_id": "T153-s01", "question": "Compare Google Pixel 9 and OnePlus 12 on display refresh rate.", "target": "Google Pixel 9|display_refresh_rate ## OnePlus 12|display_refresh_rate"}
+{"task_id": "T153-s02", "question": "Which is better in terms of display refresh rate: Google Pixel 9 or OnePlus 12?", "target": "Google Pixel 9|display_refresh_rate ## OnePlus 12|display_refresh_rate"}
+{"task_id": "T153-s03", "question": "How does Google Pixel 9's display refresh rate compare to OnePlus 12's?", "target": "Google Pixel 9|display_refresh_rate ## OnePlus 12|display_refresh_rate"}
+{"task_id": "T154", "question": "Does the Google Pixel 9 have a higher display refresh rate than the OnePlus 12?", "target": "Google Pixel 9|display_refresh_rate ## OnePlus 12|display_refresh_rate"}
+{"task_id": "T154-s01", "question": "Is Google Pixel 9's display refresh rate higher than OnePlus 12's?", "target": "Google Pixel 9|display_refresh_rate ## OnePlus 12|display_refresh_rate"}
+{"task_id": "T154-s02", "question": "Does Google Pixel 9 have a greater display refresh rate than OnePlus 12?", "target": "Google Pixel 9|display_refresh_rate ## OnePlus 12|display_refresh_rate"}
+{"task_id": "T154-s03", "question": "Is Google Pixel 9 ahead of OnePlus 12 on display refresh rate?", "target": "Google Pixel 9|display_refresh_rate ## OnePlus 12|display_refresh_rate"}
+{"task_id": "T155", "question": "Compare the Google Pixel 9 and the Samsung Galaxy S24 Ultra on display refresh rate.", "target": "Google Pixel 9|display_refresh_rate ## Samsung Galaxy S24 Ultra|display_refresh_rate"}
+{"task_id": "T155-s01", "question": "Compare Google Pixel 9 and Samsung Galaxy S24 Ultra on display refresh rate.", "target": "Google Pixel 9|display_refresh_rate ## Samsung Galaxy S24 Ultra|display_refresh_rate"}
+{"task_id": "T155-s02", "question": "Which is better in terms of display refresh rate: Google Pixel 9 or Samsung Galaxy S24 Ultra?", "target": "Google Pixel 9|display_refresh_rate ## Samsung Galaxy S24 Ultra|display_refresh_rate"}
+{"task_id": "T155-s03", "question": "How does Google Pixel 9's display refresh rate compare to Samsung Galaxy S24 Ultra's?", "target": "Google Pixel 9|display_refresh_rate ## Samsung Galaxy S24 Ultra|display_refresh_rate"}
+{"task_id": "T156", "question": "Does the Google Pixel 9 have a higher display refresh rate than the Samsung Galaxy S24 Ultra?", "target": "Google Pixel 9|display_refresh_rate ## Samsung Galaxy S24 Ultra|display_refresh_rate"}
+{"task_id": "T156-s01", "question": "Is Google Pixel 9's display refresh rate higher than Samsung Galaxy S24 Ultra's?", "target": "Google Pixel 9|display_refresh_rate ## Samsung Galaxy S24 Ultra|display_refresh_rate"}
+{"task_id": "T156-s02", "question": "Does Google Pixel 9 have a greater display refresh rate than Samsung Galaxy S24 Ultra?", "target": "Google Pixel 9|display_refresh_rate ## Samsung Galaxy S24 Ultra|display_refresh_rate"}
+{"task_id": "T156-s03", "question": "Is Google Pixel 9 ahead of Samsung Galaxy S24 Ultra on display refresh rate?", "target": "Google Pixel 9|display_refresh_rate ## Samsung Galaxy S24 Ultra|display_refresh_rate"}
+{"task_id": "T157", "question": "Compare the OnePlus 12 and the Samsung Galaxy S24 Ultra on display refresh rate.", "target": "OnePlus 12|display_refresh_rate ## Samsung Galaxy S24 Ultra|display_refresh_rate"}
+{"task_id": "T157-s01", "question": "Compare OnePlus 12 and Samsung Galaxy S24 Ultra on display refresh rate.", "target": "OnePlus 12|display_refresh_rate ## Samsung Galaxy S24 Ultra|display_refresh_rate"}
+{"task_id": "T157-s02", "question": "Which is better in terms of display refresh rate: OnePlus 12 or Samsung Galaxy S24 Ultra?", "target": "OnePlus 12|display_refresh_rate ## Samsung Galaxy S24 Ultra|display_refresh_rate"}
+{"task_id": "T157-s03", "question": "How does OnePlus 12's display refresh rate compare to Samsung Galaxy S24 Ultra's?", "target": "OnePlus 12|display_refresh_rate ## Samsung Galaxy S24 Ultra|display_refresh_rate"}
+{"task_id": "T158", "question": "Does the OnePlus 12 have a higher display refresh rate than the Samsung Galaxy S24 Ultra?", "target": "OnePlus 12|display_refresh_rate ## Samsung Galaxy S24 Ultra|display_refresh_rate"}
+{"task_id": "T158-s01", "question": "Is OnePlus 12's display refresh rate higher than Samsung Galaxy S24 Ultra's?", "target": "OnePlus 12|display_refresh_rate ## Samsung Galaxy S24 Ultra|display_refresh_rate"}
+{"task_id": "T158-s02", "question": "Does OnePlus 12 have a greater display refresh rate than Samsung Galaxy S24 Ultra?", "target": "OnePlus 12|display_refresh_rate ## Samsung Galaxy S24 Ultra|display_refresh_rate"}
+{"task_id": "T158-s03", "question": "Is OnePlus 12 ahead of Samsung Galaxy S24 Ultra on display refresh rate?", "target": "OnePlus 12|display_refresh_rate ## Samsung Galaxy S24 Ultra|display_refresh_rate"}
+{"task_id": "T159", "question": "Compare the iPhone 16 and the Google Pixel 9 on chip.", "target": "iPhone 16|chip ## Google Pixel 9|chip"}
+{"task_id": "T159-s01", "question": "Compare iPhone 16 and Google Pixel 9 on chip.", "target": "iPhone 16|chip ## Google Pixel 9|chip"}
+{"task_id": "T159-s02", "question": "Which is better in terms of chip: iPhone 16 or Google Pixel 9?", "target": "iPhone 16|chip ## Google Pixel 9|chip"}
+{"task_id": "T159-s03", "question": "How does iPhone 16's chip compare to Google Pixel 9's?", "target": "iPhone 16|chip ## Google Pixel 9|chip"}
+{"task_id": "T163", "question": "Compare the iPhone 16 and the Samsung Galaxy S24 Ultra on chip.", "target": "iPhone 16|chip ## Samsung Galaxy S24 Ultra|chip"}
+{"task_id": "T163-s01", "question": "Compare iPhone 16 and Samsung Galaxy S24 Ultra on chip.", "target": "iPhone 16|chip ## Samsung Galaxy S24 Ultra|chip"}
+{"task_id": "T163-s02", "question": "Which is better in terms of chip: iPhone 16 or Samsung Galaxy S24 Ultra?", "target": "iPhone 16|chip ## Samsung Galaxy S24 Ultra|chip"}
+{"task_id": "T163-s03", "question": "How does iPhone 16's chip compare to Samsung Galaxy S24 Ultra's?", "target": "iPhone 16|chip ## Samsung Galaxy S24 Ultra|chip"}
+{"task_id": "T164", "question": "Does the iPhone 16 have a higher chip than the Samsung Galaxy S24 Ultra?", "target": "iPhone 16|chip ## Samsung Galaxy S24 Ultra|chip"}
+{"task_id": "T164-s01", "question": "Is iPhone 16's chip higher than Samsung Galaxy S24 Ultra's?", "target": "iPhone 16|chip ## Samsung Galaxy S24 Ultra|chip"}
+{"task_id": "T164-s02", "question": "Does iPhone 16 have a greater chip than Samsung Galaxy S24 Ultra?", "target": "iPhone 16|chip ## Samsung Galaxy S24 Ultra|chip"}
+{"task_id": "T164-s03", "question": "Is iPhone 16 ahead of Samsung Galaxy S24 Ultra on chip?", "target": "iPhone 16|chip ## Samsung Galaxy S24 Ultra|chip"}
+{"task_id": "T165", "question": "Compare the Google Pixel 9 and the OnePlus 12 on chip.", "target": "Google Pixel 9|chip ## OnePlus 12|chip"}
+{"task_id": "T165-s01", "question": "Compare Google Pixel 9 and OnePlus 12 on chip.", "target": "Google Pixel 9|chip ## OnePlus 12|chip"}
+{"task_id": "T165-s02", "question": "Which is better in terms of chip: Google Pixel 9 or OnePlus 12?", "target": "Google Pixel 9|chip ## OnePlus 12|chip"}
+{"task_id": "T165-s03", "question": "How does Google Pixel 9's chip compare to OnePlus 12's?", "target": "Google Pixel 9|chip ## OnePlus 12|chip"}
+{"task_id": "T166", "question": "Does the Google Pixel 9 have a higher chip than the OnePlus 12?", "target": "Google Pixel 9|chip ## OnePlus 12|chip"}
+{"task_id": "T166-s01", "question": "Is Google Pixel 9's chip higher than OnePlus 12's?", "target": "Google Pixel 9|chip ## OnePlus 12|chip"}
+{"task_id": "T166-s02", "question": "Does Google Pixel 9 have a greater chip than OnePlus 12?", "target": "Google Pixel 9|chip ## OnePlus 12|chip"}
+{"task_id": "T166-s03", "question": "Is Google Pixel 9 ahead of OnePlus 12 on chip?", "target": "Google Pixel 9|chip ## OnePlus 12|chip"}
+{"task_id": "T167", "question": "Compare the Google Pixel 9 and the Samsung Galaxy S24 Ultra on chip.", "target": "Google Pixel 9|chip ## Samsung Galaxy S24 Ultra|chip"}
+{"task_id": "T167-s01", "question": "Compare Google Pixel 9 and Samsung Galaxy S24 Ultra on chip.", "target": "Google Pixel 9|chip ## Samsung Galaxy S24 Ultra|chip"}
+{"task_id": "T167-s02", "question": "Which is better in terms of chip: Google Pixel 9 or Samsung Galaxy S24 Ultra?", "target": "Google Pixel 9|chip ## Samsung Galaxy S24 Ultra|chip"}
+{"task_id": "T167-s03", "question": "How does Google Pixel 9's chip compare to Samsung Galaxy S24 Ultra's?", "target": "Google Pixel 9|chip ## Samsung Galaxy S24 Ultra|chip"}
+{"task_id": "T168", "question": "Does the Google Pixel 9 have a higher chip than the Samsung Galaxy S24 Ultra?", "target": "Google Pixel 9|chip ## Samsung Galaxy S24 Ultra|chip"}
+{"task_id": "T168-s01", "question": "Is Google Pixel 9's chip higher than Samsung Galaxy S24 Ultra's?", "target": "Google Pixel 9|chip ## Samsung Galaxy S24 Ultra|chip"}
+{"task_id": "T168-s02", "question": "Does Google Pixel 9 have a greater chip than Samsung Galaxy S24 Ultra?", "target": "Google Pixel 9|chip ## Samsung Galaxy S24 Ultra|chip"}
+{"task_id": "T168-s03", "question": "Is Google Pixel 9 ahead of Samsung Galaxy S24 Ultra on chip?", "target": "Google Pixel 9|chip ## Samsung Galaxy S24 Ultra|chip"}
+{"task_id": "T169", "question": "Compare the OnePlus 12 and the Samsung Galaxy S24 Ultra on chip.", "target": "OnePlus 12|chip ## Samsung Galaxy S24 Ultra|chip"}
+{"task_id": "T169-s01", "question": "Compare OnePlus 12 and Samsung Galaxy S24 Ultra on chip.", "target": "OnePlus 12|chip ## Samsung Galaxy S24 Ultra|chip"}
+{"task_id": "T169-s02", "question": "Which is better in terms of chip: OnePlus 12 or Samsung Galaxy S24 Ultra?", "target": "OnePlus 12|chip ## Samsung Galaxy S24 Ultra|chip"}
+{"task_id": "T169-s03", "question": "How does OnePlus 12's chip compare to Samsung Galaxy S24 Ultra's?", "target": "OnePlus 12|chip ## Samsung Galaxy S24 Ultra|chip"}
+{"task_id": "T173", "question": "What are the price and weight of the OnePlus 12?", "target": "OnePlus 12|price ## OnePlus 12|weight"}
+{"task_id": "T173-s01", "question": "What are OnePlus 12's price and weight?", "target": "OnePlus 12|price ## OnePlus 12|weight"}
+{"task_id": "T173-s02", "question": "Tell me the price and weight for OnePlus 12.", "target": "OnePlus 12|price ## OnePlus 12|weight"}
+{"task_id": "T173-s03", "question": "Provide OnePlus 12's price along with its weight.", "target": "OnePlus 12|price ## OnePlus 12|weight"}
+{"task_id": "T174", "question": "What are the price and weight of the Samsung Galaxy S24 Ultra?", "target": "Samsung Galaxy S24 Ultra|price ## Samsung Galaxy S24 Ultra|weight"}
+{"task_id": "T174-s01", "question": "What are Samsung Galaxy S24 Ultra's price and weight?", "target": "Samsung Galaxy S24 Ultra|price ## Samsung Galaxy S24 Ultra|weight"}
+{"task_id": "T174-s02", "question": "Tell me the price and weight for Samsung Galaxy S24 Ultra.", "target": "Samsung Galaxy S24 Ultra|price ## Samsung Galaxy S24 Ultra|weight"}
+{"task_id": "T174-s03", "question": "Provide Samsung Galaxy S24 Ultra's price along with its weight.", "target": "Samsung Galaxy S24 Ultra|price ## Samsung Galaxy S24 Ultra|weight"}
+{"task_id": "T175", "question": "What is the price of the MacBook Pro 14 M4?", "target": "MacBook Pro 14 M4|price"}
+{"task_id": "T175-s01", "question": "What is the price of MacBook Pro 14 M4?", "target": "MacBook Pro 14 M4|price"}
+{"task_id": "T175-s02", "question": "Can you tell me the price of MacBook Pro 14 M4?", "target": "MacBook Pro 14 M4|price"}
+{"task_id": "T175-s03", "question": "How would you describe the price of MacBook Pro 14 M4?", "target": "MacBook Pro 14 M4|price"}
+{"task_id": "T176", "question": "What is the weight of the MacBook Pro 14 M4?", "target": "MacBook Pro 14 M4|weight"}
+{"task_id": "T176-s01", "question": "What is the weight of MacBook Pro 14 M4?", "target": "MacBook Pro 14 M4|weight"}
+{"task_id": "T176-s02", "question": "Can you tell me the weight of MacBook Pro 14 M4?", "target": "MacBook Pro 14 M4|weight"}
+{"task_id": "T176-s03", "question": "How would you describe the weight of MacBook Pro 14 M4?", "target": "MacBook Pro 14 M4|weight"}
+{"task_id": "T177", "question": "What is the price of the Lenovo ThinkPad X1 Carbon?", "target": "Lenovo ThinkPad X1 Carbon|price"}
+{"task_id": "T177-s01", "question": "What is the price of Lenovo ThinkPad X1 Carbon?", "target": "Lenovo ThinkPad X1 Carbon|price"}
+{"task_id": "T177-s02", "question": "Can you tell me the price of Lenovo ThinkPad X1 Carbon?", "target": "Lenovo ThinkPad X1 Carbon|price"}
+{"task_id": "T177-s03", "question": "How would you describe the price of Lenovo ThinkPad X1 Carbon?", "target": "Lenovo ThinkPad X1 Carbon|price"}
+{"task_id": "T178", "question": "What is the weight of the Lenovo ThinkPad X1 Carbon?", "target": "Lenovo ThinkPad X1 Carbon|weight"}
+{"task_id": "T178-s01", "question": "What is the weight of Lenovo ThinkPad X1 Carbon?", "target": "Lenovo ThinkPad X1 Carbon|weight"}
+{"task_id": "T178-s02", "question": "Can you tell me the weight of Lenovo ThinkPad X1 Carbon?", "target": "Lenovo ThinkPad X1 Carbon|weight"}
+{"task_id": "T178-s03", "question": "How would you describe the weight of Lenovo ThinkPad X1 Carbon?", "target": "Lenovo ThinkPad X1 Carbon|weight"}
+{"task_id": "T179", "question": "What is the price of the Asus Zenbook 14 OLED?", "target": "Asus Zenbook 14 OLED|price"}
+{"task_id": "T179-s01", "question": "What is the price of Asus Zenbook 14 OLED?", "target": "Asus Zenbook 14 OLED|price"}
+{"task_id": "T179-s02", "question": "Can you tell me the price of Asus Zenbook 14 OLED?", "target": "Asus Zenbook 14 OLED|price"}
+{"task_id": "T179-s03", "question": "How would you describe the price of Asus Zenbook 14 OLED?", "target": "Asus Zenbook 14 OLED|price"}
+{"task_id": "T183", "question": "Compare the MacBook Pro 14 M4 and the Lenovo ThinkPad X1 Carbon on price.", "target": "MacBook Pro 14 M4|price ## Lenovo ThinkPad X1 Carbon|price"}
+{"task_id": "T183-s01", "question": "Compare MacBook Pro 14 M4 and Lenovo ThinkPad X1 Carbon on price.", "target": "MacBook Pro 14 M4|price ## Lenovo ThinkPad X1 Carbon|price"}
+{"task_id": "T183-s02", "question": "Which is better in terms of price: MacBook Pro 14 M4 or Lenovo ThinkPad X1 Carbon?", "target": "MacBook Pro 14 M4|price ## Lenovo ThinkPad X1 Carbon|price"}
+{"task_id": "T183-s03", "question": "How does MacBook Pro 14 M4's price compare to Lenovo ThinkPad X1 Carbon's?", "target": "MacBook Pro 14 M4|price ## Lenovo ThinkPad X1 Carbon|price"}
+{"task_id": "T184", "question": "Does the MacBook Pro 14 M4 have a higher price than the Lenovo ThinkPad X1 Carbon?", "target": "MacBook Pro 14 M4|price ## Lenovo ThinkPad X1 Carbon|price"}
+{"task_id": "T184-s01", "question": "Is MacBook Pro 14 M4's price higher than Lenovo ThinkPad X1 Carbon's?", "target": "MacBook Pro 14 M4|price ## Lenovo ThinkPad X1 Carbon|price"}
+{"task_id": "T184-s02", "question": "Does MacBook Pro 14 M4 have a greater price than Lenovo ThinkPad X1 Carbon?", "target": "MacBook Pro 14 M4|price ## Lenovo ThinkPad X1 Carbon|price"}
+{"task_id": "T184-s03", "question": "Is MacBook Pro 14 M4 ahead of Lenovo ThinkPad X1 Carbon on price?", "target": "MacBook Pro 14 M4|price ## Lenovo ThinkPad X1 Carbon|price"}
+{"task_id": "T185", "question": "Compare the MacBook Pro 14 M4 and the Asus Zenbook 14 OLED on price.", "target": "MacBook Pro 14 M4|price ## Asus Zenbook 14 OLED|price"}
+{"task_id": "T185-s01", "question": "Compare MacBook Pro 14 M4 and Asus Zenbook 14 OLED on price.", "target": "MacBook Pro 14 M4|price ## Asus Zenbook 14 OLED|price"}
+{"task_id": "T185-s02", "question": "Which is better in terms of price: MacBook Pro 14 M4 or Asus Zenbook 14 OLED?", "target": "MacBook Pro 14 M4|price ## Asus Zenbook 14 OLED|price"}
+{"task_id": "T185-s03", "question": "How does MacBook Pro 14 M4's price compare to Asus Zenbook 14 OLED's?", "target": "MacBook Pro 14 M4|price ## Asus Zenbook 14 OLED|price"}
+{"task_id": "T186", "question": "Does the MacBook Pro 14 M4 have a higher price than the Asus Zenbook 14 OLED?", "target": "MacBook Pro 14 M4|price ## Asus Zenbook 14 OLED|price"}
+{"task_id": "T186-s01", "question": "Is MacBook Pro 14 M4's price higher than Asus Zenbook 14 OLED's?", "target": "MacBook Pro 14 M4|price ## Asus Zenbook 14 OLED|price"}
+{"task_id": "T186-s02", "question": "Does MacBook Pro 14 M4 have a greater price than Asus Zenbook 14 OLED?", "target": "MacBook Pro 14 M4|price ## Asus Zenbook 14 OLED|price"}
+{"task_id": "T186-s03", "question": "Is MacBook Pro 14 M4 ahead of Asus Zenbook 14 OLED on price?", "target": "MacBook Pro 14 M4|price ## Asus Zenbook 14 OLED|price"}
+{"task_id": "T187", "question": "Compare the MacBook Pro 14 M4 and the HP Spectre x360 14 on price.", "target": "MacBook Pro 14 M4|price ## HP Spectre x360 14|price"}
+{"task_id": "T187-s01", "question": "Compare MacBook Pro 14 M4 and HP Spectre x360 14 on price.", "target": "MacBook Pro 14 M4|price ## HP Spectre x360 14|price"}
+{"task_id": "T187-s02", "question": "Which is better in terms of price: MacBook Pro 14 M4 or HP Spectre x360 14?", "target": "MacBook Pro 14 M4|price ## HP Spectre x360 14|price"}
+{"task_id": "T187-s03", "question": "How does MacBook Pro 14 M4's price compare to HP Spectre x360 14's?", "target": "MacBook Pro 14 M4|price ## HP Spectre x360 14|price"}
+{"task_id": "T188", "question": "Does the MacBook Pro 14 M4 have a higher price than the HP Spectre x360 14?", "target": "MacBook Pro 14 M4|price ## HP Spectre x360 14|price"}
+{"task_id": "T188-s01", "question": "Is MacBook Pro 14 M4's price higher than HP Spectre x360 14's?", "target": "MacBook Pro 14 M4|price ## HP Spectre x360 14|price"}
+{"task_id": "T188-s02", "question": "Does MacBook Pro 14 M4 have a greater price than HP Spectre x360 14?", "target": "MacBook Pro 14 M4|price ## HP Spectre x360 14|price"}
+{"task_id": "T188-s03", "question": "Is MacBook Pro 14 M4 ahead of HP Spectre x360 14 on price?", "target": "MacBook Pro 14 M4|price ## HP Spectre x360 14|price"}
+{"task_id": "T189", "question": "Compare the Lenovo ThinkPad X1 Carbon and the Asus Zenbook 14 OLED on price.", "target": "Lenovo ThinkPad X1 Carbon|price ## Asus Zenbook 14 OLED|price"}
+{"task_id": "T189-s01", "question": "Compare Lenovo ThinkPad X1 Carbon and Asus Zenbook 14 OLED on price.", "target": "Lenovo ThinkPad X1 Carbon|price ## Asus Zenbook 14 OLED|price"}
+{"task_id": "T189-s02", "question": "Which is better in terms of price: Lenovo ThinkPad X1 Carbon or Asus Zenbook 14 OLED?", "target": "Lenovo ThinkPad X1 Carbon|price ## Asus Zenbook 14 OLED|price"}
+{"task_id": "T189-s03", "question": "How does Lenovo ThinkPad X1 Carbon's price compare to Asus Zenbook 14 OLED's?", "target": "Lenovo ThinkPad X1 Carbon|price ## Asus Zenbook 14 OLED|price"}
+{"task_id": "T193", "question": "Compare the Asus Zenbook 14 OLED and the HP Spectre x360 14 on price.", "target": "Asus Zenbook 14 OLED|price ## HP Spectre x360 14|price"}
+{"task_id": "T193-s01", "question": "Compare Asus Zenbook 14 OLED and HP Spectre x360 14 on price.", "target": "Asus Zenbook 14 OLED|price ## HP Spectre x360 14|price"}
+{"task_id": "T193-s02", "question": "Which is better in terms of price: Asus Zenbook 14 OLED or HP Spectre x360 14?", "target": "Asus Zenbook 14 OLED|price ## HP Spectre x360 14|price"}
+{"task_id": "T193-s03", "question": "How does Asus Zenbook 14 OLED's price compare to HP Spectre x360 14's?", "target": "Asus Zenbook 14 OLED|price ## HP Spectre x360 14|price"}
+{"task_id": "T194", "question": "Does the Asus Zenbook 14 OLED have a higher price than the HP Spectre x360 14?", "target": "Asus Zenbook 14 OLED|price ## HP Spectre x360 14|price"}
+{"task_id": "T194-s01", "question": "Is Asus Zenbook 14 OLED's price higher than HP Spectre x360 14's?", "target": "Asus Zenbook 14 OLED|price ## HP Spectre x360 14|price"}
+{"task_id": "T194-s02", "question": "Does Asus Zenbook 14 OLED have a greater price than HP Spectre x360 14?", "target": "Asus Zenbook 14 OLED|price ## HP Spectre x360 14|price"}
+{"task_id": "T194-s03", "question": "Is Asus Zenbook 14 OLED ahead of HP Spectre x360 14 on price?", "target": "Asus Zenbook 14 OLED|price ## HP Spectre x360 14|price"}
+{"task_id": "T195", "question": "Compare the MacBook Pro 14 M4 and the Lenovo ThinkPad X1 Carbon on weight.", "target": "MacBook Pro 14 M4|weight ## Lenovo ThinkPad X1 Carbon|weight"}
+{"task_id": "T195-s01", "question": "Compare MacBook Pro 14 M4 and Lenovo ThinkPad X1 Carbon on weight.", "target": "MacBook Pro 14 M4|weight ## Lenovo ThinkPad X1 Carbon|weight"}
+{"task_id": "T195-s02", "question": "Which is better in terms of weight: MacBook Pro 14 M4 or Lenovo ThinkPad X1 Carbon?", "target": "MacBook Pro 14 M4|weight ## Lenovo ThinkPad X1 Carbon|weight"}
+{"task_id": "T195-s03", "question": "How does MacBook Pro 14 M4's weight compare to Lenovo ThinkPad X1 Carbon's?", "target": "MacBook Pro 14 M4|weight ## Lenovo ThinkPad X1 Carbon|weight"}
+{"task_id": "T196", "question": "Does the MacBook Pro 14 M4 have a higher weight than the Lenovo ThinkPad X1 Carbon?", "target": "MacBook Pro 14 M4|weight ## Lenovo ThinkPad X1 Carbon|weight"}
+{"task_id": "T196-s01", "question": "Is MacBook Pro 14 M4's weight higher than Lenovo ThinkPad X1 Carbon's?", "target": "MacBook Pro 14 M4|weight ## Lenovo ThinkPad X1 Carbon|weight"}
+{"task_id": "T196-s02", "question": "Does MacBook Pro 14 M4 have a greater weight than Lenovo ThinkPad X1 Carbon?", "target": "MacBook Pro 14 M4|weight ## Lenovo ThinkPad X1 Carbon|weight"}
+{"task_id": "T196-s03", "question": "Is MacBook Pro 14 M4 ahead of Lenovo ThinkPad X1 Carbon on weight?", "target": "MacBook Pro 14 M4|weight ## Lenovo ThinkPad X1 Carbon|weight"}
+{"task_id": "T197", "question": "Compare the MacBook Pro 14 M4 and the Asus Zenbook 14 OLED on weight.", "target": "MacBook Pro 14 M4|weight ## Asus Zenbook 14 OLED|weight"}
+{"task_id": "T197-s01", "question": "Compare MacBook Pro 14 M4 and Asus Zenbook 14 OLED on weight.", "target": "MacBook Pro 14 M4|weight ## Asus Zenbook 14 OLED|weight"}
+{"task_id": "T197-s02", "question": "Which is better in terms of weight: MacBook Pro 14 M4 or Asus Zenbook 14 OLED?", "target": "MacBook Pro 14 M4|weight ## Asus Zenbook 14 OLED|weight"}
+{"task_id": "T197-s03", "question": "How does MacBook Pro 14 M4's weight compare to Asus Zenbook 14 OLED's?", "target": "MacBook Pro 14 M4|weight ## Asus Zenbook 14 OLED|weight"}
+{"task_id": "T198", "question": "Does the MacBook Pro 14 M4 have a higher weight than the Asus Zenbook 14 OLED?", "target": "MacBook Pro 14 M4|weight ## Asus Zenbook 14 OLED|weight"}
+{"task_id": "T198-s01", "question": "Is MacBook Pro 14 M4's weight higher than Asus Zenbook 14 OLED's?", "target": "MacBook Pro 14 M4|weight ## Asus Zenbook 14 OLED|weight"}
+{"task_id": "T198-s02", "question": "Does MacBook Pro 14 M4 have a greater weight than Asus Zenbook 14 OLED?", "target": "MacBook Pro 14 M4|weight ## Asus Zenbook 14 OLED|weight"}
+{"task_id": "T198-s03", "question": "Is MacBook Pro 14 M4 ahead of Asus Zenbook 14 OLED on weight?", "target": "MacBook Pro 14 M4|weight ## Asus Zenbook 14 OLED|weight"}
+{"task_id": "T199", "question": "Compare the MacBook Pro 14 M4 and the HP Spectre x360 14 on weight.", "target": "MacBook Pro 14 M4|weight ## HP Spectre x360 14|weight"}
+{"task_id": "T199-s01", "question": "Compare MacBook Pro 14 M4 and HP Spectre x360 14 on weight.", "target": "MacBook Pro 14 M4|weight ## HP Spectre x360 14|weight"}
+{"task_id": "T199-s02", "question": "Which is better in terms of weight: MacBook Pro 14 M4 or HP Spectre x360 14?", "target": "MacBook Pro 14 M4|weight ## HP Spectre x360 14|weight"}
+{"task_id": "T199-s03", "question": "How does MacBook Pro 14 M4's weight compare to HP Spectre x360 14's?", "target": "MacBook Pro 14 M4|weight ## HP Spectre x360 14|weight"}
+{"task_id": "T203", "question": "Compare the Lenovo ThinkPad X1 Carbon and the HP Spectre x360 14 on weight.", "target": "Lenovo ThinkPad X1 Carbon|weight ## HP Spectre x360 14|weight"}
+{"task_id": "T203-s01", "question": "Compare Lenovo ThinkPad X1 Carbon and HP Spectre x360 14 on weight.", "target": "Lenovo ThinkPad X1 Carbon|weight ## HP Spectre x360 14|weight"}
+{"task_id": "T203-s02", "question": "Which is better in terms of weight: Lenovo ThinkPad X1 Carbon or HP Spectre x360 14?", "target": "Lenovo ThinkPad X1 Carbon|weight ## HP Spectre x360 14|weight"}
+{"task_id": "T203-s03", "question": "How does Lenovo ThinkPad X1 Carbon's weight compare to HP Spectre x360 14's?", "target": "Lenovo ThinkPad X1 Carbon|weight ## HP Spectre x360 14|weight"}
+{"task_id": "T204", "question": "Does the Lenovo ThinkPad X1 Carbon have a higher weight than the HP Spectre x360 14?", "target": "Lenovo ThinkPad X1 Carbon|weight ## HP Spectre x360 14|weight"}
+{"task_id": "T204-s01", "question": "Is Lenovo ThinkPad X1 Carbon's weight higher than HP Spectre x360 14's?", "target": "Lenovo ThinkPad X1 Carbon|weight ## HP Spectre x360 14|weight"}
+{"task_id": "T204-s02", "question": "Does Lenovo ThinkPad X1 Carbon have a greater weight than HP Spectre x360 14?", "target": "Lenovo ThinkPad X1 Carbon|weight ## HP Spectre x360 14|weight"}
+{"task_id": "T204-s03", "question": "Is Lenovo ThinkPad X1 Carbon ahead of HP Spectre x360 14 on weight?", "target": "Lenovo ThinkPad X1 Carbon|weight ## HP Spectre x360 14|weight"}
+{"task_id": "T205", "question": "Compare the Asus Zenbook 14 OLED and the HP Spectre x360 14 on weight.", "target": "Asus Zenbook 14 OLED|weight ## HP Spectre x360 14|weight"}
+{"task_id": "T205-s01", "question": "Compare Asus Zenbook 14 OLED and HP Spectre x360 14 on weight.", "target": "Asus Zenbook 14 OLED|weight ## HP Spectre x360 14|weight"}
+{"task_id": "T205-s02", "question": "Which is better in terms of weight: Asus Zenbook 14 OLED or HP Spectre x360 14?", "target": "Asus Zenbook 14 OLED|weight ## HP Spectre x360 14|weight"}
+{"task_id": "T205-s03", "question": "How does Asus Zenbook 14 OLED's weight compare to HP Spectre x360 14's?", "target": "Asus Zenbook 14 OLED|weight ## HP Spectre x360 14|weight"}
+{"task_id": "T206", "question": "Does the Asus Zenbook 14 OLED have a higher weight than the HP Spectre x360 14?", "target": "Asus Zenbook 14 OLED|weight ## HP Spectre x360 14|weight"}
+{"task_id": "T206-s01", "question": "Is Asus Zenbook 14 OLED's weight higher than HP Spectre x360 14's?", "target": "Asus Zenbook 14 OLED|weight ## HP Spectre x360 14|weight"}
+{"task_id": "T206-s02", "question": "Does Asus Zenbook 14 OLED have a greater weight than HP Spectre x360 14?", "target": "Asus Zenbook 14 OLED|weight ## HP Spectre x360 14|weight"}
+{"task_id": "T206-s03", "question": "Is Asus Zenbook 14 OLED ahead of HP Spectre x360 14 on weight?", "target": "Asus Zenbook 14 OLED|weight ## HP Spectre x360 14|weight"}
+{"task_id": "T207", "question": "Compare the MacBook Pro 14 M4 and the Lenovo ThinkPad X1 Carbon on battery.", "target": "MacBook Pro 14 M4|battery ## Lenovo ThinkPad X1 Carbon|battery"}
+{"task_id": "T207-s01", "question": "Compare MacBook Pro 14 M4 and Lenovo ThinkPad X1 Carbon on battery capacity.", "target": "MacBook Pro 14 M4|battery ## Lenovo ThinkPad X1 Carbon|battery"}
+{"task_id": "T207-s02", "question": "Which is better in terms of battery capacity: MacBook Pro 14 M4 or Lenovo ThinkPad X1 Carbon?", "target": "MacBook Pro 14 M4|battery ## Lenovo ThinkPad X1 Carbon|battery"}
+{"task_id": "T207-s03", "question": "How does MacBook Pro 14 M4's battery capacity compare to Lenovo ThinkPad X1 Carbon's?", "target": "MacBook Pro 14 M4|battery ## Lenovo ThinkPad X1 Carbon|battery"}
+{"task_id": "T208", "question": "Does the MacBook Pro 14 M4 have a higher battery than the Lenovo ThinkPad X1 Carbon?", "target": "MacBook Pro 14 M4|battery ## Lenovo ThinkPad X1 Carbon|battery"}
+{"task_id": "T208-s01", "question": "Is MacBook Pro 14 M4's battery capacity higher than Lenovo ThinkPad X1 Carbon's?", "target": "MacBook Pro 14 M4|battery ## Lenovo ThinkPad X1 Carbon|battery"}
+{"task_id": "T208-s02", "question": "Does MacBook Pro 14 M4 have a greater battery capacity than Lenovo ThinkPad X1 Carbon?", "target": "MacBook Pro 14 M4|battery ## Lenovo ThinkPad X1 Carbon|battery"}
+{"task_id": "T208-s03", "question": "Is MacBook Pro 14 M4 ahead of Lenovo ThinkPad X1 Carbon on battery capacity?", "target": "MacBook Pro 14 M4|battery ## Lenovo ThinkPad X1 Carbon|battery"}
+{"task_id": "T209", "question": "Compare the MacBook Pro 14 M4 and the Asus Zenbook 14 OLED on battery.", "target": "MacBook Pro 14 M4|battery ## Asus Zenbook 14 OLED|battery"}
+{"task_id": "T209-s01", "question": "Compare MacBook Pro 14 M4 and Asus Zenbook 14 OLED on battery capacity.", "target": "MacBook Pro 14 M4|battery ## Asus Zenbook 14 OLED|battery"}
+{"task_id": "T209-s02", "question": "Which is better in terms of battery capacity: MacBook Pro 14 M4 or Asus Zenbook 14 OLED?", "target": "MacBook Pro 14 M4|battery ## Asus Zenbook 14 OLED|battery"}
+{"task_id": "T209-s03", "question": "How does MacBook Pro 14 M4's battery capacity compare to Asus Zenbook 14 OLED's?", "target": "MacBook Pro 14 M4|battery ## Asus Zenbook 14 OLED|battery"}
+{"task_id": "T213", "question": "Compare the Lenovo ThinkPad X1 Carbon and the Asus Zenbook 14 OLED on battery.", "target": "Lenovo ThinkPad X1 Carbon|battery ## Asus Zenbook 14 OLED|battery"}
+{"task_id": "T213-s01", "question": "Compare Lenovo ThinkPad X1 Carbon and Asus Zenbook 14 OLED on battery capacity.", "target": "Lenovo ThinkPad X1 Carbon|battery ## Asus Zenbook 14 OLED|battery"}
+{"task_id": "T213-s02", "question": "Which is better in terms of battery capacity: Lenovo ThinkPad X1 Carbon or Asus Zenbook 14 OLED?", "target": "Lenovo ThinkPad X1 Carbon|battery ## Asus Zenbook 14 OLED|battery"}
+{"task_id": "T213-s03", "question": "How does Lenovo ThinkPad X1 Carbon's battery capacity compare to Asus Zenbook 14 OLED's?", "target": "Lenovo ThinkPad X1 Carbon|battery ## Asus Zenbook 14 OLED|battery"}
+{"task_id": "T214", "question": "Does the Lenovo ThinkPad X1 Carbon have a higher battery than the Asus Zenbook 14 OLED?", "target": "Lenovo ThinkPad X1 Carbon|battery ## Asus Zenbook 14 OLED|battery"}
+{"task_id": "T214-s01", "question": "Is Lenovo ThinkPad X1 Carbon's battery capacity higher than Asus Zenbook 14 OLED's?", "target": "Lenovo ThinkPad X1 Carbon|battery ## Asus Zenbook 14 OLED|battery"}
+{"task_id": "T214-s02", "question": "Does Lenovo ThinkPad X1 Carbon have a greater battery capacity than Asus Zenbook 14 OLED?", "target": "Lenovo ThinkPad X1 Carbon|battery ## Asus Zenbook 14 OLED|battery"}
+{"task_id": "T214-s03", "question": "Is Lenovo ThinkPad X1 Carbon ahead of Asus Zenbook 14 OLED on battery capacity?", "target": "Lenovo ThinkPad X1 Carbon|battery ## Asus Zenbook 14 OLED|battery"}
+{"task_id": "T215", "question": "Compare the Lenovo ThinkPad X1 Carbon and the HP Spectre x360 14 on battery.", "target": "Lenovo ThinkPad X1 Carbon|battery ## HP Spectre x360 14|battery"}
+{"task_id": "T215-s01", "question": "Compare Lenovo ThinkPad X1 Carbon and HP Spectre x360 14 on battery capacity.", "target": "Lenovo ThinkPad X1 Carbon|battery ## HP Spectre x360 14|battery"}
+{"task_id": "T215-s02", "question": "Which is better in terms of battery capacity: Lenovo ThinkPad X1 Carbon or HP Spectre x360 14?", "target": "Lenovo ThinkPad X1 Carbon|battery ## HP Spectre x360 14|battery"}
+{"task_id": "T215-s03", "question": "How does Lenovo ThinkPad X1 Carbon's battery capacity compare to HP Spectre x360 14's?", "target": "Lenovo ThinkPad X1 Carbon|battery ## HP Spectre x360 14|battery"}
+{"task_id": "T216", "question": "Does the Lenovo ThinkPad X1 Carbon have a higher battery than the HP Spectre x360 14?", "target": "Lenovo ThinkPad X1 Carbon|battery ## HP Spectre x360 14|battery"}
+{"task_id": "T216-s01", "question": "Is Lenovo ThinkPad X1 Carbon's battery capacity higher than HP Spectre x360 14's?", "target": "Lenovo ThinkPad X1 Carbon|battery ## HP Spectre x360 14|battery"}
+{"task_id": "T216-s02", "question": "Does Lenovo ThinkPad X1 Carbon have a greater battery capacity than HP Spectre x360 14?", "target": "Lenovo ThinkPad X1 Carbon|battery ## HP Spectre x360 14|battery"}
+{"task_id": "T216-s03", "question": "Is Lenovo ThinkPad X1 Carbon ahead of HP Spectre x360 14 on battery capacity?", "target": "Lenovo ThinkPad X1 Carbon|battery ## HP Spectre x360 14|battery"}
+{"task_id": "T217", "question": "Compare the Asus Zenbook 14 OLED and the HP Spectre x360 14 on battery.", "target": "Asus Zenbook 14 OLED|battery ## HP Spectre x360 14|battery"}
+{"task_id": "T217-s01", "question": "Compare Asus Zenbook 14 OLED and HP Spectre x360 14 on battery capacity.", "target": "Asus Zenbook 14 OLED|battery ## HP Spectre x360 14|battery"}
+{"task_id": "T217-s02", "question": "Which is better in terms of battery capacity: Asus Zenbook 14 OLED or HP Spectre x360 14?", "target": "Asus Zenbook 14 OLED|battery ## HP Spectre x360 14|battery"}
+{"task_id": "T217-s03", "question": "How does Asus Zenbook 14 OLED's battery capacity compare to HP Spectre x360 14's?", "target": "Asus Zenbook 14 OLED|battery ## HP Spectre x360 14|battery"}
+{"task_id": "T218", "question": "Does the Asus Zenbook 14 OLED have a higher battery than the HP Spectre x360 14?", "target": "Asus Zenbook 14 OLED|battery ## HP Spectre x360 14|battery"}
+{"task_id": "T218-s01", "question": "Is Asus Zenbook 14 OLED's battery capacity higher than HP Spectre x360 14's?", "target": "Asus Zenbook 14 OLED|battery ## HP Spectre x360 14|battery"}
+{"task_id": "T218-s02", "question": "Does Asus Zenbook 14 OLED have a greater battery capacity than HP Spectre x360 14?", "target": "Asus Zenbook 14 OLED|battery ## HP Spectre x360 14|battery"}
+{"task_id": "T218-s03", "question": "Is Asus Zenbook 14 OLED ahead of HP Spectre x360 14 on battery capacity?", "target": "Asus Zenbook 14 OLED|battery ## HP Spectre x360 14|battery"}
+{"task_id": "T219", "question": "Compare the MacBook Pro 14 M4 and the Lenovo ThinkPad X1 Carbon on chip.", "target": "MacBook Pro 14 M4|chip ## Lenovo ThinkPad X1 Carbon|chip"}
+{"task_id": "T219-s01", "question": "Compare MacBook Pro 14 M4 and Lenovo ThinkPad X1 Carbon on chip.", "target": "MacBook Pro 14 M4|chip ## Lenovo ThinkPad X1 Carbon|chip"}
+{"task_id": "T219-s02", "question": "Which is better in terms of chip: MacBook Pro 14 M4 or Lenovo ThinkPad X1 Carbon?", "target": "MacBook Pro 14 M4|chip ## Lenovo ThinkPad X1 Carbon|chip"}
+{"task_id": "T219-s03", "question": "How does MacBook Pro 14 M4's chip compare to Lenovo ThinkPad X1 Carbon's?", "target": "MacBook Pro 14 M4|chip ## Lenovo ThinkPad X1 Carbon|chip"}
+{"task_id": "T223", "question": "Compare the MacBook Pro 14 M4 and the HP Spectre x360 14 on chip.", "target": "MacBook Pro 14 M4|chip ## HP Spectre x360 14|chip"}
+{"task_id": "T223-s01", "question": "Compare MacBook Pro 14 M4 and HP Spectre x360 14 on chip.", "target": "MacBook Pro 14 M4|chip ## HP Spectre x360 14|chip"}
+{"task_id": "T223-s02", "question": "Which is better in terms of chip: MacBook Pro 14 M4 or HP Spectre x360 14?", "target": "MacBook Pro 14 M4|chip ## HP Spectre x360 14|chip"}
+{"task_id": "T223-s03", "question": "How does MacBook Pro 14 M4's chip compare to HP Spectre x360 14's?", "target": "MacBook Pro 14 M4|chip ## HP Spectre x360 14|chip"}
+{"task_id": "T224", "question": "Does the MacBook Pro 14 M4 have a higher chip than the HP Spectre x360 14?", "target": "MacBook Pro 14 M4|chip ## HP Spectre x360 14|chip"}
+{"task_id": "T224-s01", "question": "Is MacBook Pro 14 M4's chip higher than HP Spectre x360 14's?", "target": "MacBook Pro 14 M4|chip ## HP Spectre x360 14|chip"}
+{"task_id": "T224-s02", "question": "Does MacBook Pro 14 M4 have a greater chip than HP Spectre x360 14?", "target": "MacBook Pro 14 M4|chip ## HP Spectre x360 14|chip"}
+{"task_id": "T224-s03", "question": "Is MacBook Pro 14 M4 ahead of HP Spectre x360 14 on chip?", "target": "MacBook Pro 14 M4|chip ## HP Spectre x360 14|chip"}
+{"task_id": "T225", "question": "Compare the Lenovo ThinkPad X1 Carbon and the Asus Zenbook 14 OLED on chip.", "target": "Lenovo ThinkPad X1 Carbon|chip ## Asus Zenbook 14 OLED|chip"}
+{"task_id": "T225-s01", "question": "Compare Lenovo ThinkPad X1 Carbon and Asus Zenbook 14 OLED on chip.", "target": "Lenovo ThinkPad X1 Carbon|chip ## Asus Zenbook 14 OLED|chip"}
+{"task_id": "T225-s02", "question": "Which is better in terms of chip: Lenovo ThinkPad X1 Carbon or Asus Zenbook 14 OLED?", "target": "Lenovo ThinkPad X1 Carbon|chip ## Asus Zenbook 14 OLED|chip"}
+{"task_id": "T225-s03", "question": "How does Lenovo ThinkPad X1 Carbon's chip compare to Asus Zenbook 14 OLED's?", "target": "Lenovo ThinkPad X1 Carbon|chip ## Asus Zenbook 14 OLED|chip"}
+{"task_id": "T226", "question": "Does the Lenovo ThinkPad X1 Carbon have a higher chip than the Asus Zenbook 14 OLED?", "target": "Lenovo ThinkPad X1 Carbon|chip ## Asus Zenbook 14 OLED|chip"}
+{"task_id": "T226-s01", "question": "Is Lenovo ThinkPad X1 Carbon's chip higher than Asus Zenbook 14 OLED's?", "target": "Lenovo ThinkPad X1 Carbon|chip ## Asus Zenbook 14 OLED|chip"}
+{"task_id": "T226-s02", "question": "Does Lenovo ThinkPad X1 Carbon have a greater chip than Asus Zenbook 14 OLED?", "target": "Lenovo ThinkPad X1 Carbon|chip ## Asus Zenbook 14 OLED|chip"}
+{"task_id": "T226-s03", "question": "Is Lenovo ThinkPad X1 Carbon ahead of Asus Zenbook 14 OLED on chip?", "target": "Lenovo ThinkPad X1 Carbon|chip ## Asus Zenbook 14 OLED|chip"}
+{"task_id": "T227", "question": "Compare the Lenovo ThinkPad X1 Carbon and the HP Spectre x360 14 on chip.", "target": "Lenovo ThinkPad X1 Carbon|chip ## HP Spectre x360 14|chip"}
+{"task_id": "T227-s01", "question": "Compare Lenovo ThinkPad X1 Carbon and HP Spectre x360 14 on chip.", "target": "Lenovo ThinkPad X1 Carbon|chip ## HP Spectre x360 14|chip"}
+{"task_id": "T227-s02", "question": "Which is better in terms of chip: Lenovo ThinkPad X1 Carbon or HP Spectre x360 14?", "target": "Lenovo ThinkPad X1 Carbon|chip ## HP Spectre x360 14|chip"}
+{"task_id": "T227-s03", "question": "How does Lenovo ThinkPad X1 Carbon's chip compare to HP Spectre x360 14's?", "target": "Lenovo ThinkPad X1 Carbon|chip ## HP Spectre x360 14|chip"}
+{"task_id": "T228", "question": "Does the Lenovo ThinkPad X1 Carbon have a higher chip than the HP Spectre x360 14?", "target": "Lenovo ThinkPad X1 Carbon|chip ## HP Spectre x360 14|chip"}
+{"task_id": "T228-s01", "question": "Is Lenovo ThinkPad X1 Carbon's chip higher than HP Spectre x360 14's?", "target": "Lenovo ThinkPad X1 Carbon|chip ## HP Spectre x360 14|chip"}
+{"task_id": "T228-s02", "question": "Does Lenovo ThinkPad X1 Carbon have a greater chip than HP Spectre x360 14?", "target": "Lenovo ThinkPad X1 Carbon|chip ## HP Spectre x360 14|chip"}
+{"task_id": "T228-s03", "question": "Is Lenovo ThinkPad X1 Carbon ahead of HP Spectre x360 14 on chip?", "target": "Lenovo ThinkPad X1 Carbon|chip ## HP Spectre x360 14|chip"}
+{"task_id": "T229", "question": "Compare the Asus Zenbook 14 OLED and the HP Spectre x360 14 on chip.", "target": "Asus Zenbook 14 OLED|chip ## HP Spectre x360 14|chip"}
+{"task_id": "T229-s01", "question": "Compare Asus Zenbook 14 OLED and HP Spectre x360 14 on chip.", "target": "Asus Zenbook 14 OLED|chip ## HP Spectre x360 14|chip"}
+{"task_id": "T229-s02", "question": "Which is better in terms of chip: Asus Zenbook 14 OLED or HP Spectre x360 14?", "target": "Asus Zenbook 14 OLED|chip ## HP Spectre x360 14|chip"}
+{"task_id": "T229-s03", "question": "How does Asus Zenbook 14 OLED's chip compare to HP Spectre x360 14's?", "target": "Asus Zenbook 14 OLED|chip ## HP Spectre x360 14|chip"}
+{"task_id": "T233", "question": "What are the price and weight of the Asus Zenbook 14 OLED?", "target": "Asus Zenbook 14 OLED|price ## Asus Zenbook 14 OLED|weight"}
+{"task_id": "T233-s01", "question": "What are Asus Zenbook 14 OLED's price and weight?", "target": "Asus Zenbook 14 OLED|price ## Asus Zenbook 14 OLED|weight"}
+{"task_id": "T233-s02", "question": "Tell me the price and weight for Asus Zenbook 14 OLED.", "target": "Asus Zenbook 14 OLED|price ## Asus Zenbook 14 OLED|weight"}
+{"task_id": "T233-s03", "question": "Provide Asus Zenbook 14 OLED's price along with its weight.", "target": "Asus Zenbook 14 OLED|price ## Asus Zenbook 14 OLED|weight"}
+{"task_id": "T234", "question": "What are the price and weight of the HP Spectre x360 14?", "target": "HP Spectre x360 14|price ## HP Spectre x360 14|weight"}
+{"task_id": "T234-s01", "question": "What are HP Spectre x360 14's price and weight?", "target": "HP Spectre x360 14|price ## HP Spectre x360 14|weight"}
+{"task_id": "T234-s02", "question": "Tell me the price and weight for HP Spectre x360 14.", "target": "HP Spectre x360 14|price ## HP Spectre x360 14|weight"}
+{"task_id": "T234-s03", "question": "Provide HP Spectre x360 14's price along with its weight.", "target": "HP Spectre x360 14|price ## HP Spectre x360 14|weight"}
+{"task_id": "T235", "question": "What is the price of the Samsung Galaxy Buds3 Pro?", "target": "Samsung Galaxy Buds3 Pro|price"}
+{"task_id": "T235-s01", "question": "What is the price of Samsung Galaxy Buds3 Pro?", "target": "Samsung Galaxy Buds3 Pro|price"}
+{"task_id": "T235-s02", "question": "Can you tell me the price of Samsung Galaxy Buds3 Pro?", "target": "Samsung Galaxy Buds3 Pro|price"}
+{"task_id": "T235-s03", "question": "How would you describe the price of Samsung Galaxy Buds3 Pro?", "target": "Samsung Galaxy Buds3 Pro|price"}
+{"task_id": "T236", "question": "What is the battery life of the Samsung Galaxy Buds3 Pro?", "target": "Samsung Galaxy Buds3 Pro|battery_life"}
+{"task_id": "T236-s01", "question": "What is the battery life of Samsung Galaxy Buds3 Pro?", "target": "Samsung Galaxy Buds3 Pro|battery_life"}
+{"task_id": "T236-s02", "question": "Can you tell me the battery life of Samsung Galaxy Buds3 Pro?", "target": "Samsung Galaxy Buds3 Pro|battery_life"}
+{"task_id": "T236-s03", "question": "How would you describe the battery life of Samsung Galaxy Buds3 Pro?", "target": "Samsung Galaxy Buds3 Pro|battery_life"}
+{"task_id": "T237", "question": "What is the price of the Nothing Ear?", "target": "Nothing Ear|price"}
+{"task_id": "T237-s01", "question": "What is the price of Nothing Ear?", "target": "Nothing Ear|price"}
+{"task_id": "T237-s02", "question": "Can you tell me the price of Nothing Ear?", "target": "Nothing Ear|price"}
+{"task_id": "T237-s03", "question": "How would you describe the price of Nothing Ear?", "target": "Nothing Ear|price"}
+{"task_id": "T238", "question": "What is the battery life of the Nothing Ear?", "target": "Nothing Ear|battery_life"}
+{"task_id": "T238-s01", "question": "What is the battery life of Nothing Ear?", "target": "Nothing Ear|battery_life"}
+{"task_id": "T238-s02", "question": "Can you tell me the battery life of Nothing Ear?", "target": "Nothing Ear|battery_life"}
+{"task_id": "T238-s03", "question": "How would you describe the battery life of Nothing Ear?", "target": "Nothing Ear|battery_life"}
+{"task_id": "T239", "question": "Compare the Samsung Galaxy Buds3 Pro and the Nothing Ear on price.", "target": "Samsung Galaxy Buds3 Pro|price ## Nothing Ear|price"}
+{"task_id": "T239-s01", "question": "Compare Samsung Galaxy Buds3 Pro and Nothing Ear on price.", "target": "Samsung Galaxy Buds3 Pro|price ## Nothing Ear|price"}
+{"task_id": "T239-s02", "question": "Which is better in terms of price: Samsung Galaxy Buds3 Pro or Nothing Ear?", "target": "Samsung Galaxy Buds3 Pro|price ## Nothing Ear|price"}
+{"task_id": "T239-s03", "question": "How does Samsung Galaxy Buds3 Pro's price compare to Nothing Ear's?", "target": "Samsung Galaxy Buds3 Pro|price ## Nothing Ear|price"}
+{"task_id": "T243", "question": "Compare the Samsung Galaxy Buds3 Pro and the Nothing Ear on noise cancellation.", "target": "Samsung Galaxy Buds3 Pro|noise_cancellation ## Nothing Ear|noise_cancellation"}
+{"task_id": "T243-s01", "question": "Compare Samsung Galaxy Buds3 Pro and Nothing Ear on noise cancellation.", "target": "Samsung Galaxy Buds3 Pro|noise_cancellation ## Nothing Ear|noise_cancellation"}
+{"task_id": "T243-s02", "question": "Which is better in terms of noise cancellation: Samsung Galaxy Buds3 Pro or Nothing Ear?", "target": "Samsung Galaxy Buds3 Pro|noise_cancellation ## Nothing Ear|noise_cancellation"}
+{"task_id": "T243-s03", "question": "How does Samsung Galaxy Buds3 Pro's noise cancellation compare to Nothing Ear's?", "target": "Samsung Galaxy Buds3 Pro|noise_cancellation ## Nothing Ear|noise_cancellation"}
+{"task_id": "T244", "question": "Compare the Samsung Galaxy Buds3 Pro and the Nothing Ear on codec support.", "target": "Samsung Galaxy Buds3 Pro|codec_support ## Nothing Ear|codec_support"}
+{"task_id": "T244-s01", "question": "Compare Samsung Galaxy Buds3 Pro and Nothing Ear on audio codec support.", "target": "Samsung Galaxy Buds3 Pro|codec_support ## Nothing Ear|codec_support"}
+{"task_id": "T244-s02", "question": "Which is better in terms of audio codec support: Samsung Galaxy Buds3 Pro or Nothing Ear?", "target": "Samsung Galaxy Buds3 Pro|codec_support ## Nothing Ear|codec_support"}
+{"task_id": "T244-s03", "question": "How does Samsung Galaxy Buds3 Pro's audio codec support compare to Nothing Ear's?", "target": "Samsung Galaxy Buds3 Pro|codec_support ## Nothing Ear|codec_support"}
+{"task_id": "T245", "question": "What are the price and battery life of the Samsung Galaxy Buds3 Pro?", "target": "Samsung Galaxy Buds3 Pro|price ## Samsung Galaxy Buds3 Pro|battery_life"}
+{"task_id": "T245-s01", "question": "What are Samsung Galaxy Buds3 Pro's price and battery life?", "target": "Samsung Galaxy Buds3 Pro|price ## Samsung Galaxy Buds3 Pro|battery_life"}
+{"task_id": "T245-s02", "question": "Tell me the price and battery life for Samsung Galaxy Buds3 Pro.", "target": "Samsung Galaxy Buds3 Pro|price ## Samsung Galaxy Buds3 Pro|battery_life"}
+{"task_id": "T245-s03", "question": "Provide Samsung Galaxy Buds3 Pro's price along with its battery life.", "target": "Samsung Galaxy Buds3 Pro|price ## Samsung Galaxy Buds3 Pro|battery_life"}
+{"task_id": "T246", "question": "What are the price and battery life of the Nothing Ear?", "target": "Nothing Ear|price ## Nothing Ear|battery_life"}
+{"task_id": "T246-s01", "question": "What are Nothing Ear's price and battery life?", "target": "Nothing Ear|price ## Nothing Ear|battery_life"}
+{"task_id": "T246-s02", "question": "Tell me the price and battery life for Nothing Ear.", "target": "Nothing Ear|price ## Nothing Ear|battery_life"}
+{"task_id": "T246-s03", "question": "Provide Nothing Ear's price along with its battery life.", "target": "Nothing Ear|price ## Nothing Ear|battery_life"}
+{"task_id": "T247", "question": "What is the price of the Hyundai Ioniq 6?", "target": "Hyundai Ioniq 6|price"}
+{"task_id": "T247-s01", "question": "What is the price of Hyundai Ioniq 6?", "target": "Hyundai Ioniq 6|price"}
+{"task_id": "T247-s02", "question": "Can you tell me the price of Hyundai Ioniq 6?", "target": "Hyundai Ioniq 6|price"}
+{"task_id": "T247-s03", "question": "How would you describe the price of Hyundai Ioniq 6?", "target": "Hyundai Ioniq 6|price"}
+{"task_id": "T248", "question": "What is the range of the Hyundai Ioniq 6?", "target": "Hyundai Ioniq 6|range"}
+{"task_id": "T248-s01", "question": "What is the driving range of Hyundai Ioniq 6?", "target": "Hyundai Ioniq 6|range"}
+{"task_id": "T248-s02", "question": "Can you tell me the driving range of Hyundai Ioniq 6?", "target": "Hyundai Ioniq 6|range"}
+{"task_id": "T248-s03", "question": "How would you describe the driving range of Hyundai Ioniq 6?", "target": "Hyundai Ioniq 6|range"}
+{"task_id": "T249", "question": "What is the price of the Ford Mustang Mach-E?", "target": "Ford Mustang Mach-E|price"}
+{"task_id": "T249-s01", "question": "What is the price of Ford Mustang Mach-E?", "target": "Ford Mustang Mach-E|price"}
+{"task_id": "T249-s02", "question": "Can you tell me the price of Ford Mustang Mach-E?", "target": "Ford Mustang Mach-E|price"}
+{"task_id": "T249-s03", "question": "How would you describe the price of Ford Mustang Mach-E?", "target": "Ford Mustang Mach-E|price"}
+{"task_id": "T253", "question": "Compare the Hyundai Ioniq 6 and the Ford Mustang Mach-E on price.", "target": "Hyundai Ioniq 6|price ## Ford Mustang Mach-E|price"}
+{"task_id": "T253-s01", "question": "Compare Hyundai Ioniq 6 and Ford Mustang Mach-E on price.", "target": "Hyundai Ioniq 6|price ## Ford Mustang Mach-E|price"}
+{"task_id": "T253-s02", "question": "Which is better in terms of price: Hyundai Ioniq 6 or Ford Mustang Mach-E?", "target": "Hyundai Ioniq 6|price ## Ford Mustang Mach-E|price"}
+{"task_id": "T253-s03", "question": "How does Hyundai Ioniq 6's price compare to Ford Mustang Mach-E's?", "target": "Hyundai Ioniq 6|price ## Ford Mustang Mach-E|price"}
+{"task_id": "T254", "question": "Does the Hyundai Ioniq 6 have a higher price than the Ford Mustang Mach-E?", "target": "Hyundai Ioniq 6|price ## Ford Mustang Mach-E|price"}
+{"task_id": "T254-s01", "question": "Is Hyundai Ioniq 6's price higher than Ford Mustang Mach-E's?", "target": "Hyundai Ioniq 6|price ## Ford Mustang Mach-E|price"}
+{"task_id": "T254-s02", "question": "Does Hyundai Ioniq 6 have a greater price than Ford Mustang Mach-E?", "target": "Hyundai Ioniq 6|price ## Ford Mustang Mach-E|price"}
+{"task_id": "T254-s03", "question": "Is Hyundai Ioniq 6 ahead of Ford Mustang Mach-E on price?", "target": "Hyundai Ioniq 6|price ## Ford Mustang Mach-E|price"}
+{"task_id": "T255", "question": "Compare the Hyundai Ioniq 6 and the BYD Seal on price.", "target": "Hyundai Ioniq 6|price ## BYD Seal|price"}
+{"task_id": "T255-s01", "question": "Compare Hyundai Ioniq 6 and BYD Seal on price.", "target": "Hyundai Ioniq 6|price ## BYD Seal|price"}
+{"task_id": "T255-s02", "question": "Which is better in terms of price: Hyundai Ioniq 6 or BYD Seal?", "target": "Hyundai Ioniq 6|price ## BYD Seal|price"}
+{"task_id": "T255-s03", "question": "How does Hyundai Ioniq 6's price compare to BYD Seal's?", "target": "Hyundai Ioniq 6|price ## BYD Seal|price"}
+{"task_id": "T256", "question": "Does the Hyundai Ioniq 6 have a higher price than the BYD Seal?", "target": "Hyundai Ioniq 6|price ## BYD Seal|price"}
+{"task_id": "T256-s01", "question": "Is Hyundai Ioniq 6's price higher than BYD Seal's?", "target": "Hyundai Ioniq 6|price ## BYD Seal|price"}
+{"task_id": "T256-s02", "question": "Does Hyundai Ioniq 6 have a greater price than BYD Seal?", "target": "Hyundai Ioniq 6|price ## BYD Seal|price"}
+{"task_id": "T256-s03", "question": "Is Hyundai Ioniq 6 ahead of BYD Seal on price?", "target": "Hyundai Ioniq 6|price ## BYD Seal|price"}
+{"task_id": "T257", "question": "Compare the Ford Mustang Mach-E and the BYD Seal on price.", "target": "Ford Mustang Mach-E|price ## BYD Seal|price"}
+{"task_id": "T257-s01", "question": "Compare Ford Mustang Mach-E and BYD Seal on price.", "target": "Ford Mustang Mach-E|price ## BYD Seal|price"}
+{"task_id": "T257-s02", "question": "Which is better in terms of price: Ford Mustang Mach-E or BYD Seal?", "target": "Ford Mustang Mach-E|price ## BYD Seal|price"}
+{"task_id": "T257-s03", "question": "How does Ford Mustang Mach-E's price compare to BYD Seal's?", "target": "Ford Mustang Mach-E|price ## BYD Seal|price"}
+{"task_id": "T258", "question": "Does the Ford Mustang Mach-E have a higher price than the BYD Seal?", "target": "Ford Mustang Mach-E|price ## BYD Seal|price"}
+{"task_id": "T258-s01", "question": "Is Ford Mustang Mach-E's price higher than BYD Seal's?", "target": "Ford Mustang Mach-E|price ## BYD Seal|price"}
+{"task_id": "T258-s02", "question": "Does Ford Mustang Mach-E have a greater price than BYD Seal?", "target": "Ford Mustang Mach-E|price ## BYD Seal|price"}
+{"task_id": "T258-s03", "question": "Is Ford Mustang Mach-E ahead of BYD Seal on price?", "target": "Ford Mustang Mach-E|price ## BYD Seal|price"}
+{"task_id": "T259", "question": "Compare the Hyundai Ioniq 6 and the Ford Mustang Mach-E on range.", "target": "Hyundai Ioniq 6|range ## Ford Mustang Mach-E|range"}
+{"task_id": "T259-s01", "question": "Compare Hyundai Ioniq 6 and Ford Mustang Mach-E on driving range.", "target": "Hyundai Ioniq 6|range ## Ford Mustang Mach-E|range"}
+{"task_id": "T259-s02", "question": "Which is better in terms of driving range: Hyundai Ioniq 6 or Ford Mustang Mach-E?", "target": "Hyundai Ioniq 6|range ## Ford Mustang Mach-E|range"}
+{"task_id": "T259-s03", "question": "How does Hyundai Ioniq 6's driving range compare to Ford Mustang Mach-E's?", "target": "Hyundai Ioniq 6|range ## Ford Mustang Mach-E|range"}
+{"task_id": "T263", "question": "Compare the Ford Mustang Mach-E and the BYD Seal on range.", "target": "Ford Mustang Mach-E|range ## BYD Seal|range"}
+{"task_id": "T263-s01", "question": "Compare Ford Mustang Mach-E and BYD Seal on driving range.", "target": "Ford Mustang Mach-E|range ## BYD Seal|range"}
+{"task_id": "T263-s02", "question": "Which is better in terms of driving range: Ford Mustang Mach-E or BYD Seal?", "target": "Ford Mustang Mach-E|range ## BYD Seal|range"}
+{"task_id": "T263-s03", "question": "How does Ford Mustang Mach-E's driving range compare to BYD Seal's?", "target": "Ford Mustang Mach-E|range ## BYD Seal|range"}
+{"task_id": "T264", "question": "Does the Ford Mustang Mach-E have a higher range than the BYD Seal?", "target": "Ford Mustang Mach-E|range ## BYD Seal|range"}
+{"task_id": "T264-s01", "question": "Is Ford Mustang Mach-E's driving range higher than BYD Seal's?", "target": "Ford Mustang Mach-E|range ## BYD Seal|range"}
+{"task_id": "T264-s02", "question": "Does Ford Mustang Mach-E have a greater driving range than BYD Seal?", "target": "Ford Mustang Mach-E|range ## BYD Seal|range"}
+{"task_id": "T264-s03", "question": "Is Ford Mustang Mach-E ahead of BYD Seal on driving range?", "target": "Ford Mustang Mach-E|range ## BYD Seal|range"}
+{"task_id": "T265", "question": "Compare the Hyundai Ioniq 6 and the Ford Mustang Mach-E on battery capacity.", "target": "Hyundai Ioniq 6|battery_capacity ## Ford Mustang Mach-E|battery_capacity"}
+{"task_id": "T265-s01", "question": "Compare Hyundai Ioniq 6 and Ford Mustang Mach-E on battery capacity.", "target": "Hyundai Ioniq 6|battery_capacity ## Ford Mustang Mach-E|battery_capacity"}
+{"task_id": "T265-s02", "question": "Which is better in terms of battery capacity: Hyundai Ioniq 6 or Ford Mustang Mach-E?", "target": "Hyundai Ioniq 6|battery_capacity ## Ford Mustang Mach-E|battery_capacity"}
+{"task_id": "T265-s03", "question": "How does Hyundai Ioniq 6's battery capacity compare to Ford Mustang Mach-E's?", "target": "Hyundai Ioniq 6|battery_capacity ## Ford Mustang Mach-E|battery_capacity"}
+{"task_id": "T266", "question": "Does the Hyundai Ioniq 6 have a higher battery capacity than the Ford Mustang Mach-E?", "target": "Hyundai Ioniq 6|battery_capacity ## Ford Mustang Mach-E|battery_capacity"}
+{"task_id": "T266-s01", "question": "Is Hyundai Ioniq 6's battery capacity higher than Ford Mustang Mach-E's?", "target": "Hyundai Ioniq 6|battery_capacity ## Ford Mustang Mach-E|battery_capacity"}
+{"task_id": "T266-s02", "question": "Does Hyundai Ioniq 6 have a greater battery capacity than Ford Mustang Mach-E?", "target": "Hyundai Ioniq 6|battery_capacity ## Ford Mustang Mach-E|battery_capacity"}
+{"task_id": "T266-s03", "question": "Is Hyundai Ioniq 6 ahead of Ford Mustang Mach-E on battery capacity?", "target": "Hyundai Ioniq 6|battery_capacity ## Ford Mustang Mach-E|battery_capacity"}
+{"task_id": "T267", "question": "Compare the Hyundai Ioniq 6 and the BYD Seal on battery capacity.", "target": "Hyundai Ioniq 6|battery_capacity ## BYD Seal|battery_capacity"}
+{"task_id": "T267-s01", "question": "Compare Hyundai Ioniq 6 and BYD Seal on battery capacity.", "target": "Hyundai Ioniq 6|battery_capacity ## BYD Seal|battery_capacity"}
+{"task_id": "T267-s02", "question": "Which is better in terms of battery capacity: Hyundai Ioniq 6 or BYD Seal?", "target": "Hyundai Ioniq 6|battery_capacity ## BYD Seal|battery_capacity"}
+{"task_id": "T267-s03", "question": "How does Hyundai Ioniq 6's battery capacity compare to BYD Seal's?", "target": "Hyundai Ioniq 6|battery_capacity ## BYD Seal|battery_capacity"}
+{"task_id": "T268", "question": "Does the Hyundai Ioniq 6 have a higher battery capacity than the BYD Seal?", "target": "Hyundai Ioniq 6|battery_capacity ## BYD Seal|battery_capacity"}
+{"task_id": "T268-s01", "question": "Is Hyundai Ioniq 6's battery capacity higher than BYD Seal's?", "target": "Hyundai Ioniq 6|battery_capacity ## BYD Seal|battery_capacity"}
+{"task_id": "T268-s02", "question": "Does Hyundai Ioniq 6 have a greater battery capacity than BYD Seal?", "target": "Hyundai Ioniq 6|battery_capacity ## BYD Seal|battery_capacity"}
+{"task_id": "T268-s03", "question": "Is Hyundai Ioniq 6 ahead of BYD Seal on battery capacity?", "target": "Hyundai Ioniq 6|battery_capacity ## BYD Seal|battery_capacity"}
+{"task_id": "T269", "question": "Compare the Ford Mustang Mach-E and the BYD Seal on battery capacity.", "target": "Ford Mustang Mach-E|battery_capacity ## BYD Seal|battery_capacity"}
+{"task_id": "T269-s01", "question": "Compare Ford Mustang Mach-E and BYD Seal on battery capacity.", "target": "Ford Mustang Mach-E|battery_capacity ## BYD Seal|battery_capacity"}
+{"task_id": "T269-s02", "question": "Which is better in terms of battery capacity: Ford Mustang Mach-E or BYD Seal?", "target": "Ford Mustang Mach-E|battery_capacity ## BYD Seal|battery_capacity"}
+{"task_id": "T269-s03", "question": "How does Ford Mustang Mach-E's battery capacity compare to BYD Seal's?", "target": "Ford Mustang Mach-E|battery_capacity ## BYD Seal|battery_capacity"}
+{"task_id": "T273", "question": "Compare the Ford Mustang Mach-E and the BYD Seal on best for.", "target": "Ford Mustang Mach-E|best_for ## BYD Seal|best_for"}
+{"task_id": "T273-s01", "question": "Compare Ford Mustang Mach-E and BYD Seal on recommended use.", "target": "Ford Mustang Mach-E|best_for ## BYD Seal|best_for"}
+{"task_id": "T273-s02", "question": "Which is better in terms of recommended use: Ford Mustang Mach-E or BYD Seal?", "target": "Ford Mustang Mach-E|best_for ## BYD Seal|best_for"}
+{"task_id": "T273-s03", "question": "How does Ford Mustang Mach-E's recommended use compare to BYD Seal's?", "target": "Ford Mustang Mach-E|best_for ## BYD Seal|best_for"}
+{"task_id": "T274", "question": "What are the price and range of the Hyundai Ioniq 6?", "target": "Hyundai Ioniq 6|price ## Hyundai Ioniq 6|range"}
+{"task_id": "T274-s01", "question": "What are Hyundai Ioniq 6's price and driving range?", "target": "Hyundai Ioniq 6|price ## Hyundai Ioniq 6|range"}
+{"task_id": "T274-s02", "question": "Tell me the price and driving range for Hyundai Ioniq 6.", "target": "Hyundai Ioniq 6|price ## Hyundai Ioniq 6|range"}
+{"task_id": "T274-s03", "question": "Provide Hyundai Ioniq 6's price along with its driving range.", "target": "Hyundai Ioniq 6|price ## Hyundai Ioniq 6|range"}
+{"task_id": "T275", "question": "What are the price and range of the Ford Mustang Mach-E?", "target": "Ford Mustang Mach-E|price ## Ford Mustang Mach-E|range"}
+{"task_id": "T275-s01", "question": "What are Ford Mustang Mach-E's price and driving range?", "target": "Ford Mustang Mach-E|price ## Ford Mustang Mach-E|range"}
+{"task_id": "T275-s02", "question": "Tell me the price and driving range for Ford Mustang Mach-E.", "target": "Ford Mustang Mach-E|price ## Ford Mustang Mach-E|range"}
+{"task_id": "T275-s03", "question": "Provide Ford Mustang Mach-E's price along with its driving range.", "target": "Ford Mustang Mach-E|price ## Ford Mustang Mach-E|range"}
+{"task_id": "T276", "question": "What are the price and range of the BYD Seal?", "target": "BYD Seal|price ## BYD Seal|range"}
+{"task_id": "T276-s01", "question": "What are BYD Seal's price and driving range?", "target": "BYD Seal|price ## BYD Seal|range"}
+{"task_id": "T276-s02", "question": "Tell me the price and driving range for BYD Seal.", "target": "BYD Seal|price ## BYD Seal|range"}
+{"task_id": "T276-s03", "question": "Provide BYD Seal's price along with its driving range.", "target": "BYD Seal|price ## BYD Seal|range"}
+{"task_id": "T277", "question": "What is the price of the Adidas Adizero Boston 12?", "target": "Adidas Adizero Boston 12|price"}
+{"task_id": "T277-s01", "question": "What is the price of Adidas Adizero Boston 12?", "target": "Adidas Adizero Boston 12|price"}
+{"task_id": "T277-s02", "question": "Can you tell me the price of Adidas Adizero Boston 12?", "target": "Adidas Adizero Boston 12|price"}
+{"task_id": "T277-s03", "question": "How would you describe the price of Adidas Adizero Boston 12?", "target": "Adidas Adizero Boston 12|price"}
+{"task_id": "T278", "question": "What is the weight of the Adidas Adizero Boston 12?", "target": "Adidas Adizero Boston 12|weight"}
+{"task_id": "T278-s01", "question": "What is the weight of Adidas Adizero Boston 12?", "target": "Adidas Adizero Boston 12|weight"}
+{"task_id": "T278-s02", "question": "Can you tell me the weight of Adidas Adizero Boston 12?", "target": "Adidas Adizero Boston 12|weight"}
+{"task_id": "T278-s03", "question": "How would you describe the weight of Adidas Adizero Boston 12?", "target": "Adidas Adizero Boston 12|weight"}
+{"task_id": "T279", "question": "What is the price of the Brooks Ghost 16?", "target": "Brooks Ghost 16|price"}
+{"task_id": "T279-s01", "question": "What is the price of Brooks Ghost 16?", "target": "Brooks Ghost 16|price"}
+{"task_id": "T279-s02", "question": "Can you tell me the price of Brooks Ghost 16?", "target": "Brooks Ghost 16|price"}
+{"task_id": "T279-s03", "question": "How would you describe the price of Brooks Ghost 16?", "target": "Brooks Ghost 16|price"}
+{"task_id": "T283", "question": "Compare the Adidas Adizero Boston 12 and the Brooks Ghost 16 on price.", "target": "Adidas Adizero Boston 12|price ## Brooks Ghost 16|price"}
+{"task_id": "T283-s01", "question": "Compare Adidas Adizero Boston 12 and Brooks Ghost 16 on price.", "target": "Adidas Adizero Boston 12|price ## Brooks Ghost 16|price"}
+{"task_id": "T283-s02", "question": "Which is better in terms of price: Adidas Adizero Boston 12 or Brooks Ghost 16?", "target": "Adidas Adizero Boston 12|price ## Brooks Ghost 16|price"}
+{"task_id": "T283-s03", "question": "How does Adidas Adizero Boston 12's price compare to Brooks Ghost 16's?", "target": "Adidas Adizero Boston 12|price ## Brooks Ghost 16|price"}
+{"task_id": "T284", "question": "Does the Adidas Adizero Boston 12 have a higher price than the Brooks Ghost 16?", "target": "Adidas Adizero Boston 12|price ## Brooks Ghost 16|price"}
+{"task_id": "T284-s01", "question": "Is Adidas Adizero Boston 12's price higher than Brooks Ghost 16's?", "target": "Adidas Adizero Boston 12|price ## Brooks Ghost 16|price"}
+{"task_id": "T284-s02", "question": "Does Adidas Adizero Boston 12 have a greater price than Brooks Ghost 16?", "target": "Adidas Adizero Boston 12|price ## Brooks Ghost 16|price"}
+{"task_id": "T284-s03", "question": "Is Adidas Adizero Boston 12 ahead of Brooks Ghost 16 on price?", "target": "Adidas Adizero Boston 12|price ## Brooks Ghost 16|price"}
+{"task_id": "T285", "question": "Compare the Adidas Adizero Boston 12 and the Asics Gel-Nimbus 26 on price.", "target": "Adidas Adizero Boston 12|price ## Asics Gel-Nimbus 26|price"}
+{"task_id": "T285-s01", "question": "Compare Adidas Adizero Boston 12 and Asics Gel-Nimbus 26 on price.", "target": "Adidas Adizero Boston 12|price ## Asics Gel-Nimbus 26|price"}
+{"task_id": "T285-s02", "question": "Which is better in terms of price: Adidas Adizero Boston 12 or Asics Gel-Nimbus 26?", "target": "Adidas Adizero Boston 12|price ## Asics Gel-Nimbus 26|price"}
+{"task_id": "T285-s03", "question": "How does Adidas Adizero Boston 12's price compare to Asics Gel-Nimbus 26's?", "target": "Adidas Adizero Boston 12|price ## Asics Gel-Nimbus 26|price"}
+{"task_id": "T286", "question": "Does the Adidas Adizero Boston 12 have a higher price than the Asics Gel-Nimbus 26?", "target": "Adidas Adizero Boston 12|price ## Asics Gel-Nimbus 26|price"}
+{"task_id": "T286-s01", "question": "Is Adidas Adizero Boston 12's price higher than Asics Gel-Nimbus 26's?", "target": "Adidas Adizero Boston 12|price ## Asics Gel-Nimbus 26|price"}
+{"task_id": "T286-s02", "question": "Does Adidas Adizero Boston 12 have a greater price than Asics Gel-Nimbus 26?", "target": "Adidas Adizero Boston 12|price ## Asics Gel-Nimbus 26|price"}
+{"task_id": "T286-s03", "question": "Is Adidas Adizero Boston 12 ahead of Asics Gel-Nimbus 26 on price?", "target": "Adidas Adizero Boston 12|price ## Asics Gel-Nimbus 26|price"}
+{"task_id": "T287", "question": "Compare the Brooks Ghost 16 and the Asics Gel-Nimbus 26 on price.", "target": "Brooks Ghost 16|price ## Asics Gel-Nimbus 26|price"}
+{"task_id": "T287-s01", "question": "Compare Brooks Ghost 16 and Asics Gel-Nimbus 26 on price.", "target": "Brooks Ghost 16|price ## Asics Gel-Nimbus 26|price"}
+{"task_id": "T287-s02", "question": "Which is better in terms of price: Brooks Ghost 16 or Asics Gel-Nimbus 26?", "target": "Brooks Ghost 16|price ## Asics Gel-Nimbus 26|price"}
+{"task_id": "T287-s03", "question": "How does Brooks Ghost 16's price compare to Asics Gel-Nimbus 26's?", "target": "Brooks Ghost 16|price ## Asics Gel-Nimbus 26|price"}
+{"task_id": "T288", "question": "Does the Brooks Ghost 16 have a higher price than the Asics Gel-Nimbus 26?", "target": "Brooks Ghost 16|price ## Asics Gel-Nimbus 26|price"}
+{"task_id": "T288-s01", "question": "Is Brooks Ghost 16's price higher than Asics Gel-Nimbus 26's?", "target": "Brooks Ghost 16|price ## Asics Gel-Nimbus 26|price"}
+{"task_id": "T288-s02", "question": "Does Brooks Ghost 16 have a greater price than Asics Gel-Nimbus 26?", "target": "Brooks Ghost 16|price ## Asics Gel-Nimbus 26|price"}
+{"task_id": "T288-s03", "question": "Is Brooks Ghost 16 ahead of Asics Gel-Nimbus 26 on price?", "target": "Brooks Ghost 16|price ## Asics Gel-Nimbus 26|price"}
+{"task_id": "T289", "question": "Compare the Adidas Adizero Boston 12 and the Brooks Ghost 16 on weight.", "target": "Adidas Adizero Boston 12|weight ## Brooks Ghost 16|weight"}
+{"task_id": "T289-s01", "question": "Compare Adidas Adizero Boston 12 and Brooks Ghost 16 on weight.", "target": "Adidas Adizero Boston 12|weight ## Brooks Ghost 16|weight"}
+{"task_id": "T289-s02", "question": "Which is better in terms of weight: Adidas Adizero Boston 12 or Brooks Ghost 16?", "target": "Adidas Adizero Boston 12|weight ## Brooks Ghost 16|weight"}
+{"task_id": "T289-s03", "question": "How does Adidas Adizero Boston 12's weight compare to Brooks Ghost 16's?", "target": "Adidas Adizero Boston 12|weight ## Brooks Ghost 16|weight"}
+{"task_id": "T293", "question": "Compare the Brooks Ghost 16 and the Asics Gel-Nimbus 26 on weight.", "target": "Brooks Ghost 16|weight ## Asics Gel-Nimbus 26|weight"}
+{"task_id": "T293-s01", "question": "Compare Brooks Ghost 16 and Asics Gel-Nimbus 26 on weight.", "target": "Brooks Ghost 16|weight ## Asics Gel-Nimbus 26|weight"}
+{"task_id": "T293-s02", "question": "Which is better in terms of weight: Brooks Ghost 16 or Asics Gel-Nimbus 26?", "target": "Brooks Ghost 16|weight ## Asics Gel-Nimbus 26|weight"}
+{"task_id": "T293-s03", "question": "How does Brooks Ghost 16's weight compare to Asics Gel-Nimbus 26's?", "target": "Brooks Ghost 16|weight ## Asics Gel-Nimbus 26|weight"}
+{"task_id": "T294", "question": "Does the Brooks Ghost 16 have a higher weight than the Asics Gel-Nimbus 26?", "target": "Brooks Ghost 16|weight ## Asics Gel-Nimbus 26|weight"}
+{"task_id": "T294-s01", "question": "Is Brooks Ghost 16's weight higher than Asics Gel-Nimbus 26's?", "target": "Brooks Ghost 16|weight ## Asics Gel-Nimbus 26|weight"}
+{"task_id": "T294-s02", "question": "Does Brooks Ghost 16 have a greater weight than Asics Gel-Nimbus 26?", "target": "Brooks Ghost 16|weight ## Asics Gel-Nimbus 26|weight"}
+{"task_id": "T294-s03", "question": "Is Brooks Ghost 16 ahead of Asics Gel-Nimbus 26 on weight?", "target": "Brooks Ghost 16|weight ## Asics Gel-Nimbus 26|weight"}
+{"task_id": "T295", "question": "Compare the Adidas Adizero Boston 12 and the Brooks Ghost 16 on cushioning.", "target": "Adidas Adizero Boston 12|cushioning ## Brooks Ghost 16|cushioning"}
+{"task_id": "T295-s01", "question": "Compare Adidas Adizero Boston 12 and Brooks Ghost 16 on cushioning.", "target": "Adidas Adizero Boston 12|cushioning ## Brooks Ghost 16|cushioning"}
+{"task_id": "T295-s02", "question": "Which is better in terms of cushioning: Adidas Adizero Boston 12 or Brooks Ghost 16?", "target": "Adidas Adizero Boston 12|cushioning ## Brooks Ghost 16|cushioning"}
+{"task_id": "T295-s03", "question": "How does Adidas Adizero Boston 12's cushioning compare to Brooks Ghost 16's?", "target": "Adidas Adizero Boston 12|cushioning ## Brooks Ghost 16|cushioning"}
+{"task_id": "T296", "question": "Compare the Adidas Adizero Boston 12 and the Asics Gel-Nimbus 26 on cushioning.", "target": "Adidas Adizero Boston 12|cushioning ## Asics Gel-Nimbus 26|cushioning"}
+{"task_id": "T296-s01", "question": "Compare Adidas Adizero Boston 12 and Asics Gel-Nimbus 26 on cushioning.", "target": "Adidas Adizero Boston 12|cushioning ## Asics Gel-Nimbus 26|cushioning"}
+{"task_id": "T296-s02", "question": "Which is better in terms of cushioning: Adidas Adizero Boston 12 or Asics Gel-Nimbus 26?", "target": "Adidas Adizero Boston 12|cushioning ## Asics Gel-Nimbus 26|cushioning"}
+{"task_id": "T296-s03", "question": "How does Adidas Adizero Boston 12's cushioning compare to Asics Gel-Nimbus 26's?", "target": "Adidas Adizero Boston 12|cushioning ## Asics Gel-Nimbus 26|cushioning"}
+{"task_id": "T297", "question": "Compare the Brooks Ghost 16 and the Asics Gel-Nimbus 26 on cushioning.", "target": "Brooks Ghost 16|cushioning ## Asics Gel-Nimbus 26|cushioning"}
+{"task_id": "T297-s01", "question": "Compare Brooks Ghost 16 and Asics Gel-Nimbus 26 on cushioning.", "target": "Brooks Ghost 16|cushioning ## Asics Gel-Nimbus 26|cushioning"}
+{"task_id": "T297-s02", "question": "Which is better in terms of cushioning: Brooks Ghost 16 or Asics Gel-Nimbus 26?", "target": "Brooks Ghost 16|cushioning ## Asics Gel-Nimbus 26|cushioning"}
+{"task_id": "T297-s03", "question": "How does Brooks Ghost 16's cushioning compare to Asics Gel-Nimbus 26's?", "target": "Brooks Ghost 16|cushioning ## Asics Gel-Nimbus 26|cushioning"}
+{"task_id": "T298", "question": "Compare the Adidas Adizero Boston 12 and the Brooks Ghost 16 on best for.", "target": "Adidas Adizero Boston 12|best_for ## Brooks Ghost 16|best_for"}
+{"task_id": "T298-s01", "question": "Compare Adidas Adizero Boston 12 and Brooks Ghost 16 on recommended use.", "target": "Adidas Adizero Boston 12|best_for ## Brooks Ghost 16|best_for"}
+{"task_id": "T298-s02", "question": "Which is better in terms of recommended use: Adidas Adizero Boston 12 or Brooks Ghost 16?", "target": "Adidas Adizero Boston 12|best_for ## Brooks Ghost 16|best_for"}
+{"task_id": "T298-s03", "question": "How does Adidas Adizero Boston 12's recommended use compare to Brooks Ghost 16's?", "target": "Adidas Adizero Boston 12|best_for ## Brooks Ghost 16|best_for"}
+{"task_id": "T299", "question": "Compare the Adidas Adizero Boston 12 and the Asics Gel-Nimbus 26 on best for.", "target": "Adidas Adizero Boston 12|best_for ## Asics Gel-Nimbus 26|best_for"}
+{"task_id": "T299-s01", "question": "Compare Adidas Adizero Boston 12 and Asics Gel-Nimbus 26 on recommended use.", "target": "Adidas Adizero Boston 12|best_for ## Asics Gel-Nimbus 26|best_for"}
+{"task_id": "T299-s02", "question": "Which is better in terms of recommended use: Adidas Adizero Boston 12 or Asics Gel-Nimbus 26?", "target": "Adidas Adizero Boston 12|best_for ## Asics Gel-Nimbus 26|best_for"}
+{"task_id": "T299-s03", "question": "How does Adidas Adizero Boston 12's recommended use compare to Asics Gel-Nimbus 26's?", "target": "Adidas Adizero Boston 12|best_for ## Asics Gel-Nimbus 26|best_for"}
+{"task_id": "T303", "question": "What are the price and weight of the Asics Gel-Nimbus 26?", "target": "Asics Gel-Nimbus 26|price ## Asics Gel-Nimbus 26|weight"}
+{"task_id": "T303-s01", "question": "What are Asics Gel-Nimbus 26's price and weight?", "target": "Asics Gel-Nimbus 26|price ## Asics Gel-Nimbus 26|weight"}
+{"task_id": "T303-s02", "question": "Tell me the price and weight for Asics Gel-Nimbus 26.", "target": "Asics Gel-Nimbus 26|price ## Asics Gel-Nimbus 26|weight"}
+{"task_id": "T303-s03", "question": "Provide Asics Gel-Nimbus 26's price along with its weight.", "target": "Asics Gel-Nimbus 26|price ## Asics Gel-Nimbus 26|weight"}
+{"task_id": "T304", "question": "What is the elevation of the Lhotse?", "target": "Lhotse|elevation"}
+{"task_id": "T304-s01", "question": "What is the elevation of Lhotse?", "target": "Lhotse|elevation"}
+{"task_id": "T304-s02", "question": "Can you tell me the elevation of Lhotse?", "target": "Lhotse|elevation"}
+{"task_id": "T304-s03", "question": "How would you describe the elevation of Lhotse?", "target": "Lhotse|elevation"}
+{"task_id": "T305", "question": "What is the first ascent year of the Lhotse?", "target": "Lhotse|first_ascent_year"}
+{"task_id": "T305-s01", "question": "What is the year of first ascent of Lhotse?", "target": "Lhotse|first_ascent_year"}
+{"task_id": "T305-s02", "question": "Can you tell me the year of first ascent of Lhotse?", "target": "Lhotse|first_ascent_year"}
+{"task_id": "T305-s03", "question": "How would you describe the year of first ascent of Lhotse?", "target": "Lhotse|first_ascent_year"}
+{"task_id": "T306", "question": "What is the elevation of the Makalu?", "target": "Makalu|elevation"}
+{"task_id": "T306-s01", "question": "What is the elevation of Makalu?", "target": "Makalu|elevation"}
+{"task_id": "T306-s02", "question": "Can you tell me the elevation of Makalu?", "target": "Makalu|elevation"}
+{"task_id": "T306-s03", "question": "How would you describe the elevation of Makalu?", "target": "Makalu|elevation"}
+{"task_id": "T307", "question": "What is the first ascent year of the Makalu?", "target": "Makalu|first_ascent_year"}
+{"task_id": "T307-s01", "question": "What is the year of first ascent of Makalu?", "target": "Makalu|first_ascent_year"}
+{"task_id": "T307-s02", "question": "Can you tell me the year of first ascent of Makalu?", "target": "Makalu|first_ascent_year"}
+{"task_id": "T307-s03", "question": "How would you describe the year of first ascent of Makalu?", "target": "Makalu|first_ascent_year"}
+{"task_id": "T308", "question": "Compare the Lhotse and the Makalu on elevation.", "target": "Lhotse|elevation ## Makalu|elevation"}
+{"task_id": "T308-s01", "question": "Compare Lhotse and Makalu on elevation.", "target": "Lhotse|elevation ## Makalu|elevation"}
+{"task_id": "T308-s02", "question": "Which is better in terms of elevation: Lhotse or Makalu?", "target": "Lhotse|elevation ## Makalu|elevation"}
+{"task_id": "T308-s03", "question": "How does Lhotse's elevation compare to Makalu's?", "target": "Lhotse|elevation ## Makalu|elevation"}
+{"task_id": "T309", "question": "Does the Lhotse have a higher elevation than the Makalu?", "target": "Lhotse|elevation ## Makalu|elevation"}
+{"task_id": "T309-s01", "question": "Is Lhotse's elevation higher than Makalu's?", "target": "Lhotse|elevation ## Makalu|elevation"}
+{"task_id": "T309-s02", "question": "Does Lhotse have a greater elevation than Makalu?", "target": "Lhotse|elevation ## Makalu|elevation"}
+{"task_id": "T309-s03", "question": "Is Lhotse ahead of Makalu on elevation?", "target": "Lhotse|elevation ## Makalu|elevation"}
+{"task_id": "T313", "question": "What are the elevation and first ascent year of the Lhotse?", "target": "Lhotse|elevation ## Lhotse|first_ascent_year"}
+{"task_id": "T313-s01", "question": "What are Lhotse's elevation and year of first ascent?", "target": "Lhotse|elevation ## Lhotse|first_ascent_year"}
+{"task_id": "T313-s02", "question": "Tell me the elevation and year of first ascent for Lhotse.", "target": "Lhotse|elevation ## Lhotse|first_ascent_year"}
+{"task_id": "T313-s03", "question": "Provide Lhotse's elevation along with its year of first ascent.", "target": "Lhotse|elevation ## Lhotse|first_ascent_year"}
+{"task_id": "T314", "question": "What are the elevation and first ascent year of the Makalu?", "target": "Makalu|elevation ## Makalu|first_ascent_year"}
+{"task_id": "T314-s01", "question": "What are Makalu's elevation and year of first ascent?", "target": "Makalu|elevation ## Makalu|first_ascent_year"}
+{"task_id": "T314-s02", "question": "Tell me the elevation and year of first ascent for Makalu.", "target": "Makalu|elevation ## Makalu|first_ascent_year"}
+{"task_id": "T314-s03", "question": "Provide Makalu's elevation along with its year of first ascent.", "target": "Makalu|elevation ## Makalu|first_ascent_year"}
+{"task_id": "T315", "question": "What is the height of the Shanghai Tower?", "target": "Shanghai Tower|height"}
+{"task_id": "T315-s01", "question": "What is the height of Shanghai Tower?", "target": "Shanghai Tower|height"}
+{"task_id": "T315-s02", "question": "Can you tell me the height of Shanghai Tower?", "target": "Shanghai Tower|height"}
+{"task_id": "T315-s03", "question": "How would you describe the height of Shanghai Tower?", "target": "Shanghai Tower|height"}
+{"task_id": "T316", "question": "What is the floors of the Shanghai Tower?", "target": "Shanghai Tower|floors"}
+{"task_id": "T316-s01", "question": "What is the floor count of Shanghai Tower?", "target": "Shanghai Tower|floors"}
+{"task_id": "T316-s02", "question": "Can you tell me the floor count of Shanghai Tower?", "target": "Shanghai Tower|floors"}
+{"task_id": "T316-s03", "question": "How would you describe the floor count of Shanghai Tower?", "target": "Shanghai Tower|floors"}
+{"task_id": "T317", "question": "What is the height of the Petronas Towers?", "target": "Petronas Towers|height"}
+{"task_id": "T317-s01", "question": "What is the height of Petronas Towers?", "target": "Petronas Towers|height"}
+{"task_id": "T317-s02", "question": "Can you tell me the height of Petronas Towers?", "target": "Petronas Towers|height"}
+{"task_id": "T317-s03", "question": "How would you describe the height of Petronas Towers?", "target": "Petronas Towers|height"}
+{"task_id": "T318", "question": "What is the floors of the Petronas Towers?", "target": "Petronas Towers|floors"}
+{"task_id": "T318-s01", "question": "What is the floor count of Petronas Towers?", "target": "Petronas Towers|floors"}
+{"task_id": "T318-s02", "question": "Can you tell me the floor count of Petronas Towers?", "target": "Petronas Towers|floors"}
+{"task_id": "T318-s03", "question": "How would you describe the floor count of Petronas Towers?", "target": "Petronas Towers|floors"}
+{"task_id": "T319", "question": "What is the height of the One World Trade Center?", "target": "One World Trade Center|height"}
+{"task_id": "T319-s01", "question": "What is the height of One World Trade Center?", "target": "One World Trade Center|height"}
+{"task_id": "T319-s02", "question": "Can you tell me the height of One World Trade Center?", "target": "One World Trade Center|height"}
+{"task_id": "T319-s03", "question": "How would you describe the height of One World Trade Center?", "target": "One World Trade Center|height"}
+{"task_id": "T323", "question": "Compare the Shanghai Tower and the One World Trade Center on height.", "target": "Shanghai Tower|height ## One World Trade Center|height"}
+{"task_id": "T323-s01", "question": "Compare Shanghai Tower and One World Trade Center on height.", "target": "Shanghai Tower|height ## One World Trade Center|height"}
+{"task_id": "T323-s02", "question": "Which is better in terms of height: Shanghai Tower or One World Trade Center?", "target": "Shanghai Tower|height ## One World Trade Center|height"}
+{"task_id": "T323-s03", "question": "How does Shanghai Tower's height compare to One World Trade Center's?", "target": "Shanghai Tower|height ## One World Trade Center|height"}
+{"task_id": "T324", "question": "Does the Shanghai Tower have a higher height than the One World Trade Center?", "target": "Shanghai Tower|height ## One World Trade Center|height"}
+{"task_id": "T324-s01", "question": "Is Shanghai Tower's height higher than One World Trade Center's?", "target": "Shanghai Tower|height ## One World Trade Center|height"}
+{"task_id": "T324-s02", "question": "Does Shanghai Tower have a greater height than One World Trade Center?", "target": "Shanghai Tower|height ## One World Trade Center|height"}
+{"task_id": "T324-s03", "question": "Is Shanghai Tower ahead of One World Trade Center on height?", "target": "Shanghai Tower|height ## One World Trade Center|height"}
+{"task_id": "T325", "question": "Compare the Petronas Towers and the One World Trade Center on height.", "target": "Petronas Towers|height ## One World Trade Center|height"}
+{"task_id": "T325-s01", "question": "Compare Petronas Towers and One World Trade Center on height.", "target": "Petronas Towers|height ## One World Trade Center|height"}
+{"task_id": "T325-s02", "question": "Which is better in terms of height: Petronas Towers or One World Trade Center?", "target": "Petronas Towers|height ## One World Trade Center|height"}
+{"task_id": "T325-s03", "question": "How does Petronas Towers's height compare to One World Trade Center's?", "target": "Petronas Towers|height ## One World Trade Center|height"}
+{"task_id": "T326", "question": "Does the Petronas Towers have a higher height than the One World Trade Center?", "target": "Petronas Towers|height ## One World Trade Center|height"}
+{"task_id": "T326-s01", "question": "Is Petronas Towers's height higher than One World Trade Center's?", "target": "Petronas Towers|height ## One World Trade Center|height"}
+{"task_id": "T326-s02", "question": "Does Petronas Towers have a greater height than One World Trade Center?", "target": "Petronas Towers|height ## One World Trade Center|height"}
+{"task_id": "T326-s03", "question": "Is Petronas Towers ahead of One World Trade Center on height?", "target": "Petronas Towers|height ## One World Trade Center|height"}
+{"task_id": "T327", "question": "Compare the Shanghai Tower and the Petronas Towers on floors.", "target": "Shanghai Tower|floors ## Petronas Towers|floors"}
+{"task_id": "T327-s01", "question": "Compare Shanghai Tower and Petronas Towers on floor count.", "target": "Shanghai Tower|floors ## Petronas Towers|floors"}
+{"task_id": "T327-s02", "question": "Which is better in terms of floor count: Shanghai Tower or Petronas Towers?", "target": "Shanghai Tower|floors ## Petronas Towers|floors"}
+{"task_id": "T327-s03", "question": "How does Shanghai Tower's floor count compare to Petronas Towers's?", "target": "Shanghai Tower|floors ## Petronas Towers|floors"}
+{"task_id": "T328", "question": "Does the Shanghai Tower have a higher floors than the Petronas Towers?", "target": "Shanghai Tower|floors ## Petronas Towers|floors"}
+{"task_id": "T328-s01", "question": "Is Shanghai Tower's floor count higher than Petronas Towers's?", "target": "Shanghai Tower|floors ## Petronas Towers|floors"}
+{"task_id": "T328-s02", "question": "Does Shanghai Tower have a greater floor count than Petronas Towers?", "target": "Shanghai Tower|floors ## Petronas Towers|floors"}
+{"task_id": "T328-s03", "question": "Is Shanghai Tower ahead of Petronas Towers on floor count?", "target": "Shanghai Tower|floors ## Petronas Towers|floors"}
+{"task_id": "T329", "question": "Compare the Shanghai Tower and the One World Trade Center on floors.", "target": "Shanghai Tower|floors ## One World Trade Center|floors"}
+{"task_id": "T329-s01", "question": "Compare Shanghai Tower and One World Trade Center on floor count.", "target": "Shanghai Tower|floors ## One World Trade Center|floors"}
+{"task_id": "T329-s02", "question": "Which is better in terms of floor count: Shanghai Tower or One World Trade Center?", "target": "Shanghai Tower|floors ## One World Trade Center|floors"}
+{"task_id": "T329-s03", "question": "How does Shanghai Tower's floor count compare to One World Trade Center's?", "target": "Shanghai Tower|floors ## One World Trade Center|floors"}
+{"task_id": "T333", "question": "Compare the Shanghai Tower and the Petronas Towers on completion year.", "target": "Shanghai Tower|completion_year ## Petronas Towers|completion_year"}
+{"task_id": "T333-s01", "question": "Compare Shanghai Tower and Petronas Towers on completion year.", "target": "Shanghai Tower|completion_year ## Petronas Towers|completion_year"}
+{"task_id": "T333-s02", "question": "Which is better in terms of completion year: Shanghai Tower or Petronas Towers?", "target": "Shanghai Tower|completion_year ## Petronas Towers|completion_year"}
+{"task_id": "T333-s03", "question": "How does Shanghai Tower's completion year compare to Petronas Towers's?", "target": "Shanghai Tower|completion_year ## Petronas Towers|completion_year"}
+{"task_id": "T334", "question": "Does the Shanghai Tower have a higher completion year than the Petronas Towers?", "target": "Shanghai Tower|completion_year ## Petronas Towers|completion_year"}
+{"task_id": "T334-s01", "question": "Is Shanghai Tower's completion year higher than Petronas Towers's?", "target": "Shanghai Tower|completion_year ## Petronas Towers|completion_year"}
+{"task_id": "T334-s02", "question": "Does Shanghai Tower have a greater completion year than Petronas Towers?", "target": "Shanghai Tower|completion_year ## Petronas Towers|completion_year"}
+{"task_id": "T334-s03", "question": "Is Shanghai Tower ahead of Petronas Towers on completion year?", "target": "Shanghai Tower|completion_year ## Petronas Towers|completion_year"}
+{"task_id": "T335", "question": "Compare the Shanghai Tower and the One World Trade Center on completion year.", "target": "Shanghai Tower|completion_year ## One World Trade Center|completion_year"}
+{"task_id": "T335-s01", "question": "Compare Shanghai Tower and One World Trade Center on completion year.", "target": "Shanghai Tower|completion_year ## One World Trade Center|completion_year"}
+{"task_id": "T335-s02", "question": "Which is better in terms of completion year: Shanghai Tower or One World Trade Center?", "target": "Shanghai Tower|completion_year ## One World Trade Center|completion_year"}
+{"task_id": "T335-s03", "question": "How does Shanghai Tower's completion year compare to One World Trade Center's?", "target": "Shanghai Tower|completion_year ## One World Trade Center|completion_year"}
+{"task_id": "T336", "question": "Does the Shanghai Tower have a higher completion year than the One World Trade Center?", "target": "Shanghai Tower|completion_year ## One World Trade Center|completion_year"}
+{"task_id": "T336-s01", "question": "Is Shanghai Tower's completion year higher than One World Trade Center's?", "target": "Shanghai Tower|completion_year ## One World Trade Center|completion_year"}
+{"task_id": "T336-s02", "question": "Does Shanghai Tower have a greater completion year than One World Trade Center?", "target": "Shanghai Tower|completion_year ## One World Trade Center|completion_year"}
+{"task_id": "T336-s03", "question": "Is Shanghai Tower ahead of One World Trade Center on completion year?", "target": "Shanghai Tower|completion_year ## One World Trade Center|completion_year"}
+{"task_id": "T337", "question": "Compare the Petronas Towers and the One World Trade Center on completion year.", "target": "Petronas Towers|completion_year ## One World Trade Center|completion_year"}
+{"task_id": "T337-s01", "question": "Compare Petronas Towers and One World Trade Center on completion year.", "target": "Petronas Towers|completion_year ## One World Trade Center|completion_year"}
+{"task_id": "T337-s02", "question": "Which is better in terms of completion year: Petronas Towers or One World Trade Center?", "target": "Petronas Towers|completion_year ## One World Trade Center|completion_year"}
+{"task_id": "T337-s03", "question": "How does Petronas Towers's completion year compare to One World Trade Center's?", "target": "Petronas Towers|completion_year ## One World Trade Center|completion_year"}
+{"task_id": "T338", "question": "Does the Petronas Towers have a higher completion year than the One World Trade Center?", "target": "Petronas Towers|completion_year ## One World Trade Center|completion_year"}
+{"task_id": "T338-s01", "question": "Is Petronas Towers's completion year higher than One World Trade Center's?", "target": "Petronas Towers|completion_year ## One World Trade Center|completion_year"}
+{"task_id": "T338-s02", "question": "Does Petronas Towers have a greater completion year than One World Trade Center?", "target": "Petronas Towers|completion_year ## One World Trade Center|completion_year"}
+{"task_id": "T338-s03", "question": "Is Petronas Towers ahead of One World Trade Center on completion year?", "target": "Petronas Towers|completion_year ## One World Trade Center|completion_year"}
+{"task_id": "T339", "question": "Compare the Shanghai Tower and the Petronas Towers on architect.", "target": "Shanghai Tower|architect ## Petronas Towers|architect"}
+{"task_id": "T339-s01", "question": "Compare Shanghai Tower and Petronas Towers on architect.", "target": "Shanghai Tower|architect ## Petronas Towers|architect"}
+{"task_id": "T339-s02", "question": "Which is better in terms of architect: Shanghai Tower or Petronas Towers?", "target": "Shanghai Tower|architect ## Petronas Towers|architect"}
+{"task_id": "T339-s03", "question": "How does Shanghai Tower's architect compare to Petronas Towers's?", "target": "Shanghai Tower|architect ## Petronas Towers|architect"}
+{"task_id": "T343", "question": "What are the height and floors of the Petronas Towers?", "target": "Petronas Towers|height ## Petronas Towers|floors"}
+{"task_id": "T343-s01", "question": "What are Petronas Towers's height and floor count?", "target": "Petronas Towers|height ## Petronas Towers|floors"}
+{"task_id": "T343-s02", "question": "Tell me the height and floor count for Petronas Towers.", "target": "Petronas Towers|height ## Petronas Towers|floors"}
+{"task_id": "T343-s03", "question": "Provide Petronas Towers's height along with its floor count.", "target": "Petronas Towers|height ## Petronas Towers|floors"}
+{"task_id": "T344", "question": "What are the height and floors of the One World Trade Center?", "target": "One World Trade Center|height ## One World Trade Center|floors"}
+{"task_id": "T344-s01", "question": "What are One World Trade Center's height and floor count?", "target": "One World Trade Center|height ## One World Trade Center|floors"}
+{"task_id": "T344-s02", "question": "Tell me the height and floor count for One World Trade Center.", "target": "One World Trade Center|height ## One World Trade Center|floors"}
+{"task_id": "T344-s03", "question": "Provide One World Trade Center's height along with its floor count.", "target": "One World Trade Center|height ## One World Trade Center|floors"}

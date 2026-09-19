@@ -1,0 +1,211 @@
+[
+  {
+    "id": "T1",
+    "category": "simple_fact",
+    "difficulty": "easy",
+    "url": "https://en.wikipedia.org/wiki/Louvre",
+    "page_file": "pages/page1.html",
+    "question": "When was the Louvre museum established?",
+    "ground_truth": "1793"
+  },
+  {
+    "id": "T2",
+    "category": "simple_fact",
+    "difficulty": "easy",
+    "url": "https://en.wikipedia.org/wiki/Eiffel_Tower",
+    "page_file": "pages/page2.html",
+    "question": "How tall is the Eiffel Tower?",
+    "ground_truth": "330"
+  },
+  {
+    "id": "T3",
+    "category": "simple_fact",
+    "difficulty": "easy",
+    "url": "https://en.wikipedia.org/wiki/Great_Wall_of_China",
+    "page_file": "pages/page3.html",
+    "question": "How long is the Great Wall of China?",
+    "ground_truth": "21,196"
+  },
+  {
+    "id": "T4",
+    "category": "specific_lookup",
+    "difficulty": "easy",
+    "url": "https://en.wikipedia.org/wiki/Mona_Lisa",
+    "page_file": "pages/page4.html",
+    "question": "Who painted the Mona Lisa?",
+    "ground_truth": "Leonardo da Vinci"
+  },
+  {
+    "id": "T5",
+    "category": "specific_lookup",
+    "difficulty": "easy",
+    "url": "https://en.wikipedia.org/wiki/Statue_of_Liberty",
+    "page_file": "pages/page5.html",
+    "question": "Who designed the Statue of Liberty?",
+    "ground_truth": "Fr\u00e9d\u00e9ric Auguste Bartholdi"
+  },
+  {
+    "id": "T6",
+    "category": "list_extraction",
+    "difficulty": "hard",
+    "url": "https://en.wikipedia.org/wiki/Seven_Wonders_of_the_Ancient_World",
+    "page_file": "pages/page6.html",
+    "question": "What are the Seven Wonders of the Ancient World?",
+    "ground_truth": {
+      "required_facts": [
+        "Great Pyramid of Giza",
+        "Hanging Gardens of Babylon",
+        "Temple of Artemis",
+        "Statue of Zeus",
+        "Mausoleum at Halicarnassus",
+        "Colossus of Rhodes",
+        "Lighthouse of Alexandria"
+      ],
+      "match_threshold": 0.7
+    }
+  },
+  {
+    "id": "T7",
+    "category": "comparison",
+    "difficulty": "hard",
+    "url": "https://en.wikipedia.org/wiki/Burj_Khalifa",
+    "page_file": "pages/page7.html",
+    "question": "How does the height of the Burj Khalifa compare to the Eiffel Tower?",
+    "ground_truth": {
+      "required_facts": [
+        "828",
+        "330"
+      ],
+      "match_threshold": 1.0
+    }
+  },
+  {
+    "id": "T8",
+    "category": "simple_fact",
+    "difficulty": "easy",
+    "url": "https://en.wikipedia.org/wiki/Taj_Mahal",
+    "page_file": "pages/page8.html",
+    "question": "When was the Taj Mahal built?",
+    "ground_truth": {
+      "required_facts": [
+        "1632",
+        "1653"
+      ],
+      "match_threshold": 0.5
+    }
+  },
+  {
+    "id": "T9",
+    "category": "simple_fact",
+    "difficulty": "easy",
+    "url": "https://en.wikipedia.org/wiki/Colosseum",
+    "page_file": "pages/page9.html",
+    "question": "When was the Colosseum completed?",
+    "ground_truth": "AD 80"
+  },
+  {
+    "id": "T10",
+    "category": "specific_lookup",
+    "difficulty": "easy",
+    "url": "https://en.wikipedia.org/wiki/Isaac_Newton",
+    "page_file": "pages/page10.html",
+    "question": "When was Isaac Newton born?",
+    "ground_truth": {
+      "required_facts": [
+        "1642",
+        "1643"
+      ],
+      "match_threshold": 0.5
+    }
+  },
+  {
+    "id": "T11",
+    "category": "specific_lookup",
+    "difficulty": "medium",
+    "url": "https://en.wikipedia.org/wiki/Marie_Curie",
+    "page_file": "pages/page11.html",
+    "question": "What field was Marie Curie's 1911 Nobel Prize in?",
+    "ground_truth": "Chemistry"
+  },
+  {
+    "id": "T12",
+    "category": "process_howto",
+    "difficulty": "medium",
+    "url": "https://en.wikipedia.org/wiki/Photosynthesis",
+    "page_file": "pages/page12.html",
+    "question": "What gas do plants release during photosynthesis?",
+    "ground_truth": "oxygen"
+  },
+  {
+    "id": "T13",
+    "category": "process_howto",
+    "difficulty": "medium",
+    "url": "https://en.wikipedia.org/wiki/Water_cycle",
+    "page_file": "pages/page13.html",
+    "question": "What do scientists call the process where water turns into water vapor?",
+    "ground_truth": "evaporation"
+  },
+  {
+    "id": "T14",
+    "category": "general_information",
+    "difficulty": "easy",
+    "url": "https://en.wikipedia.org/wiki/2024_Summer_Olympics",
+    "page_file": "pages/page14.html",
+    "question": "Where were the 2024 Summer Olympics held?",
+    "ground_truth": "Paris"
+  },
+  {
+    "id": "T15",
+    "category": "general_information",
+    "difficulty": "easy",
+    "url": "https://en.wikipedia.org/wiki/Artificial_intelligence",
+    "page_file": "pages/page15.html",
+    "question": "What does the abbreviation AI stand for?",
+    "ground_truth": "Artificial intelligence"
+  },
+  {
+    "id": "T16",
+    "category": "heavy_page",
+    "difficulty": "medium",
+    "url": "https://en.wikipedia.org/wiki/World_War_II",
+    "page_file": "pages/page16.html",
+    "question": "When did World War II end?",
+    "ground_truth": "1945"
+  },
+  {
+    "id": "T17",
+    "category": "heavy_page",
+    "difficulty": "medium",
+    "url": "https://en.wikipedia.org/wiki/India",
+    "page_file": "pages/page17.html",
+    "question": "What is the capital of India?",
+    "ground_truth": "New Delhi"
+  },
+  {
+    "id": "T18",
+    "category": "small_page",
+    "difficulty": "easy",
+    "url": "https://en.wikipedia.org/wiki/Jaipur",
+    "page_file": "pages/page18.html",
+    "question": "In which state of India is Jaipur located?",
+    "ground_truth": "Rajasthan"
+  },
+  {
+    "id": "T19",
+    "category": "small_page",
+    "difficulty": "easy",
+    "url": "https://en.wikipedia.org/wiki/5G",
+    "page_file": "pages/page19.html",
+    "question": "What does 5G stand for?",
+    "ground_truth": "fifth-generation"
+  },
+  {
+    "id": "T20",
+    "category": "ambiguous_subtopic",
+    "difficulty": "hard",
+    "url": "https://en.wikipedia.org/wiki/Louvre",
+    "page_file": "pages/page1.html",
+    "question": "When was the Louvre-Lens branch opened?",
+    "ground_truth": "2012"
+  }
+]

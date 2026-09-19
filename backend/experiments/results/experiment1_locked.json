@@ -1,0 +1,758 @@
+[
+  {
+    "policy": "always_retrieve",
+    "task_id": "easy-gen-7",
+    "difficulty": "easy",
+    "final_bytes_used": 3759,
+    "stopped_at_step": 3,
+    "ground_truth_correct_at_step": 2,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "always_retrieve",
+    "task_id": "easy-gen-8",
+    "difficulty": "easy",
+    "final_bytes_used": 3948,
+    "stopped_at_step": 3,
+    "ground_truth_correct_at_step": 2,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "always_retrieve",
+    "task_id": "easy-gen-0",
+    "difficulty": "easy",
+    "final_bytes_used": 3338,
+    "stopped_at_step": 3,
+    "ground_truth_correct_at_step": 2,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "always_retrieve",
+    "task_id": "easy-gen-3",
+    "difficulty": "easy",
+    "final_bytes_used": 3535,
+    "stopped_at_step": 3,
+    "ground_truth_correct_at_step": 2,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "always_retrieve",
+    "task_id": "medium-gen-13",
+    "difficulty": "medium",
+    "final_bytes_used": 9883,
+    "stopped_at_step": 5,
+    "ground_truth_correct_at_step": 4,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "always_retrieve",
+    "task_id": "medium-gen-19",
+    "difficulty": "medium",
+    "final_bytes_used": 9064,
+    "stopped_at_step": 5,
+    "ground_truth_correct_at_step": 4,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "always_retrieve",
+    "task_id": "medium-gen-6",
+    "difficulty": "medium",
+    "final_bytes_used": 9961,
+    "stopped_at_step": 5,
+    "ground_truth_correct_at_step": 4,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "always_retrieve",
+    "task_id": "medium-gen-17",
+    "difficulty": "medium",
+    "final_bytes_used": 9872,
+    "stopped_at_step": 5,
+    "ground_truth_correct_at_step": 4,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "always_retrieve",
+    "task_id": "hard-gen-8",
+    "difficulty": "hard",
+    "final_bytes_used": 16697,
+    "stopped_at_step": 7,
+    "ground_truth_correct_at_step": 6,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "always_retrieve",
+    "task_id": "hard-gen-18",
+    "difficulty": "hard",
+    "final_bytes_used": 16151,
+    "stopped_at_step": 7,
+    "ground_truth_correct_at_step": 6,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "always_retrieve",
+    "task_id": "hard-gen-11",
+    "difficulty": "hard",
+    "final_bytes_used": 17189,
+    "stopped_at_step": 7,
+    "ground_truth_correct_at_step": 6,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "always_retrieve",
+    "task_id": "hard-gen-3",
+    "difficulty": "hard",
+    "final_bytes_used": 16808,
+    "stopped_at_step": 7,
+    "ground_truth_correct_at_step": 6,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_budget_10kb",
+    "task_id": "easy-gen-7",
+    "difficulty": "easy",
+    "final_bytes_used": 3759,
+    "stopped_at_step": 3,
+    "ground_truth_correct_at_step": 2,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_budget_10kb",
+    "task_id": "easy-gen-8",
+    "difficulty": "easy",
+    "final_bytes_used": 3948,
+    "stopped_at_step": 3,
+    "ground_truth_correct_at_step": 2,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_budget_10kb",
+    "task_id": "easy-gen-0",
+    "difficulty": "easy",
+    "final_bytes_used": 3338,
+    "stopped_at_step": 3,
+    "ground_truth_correct_at_step": 2,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_budget_10kb",
+    "task_id": "easy-gen-3",
+    "difficulty": "easy",
+    "final_bytes_used": 3535,
+    "stopped_at_step": 3,
+    "ground_truth_correct_at_step": 2,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_budget_10kb",
+    "task_id": "medium-gen-13",
+    "difficulty": "medium",
+    "final_bytes_used": 9883,
+    "stopped_at_step": 5,
+    "ground_truth_correct_at_step": 4,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_budget_10kb",
+    "task_id": "medium-gen-19",
+    "difficulty": "medium",
+    "final_bytes_used": 9064,
+    "stopped_at_step": 5,
+    "ground_truth_correct_at_step": 4,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_budget_10kb",
+    "task_id": "medium-gen-6",
+    "difficulty": "medium",
+    "final_bytes_used": 9961,
+    "stopped_at_step": 5,
+    "ground_truth_correct_at_step": 4,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_budget_10kb",
+    "task_id": "medium-gen-17",
+    "difficulty": "medium",
+    "final_bytes_used": 9872,
+    "stopped_at_step": 5,
+    "ground_truth_correct_at_step": 4,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_budget_10kb",
+    "task_id": "hard-gen-8",
+    "difficulty": "hard",
+    "final_bytes_used": 12078,
+    "stopped_at_step": 5,
+    "ground_truth_correct_at_step": 6,
+    "reached_sufficient_evidence": false
+  },
+  {
+    "policy": "fixed_budget_10kb",
+    "task_id": "hard-gen-18",
+    "difficulty": "hard",
+    "final_bytes_used": 11610,
+    "stopped_at_step": 5,
+    "ground_truth_correct_at_step": 6,
+    "reached_sufficient_evidence": false
+  },
+  {
+    "policy": "fixed_budget_10kb",
+    "task_id": "hard-gen-11",
+    "difficulty": "hard",
+    "final_bytes_used": 10228,
+    "stopped_at_step": 4,
+    "ground_truth_correct_at_step": 6,
+    "reached_sufficient_evidence": false
+  },
+  {
+    "policy": "fixed_budget_10kb",
+    "task_id": "hard-gen-3",
+    "difficulty": "hard",
+    "final_bytes_used": 11796,
+    "stopped_at_step": 5,
+    "ground_truth_correct_at_step": 6,
+    "reached_sufficient_evidence": false
+  },
+  {
+    "policy": "fixed_budget_25kb",
+    "task_id": "easy-gen-7",
+    "difficulty": "easy",
+    "final_bytes_used": 3759,
+    "stopped_at_step": 3,
+    "ground_truth_correct_at_step": 2,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_budget_25kb",
+    "task_id": "easy-gen-8",
+    "difficulty": "easy",
+    "final_bytes_used": 3948,
+    "stopped_at_step": 3,
+    "ground_truth_correct_at_step": 2,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_budget_25kb",
+    "task_id": "easy-gen-0",
+    "difficulty": "easy",
+    "final_bytes_used": 3338,
+    "stopped_at_step": 3,
+    "ground_truth_correct_at_step": 2,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_budget_25kb",
+    "task_id": "easy-gen-3",
+    "difficulty": "easy",
+    "final_bytes_used": 3535,
+    "stopped_at_step": 3,
+    "ground_truth_correct_at_step": 2,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_budget_25kb",
+    "task_id": "medium-gen-13",
+    "difficulty": "medium",
+    "final_bytes_used": 9883,
+    "stopped_at_step": 5,
+    "ground_truth_correct_at_step": 4,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_budget_25kb",
+    "task_id": "medium-gen-19",
+    "difficulty": "medium",
+    "final_bytes_used": 9064,
+    "stopped_at_step": 5,
+    "ground_truth_correct_at_step": 4,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_budget_25kb",
+    "task_id": "medium-gen-6",
+    "difficulty": "medium",
+    "final_bytes_used": 9961,
+    "stopped_at_step": 5,
+    "ground_truth_correct_at_step": 4,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_budget_25kb",
+    "task_id": "medium-gen-17",
+    "difficulty": "medium",
+    "final_bytes_used": 9872,
+    "stopped_at_step": 5,
+    "ground_truth_correct_at_step": 4,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_budget_25kb",
+    "task_id": "hard-gen-8",
+    "difficulty": "hard",
+    "final_bytes_used": 16697,
+    "stopped_at_step": 7,
+    "ground_truth_correct_at_step": 6,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_budget_25kb",
+    "task_id": "hard-gen-18",
+    "difficulty": "hard",
+    "final_bytes_used": 16151,
+    "stopped_at_step": 7,
+    "ground_truth_correct_at_step": 6,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_budget_25kb",
+    "task_id": "hard-gen-11",
+    "difficulty": "hard",
+    "final_bytes_used": 17189,
+    "stopped_at_step": 7,
+    "ground_truth_correct_at_step": 6,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_budget_25kb",
+    "task_id": "hard-gen-3",
+    "difficulty": "hard",
+    "final_bytes_used": 16808,
+    "stopped_at_step": 7,
+    "ground_truth_correct_at_step": 6,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_threshold_0.75",
+    "task_id": "easy-gen-7",
+    "difficulty": "easy",
+    "final_bytes_used": 3759,
+    "stopped_at_step": 3,
+    "ground_truth_correct_at_step": 2,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_threshold_0.75",
+    "task_id": "easy-gen-8",
+    "difficulty": "easy",
+    "final_bytes_used": 3948,
+    "stopped_at_step": 3,
+    "ground_truth_correct_at_step": 2,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_threshold_0.75",
+    "task_id": "easy-gen-0",
+    "difficulty": "easy",
+    "final_bytes_used": 3338,
+    "stopped_at_step": 3,
+    "ground_truth_correct_at_step": 2,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_threshold_0.75",
+    "task_id": "easy-gen-3",
+    "difficulty": "easy",
+    "final_bytes_used": 3535,
+    "stopped_at_step": 3,
+    "ground_truth_correct_at_step": 2,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_threshold_0.75",
+    "task_id": "medium-gen-13",
+    "difficulty": "medium",
+    "final_bytes_used": 9883,
+    "stopped_at_step": 5,
+    "ground_truth_correct_at_step": 4,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_threshold_0.75",
+    "task_id": "medium-gen-19",
+    "difficulty": "medium",
+    "final_bytes_used": 9064,
+    "stopped_at_step": 5,
+    "ground_truth_correct_at_step": 4,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_threshold_0.75",
+    "task_id": "medium-gen-6",
+    "difficulty": "medium",
+    "final_bytes_used": 9961,
+    "stopped_at_step": 5,
+    "ground_truth_correct_at_step": 4,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_threshold_0.75",
+    "task_id": "medium-gen-17",
+    "difficulty": "medium",
+    "final_bytes_used": 9872,
+    "stopped_at_step": 5,
+    "ground_truth_correct_at_step": 4,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_threshold_0.75",
+    "task_id": "hard-gen-8",
+    "difficulty": "hard",
+    "final_bytes_used": 16697,
+    "stopped_at_step": 7,
+    "ground_truth_correct_at_step": 6,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_threshold_0.75",
+    "task_id": "hard-gen-18",
+    "difficulty": "hard",
+    "final_bytes_used": 16151,
+    "stopped_at_step": 7,
+    "ground_truth_correct_at_step": 6,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_threshold_0.75",
+    "task_id": "hard-gen-11",
+    "difficulty": "hard",
+    "final_bytes_used": 17189,
+    "stopped_at_step": 7,
+    "ground_truth_correct_at_step": 6,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_threshold_0.75",
+    "task_id": "hard-gen-3",
+    "difficulty": "hard",
+    "final_bytes_used": 16808,
+    "stopped_at_step": 7,
+    "ground_truth_correct_at_step": 6,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_threshold_0.90",
+    "task_id": "easy-gen-7",
+    "difficulty": "easy",
+    "final_bytes_used": 3759,
+    "stopped_at_step": 3,
+    "ground_truth_correct_at_step": 2,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_threshold_0.90",
+    "task_id": "easy-gen-8",
+    "difficulty": "easy",
+    "final_bytes_used": 3948,
+    "stopped_at_step": 3,
+    "ground_truth_correct_at_step": 2,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_threshold_0.90",
+    "task_id": "easy-gen-0",
+    "difficulty": "easy",
+    "final_bytes_used": 3338,
+    "stopped_at_step": 3,
+    "ground_truth_correct_at_step": 2,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_threshold_0.90",
+    "task_id": "easy-gen-3",
+    "difficulty": "easy",
+    "final_bytes_used": 3535,
+    "stopped_at_step": 3,
+    "ground_truth_correct_at_step": 2,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_threshold_0.90",
+    "task_id": "medium-gen-13",
+    "difficulty": "medium",
+    "final_bytes_used": 9883,
+    "stopped_at_step": 5,
+    "ground_truth_correct_at_step": 4,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_threshold_0.90",
+    "task_id": "medium-gen-19",
+    "difficulty": "medium",
+    "final_bytes_used": 9064,
+    "stopped_at_step": 5,
+    "ground_truth_correct_at_step": 4,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_threshold_0.90",
+    "task_id": "medium-gen-6",
+    "difficulty": "medium",
+    "final_bytes_used": 9961,
+    "stopped_at_step": 5,
+    "ground_truth_correct_at_step": 4,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_threshold_0.90",
+    "task_id": "medium-gen-17",
+    "difficulty": "medium",
+    "final_bytes_used": 9872,
+    "stopped_at_step": 5,
+    "ground_truth_correct_at_step": 4,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_threshold_0.90",
+    "task_id": "hard-gen-8",
+    "difficulty": "hard",
+    "final_bytes_used": 16697,
+    "stopped_at_step": 7,
+    "ground_truth_correct_at_step": 6,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_threshold_0.90",
+    "task_id": "hard-gen-18",
+    "difficulty": "hard",
+    "final_bytes_used": 16151,
+    "stopped_at_step": 7,
+    "ground_truth_correct_at_step": 6,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_threshold_0.90",
+    "task_id": "hard-gen-11",
+    "difficulty": "hard",
+    "final_bytes_used": 17189,
+    "stopped_at_step": 7,
+    "ground_truth_correct_at_step": 6,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_threshold_0.90",
+    "task_id": "hard-gen-3",
+    "difficulty": "hard",
+    "final_bytes_used": 16808,
+    "stopped_at_step": 7,
+    "ground_truth_correct_at_step": 6,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "heuristic_adaptive",
+    "task_id": "easy-gen-7",
+    "difficulty": "easy",
+    "final_bytes_used": 3759,
+    "stopped_at_step": 3,
+    "ground_truth_correct_at_step": 2,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "heuristic_adaptive",
+    "task_id": "easy-gen-8",
+    "difficulty": "easy",
+    "final_bytes_used": 3948,
+    "stopped_at_step": 3,
+    "ground_truth_correct_at_step": 2,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "heuristic_adaptive",
+    "task_id": "easy-gen-0",
+    "difficulty": "easy",
+    "final_bytes_used": 3338,
+    "stopped_at_step": 3,
+    "ground_truth_correct_at_step": 2,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "heuristic_adaptive",
+    "task_id": "easy-gen-3",
+    "difficulty": "easy",
+    "final_bytes_used": 3535,
+    "stopped_at_step": 3,
+    "ground_truth_correct_at_step": 2,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "heuristic_adaptive",
+    "task_id": "medium-gen-13",
+    "difficulty": "medium",
+    "final_bytes_used": 9883,
+    "stopped_at_step": 5,
+    "ground_truth_correct_at_step": 4,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "heuristic_adaptive",
+    "task_id": "medium-gen-19",
+    "difficulty": "medium",
+    "final_bytes_used": 9064,
+    "stopped_at_step": 5,
+    "ground_truth_correct_at_step": 4,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "heuristic_adaptive",
+    "task_id": "medium-gen-6",
+    "difficulty": "medium",
+    "final_bytes_used": 9961,
+    "stopped_at_step": 5,
+    "ground_truth_correct_at_step": 4,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "heuristic_adaptive",
+    "task_id": "medium-gen-17",
+    "difficulty": "medium",
+    "final_bytes_used": 9872,
+    "stopped_at_step": 5,
+    "ground_truth_correct_at_step": 4,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "heuristic_adaptive",
+    "task_id": "hard-gen-8",
+    "difficulty": "hard",
+    "final_bytes_used": 14393,
+    "stopped_at_step": 6,
+    "ground_truth_correct_at_step": 6,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "heuristic_adaptive",
+    "task_id": "hard-gen-18",
+    "difficulty": "hard",
+    "final_bytes_used": 14019,
+    "stopped_at_step": 6,
+    "ground_truth_correct_at_step": 6,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "heuristic_adaptive",
+    "task_id": "hard-gen-11",
+    "difficulty": "hard",
+    "final_bytes_used": 14895,
+    "stopped_at_step": 6,
+    "ground_truth_correct_at_step": 6,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "heuristic_adaptive",
+    "task_id": "hard-gen-3",
+    "difficulty": "hard",
+    "final_bytes_used": 14176,
+    "stopped_at_step": 6,
+    "ground_truth_correct_at_step": 6,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "linucb_bandit",
+    "task_id": "easy-gen-7",
+    "difficulty": "easy",
+    "final_bytes_used": 2581,
+    "stopped_at_step": 2,
+    "ground_truth_correct_at_step": 2,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "linucb_bandit",
+    "task_id": "easy-gen-8",
+    "difficulty": "easy",
+    "final_bytes_used": 2738,
+    "stopped_at_step": 2,
+    "ground_truth_correct_at_step": 2,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "linucb_bandit",
+    "task_id": "easy-gen-0",
+    "difficulty": "easy",
+    "final_bytes_used": 2085,
+    "stopped_at_step": 2,
+    "ground_truth_correct_at_step": 2,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "linucb_bandit",
+    "task_id": "easy-gen-3",
+    "difficulty": "easy",
+    "final_bytes_used": 2419,
+    "stopped_at_step": 2,
+    "ground_truth_correct_at_step": 2,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "linucb_bandit",
+    "task_id": "medium-gen-13",
+    "difficulty": "medium",
+    "final_bytes_used": 7910,
+    "stopped_at_step": 4,
+    "ground_truth_correct_at_step": 4,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "linucb_bandit",
+    "task_id": "medium-gen-19",
+    "difficulty": "medium",
+    "final_bytes_used": 7250,
+    "stopped_at_step": 4,
+    "ground_truth_correct_at_step": 4,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "linucb_bandit",
+    "task_id": "medium-gen-6",
+    "difficulty": "medium",
+    "final_bytes_used": 7803,
+    "stopped_at_step": 4,
+    "ground_truth_correct_at_step": 4,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "linucb_bandit",
+    "task_id": "medium-gen-17",
+    "difficulty": "medium",
+    "final_bytes_used": 7654,
+    "stopped_at_step": 4,
+    "ground_truth_correct_at_step": 4,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "linucb_bandit",
+    "task_id": "hard-gen-8",
+    "difficulty": "hard",
+    "final_bytes_used": 14393,
+    "stopped_at_step": 6,
+    "ground_truth_correct_at_step": 6,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "linucb_bandit",
+    "task_id": "hard-gen-18",
+    "difficulty": "hard",
+    "final_bytes_used": 14019,
+    "stopped_at_step": 6,
+    "ground_truth_correct_at_step": 6,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "linucb_bandit",
+    "task_id": "hard-gen-11",
+    "difficulty": "hard",
+    "final_bytes_used": 14895,
+    "stopped_at_step": 6,
+    "ground_truth_correct_at_step": 6,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "linucb_bandit",
+    "task_id": "hard-gen-3",
+    "difficulty": "hard",
+    "final_bytes_used": 14176,
+    "stopped_at_step": 6,
+    "ground_truth_correct_at_step": 6,
+    "reached_sufficient_evidence": true
+  }
+]

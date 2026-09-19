@@ -1,0 +1,8331 @@
+[
+  {
+    "id": "T1",
+    "question": "What is the battery capacity of the iPhone 15?",
+    "decomposed_requirements": [
+      {
+        "entity": "iPhone 15",
+        "attribute": "battery"
+      }
+    ],
+    "expected_answer": "3349 mAh",
+    "topic": "phones",
+    "difficulty": "easy",
+    "answer_type": "single_fact"
+  },
+  {
+    "id": "T2",
+    "question": "What is the starting price of the Samsung Galaxy S24?",
+    "decomposed_requirements": [
+      {
+        "entity": "Samsung Galaxy S24",
+        "attribute": "price"
+      }
+    ],
+    "expected_answer": "$799",
+    "topic": "phones",
+    "difficulty": "easy",
+    "answer_type": "single_fact"
+  },
+  {
+    "id": "T3",
+    "question": "Which phone has the higher display refresh rate: the iPhone 15 or the Samsung Galaxy S24?",
+    "decomposed_requirements": [
+      {
+        "entity": "iPhone 15",
+        "attribute": "display_refresh_rate"
+      },
+      {
+        "entity": "Samsung Galaxy S24",
+        "attribute": "display_refresh_rate"
+      }
+    ],
+    "expected_answer": "Samsung Galaxy S24 (up to 120Hz vs iPhone 15's 60Hz)",
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "ground_truth": {
+      "required_facts": [
+        "60Hz",
+        "120Hz"
+      ],
+      "match_threshold": 1.0
+    }
+  },
+  {
+    "id": "T4",
+    "question": "Compare the iPhone 15 and Samsung Galaxy S24 on price and battery capacity.",
+    "decomposed_requirements": [
+      {
+        "entity": "iPhone 15",
+        "attribute": "price"
+      },
+      {
+        "entity": "iPhone 15",
+        "attribute": "battery"
+      },
+      {
+        "entity": "Samsung Galaxy S24",
+        "attribute": "price"
+      },
+      {
+        "entity": "Samsung Galaxy S24",
+        "attribute": "battery"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$799",
+        "3349 mAh",
+        "4,000 mAh"
+      ],
+      "match_threshold": 1.0
+    },
+    "topic": "phones",
+    "difficulty": "hard",
+    "answer_type": "comparison"
+  },
+  {
+    "id": "T5",
+    "question": "What is the starting price of the MacBook Air 13 M3?",
+    "decomposed_requirements": [
+      {
+        "entity": "MacBook Air 13 M3",
+        "attribute": "price"
+      }
+    ],
+    "expected_answer": "$1,099",
+    "topic": "laptops",
+    "difficulty": "easy",
+    "answer_type": "single_fact"
+  },
+  {
+    "id": "T6",
+    "question": "What is the battery life of the Dell XPS 13 (2024)?",
+    "decomposed_requirements": [
+      {
+        "entity": "Dell XPS 13 2024",
+        "attribute": "battery"
+      }
+    ],
+    "expected_answer": "roughly 14 hours of continuous video playback in independent testing",
+    "topic": "laptops",
+    "difficulty": "easy",
+    "answer_type": "single_fact"
+  },
+  {
+    "id": "T7",
+    "question": "Which laptop is lighter: the MacBook Air 13 M3 or the Dell XPS 13 (2024)?",
+    "decomposed_requirements": [
+      {
+        "entity": "MacBook Air 13 M3",
+        "attribute": "weight"
+      },
+      {
+        "entity": "Dell XPS 13 2024",
+        "attribute": "weight"
+      }
+    ],
+    "expected_answer": "Dell XPS 13 2024 (about 2.6 lb vs MacBook Air's 2.7 lb)",
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "ground_truth": {
+      "required_facts": [
+        "2.7 pounds",
+        "2.6 pounds"
+      ],
+      "match_threshold": 1.0
+    }
+  },
+  {
+    "id": "T8",
+    "question": "Compare the MacBook Air 13 M3 and the Dell XPS 13 (2024) on price and weight.",
+    "decomposed_requirements": [
+      {
+        "entity": "MacBook Air 13 M3",
+        "attribute": "price"
+      },
+      {
+        "entity": "MacBook Air 13 M3",
+        "attribute": "weight"
+      },
+      {
+        "entity": "Dell XPS 13 2024",
+        "attribute": "price"
+      },
+      {
+        "entity": "Dell XPS 13 2024",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$1,099",
+        "2.7 pounds",
+        "$1,299",
+        "2.6 pounds"
+      ],
+      "match_threshold": 1.0
+    },
+    "topic": "laptops",
+    "difficulty": "hard",
+    "answer_type": "comparison"
+  },
+  {
+    "id": "T9",
+    "question": "What is the best time of year to visit Jaipur?",
+    "decomposed_requirements": [
+      {
+        "entity": "Jaipur",
+        "attribute": "best_time_to_visit"
+      }
+    ],
+    "expected_answer": "October to March",
+    "topic": "travel",
+    "difficulty": "easy",
+    "answer_type": "single_fact"
+  },
+  {
+    "id": "T10",
+    "question": "What is the top attraction to visit in Kyoto?",
+    "decomposed_requirements": [
+      {
+        "entity": "Kyoto",
+        "attribute": "top_attraction"
+      }
+    ],
+    "expected_answer": "Fushimi Inari Shrine",
+    "topic": "travel",
+    "difficulty": "easy",
+    "answer_type": "single_fact"
+  },
+  {
+    "id": "T11",
+    "question": "Compare Jaipur and Kyoto on typical daily travel budget.",
+    "decomposed_requirements": [
+      {
+        "entity": "Jaipur",
+        "attribute": "daily_budget"
+      },
+      {
+        "entity": "Kyoto",
+        "attribute": "daily_budget"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "April to June",
+        "$120-200"
+      ],
+      "match_threshold": 1.0
+    },
+    "topic": "travel",
+    "difficulty": "hard",
+    "answer_type": "comparison"
+  },
+  {
+    "id": "T12",
+    "question": "Which city is recommended for a shorter trip: Jaipur or Kyoto?",
+    "decomposed_requirements": [
+      {
+        "entity": "Jaipur",
+        "attribute": "typical_trip_length"
+      },
+      {
+        "entity": "Kyoto",
+        "attribute": "typical_trip_length"
+      }
+    ],
+    "expected_answer": "Both are similar (Jaipur 2-4 days, Kyoto 3-4 days), Jaipur slightly shorter at the low end",
+    "topic": "travel",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "ground_truth": {
+      "required_facts": [
+        "two to four days",
+        "three to four days"
+      ],
+      "match_threshold": 1.0
+    }
+  },
+  {
+    "id": "T13",
+    "question": "What chip powers the iPhone 15?",
+    "decomposed_requirements": [
+      {
+        "entity": "iPhone 15",
+        "attribute": "chip"
+      }
+    ],
+    "expected_answer": "Apple A16 Bionic",
+    "topic": "phones",
+    "difficulty": "easy",
+    "answer_type": "single_fact"
+  },
+  {
+    "id": "T14",
+    "question": "What processor options are available for the Dell XPS 13 (2024)?",
+    "decomposed_requirements": [
+      {
+        "entity": "Dell XPS 13 2024",
+        "attribute": "chip"
+      }
+    ],
+    "expected_answer": "Intel Core Ultra 200V-series or Qualcomm Snapdragon X Elite",
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "single_fact"
+  },
+  {
+    "id": "T15",
+    "question": "Compare the main camera resolution of the iPhone 15 and the Samsung Galaxy S24.",
+    "decomposed_requirements": [
+      {
+        "entity": "iPhone 15",
+        "attribute": "camera"
+      },
+      {
+        "entity": "Samsung Galaxy S24",
+        "attribute": "camera"
+      }
+    ],
+    "expected_answer": "Samsung Galaxy S24 has a 50MP main camera vs iPhone 15's 48MP",
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "ground_truth": {
+      "required_facts": [
+        "48MP",
+        "50MP"
+      ],
+      "match_threshold": 1.0
+    }
+  },
+  {
+    "id": "T16",
+    "question": "How many rooms does The Oberoi Rajvilas Jaipur have?",
+    "decomposed_requirements": [
+      {
+        "entity": "Oberoi Rajvilas Jaipur",
+        "attribute": "room_count"
+      }
+    ],
+    "expected_answer": "71",
+    "topic": "travel",
+    "difficulty": "easy",
+    "answer_type": "single_fact"
+  },
+  {
+    "id": "T17",
+    "question": "Which Jaipur hotel is more affordable per night: The Oberoi Rajvilas Jaipur or Ibis Jaipur City Centre?",
+    "decomposed_requirements": [
+      {
+        "entity": "Oberoi Rajvilas Jaipur",
+        "attribute": "price_per_night"
+      },
+      {
+        "entity": "Ibis Jaipur City Centre",
+        "attribute": "price_per_night"
+      }
+    ],
+    "expected_answer": "Ibis Jaipur City Centre (roughly $28-40/night vs Oberoi Rajvilas's $260+/night)",
+    "topic": "travel",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "ground_truth": {
+      "required_facts": [
+        "$260 to $800",
+        "$28-40"
+      ],
+      "match_threshold": 1.0
+    }
+  },
+  {
+    "id": "T18",
+    "question": "Compare The Oberoi Rajvilas Jaipur and Ibis Jaipur City Centre on price per night and amenities.",
+    "decomposed_requirements": [
+      {
+        "entity": "Oberoi Rajvilas Jaipur",
+        "attribute": "price_per_night"
+      },
+      {
+        "entity": "Oberoi Rajvilas Jaipur",
+        "attribute": "amenities"
+      },
+      {
+        "entity": "Ibis Jaipur City Centre",
+        "attribute": "price_per_night"
+      },
+      {
+        "entity": "Ibis Jaipur City Centre",
+        "attribute": "amenities"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$260 to $800",
+        "outdoor pool, full-service spa, fitness center, restaurants, tennis courts",
+        "$28-40",
+        "rooftop pool, 24-hour gym, restaurant, rooftop terrace"
+      ],
+      "match_threshold": 1.0
+    },
+    "topic": "travel",
+    "difficulty": "hard",
+    "answer_type": "comparison"
+  },
+  {
+    "id": "T19",
+    "question": "What is the battery life of the Sony WF-1000XM5?",
+    "decomposed_requirements": [
+      {
+        "entity": "Sony WF-1000XM5",
+        "attribute": "battery_life"
+      }
+    ],
+    "expected_answer": "about 8 hours with ANC on",
+    "topic": "electronics",
+    "difficulty": "easy",
+    "answer_type": "single_fact"
+  },
+  {
+    "id": "T20",
+    "question": "Which earbuds have better noise cancellation: AirPods Pro 2 or Sony WF-1000XM5?",
+    "decomposed_requirements": [
+      {
+        "entity": "AirPods Pro 2",
+        "attribute": "noise_cancellation"
+      },
+      {
+        "entity": "Sony WF-1000XM5",
+        "attribute": "noise_cancellation"
+      }
+    ],
+    "expected_answer": "Sony WF-1000XM5, per independent reviewer testing",
+    "topic": "electronics",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "ground_truth": {
+      "required_facts": [
+        "strong active",
+        "stronger"
+      ],
+      "match_threshold": 1.0
+    }
+  },
+  {
+    "id": "T21",
+    "question": "Compare AirPods Pro 2 and Sony WF-1000XM5 on price and battery life.",
+    "decomposed_requirements": [
+      {
+        "entity": "AirPods Pro 2",
+        "attribute": "price"
+      },
+      {
+        "entity": "AirPods Pro 2",
+        "attribute": "battery_life"
+      },
+      {
+        "entity": "Sony WF-1000XM5",
+        "attribute": "price"
+      },
+      {
+        "entity": "Sony WF-1000XM5",
+        "attribute": "battery_life"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$249",
+        "6 hours",
+        "$299.99",
+        "8 hours"
+      ],
+      "match_threshold": 1.0
+    },
+    "topic": "electronics",
+    "difficulty": "hard",
+    "answer_type": "comparison"
+  },
+  {
+    "id": "T22",
+    "question": "How tall is the Burj Khalifa?",
+    "decomposed_requirements": [
+      {
+        "entity": "Burj Khalifa",
+        "attribute": "height"
+      }
+    ],
+    "expected_answer": "828 meters (2,717 feet)",
+    "topic": "buildings",
+    "difficulty": "easy",
+    "answer_type": "single_fact"
+  },
+  {
+    "id": "T23",
+    "question": "Which building is taller: the Burj Khalifa or the Empire State Building?",
+    "decomposed_requirements": [
+      {
+        "entity": "Burj Khalifa",
+        "attribute": "height"
+      },
+      {
+        "entity": "Empire State Building",
+        "attribute": "height"
+      }
+    ],
+    "expected_answer": "Burj Khalifa (828m vs 381m roof height)",
+    "topic": "buildings",
+    "difficulty": "easy",
+    "answer_type": "comparison",
+    "ground_truth": {
+      "required_facts": [
+        "828 meters",
+        "381 meters"
+      ],
+      "match_threshold": 1.0
+    }
+  },
+  {
+    "id": "T24",
+    "question": "Compare the Burj Khalifa and the Empire State Building on height and completion year.",
+    "decomposed_requirements": [
+      {
+        "entity": "Burj Khalifa",
+        "attribute": "height"
+      },
+      {
+        "entity": "Burj Khalifa",
+        "attribute": "completion_year"
+      },
+      {
+        "entity": "Empire State Building",
+        "attribute": "height"
+      },
+      {
+        "entity": "Empire State Building",
+        "attribute": "completion_year"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "828 meters",
+        "2010",
+        "381 meters",
+        "1931"
+      ],
+      "match_threshold": 1.0
+    },
+    "topic": "buildings",
+    "difficulty": "medium",
+    "answer_type": "comparison"
+  },
+  {
+    "id": "T25",
+    "question": "What is the elevation of Mount Everest?",
+    "decomposed_requirements": [
+      {
+        "entity": "Mount Everest",
+        "attribute": "elevation"
+      }
+    ],
+    "expected_answer": "8,849 meters (29,032 feet)",
+    "topic": "geography",
+    "difficulty": "easy",
+    "answer_type": "single_fact"
+  },
+  {
+    "id": "T26",
+    "question": "Which mountain was first climbed earlier: Mount Everest or K2?",
+    "decomposed_requirements": [
+      {
+        "entity": "Mount Everest",
+        "attribute": "first_ascent_year"
+      },
+      {
+        "entity": "K2",
+        "attribute": "first_ascent_year"
+      }
+    ],
+    "expected_answer": "Mount Everest (1953 vs K2's 1954)",
+    "topic": "geography",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "ground_truth": {
+      "required_facts": [
+        "1953",
+        "1954"
+      ],
+      "match_threshold": 1.0
+    }
+  },
+  {
+    "id": "T27",
+    "question": "Compare Mount Everest and K2 on elevation and location.",
+    "decomposed_requirements": [
+      {
+        "entity": "Mount Everest",
+        "attribute": "elevation"
+      },
+      {
+        "entity": "Mount Everest",
+        "attribute": "location"
+      },
+      {
+        "entity": "K2",
+        "attribute": "elevation"
+      },
+      {
+        "entity": "K2",
+        "attribute": "location"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "8,849 meters",
+        "Himalayas",
+        "8,611 meters",
+        "Karakoram"
+      ],
+      "match_threshold": 1.0
+    },
+    "topic": "geography",
+    "difficulty": "medium",
+    "answer_type": "comparison"
+  },
+  {
+    "id": "T28",
+    "question": "What is the capital of Japan?",
+    "decomposed_requirements": [
+      {
+        "entity": "Japan",
+        "attribute": "capital"
+      }
+    ],
+    "expected_answer": "Tokyo",
+    "topic": "countries",
+    "difficulty": "easy",
+    "answer_type": "single_fact"
+  },
+  {
+    "id": "T29",
+    "question": "Which country has a larger population: India or Japan?",
+    "decomposed_requirements": [
+      {
+        "entity": "India",
+        "attribute": "population"
+      },
+      {
+        "entity": "Japan",
+        "attribute": "population"
+      }
+    ],
+    "expected_answer": "India (about 1.4-1.48 billion vs Japan's ~123 million)",
+    "topic": "countries",
+    "difficulty": "easy",
+    "answer_type": "comparison",
+    "ground_truth": {
+      "required_facts": [
+        "1.4 billion",
+        "123 million"
+      ],
+      "match_threshold": 1.0
+    }
+  },
+  {
+    "id": "T30",
+    "question": "Compare India and Japan on population and land area.",
+    "decomposed_requirements": [
+      {
+        "entity": "India",
+        "attribute": "population"
+      },
+      {
+        "entity": "India",
+        "attribute": "area"
+      },
+      {
+        "entity": "Japan",
+        "attribute": "population"
+      },
+      {
+        "entity": "Japan",
+        "attribute": "area"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "1.4 billion",
+        "3,287,263 square kilometers",
+        "123 million",
+        "377,930 square kilometers"
+      ],
+      "match_threshold": 1.0
+    },
+    "topic": "countries",
+    "difficulty": "medium",
+    "answer_type": "comparison"
+  },
+  {
+    "id": "T31",
+    "question": "What is the price of the Nike Pegasus 41?",
+    "decomposed_requirements": [
+      {
+        "entity": "Nike Pegasus 41",
+        "attribute": "price"
+      }
+    ],
+    "expected_answer": "about $130-145",
+    "topic": "running_shoes",
+    "difficulty": "easy",
+    "answer_type": "single_fact"
+  },
+  {
+    "id": "T32",
+    "question": "Which running shoe is lighter: the Nike Pegasus 41 or the Hoka Clifton 9?",
+    "decomposed_requirements": [
+      {
+        "entity": "Nike Pegasus 41",
+        "attribute": "weight"
+      },
+      {
+        "entity": "Hoka Clifton 9",
+        "attribute": "weight"
+      }
+    ],
+    "expected_answer": "Hoka Clifton 9 (about 9.7 oz vs Pegasus 41's 10.0 oz)",
+    "topic": "running_shoes",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "ground_truth": {
+      "required_facts": [
+        "10.0 ounces",
+        "9.7 ounces"
+      ],
+      "match_threshold": 1.0
+    }
+  },
+  {
+    "id": "T33",
+    "question": "Compare the Nike Pegasus 41 and Hoka Clifton 9 on cushioning and recommended use.",
+    "decomposed_requirements": [
+      {
+        "entity": "Nike Pegasus 41",
+        "attribute": "cushioning"
+      },
+      {
+        "entity": "Nike Pegasus 41",
+        "attribute": "best_for"
+      },
+      {
+        "entity": "Hoka Clifton 9",
+        "attribute": "cushioning"
+      },
+      {
+        "entity": "Hoka Clifton 9",
+        "attribute": "best_for"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "moderate",
+        "daily training",
+        "maximal",
+        "long runs"
+      ],
+      "match_threshold": 1.0
+    },
+    "topic": "running_shoes",
+    "difficulty": "hard",
+    "answer_type": "comparison"
+  },
+  {
+    "id": "T34",
+    "question": "What is the EPA-estimated range of the Tesla Model 3?",
+    "decomposed_requirements": [
+      {
+        "entity": "Tesla Model 3",
+        "attribute": "range"
+      }
+    ],
+    "expected_answer": "roughly 309-363 miles depending on trim",
+    "topic": "vehicles",
+    "difficulty": "easy",
+    "answer_type": "single_fact"
+  },
+  {
+    "id": "T35",
+    "question": "Which EV has the longer range: the Tesla Model 3 or the Nissan Leaf?",
+    "decomposed_requirements": [
+      {
+        "entity": "Tesla Model 3",
+        "attribute": "range"
+      },
+      {
+        "entity": "Nissan Leaf",
+        "attribute": "range"
+      }
+    ],
+    "expected_answer": "Tesla Model 3 (309-363 miles vs Leaf's 259-303 miles)",
+    "topic": "vehicles",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "ground_truth": {
+      "required_facts": [
+        "309 to 363 miles",
+        "259 to 303 miles"
+      ],
+      "match_threshold": 1.0
+    }
+  },
+  {
+    "id": "T36",
+    "question": "Compare the Tesla Model 3 and Nissan Leaf on price and battery capacity.",
+    "decomposed_requirements": [
+      {
+        "entity": "Tesla Model 3",
+        "attribute": "price"
+      },
+      {
+        "entity": "Tesla Model 3",
+        "attribute": "battery_capacity"
+      },
+      {
+        "entity": "Nissan Leaf",
+        "attribute": "price"
+      },
+      {
+        "entity": "Nissan Leaf",
+        "attribute": "battery_capacity"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$37,000",
+        "82 kWh",
+        "$29,990",
+        "75 kWh"
+      ],
+      "match_threshold": 1.0
+    },
+    "topic": "vehicles",
+    "difficulty": "hard",
+    "answer_type": "comparison"
+  },
+  {
+    "id": "T37",
+    "question": "Does the Tesla Model 3 have a longer EPA-estimated range than the Nissan Leaf?",
+    "decomposed_requirements": [
+      {
+        "entity": "Tesla Model 3",
+        "attribute": "range"
+      },
+      {
+        "entity": "Nissan Leaf",
+        "attribute": "range"
+      }
+    ],
+    "expected_answer": "Yes",
+    "topic": "vehicles",
+    "difficulty": "easy",
+    "answer_type": "yes_no",
+    "ground_truth": {
+      "required_facts": [
+        "309 to 363 miles",
+        "259 to 303 miles"
+      ],
+      "match_threshold": 1.0
+    }
+  },
+  {
+    "id": "T38",
+    "question": "What amenities does The Oberoi Rajvilas Jaipur offer?",
+    "decomposed_requirements": [
+      {
+        "entity": "Oberoi Rajvilas Jaipur",
+        "attribute": "amenities"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "outdoor pool, full-service spa, fitness center, restaurants, tennis courts"
+      ],
+      "match_threshold": 1.0
+    },
+    "topic": "travel",
+    "difficulty": "medium",
+    "answer_type": "list"
+  },
+  {
+    "id": "T39",
+    "question": "What are the capital and official languages of India?",
+    "decomposed_requirements": [
+      {
+        "entity": "India",
+        "attribute": "capital"
+      },
+      {
+        "entity": "India",
+        "attribute": "official_language"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "New Delhi",
+        "Hindi and English"
+      ],
+      "match_threshold": 1.0
+    },
+    "topic": "countries",
+    "difficulty": "medium",
+    "answer_type": "multi_part"
+  },
+  {
+    "id": "T40",
+    "question": "How do I change a flat car tire?",
+    "decomposed_requirements": [
+      {
+        "entity": "tire",
+        "attribute": "procedure"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "secure the vehicle and loosen the lug nuts",
+        "raise the vehicle at the jacking point",
+        "remove the flat tire and install the spare",
+        "lower the vehicle and tighten the lug nuts"
+      ],
+      "match_threshold": 1.0
+    },
+    "topic": "vehicles",
+    "difficulty": "hard",
+    "answer_type": "procedure"
+  },
+  {
+    "id": "T41",
+    "question": "Summarize the premise of Mamma Mia! (2008).",
+    "decomposed_requirements": [
+      {
+        "entity": "Mamma Mia",
+        "attribute": "summary"
+      }
+    ],
+    "ground_truth": "On a Greek island, Sophie secretly invites three former lovers of her mother Donna to her wedding because one may be her father, reviving old relationships.",
+    "topic": "film",
+    "difficulty": "medium",
+    "answer_type": "narrative"
+  },
+  {
+    "id": "T42",
+    "question": "What is the top attraction to visit in Jaipur?",
+    "decomposed_requirements": [
+      {
+        "entity": "Jaipur",
+        "attribute": "top_attraction"
+      }
+    ],
+    "expected_answer": "Amber Fort",
+    "topic": "travel",
+    "difficulty": "easy",
+    "answer_type": "single_fact"
+  },
+  {
+    "id": "T43",
+    "question": "What amenities does the Ibis Jaipur City Centre offer?",
+    "decomposed_requirements": [
+      {
+        "entity": "Ibis Jaipur City Centre",
+        "attribute": "amenities"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "rooftop pool, 24-hour gym, restaurant, rooftop terrace"
+      ],
+      "match_threshold": 1.0
+    },
+    "topic": "travel",
+    "difficulty": "medium",
+    "answer_type": "list"
+  },
+  {
+    "id": "T44",
+    "question": "Summarize the premise of Titanic (1997).",
+    "decomposed_requirements": [
+      {
+        "entity": "Titanic",
+        "attribute": "summary"
+      }
+    ],
+    "ground_truth": "Aboard the doomed liner Titanic, poor artist Jack and wealthy Rose fall in love before the ship strikes an iceberg and sinks.",
+    "topic": "film",
+    "difficulty": "medium",
+    "answer_type": "narrative"
+  },
+  {
+    "id": "T45",
+    "question": "What is the noise cancellation of the Bose QuietComfort Ultra?",
+    "decomposed_requirements": [
+      {
+        "entity": "Bose QuietComfort Ultra",
+        "attribute": "noise_cancellation"
+      }
+    ],
+    "expected_answer": "Class-leading active noise cancellation",
+    "topic": "electronics",
+    "difficulty": "easy",
+    "answer_type": "single_fact"
+  },
+  {
+    "id": "T46",
+    "question": "What is the year of first ascent of Kangchenjunga?",
+    "decomposed_requirements": [
+      {
+        "entity": "Kangchenjunga",
+        "attribute": "first_ascent_year"
+      }
+    ],
+    "expected_answer": "1955",
+    "topic": "geography",
+    "difficulty": "medium",
+    "answer_type": "single_fact"
+  },
+  {
+    "id": "T47",
+    "question": "What are the main camera resolution and display refresh rate of the Google Pixel 8?",
+    "decomposed_requirements": [
+      {
+        "entity": "Google Pixel 8",
+        "attribute": "camera"
+      },
+      {
+        "entity": "Google Pixel 8",
+        "attribute": "display_refresh_rate"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "50-megapixel",
+        "120 Hz"
+      ],
+      "match_threshold": 1.0
+    },
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "multi_part"
+  },
+  {
+    "id": "T48",
+    "question": "What is the typical trip length for Bali?",
+    "decomposed_requirements": [
+      {
+        "entity": "Bali",
+        "attribute": "typical_trip_length"
+      }
+    ],
+    "expected_answer": "About 7-10 days",
+    "topic": "travel",
+    "difficulty": "easy",
+    "answer_type": "single_fact"
+  },
+  {
+    "id": "T49",
+    "question": "What is the battery life of AirPods Pro 2?",
+    "decomposed_requirements": [
+      {
+        "entity": "AirPods Pro 2",
+        "attribute": "battery_life"
+      }
+    ],
+    "topic": "electronics",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "decomposer_only": true
+  },
+  {
+    "id": "T50",
+    "question": "What is the audio codec support of AirPods Pro 2?",
+    "decomposed_requirements": [
+      {
+        "entity": "AirPods Pro 2",
+        "attribute": "codec_support"
+      }
+    ],
+    "topic": "electronics",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "decomposer_only": true
+  },
+  {
+    "id": "T51",
+    "question": "What is the price of AirPods Pro 2?",
+    "decomposed_requirements": [
+      {
+        "entity": "AirPods Pro 2",
+        "attribute": "price"
+      }
+    ],
+    "topic": "electronics",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "decomposer_only": true
+  },
+  {
+    "id": "T52",
+    "question": "What is the typical trip length of Bali?",
+    "decomposed_requirements": [
+      {
+        "entity": "Bali",
+        "attribute": "typical_trip_length"
+      }
+    ],
+    "topic": "travel",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "decomposer_only": true
+  },
+  {
+    "id": "T53",
+    "question": "What is the noise cancellation of Bose QuietComfort Ultra?",
+    "decomposed_requirements": [
+      {
+        "entity": "Bose QuietComfort Ultra",
+        "attribute": "noise_cancellation"
+      }
+    ],
+    "topic": "electronics",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "decomposer_only": true
+  },
+  {
+    "id": "T54",
+    "question": "What is the architect of Burj Khalifa?",
+    "decomposed_requirements": [
+      {
+        "entity": "Burj Khalifa",
+        "attribute": "architect"
+      }
+    ],
+    "topic": "buildings",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "decomposer_only": true
+  },
+  {
+    "id": "T55",
+    "question": "Compare Burj Khalifa and Empire State Building on architect.",
+    "decomposed_requirements": [
+      {
+        "entity": "Burj Khalifa",
+        "attribute": "architect"
+      },
+      {
+        "entity": "Empire State Building",
+        "attribute": "architect"
+      }
+    ],
+    "topic": "buildings",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "decomposer_only": true,
+    "ground_truth": {
+      "required_facts": [
+        "Adrian Smith",
+        "Shreve, Lamb and Harmon"
+      ],
+      "match_threshold": 1.0
+    }
+  },
+  {
+    "id": "T56",
+    "question": "Compare India and Japan on land area.",
+    "decomposed_requirements": [
+      {
+        "entity": "India",
+        "attribute": "area"
+      },
+      {
+        "entity": "Japan",
+        "attribute": "area"
+      }
+    ],
+    "topic": "countries",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "decomposer_only": true,
+    "ground_truth": {
+      "required_facts": [
+        "3,287,263 square kilometers",
+        "377,930 square kilometers"
+      ],
+      "match_threshold": 1.0
+    }
+  },
+  {
+    "id": "T57",
+    "question": "Compare Dell XPS 13 2024 and MacBook Air 13 M3 on battery capacity.",
+    "decomposed_requirements": [
+      {
+        "entity": "Dell XPS 13 2024",
+        "attribute": "battery"
+      },
+      {
+        "entity": "MacBook Air 13 M3",
+        "attribute": "battery"
+      }
+    ],
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "decomposer_only": true,
+    "ground_truth": {
+      "required_facts": [
+        "14 hours",
+        "18 hours"
+      ],
+      "match_threshold": 1.0
+    }
+  },
+  {
+    "id": "T58",
+    "question": "Compare Nissan Leaf and Tesla Model 3 on battery capacity.",
+    "decomposed_requirements": [
+      {
+        "entity": "Nissan Leaf",
+        "attribute": "battery_capacity"
+      },
+      {
+        "entity": "Tesla Model 3",
+        "attribute": "battery_capacity"
+      }
+    ],
+    "topic": "vehicles",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "decomposer_only": true,
+    "ground_truth": {
+      "required_facts": [
+        "75 kWh",
+        "82 kWh"
+      ],
+      "match_threshold": 1.0
+    }
+  },
+  {
+    "id": "T59",
+    "question": "Is India's land area higher than Japan's?",
+    "decomposed_requirements": [
+      {
+        "entity": "India",
+        "attribute": "area"
+      },
+      {
+        "entity": "Japan",
+        "attribute": "area"
+      }
+    ],
+    "topic": "countries",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "decomposer_only": true,
+    "ground_truth": {
+      "required_facts": [
+        "3,287,263 square kilometers",
+        "377,930 square kilometers"
+      ],
+      "match_threshold": 1.0
+    }
+  },
+  {
+    "id": "T60",
+    "question": "Is Dell XPS 13 2024's battery capacity higher than MacBook Air 13 M3's?",
+    "decomposed_requirements": [
+      {
+        "entity": "Dell XPS 13 2024",
+        "attribute": "battery"
+      },
+      {
+        "entity": "MacBook Air 13 M3",
+        "attribute": "battery"
+      }
+    ],
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "decomposer_only": true,
+    "ground_truth": {
+      "required_facts": [
+        "14 hours",
+        "18 hours"
+      ],
+      "match_threshold": 1.0
+    }
+  },
+  {
+    "id": "T61",
+    "question": "Is Dell XPS 13 2024's battery capacity higher than Samsung Galaxy S24's?",
+    "decomposed_requirements": [
+      {
+        "entity": "Dell XPS 13 2024",
+        "attribute": "battery"
+      },
+      {
+        "entity": "Samsung Galaxy S24",
+        "attribute": "battery"
+      }
+    ],
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "decomposer_only": true,
+    "ground_truth": {
+      "required_facts": [
+        "14 hours",
+        "4,000 mAh"
+      ],
+      "match_threshold": 1.0
+    }
+  },
+  {
+    "id": "T62",
+    "question": "Is Dell XPS 13 2024's battery capacity higher than iPhone 15's?",
+    "decomposed_requirements": [
+      {
+        "entity": "Dell XPS 13 2024",
+        "attribute": "battery"
+      },
+      {
+        "entity": "iPhone 15",
+        "attribute": "battery"
+      }
+    ],
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "decomposer_only": true,
+    "ground_truth": {
+      "required_facts": [
+        "14 hours",
+        "3349 mAh"
+      ],
+      "match_threshold": 1.0
+    }
+  },
+  {
+    "id": "T63",
+    "question": "Is MacBook Air 13 M3's battery capacity higher than Samsung Galaxy S24's?",
+    "decomposed_requirements": [
+      {
+        "entity": "MacBook Air 13 M3",
+        "attribute": "battery"
+      },
+      {
+        "entity": "Samsung Galaxy S24",
+        "attribute": "battery"
+      }
+    ],
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "decomposer_only": true,
+    "ground_truth": {
+      "required_facts": [
+        "18 hours",
+        "4,000 mAh"
+      ],
+      "match_threshold": 1.0
+    }
+  },
+  {
+    "id": "T64",
+    "question": "Is MacBook Air 13 M3's battery capacity higher than iPhone 15's?",
+    "decomposed_requirements": [
+      {
+        "entity": "MacBook Air 13 M3",
+        "attribute": "battery"
+      },
+      {
+        "entity": "iPhone 15",
+        "attribute": "battery"
+      }
+    ],
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "decomposer_only": true,
+    "ground_truth": {
+      "required_facts": [
+        "18 hours",
+        "3349 mAh"
+      ],
+      "match_threshold": 1.0
+    }
+  },
+  {
+    "id": "T65",
+    "question": "Is Samsung Galaxy S24's battery capacity higher than iPhone 15's?",
+    "decomposed_requirements": [
+      {
+        "entity": "Samsung Galaxy S24",
+        "attribute": "battery"
+      },
+      {
+        "entity": "iPhone 15",
+        "attribute": "battery"
+      }
+    ],
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "decomposer_only": true,
+    "ground_truth": {
+      "required_facts": [
+        "4,000 mAh",
+        "3349 mAh"
+      ],
+      "match_threshold": 1.0
+    }
+  },
+  {
+    "id": "T66",
+    "question": "Is Nissan Leaf's battery capacity higher than Tesla Model 3's?",
+    "decomposed_requirements": [
+      {
+        "entity": "Nissan Leaf",
+        "attribute": "battery_capacity"
+      },
+      {
+        "entity": "Tesla Model 3",
+        "attribute": "battery_capacity"
+      }
+    ],
+    "topic": "vehicles",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "decomposer_only": true,
+    "ground_truth": {
+      "required_facts": [
+        "75 kWh",
+        "82 kWh"
+      ],
+      "match_threshold": 1.0
+    }
+  },
+  {
+    "id": "T67",
+    "question": "Is Burj Khalifa's completion year higher than Empire State Building's?",
+    "decomposed_requirements": [
+      {
+        "entity": "Burj Khalifa",
+        "attribute": "completion_year"
+      },
+      {
+        "entity": "Empire State Building",
+        "attribute": "completion_year"
+      }
+    ],
+    "topic": "buildings",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "decomposer_only": true,
+    "ground_truth": {
+      "required_facts": [
+        "2010",
+        "1931"
+      ],
+      "match_threshold": 1.0
+    }
+  },
+  {
+    "id": "T68",
+    "question": "Is K2's elevation higher than Mount Everest's?",
+    "decomposed_requirements": [
+      {
+        "entity": "K2",
+        "attribute": "elevation"
+      },
+      {
+        "entity": "Mount Everest",
+        "attribute": "elevation"
+      }
+    ],
+    "topic": "geography",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "decomposer_only": true,
+    "ground_truth": {
+      "required_facts": [
+        "8,611 meters",
+        "8,849 meters"
+      ],
+      "match_threshold": 1.0
+    }
+  },
+  {
+    "id": "T69",
+    "question": "Is Burj Khalifa's floor count higher than Empire State Building's?",
+    "decomposed_requirements": [
+      {
+        "entity": "Burj Khalifa",
+        "attribute": "floors"
+      },
+      {
+        "entity": "Empire State Building",
+        "attribute": "floors"
+      }
+    ],
+    "topic": "buildings",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "decomposer_only": true,
+    "ground_truth": {
+      "required_facts": [
+        "163",
+        "102"
+      ],
+      "match_threshold": 1.0
+    }
+  },
+  {
+    "id": "T70",
+    "question": "Is AirPods Pro 2's price higher than Dell XPS 13 2024's?",
+    "decomposed_requirements": [
+      {
+        "entity": "AirPods Pro 2",
+        "attribute": "price"
+      },
+      {
+        "entity": "Dell XPS 13 2024",
+        "attribute": "price"
+      }
+    ],
+    "topic": "electronics",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "decomposer_only": true,
+    "ground_truth": {
+      "required_facts": [
+        "$249",
+        "$1,299"
+      ],
+      "match_threshold": 1.0
+    }
+  },
+  {
+    "id": "T71",
+    "question": "Is AirPods Pro 2's price higher than Hoka Clifton 9's?",
+    "decomposed_requirements": [
+      {
+        "entity": "AirPods Pro 2",
+        "attribute": "price"
+      },
+      {
+        "entity": "Hoka Clifton 9",
+        "attribute": "price"
+      }
+    ],
+    "topic": "electronics",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "decomposer_only": true,
+    "ground_truth": {
+      "required_facts": [
+        "$249",
+        "$150"
+      ],
+      "match_threshold": 1.0
+    }
+  },
+  {
+    "id": "T72",
+    "question": "What are AirPods Pro 2's battery life and audio codec support?",
+    "decomposed_requirements": [
+      {
+        "entity": "AirPods Pro 2",
+        "attribute": "battery_life"
+      },
+      {
+        "entity": "AirPods Pro 2",
+        "attribute": "codec_support"
+      }
+    ],
+    "topic": "electronics",
+    "difficulty": "medium",
+    "answer_type": "multi_part",
+    "decomposer_only": true,
+    "ground_truth": {
+      "required_facts": [
+        "6 hours",
+        "AAC"
+      ],
+      "match_threshold": 1.0
+    }
+  },
+  {
+    "id": "T73",
+    "question": "What are Burj Khalifa's architect and completion year?",
+    "decomposed_requirements": [
+      {
+        "entity": "Burj Khalifa",
+        "attribute": "architect"
+      },
+      {
+        "entity": "Burj Khalifa",
+        "attribute": "completion_year"
+      }
+    ],
+    "topic": "buildings",
+    "difficulty": "medium",
+    "answer_type": "multi_part",
+    "decomposer_only": true,
+    "ground_truth": {
+      "required_facts": [
+        "Adrian Smith",
+        "2010"
+      ],
+      "match_threshold": 1.0
+    }
+  },
+  {
+    "id": "T74",
+    "question": "What are Dell XPS 13 2024's battery capacity and chip?",
+    "decomposed_requirements": [
+      {
+        "entity": "Dell XPS 13 2024",
+        "attribute": "battery"
+      },
+      {
+        "entity": "Dell XPS 13 2024",
+        "attribute": "chip"
+      }
+    ],
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "multi_part",
+    "decomposer_only": true,
+    "ground_truth": {
+      "required_facts": [
+        "14 hours",
+        "Intel Core Ultra"
+      ],
+      "match_threshold": 1.0
+    }
+  },
+  {
+    "id": "T75",
+    "question": "What are Empire State Building's architect and completion year?",
+    "decomposed_requirements": [
+      {
+        "entity": "Empire State Building",
+        "attribute": "architect"
+      },
+      {
+        "entity": "Empire State Building",
+        "attribute": "completion_year"
+      }
+    ],
+    "topic": "buildings",
+    "difficulty": "medium",
+    "answer_type": "multi_part",
+    "decomposer_only": true,
+    "ground_truth": {
+      "required_facts": [
+        "Shreve, Lamb and Harmon",
+        "1931"
+      ],
+      "match_threshold": 1.0
+    }
+  },
+  {
+    "id": "T76",
+    "question": "What are Google Pixel 8's main camera resolution and display refresh rate?",
+    "decomposed_requirements": [
+      {
+        "entity": "Google Pixel 8",
+        "attribute": "camera"
+      },
+      {
+        "entity": "Google Pixel 8",
+        "attribute": "display_refresh_rate"
+      }
+    ],
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "multi_part",
+    "decomposer_only": true,
+    "ground_truth": {
+      "required_facts": [
+        "50-megapixel",
+        "120 Hz"
+      ],
+      "match_threshold": 1.0
+    }
+  },
+  {
+    "id": "T77",
+    "question": "What are Hoka Clifton 9's recommended use and cushioning?",
+    "decomposed_requirements": [
+      {
+        "entity": "Hoka Clifton 9",
+        "attribute": "best_for"
+      },
+      {
+        "entity": "Hoka Clifton 9",
+        "attribute": "cushioning"
+      }
+    ],
+    "topic": "running_shoes",
+    "difficulty": "medium",
+    "answer_type": "multi_part",
+    "decomposer_only": true,
+    "ground_truth": {
+      "required_facts": [
+        "long runs",
+        "maximal"
+      ],
+      "match_threshold": 1.0
+    }
+  },
+  {
+    "id": "T78",
+    "question": "What are Ibis Jaipur City Centre's amenities and guest rating?",
+    "decomposed_requirements": [
+      {
+        "entity": "Ibis Jaipur City Centre",
+        "attribute": "amenities"
+      },
+      {
+        "entity": "Ibis Jaipur City Centre",
+        "attribute": "rating"
+      }
+    ],
+    "topic": "travel",
+    "difficulty": "medium",
+    "answer_type": "multi_part",
+    "decomposer_only": true,
+    "ground_truth": {
+      "required_facts": [
+        "rooftop pool, 24-hour gym, restaurant, rooftop terrace",
+        "4-star"
+      ],
+      "match_threshold": 1.0
+    }
+  },
+  {
+    "id": "T79",
+    "question": "What are India's land area and capital?",
+    "decomposed_requirements": [
+      {
+        "entity": "India",
+        "attribute": "area"
+      },
+      {
+        "entity": "India",
+        "attribute": "capital"
+      }
+    ],
+    "topic": "countries",
+    "difficulty": "medium",
+    "answer_type": "multi_part",
+    "decomposer_only": true,
+    "ground_truth": {
+      "required_facts": [
+        "3,287,263 square kilometers",
+        "New Delhi"
+      ],
+      "match_threshold": 1.0
+    }
+  },
+  {
+    "id": "T80",
+    "question": "What are Jaipur's recommended travel season and daily travel budget?",
+    "decomposed_requirements": [
+      {
+        "entity": "Jaipur",
+        "attribute": "best_time_to_visit"
+      },
+      {
+        "entity": "Jaipur",
+        "attribute": "daily_budget"
+      }
+    ],
+    "topic": "travel",
+    "difficulty": "medium",
+    "answer_type": "multi_part",
+    "decomposer_only": true,
+    "ground_truth": {
+      "required_facts": [
+        "October to March",
+        "April to June"
+      ],
+      "match_threshold": 1.0
+    }
+  },
+  {
+    "id": "T81",
+    "question": "What are Japan's land area and capital?",
+    "decomposed_requirements": [
+      {
+        "entity": "Japan",
+        "attribute": "area"
+      },
+      {
+        "entity": "Japan",
+        "attribute": "capital"
+      }
+    ],
+    "topic": "countries",
+    "difficulty": "medium",
+    "answer_type": "multi_part",
+    "decomposer_only": true,
+    "ground_truth": {
+      "required_facts": [
+        "377,930 square kilometers",
+        "Tokyo"
+      ],
+      "match_threshold": 1.0
+    }
+  },
+  {
+    "id": "T82",
+    "question": "What are K2's elevation and location?",
+    "decomposed_requirements": [
+      {
+        "entity": "K2",
+        "attribute": "elevation"
+      },
+      {
+        "entity": "K2",
+        "attribute": "location"
+      }
+    ],
+    "topic": "geography",
+    "difficulty": "medium",
+    "answer_type": "multi_part",
+    "decomposer_only": true,
+    "ground_truth": {
+      "required_facts": [
+        "8,611 meters",
+        "Karakoram"
+      ],
+      "match_threshold": 1.0
+    }
+  },
+  {
+    "id": "T83",
+    "question": "What are Kyoto's recommended travel season and daily travel budget?",
+    "decomposed_requirements": [
+      {
+        "entity": "Kyoto",
+        "attribute": "best_time_to_visit"
+      },
+      {
+        "entity": "Kyoto",
+        "attribute": "daily_budget"
+      }
+    ],
+    "topic": "travel",
+    "difficulty": "medium",
+    "answer_type": "multi_part",
+    "decomposer_only": true,
+    "ground_truth": {
+      "required_facts": [
+        "spring",
+        "$120-200"
+      ],
+      "match_threshold": 1.0
+    }
+  },
+  {
+    "id": "T84",
+    "question": "List the amenities of Ibis Jaipur City Centre.",
+    "decomposed_requirements": [
+      {
+        "entity": "Ibis Jaipur City Centre",
+        "attribute": "amenities"
+      }
+    ],
+    "topic": "travel",
+    "difficulty": "medium",
+    "answer_type": "list",
+    "decomposer_only": true,
+    "ground_truth": {
+      "required_facts": [
+        "rooftop pool, 24-hour gym, restaurant, rooftop terrace"
+      ],
+      "match_threshold": 1.0
+    }
+  },
+  {
+    "id": "T85",
+    "question": "List the audio codec support of AirPods Pro 2.",
+    "decomposed_requirements": [
+      {
+        "entity": "AirPods Pro 2",
+        "attribute": "codec_support"
+      }
+    ],
+    "topic": "electronics",
+    "difficulty": "medium",
+    "answer_type": "list",
+    "decomposer_only": true,
+    "ground_truth": {
+      "required_facts": [
+        "AAC"
+      ],
+      "match_threshold": 1.0
+    }
+  },
+  {
+    "id": "T86",
+    "question": "List the audio codec support of Sony WF-1000XM5.",
+    "decomposed_requirements": [
+      {
+        "entity": "Sony WF-1000XM5",
+        "attribute": "codec_support"
+      }
+    ],
+    "topic": "electronics",
+    "difficulty": "medium",
+    "answer_type": "list",
+    "decomposer_only": true,
+    "ground_truth": {
+      "required_facts": [
+        "LDAC"
+      ],
+      "match_threshold": 1.0
+    }
+  },
+  {
+    "id": "T87",
+    "question": "Give me a brief summary of Inception.",
+    "decomposed_requirements": [
+      {
+        "entity": "Inception",
+        "attribute": "summary"
+      }
+    ],
+    "topic": "film",
+    "difficulty": "medium",
+    "answer_type": "narrative",
+    "decomposer_only": true
+  },
+  {
+    "id": "T88",
+    "question": "Give me a brief summary of The Lion King.",
+    "decomposed_requirements": [
+      {
+        "entity": "The Lion King",
+        "attribute": "summary"
+      }
+    ],
+    "topic": "film",
+    "difficulty": "medium",
+    "answer_type": "narrative",
+    "decomposer_only": true
+  },
+  {
+    "id": "T89",
+    "question": "Give me a brief summary of Finding Nemo.",
+    "decomposed_requirements": [
+      {
+        "entity": "Finding Nemo",
+        "attribute": "summary"
+      }
+    ],
+    "topic": "film",
+    "difficulty": "medium",
+    "answer_type": "narrative",
+    "decomposer_only": true
+  },
+  {
+    "id": "T90",
+    "question": "Give me a brief summary of Jurassic Park.",
+    "decomposed_requirements": [
+      {
+        "entity": "Jurassic Park",
+        "attribute": "summary"
+      }
+    ],
+    "topic": "film",
+    "difficulty": "medium",
+    "answer_type": "narrative",
+    "decomposer_only": true
+  },
+  {
+    "id": "T91",
+    "question": "What is the price of the iPhone 16?",
+    "decomposed_requirements": [
+      {
+        "entity": "iPhone 16",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$799"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "phase_c": true
+  },
+  {
+    "id": "T92",
+    "question": "What is the weight of the iPhone 16?",
+    "decomposed_requirements": [
+      {
+        "entity": "iPhone 16",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "170 grams"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "phase_c": true
+  },
+  {
+    "id": "T93",
+    "question": "What is the price of the Google Pixel 9?",
+    "decomposed_requirements": [
+      {
+        "entity": "Google Pixel 9",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$799"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "phase_c": true
+  },
+  {
+    "id": "T94",
+    "question": "What is the weight of the Google Pixel 9?",
+    "decomposed_requirements": [
+      {
+        "entity": "Google Pixel 9",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "198 grams"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "phase_c": true
+  },
+  {
+    "id": "T95",
+    "question": "What is the price of the OnePlus 12?",
+    "decomposed_requirements": [
+      {
+        "entity": "OnePlus 12",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$799"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "phase_c": true
+  },
+  {
+    "id": "T96",
+    "question": "What is the weight of the OnePlus 12?",
+    "decomposed_requirements": [
+      {
+        "entity": "OnePlus 12",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "220 grams"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "phase_c": true
+  },
+  {
+    "id": "T97",
+    "question": "What is the price of the Samsung Galaxy S24 Ultra?",
+    "decomposed_requirements": [
+      {
+        "entity": "Samsung Galaxy S24 Ultra",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$1,299"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "phase_c": true
+  },
+  {
+    "id": "T98",
+    "question": "What is the weight of the Samsung Galaxy S24 Ultra?",
+    "decomposed_requirements": [
+      {
+        "entity": "Samsung Galaxy S24 Ultra",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "232 grams"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "phase_c": true
+  },
+  {
+    "id": "T99",
+    "question": "Compare the iPhone 16 and the Google Pixel 9 on price.",
+    "decomposed_requirements": [
+      {
+        "entity": "iPhone 16",
+        "attribute": "price"
+      },
+      {
+        "entity": "Google Pixel 9",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$799"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T100",
+    "question": "Does the iPhone 16 have a higher price than the Google Pixel 9?",
+    "decomposed_requirements": [
+      {
+        "entity": "iPhone 16",
+        "attribute": "price"
+      },
+      {
+        "entity": "Google Pixel 9",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$799"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T101",
+    "question": "Compare the iPhone 16 and the OnePlus 12 on price.",
+    "decomposed_requirements": [
+      {
+        "entity": "iPhone 16",
+        "attribute": "price"
+      },
+      {
+        "entity": "OnePlus 12",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$799"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T102",
+    "question": "Does the iPhone 16 have a higher price than the OnePlus 12?",
+    "decomposed_requirements": [
+      {
+        "entity": "iPhone 16",
+        "attribute": "price"
+      },
+      {
+        "entity": "OnePlus 12",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$799"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T103",
+    "question": "Compare the iPhone 16 and the Samsung Galaxy S24 Ultra on price.",
+    "decomposed_requirements": [
+      {
+        "entity": "iPhone 16",
+        "attribute": "price"
+      },
+      {
+        "entity": "Samsung Galaxy S24 Ultra",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$799",
+        "$1,299"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T104",
+    "question": "Does the iPhone 16 have a higher price than the Samsung Galaxy S24 Ultra?",
+    "decomposed_requirements": [
+      {
+        "entity": "iPhone 16",
+        "attribute": "price"
+      },
+      {
+        "entity": "Samsung Galaxy S24 Ultra",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$799",
+        "$1,299"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T105",
+    "question": "Compare the Google Pixel 9 and the OnePlus 12 on price.",
+    "decomposed_requirements": [
+      {
+        "entity": "Google Pixel 9",
+        "attribute": "price"
+      },
+      {
+        "entity": "OnePlus 12",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$799"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T106",
+    "question": "Does the Google Pixel 9 have a higher price than the OnePlus 12?",
+    "decomposed_requirements": [
+      {
+        "entity": "Google Pixel 9",
+        "attribute": "price"
+      },
+      {
+        "entity": "OnePlus 12",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$799"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T107",
+    "question": "Compare the Google Pixel 9 and the Samsung Galaxy S24 Ultra on price.",
+    "decomposed_requirements": [
+      {
+        "entity": "Google Pixel 9",
+        "attribute": "price"
+      },
+      {
+        "entity": "Samsung Galaxy S24 Ultra",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$799",
+        "$1,299"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T108",
+    "question": "Does the Google Pixel 9 have a higher price than the Samsung Galaxy S24 Ultra?",
+    "decomposed_requirements": [
+      {
+        "entity": "Google Pixel 9",
+        "attribute": "price"
+      },
+      {
+        "entity": "Samsung Galaxy S24 Ultra",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$799",
+        "$1,299"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T109",
+    "question": "Compare the OnePlus 12 and the Samsung Galaxy S24 Ultra on price.",
+    "decomposed_requirements": [
+      {
+        "entity": "OnePlus 12",
+        "attribute": "price"
+      },
+      {
+        "entity": "Samsung Galaxy S24 Ultra",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$799",
+        "$1,299"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T110",
+    "question": "Does the OnePlus 12 have a higher price than the Samsung Galaxy S24 Ultra?",
+    "decomposed_requirements": [
+      {
+        "entity": "OnePlus 12",
+        "attribute": "price"
+      },
+      {
+        "entity": "Samsung Galaxy S24 Ultra",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$799",
+        "$1,299"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T111",
+    "question": "Compare the iPhone 16 and the Google Pixel 9 on weight.",
+    "decomposed_requirements": [
+      {
+        "entity": "iPhone 16",
+        "attribute": "weight"
+      },
+      {
+        "entity": "Google Pixel 9",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "170 grams",
+        "198 grams"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T112",
+    "question": "Does the iPhone 16 have a higher weight than the Google Pixel 9?",
+    "decomposed_requirements": [
+      {
+        "entity": "iPhone 16",
+        "attribute": "weight"
+      },
+      {
+        "entity": "Google Pixel 9",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "170 grams",
+        "198 grams"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T113",
+    "question": "Compare the iPhone 16 and the OnePlus 12 on weight.",
+    "decomposed_requirements": [
+      {
+        "entity": "iPhone 16",
+        "attribute": "weight"
+      },
+      {
+        "entity": "OnePlus 12",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "170 grams",
+        "220 grams"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T114",
+    "question": "Does the iPhone 16 have a higher weight than the OnePlus 12?",
+    "decomposed_requirements": [
+      {
+        "entity": "iPhone 16",
+        "attribute": "weight"
+      },
+      {
+        "entity": "OnePlus 12",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "170 grams",
+        "220 grams"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T115",
+    "question": "Compare the iPhone 16 and the Samsung Galaxy S24 Ultra on weight.",
+    "decomposed_requirements": [
+      {
+        "entity": "iPhone 16",
+        "attribute": "weight"
+      },
+      {
+        "entity": "Samsung Galaxy S24 Ultra",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "170 grams",
+        "232 grams"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T116",
+    "question": "Does the iPhone 16 have a higher weight than the Samsung Galaxy S24 Ultra?",
+    "decomposed_requirements": [
+      {
+        "entity": "iPhone 16",
+        "attribute": "weight"
+      },
+      {
+        "entity": "Samsung Galaxy S24 Ultra",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "170 grams",
+        "232 grams"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T117",
+    "question": "Compare the Google Pixel 9 and the OnePlus 12 on weight.",
+    "decomposed_requirements": [
+      {
+        "entity": "Google Pixel 9",
+        "attribute": "weight"
+      },
+      {
+        "entity": "OnePlus 12",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "198 grams",
+        "220 grams"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T118",
+    "question": "Does the Google Pixel 9 have a higher weight than the OnePlus 12?",
+    "decomposed_requirements": [
+      {
+        "entity": "Google Pixel 9",
+        "attribute": "weight"
+      },
+      {
+        "entity": "OnePlus 12",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "198 grams",
+        "220 grams"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T119",
+    "question": "Compare the Google Pixel 9 and the Samsung Galaxy S24 Ultra on weight.",
+    "decomposed_requirements": [
+      {
+        "entity": "Google Pixel 9",
+        "attribute": "weight"
+      },
+      {
+        "entity": "Samsung Galaxy S24 Ultra",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "198 grams",
+        "232 grams"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T120",
+    "question": "Does the Google Pixel 9 have a higher weight than the Samsung Galaxy S24 Ultra?",
+    "decomposed_requirements": [
+      {
+        "entity": "Google Pixel 9",
+        "attribute": "weight"
+      },
+      {
+        "entity": "Samsung Galaxy S24 Ultra",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "198 grams",
+        "232 grams"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T121",
+    "question": "Compare the OnePlus 12 and the Samsung Galaxy S24 Ultra on weight.",
+    "decomposed_requirements": [
+      {
+        "entity": "OnePlus 12",
+        "attribute": "weight"
+      },
+      {
+        "entity": "Samsung Galaxy S24 Ultra",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "220 grams",
+        "232 grams"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T122",
+    "question": "Does the OnePlus 12 have a higher weight than the Samsung Galaxy S24 Ultra?",
+    "decomposed_requirements": [
+      {
+        "entity": "OnePlus 12",
+        "attribute": "weight"
+      },
+      {
+        "entity": "Samsung Galaxy S24 Ultra",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "220 grams",
+        "232 grams"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T123",
+    "question": "Compare the iPhone 16 and the Google Pixel 9 on battery.",
+    "decomposed_requirements": [
+      {
+        "entity": "iPhone 16",
+        "attribute": "battery"
+      },
+      {
+        "entity": "Google Pixel 9",
+        "attribute": "battery"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "3561 mAh",
+        "4700 mAh"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T124",
+    "question": "Does the iPhone 16 have a higher battery than the Google Pixel 9?",
+    "decomposed_requirements": [
+      {
+        "entity": "iPhone 16",
+        "attribute": "battery"
+      },
+      {
+        "entity": "Google Pixel 9",
+        "attribute": "battery"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "3561 mAh",
+        "4700 mAh"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T125",
+    "question": "Compare the iPhone 16 and the OnePlus 12 on battery.",
+    "decomposed_requirements": [
+      {
+        "entity": "iPhone 16",
+        "attribute": "battery"
+      },
+      {
+        "entity": "OnePlus 12",
+        "attribute": "battery"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "3561 mAh",
+        "5400 mAh"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T126",
+    "question": "Does the iPhone 16 have a higher battery than the OnePlus 12?",
+    "decomposed_requirements": [
+      {
+        "entity": "iPhone 16",
+        "attribute": "battery"
+      },
+      {
+        "entity": "OnePlus 12",
+        "attribute": "battery"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "3561 mAh",
+        "5400 mAh"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T127",
+    "question": "Compare the iPhone 16 and the Samsung Galaxy S24 Ultra on battery.",
+    "decomposed_requirements": [
+      {
+        "entity": "iPhone 16",
+        "attribute": "battery"
+      },
+      {
+        "entity": "Samsung Galaxy S24 Ultra",
+        "attribute": "battery"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "3561 mAh",
+        "5000 mAh"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T128",
+    "question": "Does the iPhone 16 have a higher battery than the Samsung Galaxy S24 Ultra?",
+    "decomposed_requirements": [
+      {
+        "entity": "iPhone 16",
+        "attribute": "battery"
+      },
+      {
+        "entity": "Samsung Galaxy S24 Ultra",
+        "attribute": "battery"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "3561 mAh",
+        "5000 mAh"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T129",
+    "question": "Compare the Google Pixel 9 and the OnePlus 12 on battery.",
+    "decomposed_requirements": [
+      {
+        "entity": "Google Pixel 9",
+        "attribute": "battery"
+      },
+      {
+        "entity": "OnePlus 12",
+        "attribute": "battery"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "4700 mAh",
+        "5400 mAh"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T130",
+    "question": "Does the Google Pixel 9 have a higher battery than the OnePlus 12?",
+    "decomposed_requirements": [
+      {
+        "entity": "Google Pixel 9",
+        "attribute": "battery"
+      },
+      {
+        "entity": "OnePlus 12",
+        "attribute": "battery"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "4700 mAh",
+        "5400 mAh"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T131",
+    "question": "Compare the Google Pixel 9 and the Samsung Galaxy S24 Ultra on battery.",
+    "decomposed_requirements": [
+      {
+        "entity": "Google Pixel 9",
+        "attribute": "battery"
+      },
+      {
+        "entity": "Samsung Galaxy S24 Ultra",
+        "attribute": "battery"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "4700 mAh",
+        "5000 mAh"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T132",
+    "question": "Does the Google Pixel 9 have a higher battery than the Samsung Galaxy S24 Ultra?",
+    "decomposed_requirements": [
+      {
+        "entity": "Google Pixel 9",
+        "attribute": "battery"
+      },
+      {
+        "entity": "Samsung Galaxy S24 Ultra",
+        "attribute": "battery"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "4700 mAh",
+        "5000 mAh"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T133",
+    "question": "Compare the OnePlus 12 and the Samsung Galaxy S24 Ultra on battery.",
+    "decomposed_requirements": [
+      {
+        "entity": "OnePlus 12",
+        "attribute": "battery"
+      },
+      {
+        "entity": "Samsung Galaxy S24 Ultra",
+        "attribute": "battery"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "5400 mAh",
+        "5000 mAh"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T134",
+    "question": "Does the OnePlus 12 have a higher battery than the Samsung Galaxy S24 Ultra?",
+    "decomposed_requirements": [
+      {
+        "entity": "OnePlus 12",
+        "attribute": "battery"
+      },
+      {
+        "entity": "Samsung Galaxy S24 Ultra",
+        "attribute": "battery"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "5400 mAh",
+        "5000 mAh"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T135",
+    "question": "Compare the iPhone 16 and the Google Pixel 9 on camera.",
+    "decomposed_requirements": [
+      {
+        "entity": "iPhone 16",
+        "attribute": "camera"
+      },
+      {
+        "entity": "Google Pixel 9",
+        "attribute": "camera"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "48MP",
+        "50MP"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T136",
+    "question": "Does the iPhone 16 have a higher camera than the Google Pixel 9?",
+    "decomposed_requirements": [
+      {
+        "entity": "iPhone 16",
+        "attribute": "camera"
+      },
+      {
+        "entity": "Google Pixel 9",
+        "attribute": "camera"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "48MP",
+        "50MP"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T137",
+    "question": "Compare the iPhone 16 and the OnePlus 12 on camera.",
+    "decomposed_requirements": [
+      {
+        "entity": "iPhone 16",
+        "attribute": "camera"
+      },
+      {
+        "entity": "OnePlus 12",
+        "attribute": "camera"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "48MP",
+        "50MP"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T138",
+    "question": "Does the iPhone 16 have a higher camera than the OnePlus 12?",
+    "decomposed_requirements": [
+      {
+        "entity": "iPhone 16",
+        "attribute": "camera"
+      },
+      {
+        "entity": "OnePlus 12",
+        "attribute": "camera"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "48MP",
+        "50MP"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T139",
+    "question": "Compare the iPhone 16 and the Samsung Galaxy S24 Ultra on camera.",
+    "decomposed_requirements": [
+      {
+        "entity": "iPhone 16",
+        "attribute": "camera"
+      },
+      {
+        "entity": "Samsung Galaxy S24 Ultra",
+        "attribute": "camera"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "48MP",
+        "200MP"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T140",
+    "question": "Does the iPhone 16 have a higher camera than the Samsung Galaxy S24 Ultra?",
+    "decomposed_requirements": [
+      {
+        "entity": "iPhone 16",
+        "attribute": "camera"
+      },
+      {
+        "entity": "Samsung Galaxy S24 Ultra",
+        "attribute": "camera"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "48MP",
+        "200MP"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T141",
+    "question": "Compare the Google Pixel 9 and the OnePlus 12 on camera.",
+    "decomposed_requirements": [
+      {
+        "entity": "Google Pixel 9",
+        "attribute": "camera"
+      },
+      {
+        "entity": "OnePlus 12",
+        "attribute": "camera"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "50MP"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T142",
+    "question": "Does the Google Pixel 9 have a higher camera than the OnePlus 12?",
+    "decomposed_requirements": [
+      {
+        "entity": "Google Pixel 9",
+        "attribute": "camera"
+      },
+      {
+        "entity": "OnePlus 12",
+        "attribute": "camera"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "50MP"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T143",
+    "question": "Compare the Google Pixel 9 and the Samsung Galaxy S24 Ultra on camera.",
+    "decomposed_requirements": [
+      {
+        "entity": "Google Pixel 9",
+        "attribute": "camera"
+      },
+      {
+        "entity": "Samsung Galaxy S24 Ultra",
+        "attribute": "camera"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "50MP",
+        "200MP"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T144",
+    "question": "Does the Google Pixel 9 have a higher camera than the Samsung Galaxy S24 Ultra?",
+    "decomposed_requirements": [
+      {
+        "entity": "Google Pixel 9",
+        "attribute": "camera"
+      },
+      {
+        "entity": "Samsung Galaxy S24 Ultra",
+        "attribute": "camera"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "50MP",
+        "200MP"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T145",
+    "question": "Compare the OnePlus 12 and the Samsung Galaxy S24 Ultra on camera.",
+    "decomposed_requirements": [
+      {
+        "entity": "OnePlus 12",
+        "attribute": "camera"
+      },
+      {
+        "entity": "Samsung Galaxy S24 Ultra",
+        "attribute": "camera"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "50MP",
+        "200MP"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T146",
+    "question": "Does the OnePlus 12 have a higher camera than the Samsung Galaxy S24 Ultra?",
+    "decomposed_requirements": [
+      {
+        "entity": "OnePlus 12",
+        "attribute": "camera"
+      },
+      {
+        "entity": "Samsung Galaxy S24 Ultra",
+        "attribute": "camera"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "50MP",
+        "200MP"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T147",
+    "question": "Compare the iPhone 16 and the Google Pixel 9 on display refresh rate.",
+    "decomposed_requirements": [
+      {
+        "entity": "iPhone 16",
+        "attribute": "display_refresh_rate"
+      },
+      {
+        "entity": "Google Pixel 9",
+        "attribute": "display_refresh_rate"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "60Hz",
+        "120Hz"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T148",
+    "question": "Does the iPhone 16 have a higher display refresh rate than the Google Pixel 9?",
+    "decomposed_requirements": [
+      {
+        "entity": "iPhone 16",
+        "attribute": "display_refresh_rate"
+      },
+      {
+        "entity": "Google Pixel 9",
+        "attribute": "display_refresh_rate"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "60Hz",
+        "120Hz"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T149",
+    "question": "Compare the iPhone 16 and the OnePlus 12 on display refresh rate.",
+    "decomposed_requirements": [
+      {
+        "entity": "iPhone 16",
+        "attribute": "display_refresh_rate"
+      },
+      {
+        "entity": "OnePlus 12",
+        "attribute": "display_refresh_rate"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "60Hz",
+        "120Hz"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T150",
+    "question": "Does the iPhone 16 have a higher display refresh rate than the OnePlus 12?",
+    "decomposed_requirements": [
+      {
+        "entity": "iPhone 16",
+        "attribute": "display_refresh_rate"
+      },
+      {
+        "entity": "OnePlus 12",
+        "attribute": "display_refresh_rate"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "60Hz",
+        "120Hz"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T151",
+    "question": "Compare the iPhone 16 and the Samsung Galaxy S24 Ultra on display refresh rate.",
+    "decomposed_requirements": [
+      {
+        "entity": "iPhone 16",
+        "attribute": "display_refresh_rate"
+      },
+      {
+        "entity": "Samsung Galaxy S24 Ultra",
+        "attribute": "display_refresh_rate"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "60Hz",
+        "120Hz"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T152",
+    "question": "Does the iPhone 16 have a higher display refresh rate than the Samsung Galaxy S24 Ultra?",
+    "decomposed_requirements": [
+      {
+        "entity": "iPhone 16",
+        "attribute": "display_refresh_rate"
+      },
+      {
+        "entity": "Samsung Galaxy S24 Ultra",
+        "attribute": "display_refresh_rate"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "60Hz",
+        "120Hz"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T153",
+    "question": "Compare the Google Pixel 9 and the OnePlus 12 on display refresh rate.",
+    "decomposed_requirements": [
+      {
+        "entity": "Google Pixel 9",
+        "attribute": "display_refresh_rate"
+      },
+      {
+        "entity": "OnePlus 12",
+        "attribute": "display_refresh_rate"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "120Hz"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T154",
+    "question": "Does the Google Pixel 9 have a higher display refresh rate than the OnePlus 12?",
+    "decomposed_requirements": [
+      {
+        "entity": "Google Pixel 9",
+        "attribute": "display_refresh_rate"
+      },
+      {
+        "entity": "OnePlus 12",
+        "attribute": "display_refresh_rate"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "120Hz"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T155",
+    "question": "Compare the Google Pixel 9 and the Samsung Galaxy S24 Ultra on display refresh rate.",
+    "decomposed_requirements": [
+      {
+        "entity": "Google Pixel 9",
+        "attribute": "display_refresh_rate"
+      },
+      {
+        "entity": "Samsung Galaxy S24 Ultra",
+        "attribute": "display_refresh_rate"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "120Hz"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T156",
+    "question": "Does the Google Pixel 9 have a higher display refresh rate than the Samsung Galaxy S24 Ultra?",
+    "decomposed_requirements": [
+      {
+        "entity": "Google Pixel 9",
+        "attribute": "display_refresh_rate"
+      },
+      {
+        "entity": "Samsung Galaxy S24 Ultra",
+        "attribute": "display_refresh_rate"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "120Hz"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T157",
+    "question": "Compare the OnePlus 12 and the Samsung Galaxy S24 Ultra on display refresh rate.",
+    "decomposed_requirements": [
+      {
+        "entity": "OnePlus 12",
+        "attribute": "display_refresh_rate"
+      },
+      {
+        "entity": "Samsung Galaxy S24 Ultra",
+        "attribute": "display_refresh_rate"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "120Hz"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T158",
+    "question": "Does the OnePlus 12 have a higher display refresh rate than the Samsung Galaxy S24 Ultra?",
+    "decomposed_requirements": [
+      {
+        "entity": "OnePlus 12",
+        "attribute": "display_refresh_rate"
+      },
+      {
+        "entity": "Samsung Galaxy S24 Ultra",
+        "attribute": "display_refresh_rate"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "120Hz"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T159",
+    "question": "Compare the iPhone 16 and the Google Pixel 9 on chip.",
+    "decomposed_requirements": [
+      {
+        "entity": "iPhone 16",
+        "attribute": "chip"
+      },
+      {
+        "entity": "Google Pixel 9",
+        "attribute": "chip"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "A18",
+        "Tensor G4"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T160",
+    "question": "Does the iPhone 16 have a higher chip than the Google Pixel 9?",
+    "decomposed_requirements": [
+      {
+        "entity": "iPhone 16",
+        "attribute": "chip"
+      },
+      {
+        "entity": "Google Pixel 9",
+        "attribute": "chip"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "A18",
+        "Tensor G4"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T161",
+    "question": "Compare the iPhone 16 and the OnePlus 12 on chip.",
+    "decomposed_requirements": [
+      {
+        "entity": "iPhone 16",
+        "attribute": "chip"
+      },
+      {
+        "entity": "OnePlus 12",
+        "attribute": "chip"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "A18",
+        "Snapdragon 8 Gen 3"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T162",
+    "question": "Does the iPhone 16 have a higher chip than the OnePlus 12?",
+    "decomposed_requirements": [
+      {
+        "entity": "iPhone 16",
+        "attribute": "chip"
+      },
+      {
+        "entity": "OnePlus 12",
+        "attribute": "chip"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "A18",
+        "Snapdragon 8 Gen 3"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T163",
+    "question": "Compare the iPhone 16 and the Samsung Galaxy S24 Ultra on chip.",
+    "decomposed_requirements": [
+      {
+        "entity": "iPhone 16",
+        "attribute": "chip"
+      },
+      {
+        "entity": "Samsung Galaxy S24 Ultra",
+        "attribute": "chip"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "A18",
+        "Snapdragon 8 Gen 3"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T164",
+    "question": "Does the iPhone 16 have a higher chip than the Samsung Galaxy S24 Ultra?",
+    "decomposed_requirements": [
+      {
+        "entity": "iPhone 16",
+        "attribute": "chip"
+      },
+      {
+        "entity": "Samsung Galaxy S24 Ultra",
+        "attribute": "chip"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "A18",
+        "Snapdragon 8 Gen 3"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T165",
+    "question": "Compare the Google Pixel 9 and the OnePlus 12 on chip.",
+    "decomposed_requirements": [
+      {
+        "entity": "Google Pixel 9",
+        "attribute": "chip"
+      },
+      {
+        "entity": "OnePlus 12",
+        "attribute": "chip"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "Tensor G4",
+        "Snapdragon 8 Gen 3"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T166",
+    "question": "Does the Google Pixel 9 have a higher chip than the OnePlus 12?",
+    "decomposed_requirements": [
+      {
+        "entity": "Google Pixel 9",
+        "attribute": "chip"
+      },
+      {
+        "entity": "OnePlus 12",
+        "attribute": "chip"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "Tensor G4",
+        "Snapdragon 8 Gen 3"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T167",
+    "question": "Compare the Google Pixel 9 and the Samsung Galaxy S24 Ultra on chip.",
+    "decomposed_requirements": [
+      {
+        "entity": "Google Pixel 9",
+        "attribute": "chip"
+      },
+      {
+        "entity": "Samsung Galaxy S24 Ultra",
+        "attribute": "chip"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "Tensor G4",
+        "Snapdragon 8 Gen 3"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T168",
+    "question": "Does the Google Pixel 9 have a higher chip than the Samsung Galaxy S24 Ultra?",
+    "decomposed_requirements": [
+      {
+        "entity": "Google Pixel 9",
+        "attribute": "chip"
+      },
+      {
+        "entity": "Samsung Galaxy S24 Ultra",
+        "attribute": "chip"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "Tensor G4",
+        "Snapdragon 8 Gen 3"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T169",
+    "question": "Compare the OnePlus 12 and the Samsung Galaxy S24 Ultra on chip.",
+    "decomposed_requirements": [
+      {
+        "entity": "OnePlus 12",
+        "attribute": "chip"
+      },
+      {
+        "entity": "Samsung Galaxy S24 Ultra",
+        "attribute": "chip"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "Snapdragon 8 Gen 3"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T170",
+    "question": "Does the OnePlus 12 have a higher chip than the Samsung Galaxy S24 Ultra?",
+    "decomposed_requirements": [
+      {
+        "entity": "OnePlus 12",
+        "attribute": "chip"
+      },
+      {
+        "entity": "Samsung Galaxy S24 Ultra",
+        "attribute": "chip"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "Snapdragon 8 Gen 3"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T171",
+    "question": "What are the price and weight of the iPhone 16?",
+    "decomposed_requirements": [
+      {
+        "entity": "iPhone 16",
+        "attribute": "price"
+      },
+      {
+        "entity": "iPhone 16",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$799",
+        "170 grams"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "multi_part",
+    "phase_c": true
+  },
+  {
+    "id": "T172",
+    "question": "What are the price and weight of the Google Pixel 9?",
+    "decomposed_requirements": [
+      {
+        "entity": "Google Pixel 9",
+        "attribute": "price"
+      },
+      {
+        "entity": "Google Pixel 9",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$799",
+        "198 grams"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "multi_part",
+    "phase_c": true
+  },
+  {
+    "id": "T173",
+    "question": "What are the price and weight of the OnePlus 12?",
+    "decomposed_requirements": [
+      {
+        "entity": "OnePlus 12",
+        "attribute": "price"
+      },
+      {
+        "entity": "OnePlus 12",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$799",
+        "220 grams"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "multi_part",
+    "phase_c": true
+  },
+  {
+    "id": "T174",
+    "question": "What are the price and weight of the Samsung Galaxy S24 Ultra?",
+    "decomposed_requirements": [
+      {
+        "entity": "Samsung Galaxy S24 Ultra",
+        "attribute": "price"
+      },
+      {
+        "entity": "Samsung Galaxy S24 Ultra",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$1,299",
+        "232 grams"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "phones",
+    "difficulty": "medium",
+    "answer_type": "multi_part",
+    "phase_c": true
+  },
+  {
+    "id": "T175",
+    "question": "What is the price of the MacBook Pro 14 M4?",
+    "decomposed_requirements": [
+      {
+        "entity": "MacBook Pro 14 M4",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$1,599"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "phase_c": true
+  },
+  {
+    "id": "T176",
+    "question": "What is the weight of the MacBook Pro 14 M4?",
+    "decomposed_requirements": [
+      {
+        "entity": "MacBook Pro 14 M4",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "3.4 pounds"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "phase_c": true
+  },
+  {
+    "id": "T177",
+    "question": "What is the price of the Lenovo ThinkPad X1 Carbon?",
+    "decomposed_requirements": [
+      {
+        "entity": "Lenovo ThinkPad X1 Carbon",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$1,399"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "phase_c": true
+  },
+  {
+    "id": "T178",
+    "question": "What is the weight of the Lenovo ThinkPad X1 Carbon?",
+    "decomposed_requirements": [
+      {
+        "entity": "Lenovo ThinkPad X1 Carbon",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "2.4 pounds"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "phase_c": true
+  },
+  {
+    "id": "T179",
+    "question": "What is the price of the Asus Zenbook 14 OLED?",
+    "decomposed_requirements": [
+      {
+        "entity": "Asus Zenbook 14 OLED",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$1,099"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "phase_c": true
+  },
+  {
+    "id": "T180",
+    "question": "What is the weight of the Asus Zenbook 14 OLED?",
+    "decomposed_requirements": [
+      {
+        "entity": "Asus Zenbook 14 OLED",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "2.8 pounds"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "phase_c": true
+  },
+  {
+    "id": "T181",
+    "question": "What is the price of the HP Spectre x360 14?",
+    "decomposed_requirements": [
+      {
+        "entity": "HP Spectre x360 14",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$1,449"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "phase_c": true
+  },
+  {
+    "id": "T182",
+    "question": "What is the weight of the HP Spectre x360 14?",
+    "decomposed_requirements": [
+      {
+        "entity": "HP Spectre x360 14",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "3.2 pounds"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "phase_c": true
+  },
+  {
+    "id": "T183",
+    "question": "Compare the MacBook Pro 14 M4 and the Lenovo ThinkPad X1 Carbon on price.",
+    "decomposed_requirements": [
+      {
+        "entity": "MacBook Pro 14 M4",
+        "attribute": "price"
+      },
+      {
+        "entity": "Lenovo ThinkPad X1 Carbon",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$1,599",
+        "$1,399"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T184",
+    "question": "Does the MacBook Pro 14 M4 have a higher price than the Lenovo ThinkPad X1 Carbon?",
+    "decomposed_requirements": [
+      {
+        "entity": "MacBook Pro 14 M4",
+        "attribute": "price"
+      },
+      {
+        "entity": "Lenovo ThinkPad X1 Carbon",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$1,599",
+        "$1,399"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T185",
+    "question": "Compare the MacBook Pro 14 M4 and the Asus Zenbook 14 OLED on price.",
+    "decomposed_requirements": [
+      {
+        "entity": "MacBook Pro 14 M4",
+        "attribute": "price"
+      },
+      {
+        "entity": "Asus Zenbook 14 OLED",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$1,599",
+        "$1,099"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T186",
+    "question": "Does the MacBook Pro 14 M4 have a higher price than the Asus Zenbook 14 OLED?",
+    "decomposed_requirements": [
+      {
+        "entity": "MacBook Pro 14 M4",
+        "attribute": "price"
+      },
+      {
+        "entity": "Asus Zenbook 14 OLED",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$1,599",
+        "$1,099"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T187",
+    "question": "Compare the MacBook Pro 14 M4 and the HP Spectre x360 14 on price.",
+    "decomposed_requirements": [
+      {
+        "entity": "MacBook Pro 14 M4",
+        "attribute": "price"
+      },
+      {
+        "entity": "HP Spectre x360 14",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$1,599",
+        "$1,449"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T188",
+    "question": "Does the MacBook Pro 14 M4 have a higher price than the HP Spectre x360 14?",
+    "decomposed_requirements": [
+      {
+        "entity": "MacBook Pro 14 M4",
+        "attribute": "price"
+      },
+      {
+        "entity": "HP Spectre x360 14",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$1,599",
+        "$1,449"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T189",
+    "question": "Compare the Lenovo ThinkPad X1 Carbon and the Asus Zenbook 14 OLED on price.",
+    "decomposed_requirements": [
+      {
+        "entity": "Lenovo ThinkPad X1 Carbon",
+        "attribute": "price"
+      },
+      {
+        "entity": "Asus Zenbook 14 OLED",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$1,399",
+        "$1,099"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T190",
+    "question": "Does the Lenovo ThinkPad X1 Carbon have a higher price than the Asus Zenbook 14 OLED?",
+    "decomposed_requirements": [
+      {
+        "entity": "Lenovo ThinkPad X1 Carbon",
+        "attribute": "price"
+      },
+      {
+        "entity": "Asus Zenbook 14 OLED",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$1,399",
+        "$1,099"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T191",
+    "question": "Compare the Lenovo ThinkPad X1 Carbon and the HP Spectre x360 14 on price.",
+    "decomposed_requirements": [
+      {
+        "entity": "Lenovo ThinkPad X1 Carbon",
+        "attribute": "price"
+      },
+      {
+        "entity": "HP Spectre x360 14",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$1,399",
+        "$1,449"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T192",
+    "question": "Does the Lenovo ThinkPad X1 Carbon have a higher price than the HP Spectre x360 14?",
+    "decomposed_requirements": [
+      {
+        "entity": "Lenovo ThinkPad X1 Carbon",
+        "attribute": "price"
+      },
+      {
+        "entity": "HP Spectre x360 14",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$1,399",
+        "$1,449"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T193",
+    "question": "Compare the Asus Zenbook 14 OLED and the HP Spectre x360 14 on price.",
+    "decomposed_requirements": [
+      {
+        "entity": "Asus Zenbook 14 OLED",
+        "attribute": "price"
+      },
+      {
+        "entity": "HP Spectre x360 14",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$1,099",
+        "$1,449"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T194",
+    "question": "Does the Asus Zenbook 14 OLED have a higher price than the HP Spectre x360 14?",
+    "decomposed_requirements": [
+      {
+        "entity": "Asus Zenbook 14 OLED",
+        "attribute": "price"
+      },
+      {
+        "entity": "HP Spectre x360 14",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$1,099",
+        "$1,449"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T195",
+    "question": "Compare the MacBook Pro 14 M4 and the Lenovo ThinkPad X1 Carbon on weight.",
+    "decomposed_requirements": [
+      {
+        "entity": "MacBook Pro 14 M4",
+        "attribute": "weight"
+      },
+      {
+        "entity": "Lenovo ThinkPad X1 Carbon",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "3.4 pounds",
+        "2.4 pounds"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T196",
+    "question": "Does the MacBook Pro 14 M4 have a higher weight than the Lenovo ThinkPad X1 Carbon?",
+    "decomposed_requirements": [
+      {
+        "entity": "MacBook Pro 14 M4",
+        "attribute": "weight"
+      },
+      {
+        "entity": "Lenovo ThinkPad X1 Carbon",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "3.4 pounds",
+        "2.4 pounds"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T197",
+    "question": "Compare the MacBook Pro 14 M4 and the Asus Zenbook 14 OLED on weight.",
+    "decomposed_requirements": [
+      {
+        "entity": "MacBook Pro 14 M4",
+        "attribute": "weight"
+      },
+      {
+        "entity": "Asus Zenbook 14 OLED",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "3.4 pounds",
+        "2.8 pounds"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T198",
+    "question": "Does the MacBook Pro 14 M4 have a higher weight than the Asus Zenbook 14 OLED?",
+    "decomposed_requirements": [
+      {
+        "entity": "MacBook Pro 14 M4",
+        "attribute": "weight"
+      },
+      {
+        "entity": "Asus Zenbook 14 OLED",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "3.4 pounds",
+        "2.8 pounds"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T199",
+    "question": "Compare the MacBook Pro 14 M4 and the HP Spectre x360 14 on weight.",
+    "decomposed_requirements": [
+      {
+        "entity": "MacBook Pro 14 M4",
+        "attribute": "weight"
+      },
+      {
+        "entity": "HP Spectre x360 14",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "3.4 pounds",
+        "3.2 pounds"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T200",
+    "question": "Does the MacBook Pro 14 M4 have a higher weight than the HP Spectre x360 14?",
+    "decomposed_requirements": [
+      {
+        "entity": "MacBook Pro 14 M4",
+        "attribute": "weight"
+      },
+      {
+        "entity": "HP Spectre x360 14",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "3.4 pounds",
+        "3.2 pounds"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T201",
+    "question": "Compare the Lenovo ThinkPad X1 Carbon and the Asus Zenbook 14 OLED on weight.",
+    "decomposed_requirements": [
+      {
+        "entity": "Lenovo ThinkPad X1 Carbon",
+        "attribute": "weight"
+      },
+      {
+        "entity": "Asus Zenbook 14 OLED",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "2.4 pounds",
+        "2.8 pounds"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T202",
+    "question": "Does the Lenovo ThinkPad X1 Carbon have a higher weight than the Asus Zenbook 14 OLED?",
+    "decomposed_requirements": [
+      {
+        "entity": "Lenovo ThinkPad X1 Carbon",
+        "attribute": "weight"
+      },
+      {
+        "entity": "Asus Zenbook 14 OLED",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "2.4 pounds",
+        "2.8 pounds"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T203",
+    "question": "Compare the Lenovo ThinkPad X1 Carbon and the HP Spectre x360 14 on weight.",
+    "decomposed_requirements": [
+      {
+        "entity": "Lenovo ThinkPad X1 Carbon",
+        "attribute": "weight"
+      },
+      {
+        "entity": "HP Spectre x360 14",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "2.4 pounds",
+        "3.2 pounds"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T204",
+    "question": "Does the Lenovo ThinkPad X1 Carbon have a higher weight than the HP Spectre x360 14?",
+    "decomposed_requirements": [
+      {
+        "entity": "Lenovo ThinkPad X1 Carbon",
+        "attribute": "weight"
+      },
+      {
+        "entity": "HP Spectre x360 14",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "2.4 pounds",
+        "3.2 pounds"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T205",
+    "question": "Compare the Asus Zenbook 14 OLED and the HP Spectre x360 14 on weight.",
+    "decomposed_requirements": [
+      {
+        "entity": "Asus Zenbook 14 OLED",
+        "attribute": "weight"
+      },
+      {
+        "entity": "HP Spectre x360 14",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "2.8 pounds",
+        "3.2 pounds"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T206",
+    "question": "Does the Asus Zenbook 14 OLED have a higher weight than the HP Spectre x360 14?",
+    "decomposed_requirements": [
+      {
+        "entity": "Asus Zenbook 14 OLED",
+        "attribute": "weight"
+      },
+      {
+        "entity": "HP Spectre x360 14",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "2.8 pounds",
+        "3.2 pounds"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T207",
+    "question": "Compare the MacBook Pro 14 M4 and the Lenovo ThinkPad X1 Carbon on battery.",
+    "decomposed_requirements": [
+      {
+        "entity": "MacBook Pro 14 M4",
+        "attribute": "battery"
+      },
+      {
+        "entity": "Lenovo ThinkPad X1 Carbon",
+        "attribute": "battery"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "22 hours",
+        "15 hours"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T208",
+    "question": "Does the MacBook Pro 14 M4 have a higher battery than the Lenovo ThinkPad X1 Carbon?",
+    "decomposed_requirements": [
+      {
+        "entity": "MacBook Pro 14 M4",
+        "attribute": "battery"
+      },
+      {
+        "entity": "Lenovo ThinkPad X1 Carbon",
+        "attribute": "battery"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "22 hours",
+        "15 hours"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T209",
+    "question": "Compare the MacBook Pro 14 M4 and the Asus Zenbook 14 OLED on battery.",
+    "decomposed_requirements": [
+      {
+        "entity": "MacBook Pro 14 M4",
+        "attribute": "battery"
+      },
+      {
+        "entity": "Asus Zenbook 14 OLED",
+        "attribute": "battery"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "22 hours",
+        "17 hours"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T210",
+    "question": "Does the MacBook Pro 14 M4 have a higher battery than the Asus Zenbook 14 OLED?",
+    "decomposed_requirements": [
+      {
+        "entity": "MacBook Pro 14 M4",
+        "attribute": "battery"
+      },
+      {
+        "entity": "Asus Zenbook 14 OLED",
+        "attribute": "battery"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "22 hours",
+        "17 hours"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T211",
+    "question": "Compare the MacBook Pro 14 M4 and the HP Spectre x360 14 on battery.",
+    "decomposed_requirements": [
+      {
+        "entity": "MacBook Pro 14 M4",
+        "attribute": "battery"
+      },
+      {
+        "entity": "HP Spectre x360 14",
+        "attribute": "battery"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "22 hours",
+        "16 hours"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T212",
+    "question": "Does the MacBook Pro 14 M4 have a higher battery than the HP Spectre x360 14?",
+    "decomposed_requirements": [
+      {
+        "entity": "MacBook Pro 14 M4",
+        "attribute": "battery"
+      },
+      {
+        "entity": "HP Spectre x360 14",
+        "attribute": "battery"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "22 hours",
+        "16 hours"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T213",
+    "question": "Compare the Lenovo ThinkPad X1 Carbon and the Asus Zenbook 14 OLED on battery.",
+    "decomposed_requirements": [
+      {
+        "entity": "Lenovo ThinkPad X1 Carbon",
+        "attribute": "battery"
+      },
+      {
+        "entity": "Asus Zenbook 14 OLED",
+        "attribute": "battery"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "15 hours",
+        "17 hours"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T214",
+    "question": "Does the Lenovo ThinkPad X1 Carbon have a higher battery than the Asus Zenbook 14 OLED?",
+    "decomposed_requirements": [
+      {
+        "entity": "Lenovo ThinkPad X1 Carbon",
+        "attribute": "battery"
+      },
+      {
+        "entity": "Asus Zenbook 14 OLED",
+        "attribute": "battery"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "15 hours",
+        "17 hours"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T215",
+    "question": "Compare the Lenovo ThinkPad X1 Carbon and the HP Spectre x360 14 on battery.",
+    "decomposed_requirements": [
+      {
+        "entity": "Lenovo ThinkPad X1 Carbon",
+        "attribute": "battery"
+      },
+      {
+        "entity": "HP Spectre x360 14",
+        "attribute": "battery"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "15 hours",
+        "16 hours"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T216",
+    "question": "Does the Lenovo ThinkPad X1 Carbon have a higher battery than the HP Spectre x360 14?",
+    "decomposed_requirements": [
+      {
+        "entity": "Lenovo ThinkPad X1 Carbon",
+        "attribute": "battery"
+      },
+      {
+        "entity": "HP Spectre x360 14",
+        "attribute": "battery"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "15 hours",
+        "16 hours"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T217",
+    "question": "Compare the Asus Zenbook 14 OLED and the HP Spectre x360 14 on battery.",
+    "decomposed_requirements": [
+      {
+        "entity": "Asus Zenbook 14 OLED",
+        "attribute": "battery"
+      },
+      {
+        "entity": "HP Spectre x360 14",
+        "attribute": "battery"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "17 hours",
+        "16 hours"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T218",
+    "question": "Does the Asus Zenbook 14 OLED have a higher battery than the HP Spectre x360 14?",
+    "decomposed_requirements": [
+      {
+        "entity": "Asus Zenbook 14 OLED",
+        "attribute": "battery"
+      },
+      {
+        "entity": "HP Spectre x360 14",
+        "attribute": "battery"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "17 hours",
+        "16 hours"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T219",
+    "question": "Compare the MacBook Pro 14 M4 and the Lenovo ThinkPad X1 Carbon on chip.",
+    "decomposed_requirements": [
+      {
+        "entity": "MacBook Pro 14 M4",
+        "attribute": "chip"
+      },
+      {
+        "entity": "Lenovo ThinkPad X1 Carbon",
+        "attribute": "chip"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "M4",
+        "Intel Core Ultra 7"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T220",
+    "question": "Does the MacBook Pro 14 M4 have a higher chip than the Lenovo ThinkPad X1 Carbon?",
+    "decomposed_requirements": [
+      {
+        "entity": "MacBook Pro 14 M4",
+        "attribute": "chip"
+      },
+      {
+        "entity": "Lenovo ThinkPad X1 Carbon",
+        "attribute": "chip"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "M4",
+        "Intel Core Ultra 7"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T221",
+    "question": "Compare the MacBook Pro 14 M4 and the Asus Zenbook 14 OLED on chip.",
+    "decomposed_requirements": [
+      {
+        "entity": "MacBook Pro 14 M4",
+        "attribute": "chip"
+      },
+      {
+        "entity": "Asus Zenbook 14 OLED",
+        "attribute": "chip"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "M4",
+        "Intel Core Ultra 5"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T222",
+    "question": "Does the MacBook Pro 14 M4 have a higher chip than the Asus Zenbook 14 OLED?",
+    "decomposed_requirements": [
+      {
+        "entity": "MacBook Pro 14 M4",
+        "attribute": "chip"
+      },
+      {
+        "entity": "Asus Zenbook 14 OLED",
+        "attribute": "chip"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "M4",
+        "Intel Core Ultra 5"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T223",
+    "question": "Compare the MacBook Pro 14 M4 and the HP Spectre x360 14 on chip.",
+    "decomposed_requirements": [
+      {
+        "entity": "MacBook Pro 14 M4",
+        "attribute": "chip"
+      },
+      {
+        "entity": "HP Spectre x360 14",
+        "attribute": "chip"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "M4",
+        "Intel Core Ultra 7"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T224",
+    "question": "Does the MacBook Pro 14 M4 have a higher chip than the HP Spectre x360 14?",
+    "decomposed_requirements": [
+      {
+        "entity": "MacBook Pro 14 M4",
+        "attribute": "chip"
+      },
+      {
+        "entity": "HP Spectre x360 14",
+        "attribute": "chip"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "M4",
+        "Intel Core Ultra 7"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T225",
+    "question": "Compare the Lenovo ThinkPad X1 Carbon and the Asus Zenbook 14 OLED on chip.",
+    "decomposed_requirements": [
+      {
+        "entity": "Lenovo ThinkPad X1 Carbon",
+        "attribute": "chip"
+      },
+      {
+        "entity": "Asus Zenbook 14 OLED",
+        "attribute": "chip"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "Intel Core Ultra 7",
+        "Intel Core Ultra 5"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T226",
+    "question": "Does the Lenovo ThinkPad X1 Carbon have a higher chip than the Asus Zenbook 14 OLED?",
+    "decomposed_requirements": [
+      {
+        "entity": "Lenovo ThinkPad X1 Carbon",
+        "attribute": "chip"
+      },
+      {
+        "entity": "Asus Zenbook 14 OLED",
+        "attribute": "chip"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "Intel Core Ultra 7",
+        "Intel Core Ultra 5"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T227",
+    "question": "Compare the Lenovo ThinkPad X1 Carbon and the HP Spectre x360 14 on chip.",
+    "decomposed_requirements": [
+      {
+        "entity": "Lenovo ThinkPad X1 Carbon",
+        "attribute": "chip"
+      },
+      {
+        "entity": "HP Spectre x360 14",
+        "attribute": "chip"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "Intel Core Ultra 7"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T228",
+    "question": "Does the Lenovo ThinkPad X1 Carbon have a higher chip than the HP Spectre x360 14?",
+    "decomposed_requirements": [
+      {
+        "entity": "Lenovo ThinkPad X1 Carbon",
+        "attribute": "chip"
+      },
+      {
+        "entity": "HP Spectre x360 14",
+        "attribute": "chip"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "Intel Core Ultra 7"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T229",
+    "question": "Compare the Asus Zenbook 14 OLED and the HP Spectre x360 14 on chip.",
+    "decomposed_requirements": [
+      {
+        "entity": "Asus Zenbook 14 OLED",
+        "attribute": "chip"
+      },
+      {
+        "entity": "HP Spectre x360 14",
+        "attribute": "chip"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "Intel Core Ultra 5",
+        "Intel Core Ultra 7"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T230",
+    "question": "Does the Asus Zenbook 14 OLED have a higher chip than the HP Spectre x360 14?",
+    "decomposed_requirements": [
+      {
+        "entity": "Asus Zenbook 14 OLED",
+        "attribute": "chip"
+      },
+      {
+        "entity": "HP Spectre x360 14",
+        "attribute": "chip"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "Intel Core Ultra 5",
+        "Intel Core Ultra 7"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T231",
+    "question": "What are the price and weight of the MacBook Pro 14 M4?",
+    "decomposed_requirements": [
+      {
+        "entity": "MacBook Pro 14 M4",
+        "attribute": "price"
+      },
+      {
+        "entity": "MacBook Pro 14 M4",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$1,599",
+        "3.4 pounds"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "multi_part",
+    "phase_c": true
+  },
+  {
+    "id": "T232",
+    "question": "What are the price and weight of the Lenovo ThinkPad X1 Carbon?",
+    "decomposed_requirements": [
+      {
+        "entity": "Lenovo ThinkPad X1 Carbon",
+        "attribute": "price"
+      },
+      {
+        "entity": "Lenovo ThinkPad X1 Carbon",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$1,399",
+        "2.4 pounds"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "multi_part",
+    "phase_c": true
+  },
+  {
+    "id": "T233",
+    "question": "What are the price and weight of the Asus Zenbook 14 OLED?",
+    "decomposed_requirements": [
+      {
+        "entity": "Asus Zenbook 14 OLED",
+        "attribute": "price"
+      },
+      {
+        "entity": "Asus Zenbook 14 OLED",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$1,099",
+        "2.8 pounds"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "multi_part",
+    "phase_c": true
+  },
+  {
+    "id": "T234",
+    "question": "What are the price and weight of the HP Spectre x360 14?",
+    "decomposed_requirements": [
+      {
+        "entity": "HP Spectre x360 14",
+        "attribute": "price"
+      },
+      {
+        "entity": "HP Spectre x360 14",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$1,449",
+        "3.2 pounds"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "laptops",
+    "difficulty": "medium",
+    "answer_type": "multi_part",
+    "phase_c": true
+  },
+  {
+    "id": "T235",
+    "question": "What is the price of the Samsung Galaxy Buds3 Pro?",
+    "decomposed_requirements": [
+      {
+        "entity": "Samsung Galaxy Buds3 Pro",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$249"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "earbuds",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "phase_c": true
+  },
+  {
+    "id": "T236",
+    "question": "What is the battery life of the Samsung Galaxy Buds3 Pro?",
+    "decomposed_requirements": [
+      {
+        "entity": "Samsung Galaxy Buds3 Pro",
+        "attribute": "battery_life"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "6 hours"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "earbuds",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "phase_c": true
+  },
+  {
+    "id": "T237",
+    "question": "What is the price of the Nothing Ear?",
+    "decomposed_requirements": [
+      {
+        "entity": "Nothing Ear",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$149"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "earbuds",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "phase_c": true
+  },
+  {
+    "id": "T238",
+    "question": "What is the battery life of the Nothing Ear?",
+    "decomposed_requirements": [
+      {
+        "entity": "Nothing Ear",
+        "attribute": "battery_life"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "8 hours"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "earbuds",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "phase_c": true
+  },
+  {
+    "id": "T239",
+    "question": "Compare the Samsung Galaxy Buds3 Pro and the Nothing Ear on price.",
+    "decomposed_requirements": [
+      {
+        "entity": "Samsung Galaxy Buds3 Pro",
+        "attribute": "price"
+      },
+      {
+        "entity": "Nothing Ear",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$249",
+        "$149"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "earbuds",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T240",
+    "question": "Does the Samsung Galaxy Buds3 Pro have a higher price than the Nothing Ear?",
+    "decomposed_requirements": [
+      {
+        "entity": "Samsung Galaxy Buds3 Pro",
+        "attribute": "price"
+      },
+      {
+        "entity": "Nothing Ear",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$249",
+        "$149"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "earbuds",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T241",
+    "question": "Compare the Samsung Galaxy Buds3 Pro and the Nothing Ear on battery life.",
+    "decomposed_requirements": [
+      {
+        "entity": "Samsung Galaxy Buds3 Pro",
+        "attribute": "battery_life"
+      },
+      {
+        "entity": "Nothing Ear",
+        "attribute": "battery_life"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "6 hours",
+        "8 hours"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "earbuds",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T242",
+    "question": "Does the Samsung Galaxy Buds3 Pro have a higher battery life than the Nothing Ear?",
+    "decomposed_requirements": [
+      {
+        "entity": "Samsung Galaxy Buds3 Pro",
+        "attribute": "battery_life"
+      },
+      {
+        "entity": "Nothing Ear",
+        "attribute": "battery_life"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "6 hours",
+        "8 hours"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "earbuds",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T243",
+    "question": "Compare the Samsung Galaxy Buds3 Pro and the Nothing Ear on noise cancellation.",
+    "decomposed_requirements": [
+      {
+        "entity": "Samsung Galaxy Buds3 Pro",
+        "attribute": "noise_cancellation"
+      },
+      {
+        "entity": "Nothing Ear",
+        "attribute": "noise_cancellation"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "strong",
+        "moderate"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "earbuds",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T244",
+    "question": "Compare the Samsung Galaxy Buds3 Pro and the Nothing Ear on codec support.",
+    "decomposed_requirements": [
+      {
+        "entity": "Samsung Galaxy Buds3 Pro",
+        "attribute": "codec_support"
+      },
+      {
+        "entity": "Nothing Ear",
+        "attribute": "codec_support"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "SSC",
+        "LDAC"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "earbuds",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T245",
+    "question": "What are the price and battery life of the Samsung Galaxy Buds3 Pro?",
+    "decomposed_requirements": [
+      {
+        "entity": "Samsung Galaxy Buds3 Pro",
+        "attribute": "price"
+      },
+      {
+        "entity": "Samsung Galaxy Buds3 Pro",
+        "attribute": "battery_life"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$249",
+        "6 hours"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "earbuds",
+    "difficulty": "medium",
+    "answer_type": "multi_part",
+    "phase_c": true
+  },
+  {
+    "id": "T246",
+    "question": "What are the price and battery life of the Nothing Ear?",
+    "decomposed_requirements": [
+      {
+        "entity": "Nothing Ear",
+        "attribute": "price"
+      },
+      {
+        "entity": "Nothing Ear",
+        "attribute": "battery_life"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$149",
+        "8 hours"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "earbuds",
+    "difficulty": "medium",
+    "answer_type": "multi_part",
+    "phase_c": true
+  },
+  {
+    "id": "T247",
+    "question": "What is the price of the Hyundai Ioniq 6?",
+    "decomposed_requirements": [
+      {
+        "entity": "Hyundai Ioniq 6",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$37,500"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "evs",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "phase_c": true
+  },
+  {
+    "id": "T248",
+    "question": "What is the range of the Hyundai Ioniq 6?",
+    "decomposed_requirements": [
+      {
+        "entity": "Hyundai Ioniq 6",
+        "attribute": "range"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "361 miles"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "evs",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "phase_c": true
+  },
+  {
+    "id": "T249",
+    "question": "What is the price of the Ford Mustang Mach-E?",
+    "decomposed_requirements": [
+      {
+        "entity": "Ford Mustang Mach-E",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$39,995"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "evs",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "phase_c": true
+  },
+  {
+    "id": "T250",
+    "question": "What is the range of the Ford Mustang Mach-E?",
+    "decomposed_requirements": [
+      {
+        "entity": "Ford Mustang Mach-E",
+        "attribute": "range"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "320 miles"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "evs",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "phase_c": true
+  },
+  {
+    "id": "T251",
+    "question": "What is the price of the BYD Seal?",
+    "decomposed_requirements": [
+      {
+        "entity": "BYD Seal",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$46,000"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "evs",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "phase_c": true
+  },
+  {
+    "id": "T252",
+    "question": "What is the range of the BYD Seal?",
+    "decomposed_requirements": [
+      {
+        "entity": "BYD Seal",
+        "attribute": "range"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "354 miles"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "evs",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "phase_c": true
+  },
+  {
+    "id": "T253",
+    "question": "Compare the Hyundai Ioniq 6 and the Ford Mustang Mach-E on price.",
+    "decomposed_requirements": [
+      {
+        "entity": "Hyundai Ioniq 6",
+        "attribute": "price"
+      },
+      {
+        "entity": "Ford Mustang Mach-E",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$37,500",
+        "$39,995"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "evs",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T254",
+    "question": "Does the Hyundai Ioniq 6 have a higher price than the Ford Mustang Mach-E?",
+    "decomposed_requirements": [
+      {
+        "entity": "Hyundai Ioniq 6",
+        "attribute": "price"
+      },
+      {
+        "entity": "Ford Mustang Mach-E",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$37,500",
+        "$39,995"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "evs",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T255",
+    "question": "Compare the Hyundai Ioniq 6 and the BYD Seal on price.",
+    "decomposed_requirements": [
+      {
+        "entity": "Hyundai Ioniq 6",
+        "attribute": "price"
+      },
+      {
+        "entity": "BYD Seal",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$37,500",
+        "$46,000"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "evs",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T256",
+    "question": "Does the Hyundai Ioniq 6 have a higher price than the BYD Seal?",
+    "decomposed_requirements": [
+      {
+        "entity": "Hyundai Ioniq 6",
+        "attribute": "price"
+      },
+      {
+        "entity": "BYD Seal",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$37,500",
+        "$46,000"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "evs",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T257",
+    "question": "Compare the Ford Mustang Mach-E and the BYD Seal on price.",
+    "decomposed_requirements": [
+      {
+        "entity": "Ford Mustang Mach-E",
+        "attribute": "price"
+      },
+      {
+        "entity": "BYD Seal",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$39,995",
+        "$46,000"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "evs",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T258",
+    "question": "Does the Ford Mustang Mach-E have a higher price than the BYD Seal?",
+    "decomposed_requirements": [
+      {
+        "entity": "Ford Mustang Mach-E",
+        "attribute": "price"
+      },
+      {
+        "entity": "BYD Seal",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$39,995",
+        "$46,000"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "evs",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T259",
+    "question": "Compare the Hyundai Ioniq 6 and the Ford Mustang Mach-E on range.",
+    "decomposed_requirements": [
+      {
+        "entity": "Hyundai Ioniq 6",
+        "attribute": "range"
+      },
+      {
+        "entity": "Ford Mustang Mach-E",
+        "attribute": "range"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "361 miles",
+        "320 miles"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "evs",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T260",
+    "question": "Does the Hyundai Ioniq 6 have a higher range than the Ford Mustang Mach-E?",
+    "decomposed_requirements": [
+      {
+        "entity": "Hyundai Ioniq 6",
+        "attribute": "range"
+      },
+      {
+        "entity": "Ford Mustang Mach-E",
+        "attribute": "range"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "361 miles",
+        "320 miles"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "evs",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T261",
+    "question": "Compare the Hyundai Ioniq 6 and the BYD Seal on range.",
+    "decomposed_requirements": [
+      {
+        "entity": "Hyundai Ioniq 6",
+        "attribute": "range"
+      },
+      {
+        "entity": "BYD Seal",
+        "attribute": "range"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "361 miles",
+        "354 miles"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "evs",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T262",
+    "question": "Does the Hyundai Ioniq 6 have a higher range than the BYD Seal?",
+    "decomposed_requirements": [
+      {
+        "entity": "Hyundai Ioniq 6",
+        "attribute": "range"
+      },
+      {
+        "entity": "BYD Seal",
+        "attribute": "range"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "361 miles",
+        "354 miles"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "evs",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T263",
+    "question": "Compare the Ford Mustang Mach-E and the BYD Seal on range.",
+    "decomposed_requirements": [
+      {
+        "entity": "Ford Mustang Mach-E",
+        "attribute": "range"
+      },
+      {
+        "entity": "BYD Seal",
+        "attribute": "range"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "320 miles",
+        "354 miles"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "evs",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T264",
+    "question": "Does the Ford Mustang Mach-E have a higher range than the BYD Seal?",
+    "decomposed_requirements": [
+      {
+        "entity": "Ford Mustang Mach-E",
+        "attribute": "range"
+      },
+      {
+        "entity": "BYD Seal",
+        "attribute": "range"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "320 miles",
+        "354 miles"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "evs",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T265",
+    "question": "Compare the Hyundai Ioniq 6 and the Ford Mustang Mach-E on battery capacity.",
+    "decomposed_requirements": [
+      {
+        "entity": "Hyundai Ioniq 6",
+        "attribute": "battery_capacity"
+      },
+      {
+        "entity": "Ford Mustang Mach-E",
+        "attribute": "battery_capacity"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "77 kWh",
+        "91 kWh"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "evs",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T266",
+    "question": "Does the Hyundai Ioniq 6 have a higher battery capacity than the Ford Mustang Mach-E?",
+    "decomposed_requirements": [
+      {
+        "entity": "Hyundai Ioniq 6",
+        "attribute": "battery_capacity"
+      },
+      {
+        "entity": "Ford Mustang Mach-E",
+        "attribute": "battery_capacity"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "77 kWh",
+        "91 kWh"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "evs",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T267",
+    "question": "Compare the Hyundai Ioniq 6 and the BYD Seal on battery capacity.",
+    "decomposed_requirements": [
+      {
+        "entity": "Hyundai Ioniq 6",
+        "attribute": "battery_capacity"
+      },
+      {
+        "entity": "BYD Seal",
+        "attribute": "battery_capacity"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "77 kWh",
+        "82 kWh"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "evs",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T268",
+    "question": "Does the Hyundai Ioniq 6 have a higher battery capacity than the BYD Seal?",
+    "decomposed_requirements": [
+      {
+        "entity": "Hyundai Ioniq 6",
+        "attribute": "battery_capacity"
+      },
+      {
+        "entity": "BYD Seal",
+        "attribute": "battery_capacity"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "77 kWh",
+        "82 kWh"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "evs",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T269",
+    "question": "Compare the Ford Mustang Mach-E and the BYD Seal on battery capacity.",
+    "decomposed_requirements": [
+      {
+        "entity": "Ford Mustang Mach-E",
+        "attribute": "battery_capacity"
+      },
+      {
+        "entity": "BYD Seal",
+        "attribute": "battery_capacity"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "91 kWh",
+        "82 kWh"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "evs",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T270",
+    "question": "Does the Ford Mustang Mach-E have a higher battery capacity than the BYD Seal?",
+    "decomposed_requirements": [
+      {
+        "entity": "Ford Mustang Mach-E",
+        "attribute": "battery_capacity"
+      },
+      {
+        "entity": "BYD Seal",
+        "attribute": "battery_capacity"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "91 kWh",
+        "82 kWh"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "evs",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T271",
+    "question": "Compare the Hyundai Ioniq 6 and the Ford Mustang Mach-E on best for.",
+    "decomposed_requirements": [
+      {
+        "entity": "Hyundai Ioniq 6",
+        "attribute": "best_for"
+      },
+      {
+        "entity": "Ford Mustang Mach-E",
+        "attribute": "best_for"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "efficiency",
+        "families"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "evs",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T272",
+    "question": "Compare the Hyundai Ioniq 6 and the BYD Seal on best for.",
+    "decomposed_requirements": [
+      {
+        "entity": "Hyundai Ioniq 6",
+        "attribute": "best_for"
+      },
+      {
+        "entity": "BYD Seal",
+        "attribute": "best_for"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "efficiency",
+        "value"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "evs",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T273",
+    "question": "Compare the Ford Mustang Mach-E and the BYD Seal on best for.",
+    "decomposed_requirements": [
+      {
+        "entity": "Ford Mustang Mach-E",
+        "attribute": "best_for"
+      },
+      {
+        "entity": "BYD Seal",
+        "attribute": "best_for"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "families",
+        "value"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "evs",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T274",
+    "question": "What are the price and range of the Hyundai Ioniq 6?",
+    "decomposed_requirements": [
+      {
+        "entity": "Hyundai Ioniq 6",
+        "attribute": "price"
+      },
+      {
+        "entity": "Hyundai Ioniq 6",
+        "attribute": "range"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$37,500",
+        "361 miles"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "evs",
+    "difficulty": "medium",
+    "answer_type": "multi_part",
+    "phase_c": true
+  },
+  {
+    "id": "T275",
+    "question": "What are the price and range of the Ford Mustang Mach-E?",
+    "decomposed_requirements": [
+      {
+        "entity": "Ford Mustang Mach-E",
+        "attribute": "price"
+      },
+      {
+        "entity": "Ford Mustang Mach-E",
+        "attribute": "range"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$39,995",
+        "320 miles"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "evs",
+    "difficulty": "medium",
+    "answer_type": "multi_part",
+    "phase_c": true
+  },
+  {
+    "id": "T276",
+    "question": "What are the price and range of the BYD Seal?",
+    "decomposed_requirements": [
+      {
+        "entity": "BYD Seal",
+        "attribute": "price"
+      },
+      {
+        "entity": "BYD Seal",
+        "attribute": "range"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$46,000",
+        "354 miles"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "evs",
+    "difficulty": "medium",
+    "answer_type": "multi_part",
+    "phase_c": true
+  },
+  {
+    "id": "T277",
+    "question": "What is the price of the Adidas Adizero Boston 12?",
+    "decomposed_requirements": [
+      {
+        "entity": "Adidas Adizero Boston 12",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$160"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "running_shoes",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "phase_c": true
+  },
+  {
+    "id": "T278",
+    "question": "What is the weight of the Adidas Adizero Boston 12?",
+    "decomposed_requirements": [
+      {
+        "entity": "Adidas Adizero Boston 12",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "9.4 ounces"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "running_shoes",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "phase_c": true
+  },
+  {
+    "id": "T279",
+    "question": "What is the price of the Brooks Ghost 16?",
+    "decomposed_requirements": [
+      {
+        "entity": "Brooks Ghost 16",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$140"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "running_shoes",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "phase_c": true
+  },
+  {
+    "id": "T280",
+    "question": "What is the weight of the Brooks Ghost 16?",
+    "decomposed_requirements": [
+      {
+        "entity": "Brooks Ghost 16",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "9.8 ounces"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "running_shoes",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "phase_c": true
+  },
+  {
+    "id": "T281",
+    "question": "What is the price of the Asics Gel-Nimbus 26?",
+    "decomposed_requirements": [
+      {
+        "entity": "Asics Gel-Nimbus 26",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$160"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "running_shoes",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "phase_c": true
+  },
+  {
+    "id": "T282",
+    "question": "What is the weight of the Asics Gel-Nimbus 26?",
+    "decomposed_requirements": [
+      {
+        "entity": "Asics Gel-Nimbus 26",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "10.6 ounces"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "running_shoes",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "phase_c": true
+  },
+  {
+    "id": "T283",
+    "question": "Compare the Adidas Adizero Boston 12 and the Brooks Ghost 16 on price.",
+    "decomposed_requirements": [
+      {
+        "entity": "Adidas Adizero Boston 12",
+        "attribute": "price"
+      },
+      {
+        "entity": "Brooks Ghost 16",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$160",
+        "$140"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "running_shoes",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T284",
+    "question": "Does the Adidas Adizero Boston 12 have a higher price than the Brooks Ghost 16?",
+    "decomposed_requirements": [
+      {
+        "entity": "Adidas Adizero Boston 12",
+        "attribute": "price"
+      },
+      {
+        "entity": "Brooks Ghost 16",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$160",
+        "$140"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "running_shoes",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T285",
+    "question": "Compare the Adidas Adizero Boston 12 and the Asics Gel-Nimbus 26 on price.",
+    "decomposed_requirements": [
+      {
+        "entity": "Adidas Adizero Boston 12",
+        "attribute": "price"
+      },
+      {
+        "entity": "Asics Gel-Nimbus 26",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$160"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "running_shoes",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T286",
+    "question": "Does the Adidas Adizero Boston 12 have a higher price than the Asics Gel-Nimbus 26?",
+    "decomposed_requirements": [
+      {
+        "entity": "Adidas Adizero Boston 12",
+        "attribute": "price"
+      },
+      {
+        "entity": "Asics Gel-Nimbus 26",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$160"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "running_shoes",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T287",
+    "question": "Compare the Brooks Ghost 16 and the Asics Gel-Nimbus 26 on price.",
+    "decomposed_requirements": [
+      {
+        "entity": "Brooks Ghost 16",
+        "attribute": "price"
+      },
+      {
+        "entity": "Asics Gel-Nimbus 26",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$140",
+        "$160"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "running_shoes",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T288",
+    "question": "Does the Brooks Ghost 16 have a higher price than the Asics Gel-Nimbus 26?",
+    "decomposed_requirements": [
+      {
+        "entity": "Brooks Ghost 16",
+        "attribute": "price"
+      },
+      {
+        "entity": "Asics Gel-Nimbus 26",
+        "attribute": "price"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$140",
+        "$160"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "running_shoes",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T289",
+    "question": "Compare the Adidas Adizero Boston 12 and the Brooks Ghost 16 on weight.",
+    "decomposed_requirements": [
+      {
+        "entity": "Adidas Adizero Boston 12",
+        "attribute": "weight"
+      },
+      {
+        "entity": "Brooks Ghost 16",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "9.4 ounces",
+        "9.8 ounces"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "running_shoes",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T290",
+    "question": "Does the Adidas Adizero Boston 12 have a higher weight than the Brooks Ghost 16?",
+    "decomposed_requirements": [
+      {
+        "entity": "Adidas Adizero Boston 12",
+        "attribute": "weight"
+      },
+      {
+        "entity": "Brooks Ghost 16",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "9.4 ounces",
+        "9.8 ounces"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "running_shoes",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T291",
+    "question": "Compare the Adidas Adizero Boston 12 and the Asics Gel-Nimbus 26 on weight.",
+    "decomposed_requirements": [
+      {
+        "entity": "Adidas Adizero Boston 12",
+        "attribute": "weight"
+      },
+      {
+        "entity": "Asics Gel-Nimbus 26",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "9.4 ounces",
+        "10.6 ounces"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "running_shoes",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T292",
+    "question": "Does the Adidas Adizero Boston 12 have a higher weight than the Asics Gel-Nimbus 26?",
+    "decomposed_requirements": [
+      {
+        "entity": "Adidas Adizero Boston 12",
+        "attribute": "weight"
+      },
+      {
+        "entity": "Asics Gel-Nimbus 26",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "9.4 ounces",
+        "10.6 ounces"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "running_shoes",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T293",
+    "question": "Compare the Brooks Ghost 16 and the Asics Gel-Nimbus 26 on weight.",
+    "decomposed_requirements": [
+      {
+        "entity": "Brooks Ghost 16",
+        "attribute": "weight"
+      },
+      {
+        "entity": "Asics Gel-Nimbus 26",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "9.8 ounces",
+        "10.6 ounces"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "running_shoes",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T294",
+    "question": "Does the Brooks Ghost 16 have a higher weight than the Asics Gel-Nimbus 26?",
+    "decomposed_requirements": [
+      {
+        "entity": "Brooks Ghost 16",
+        "attribute": "weight"
+      },
+      {
+        "entity": "Asics Gel-Nimbus 26",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "9.8 ounces",
+        "10.6 ounces"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "running_shoes",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T295",
+    "question": "Compare the Adidas Adizero Boston 12 and the Brooks Ghost 16 on cushioning.",
+    "decomposed_requirements": [
+      {
+        "entity": "Adidas Adizero Boston 12",
+        "attribute": "cushioning"
+      },
+      {
+        "entity": "Brooks Ghost 16",
+        "attribute": "cushioning"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "moderate",
+        "balanced"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "running_shoes",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T296",
+    "question": "Compare the Adidas Adizero Boston 12 and the Asics Gel-Nimbus 26 on cushioning.",
+    "decomposed_requirements": [
+      {
+        "entity": "Adidas Adizero Boston 12",
+        "attribute": "cushioning"
+      },
+      {
+        "entity": "Asics Gel-Nimbus 26",
+        "attribute": "cushioning"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "moderate",
+        "maximal"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "running_shoes",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T297",
+    "question": "Compare the Brooks Ghost 16 and the Asics Gel-Nimbus 26 on cushioning.",
+    "decomposed_requirements": [
+      {
+        "entity": "Brooks Ghost 16",
+        "attribute": "cushioning"
+      },
+      {
+        "entity": "Asics Gel-Nimbus 26",
+        "attribute": "cushioning"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "balanced",
+        "maximal"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "running_shoes",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T298",
+    "question": "Compare the Adidas Adizero Boston 12 and the Brooks Ghost 16 on best for.",
+    "decomposed_requirements": [
+      {
+        "entity": "Adidas Adizero Boston 12",
+        "attribute": "best_for"
+      },
+      {
+        "entity": "Brooks Ghost 16",
+        "attribute": "best_for"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "tempo runs",
+        "daily training"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "running_shoes",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T299",
+    "question": "Compare the Adidas Adizero Boston 12 and the Asics Gel-Nimbus 26 on best for.",
+    "decomposed_requirements": [
+      {
+        "entity": "Adidas Adizero Boston 12",
+        "attribute": "best_for"
+      },
+      {
+        "entity": "Asics Gel-Nimbus 26",
+        "attribute": "best_for"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "tempo runs",
+        "long runs"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "running_shoes",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T300",
+    "question": "Compare the Brooks Ghost 16 and the Asics Gel-Nimbus 26 on best for.",
+    "decomposed_requirements": [
+      {
+        "entity": "Brooks Ghost 16",
+        "attribute": "best_for"
+      },
+      {
+        "entity": "Asics Gel-Nimbus 26",
+        "attribute": "best_for"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "daily training",
+        "long runs"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "running_shoes",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T301",
+    "question": "What are the price and weight of the Adidas Adizero Boston 12?",
+    "decomposed_requirements": [
+      {
+        "entity": "Adidas Adizero Boston 12",
+        "attribute": "price"
+      },
+      {
+        "entity": "Adidas Adizero Boston 12",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$160",
+        "9.4 ounces"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "running_shoes",
+    "difficulty": "medium",
+    "answer_type": "multi_part",
+    "phase_c": true
+  },
+  {
+    "id": "T302",
+    "question": "What are the price and weight of the Brooks Ghost 16?",
+    "decomposed_requirements": [
+      {
+        "entity": "Brooks Ghost 16",
+        "attribute": "price"
+      },
+      {
+        "entity": "Brooks Ghost 16",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$140",
+        "9.8 ounces"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "running_shoes",
+    "difficulty": "medium",
+    "answer_type": "multi_part",
+    "phase_c": true
+  },
+  {
+    "id": "T303",
+    "question": "What are the price and weight of the Asics Gel-Nimbus 26?",
+    "decomposed_requirements": [
+      {
+        "entity": "Asics Gel-Nimbus 26",
+        "attribute": "price"
+      },
+      {
+        "entity": "Asics Gel-Nimbus 26",
+        "attribute": "weight"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "$160",
+        "10.6 ounces"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "running_shoes",
+    "difficulty": "medium",
+    "answer_type": "multi_part",
+    "phase_c": true
+  },
+  {
+    "id": "T304",
+    "question": "What is the elevation of the Lhotse?",
+    "decomposed_requirements": [
+      {
+        "entity": "Lhotse",
+        "attribute": "elevation"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "8,516 meters"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "mountains",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "phase_c": true
+  },
+  {
+    "id": "T305",
+    "question": "What is the first ascent year of the Lhotse?",
+    "decomposed_requirements": [
+      {
+        "entity": "Lhotse",
+        "attribute": "first_ascent_year"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "1956"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "mountains",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "phase_c": true
+  },
+  {
+    "id": "T306",
+    "question": "What is the elevation of the Makalu?",
+    "decomposed_requirements": [
+      {
+        "entity": "Makalu",
+        "attribute": "elevation"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "8,485 meters"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "mountains",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "phase_c": true
+  },
+  {
+    "id": "T307",
+    "question": "What is the first ascent year of the Makalu?",
+    "decomposed_requirements": [
+      {
+        "entity": "Makalu",
+        "attribute": "first_ascent_year"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "1955"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "mountains",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "phase_c": true
+  },
+  {
+    "id": "T308",
+    "question": "Compare the Lhotse and the Makalu on elevation.",
+    "decomposed_requirements": [
+      {
+        "entity": "Lhotse",
+        "attribute": "elevation"
+      },
+      {
+        "entity": "Makalu",
+        "attribute": "elevation"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "8,516 meters",
+        "8,485 meters"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "mountains",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T309",
+    "question": "Does the Lhotse have a higher elevation than the Makalu?",
+    "decomposed_requirements": [
+      {
+        "entity": "Lhotse",
+        "attribute": "elevation"
+      },
+      {
+        "entity": "Makalu",
+        "attribute": "elevation"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "8,516 meters",
+        "8,485 meters"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "mountains",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T310",
+    "question": "Compare the Lhotse and the Makalu on first ascent year.",
+    "decomposed_requirements": [
+      {
+        "entity": "Lhotse",
+        "attribute": "first_ascent_year"
+      },
+      {
+        "entity": "Makalu",
+        "attribute": "first_ascent_year"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "1956",
+        "1955"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "mountains",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T311",
+    "question": "Does the Lhotse have a higher first ascent year than the Makalu?",
+    "decomposed_requirements": [
+      {
+        "entity": "Lhotse",
+        "attribute": "first_ascent_year"
+      },
+      {
+        "entity": "Makalu",
+        "attribute": "first_ascent_year"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "1956",
+        "1955"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "mountains",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T312",
+    "question": "Compare the Lhotse and the Makalu on location.",
+    "decomposed_requirements": [
+      {
+        "entity": "Lhotse",
+        "attribute": "location"
+      },
+      {
+        "entity": "Makalu",
+        "attribute": "location"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "Himalayas"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "mountains",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T313",
+    "question": "What are the elevation and first ascent year of the Lhotse?",
+    "decomposed_requirements": [
+      {
+        "entity": "Lhotse",
+        "attribute": "elevation"
+      },
+      {
+        "entity": "Lhotse",
+        "attribute": "first_ascent_year"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "8,516 meters",
+        "1956"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "mountains",
+    "difficulty": "medium",
+    "answer_type": "multi_part",
+    "phase_c": true
+  },
+  {
+    "id": "T314",
+    "question": "What are the elevation and first ascent year of the Makalu?",
+    "decomposed_requirements": [
+      {
+        "entity": "Makalu",
+        "attribute": "elevation"
+      },
+      {
+        "entity": "Makalu",
+        "attribute": "first_ascent_year"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "8,485 meters",
+        "1955"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "mountains",
+    "difficulty": "medium",
+    "answer_type": "multi_part",
+    "phase_c": true
+  },
+  {
+    "id": "T315",
+    "question": "What is the height of the Shanghai Tower?",
+    "decomposed_requirements": [
+      {
+        "entity": "Shanghai Tower",
+        "attribute": "height"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "632 meters"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "buildings",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "phase_c": true
+  },
+  {
+    "id": "T316",
+    "question": "What is the floors of the Shanghai Tower?",
+    "decomposed_requirements": [
+      {
+        "entity": "Shanghai Tower",
+        "attribute": "floors"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "128"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "buildings",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "phase_c": true
+  },
+  {
+    "id": "T317",
+    "question": "What is the height of the Petronas Towers?",
+    "decomposed_requirements": [
+      {
+        "entity": "Petronas Towers",
+        "attribute": "height"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "452 meters"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "buildings",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "phase_c": true
+  },
+  {
+    "id": "T318",
+    "question": "What is the floors of the Petronas Towers?",
+    "decomposed_requirements": [
+      {
+        "entity": "Petronas Towers",
+        "attribute": "floors"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "88"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "buildings",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "phase_c": true
+  },
+  {
+    "id": "T319",
+    "question": "What is the height of the One World Trade Center?",
+    "decomposed_requirements": [
+      {
+        "entity": "One World Trade Center",
+        "attribute": "height"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "541 meters"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "buildings",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "phase_c": true
+  },
+  {
+    "id": "T320",
+    "question": "What is the floors of the One World Trade Center?",
+    "decomposed_requirements": [
+      {
+        "entity": "One World Trade Center",
+        "attribute": "floors"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "94"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "buildings",
+    "difficulty": "easy",
+    "answer_type": "single_fact",
+    "phase_c": true
+  },
+  {
+    "id": "T321",
+    "question": "Compare the Shanghai Tower and the Petronas Towers on height.",
+    "decomposed_requirements": [
+      {
+        "entity": "Shanghai Tower",
+        "attribute": "height"
+      },
+      {
+        "entity": "Petronas Towers",
+        "attribute": "height"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "632 meters",
+        "452 meters"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "buildings",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T322",
+    "question": "Does the Shanghai Tower have a higher height than the Petronas Towers?",
+    "decomposed_requirements": [
+      {
+        "entity": "Shanghai Tower",
+        "attribute": "height"
+      },
+      {
+        "entity": "Petronas Towers",
+        "attribute": "height"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "632 meters",
+        "452 meters"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "buildings",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T323",
+    "question": "Compare the Shanghai Tower and the One World Trade Center on height.",
+    "decomposed_requirements": [
+      {
+        "entity": "Shanghai Tower",
+        "attribute": "height"
+      },
+      {
+        "entity": "One World Trade Center",
+        "attribute": "height"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "632 meters",
+        "541 meters"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "buildings",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T324",
+    "question": "Does the Shanghai Tower have a higher height than the One World Trade Center?",
+    "decomposed_requirements": [
+      {
+        "entity": "Shanghai Tower",
+        "attribute": "height"
+      },
+      {
+        "entity": "One World Trade Center",
+        "attribute": "height"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "632 meters",
+        "541 meters"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "buildings",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T325",
+    "question": "Compare the Petronas Towers and the One World Trade Center on height.",
+    "decomposed_requirements": [
+      {
+        "entity": "Petronas Towers",
+        "attribute": "height"
+      },
+      {
+        "entity": "One World Trade Center",
+        "attribute": "height"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "452 meters",
+        "541 meters"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "buildings",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T326",
+    "question": "Does the Petronas Towers have a higher height than the One World Trade Center?",
+    "decomposed_requirements": [
+      {
+        "entity": "Petronas Towers",
+        "attribute": "height"
+      },
+      {
+        "entity": "One World Trade Center",
+        "attribute": "height"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "452 meters",
+        "541 meters"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "buildings",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T327",
+    "question": "Compare the Shanghai Tower and the Petronas Towers on floors.",
+    "decomposed_requirements": [
+      {
+        "entity": "Shanghai Tower",
+        "attribute": "floors"
+      },
+      {
+        "entity": "Petronas Towers",
+        "attribute": "floors"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "128",
+        "88"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "buildings",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T328",
+    "question": "Does the Shanghai Tower have a higher floors than the Petronas Towers?",
+    "decomposed_requirements": [
+      {
+        "entity": "Shanghai Tower",
+        "attribute": "floors"
+      },
+      {
+        "entity": "Petronas Towers",
+        "attribute": "floors"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "128",
+        "88"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "buildings",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T329",
+    "question": "Compare the Shanghai Tower and the One World Trade Center on floors.",
+    "decomposed_requirements": [
+      {
+        "entity": "Shanghai Tower",
+        "attribute": "floors"
+      },
+      {
+        "entity": "One World Trade Center",
+        "attribute": "floors"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "128",
+        "94"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "buildings",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T330",
+    "question": "Does the Shanghai Tower have a higher floors than the One World Trade Center?",
+    "decomposed_requirements": [
+      {
+        "entity": "Shanghai Tower",
+        "attribute": "floors"
+      },
+      {
+        "entity": "One World Trade Center",
+        "attribute": "floors"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "128",
+        "94"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "buildings",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T331",
+    "question": "Compare the Petronas Towers and the One World Trade Center on floors.",
+    "decomposed_requirements": [
+      {
+        "entity": "Petronas Towers",
+        "attribute": "floors"
+      },
+      {
+        "entity": "One World Trade Center",
+        "attribute": "floors"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "88",
+        "94"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "buildings",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T332",
+    "question": "Does the Petronas Towers have a higher floors than the One World Trade Center?",
+    "decomposed_requirements": [
+      {
+        "entity": "Petronas Towers",
+        "attribute": "floors"
+      },
+      {
+        "entity": "One World Trade Center",
+        "attribute": "floors"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "88",
+        "94"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "buildings",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T333",
+    "question": "Compare the Shanghai Tower and the Petronas Towers on completion year.",
+    "decomposed_requirements": [
+      {
+        "entity": "Shanghai Tower",
+        "attribute": "completion_year"
+      },
+      {
+        "entity": "Petronas Towers",
+        "attribute": "completion_year"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "2015",
+        "1998"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "buildings",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T334",
+    "question": "Does the Shanghai Tower have a higher completion year than the Petronas Towers?",
+    "decomposed_requirements": [
+      {
+        "entity": "Shanghai Tower",
+        "attribute": "completion_year"
+      },
+      {
+        "entity": "Petronas Towers",
+        "attribute": "completion_year"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "2015",
+        "1998"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "buildings",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T335",
+    "question": "Compare the Shanghai Tower and the One World Trade Center on completion year.",
+    "decomposed_requirements": [
+      {
+        "entity": "Shanghai Tower",
+        "attribute": "completion_year"
+      },
+      {
+        "entity": "One World Trade Center",
+        "attribute": "completion_year"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "2015",
+        "2014"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "buildings",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T336",
+    "question": "Does the Shanghai Tower have a higher completion year than the One World Trade Center?",
+    "decomposed_requirements": [
+      {
+        "entity": "Shanghai Tower",
+        "attribute": "completion_year"
+      },
+      {
+        "entity": "One World Trade Center",
+        "attribute": "completion_year"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "2015",
+        "2014"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "buildings",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T337",
+    "question": "Compare the Petronas Towers and the One World Trade Center on completion year.",
+    "decomposed_requirements": [
+      {
+        "entity": "Petronas Towers",
+        "attribute": "completion_year"
+      },
+      {
+        "entity": "One World Trade Center",
+        "attribute": "completion_year"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "1998",
+        "2014"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "buildings",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T338",
+    "question": "Does the Petronas Towers have a higher completion year than the One World Trade Center?",
+    "decomposed_requirements": [
+      {
+        "entity": "Petronas Towers",
+        "attribute": "completion_year"
+      },
+      {
+        "entity": "One World Trade Center",
+        "attribute": "completion_year"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "1998",
+        "2014"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "buildings",
+    "difficulty": "medium",
+    "answer_type": "yes_no",
+    "phase_c": true
+  },
+  {
+    "id": "T339",
+    "question": "Compare the Shanghai Tower and the Petronas Towers on architect.",
+    "decomposed_requirements": [
+      {
+        "entity": "Shanghai Tower",
+        "attribute": "architect"
+      },
+      {
+        "entity": "Petronas Towers",
+        "attribute": "architect"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "Gensler",
+        "Cesar Pelli"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "buildings",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T340",
+    "question": "Compare the Shanghai Tower and the One World Trade Center on architect.",
+    "decomposed_requirements": [
+      {
+        "entity": "Shanghai Tower",
+        "attribute": "architect"
+      },
+      {
+        "entity": "One World Trade Center",
+        "attribute": "architect"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "Gensler",
+        "David Childs"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "buildings",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T341",
+    "question": "Compare the Petronas Towers and the One World Trade Center on architect.",
+    "decomposed_requirements": [
+      {
+        "entity": "Petronas Towers",
+        "attribute": "architect"
+      },
+      {
+        "entity": "One World Trade Center",
+        "attribute": "architect"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "Cesar Pelli",
+        "David Childs"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "buildings",
+    "difficulty": "medium",
+    "answer_type": "comparison",
+    "phase_c": true
+  },
+  {
+    "id": "T342",
+    "question": "What are the height and floors of the Shanghai Tower?",
+    "decomposed_requirements": [
+      {
+        "entity": "Shanghai Tower",
+        "attribute": "height"
+      },
+      {
+        "entity": "Shanghai Tower",
+        "attribute": "floors"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "632 meters",
+        "128"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "buildings",
+    "difficulty": "medium",
+    "answer_type": "multi_part",
+    "phase_c": true
+  },
+  {
+    "id": "T343",
+    "question": "What are the height and floors of the Petronas Towers?",
+    "decomposed_requirements": [
+      {
+        "entity": "Petronas Towers",
+        "attribute": "height"
+      },
+      {
+        "entity": "Petronas Towers",
+        "attribute": "floors"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "452 meters",
+        "88"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "buildings",
+    "difficulty": "medium",
+    "answer_type": "multi_part",
+    "phase_c": true
+  },
+  {
+    "id": "T344",
+    "question": "What are the height and floors of the One World Trade Center?",
+    "decomposed_requirements": [
+      {
+        "entity": "One World Trade Center",
+        "attribute": "height"
+      },
+      {
+        "entity": "One World Trade Center",
+        "attribute": "floors"
+      }
+    ],
+    "ground_truth": {
+      "required_facts": [
+        "541 meters",
+        "94"
+      ],
+      "match_threshold": 1.0
+    },
+    "expected_answer": null,
+    "topic": "buildings",
+    "difficulty": "medium",
+    "answer_type": "multi_part",
+    "phase_c": true
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "experiment": 1,
+  "description": "LinUCB bandit vs fixed baselines on synthetic tasks",
+  "bandit": {
+    "alpha": 0.8,
+    "n_epochs": 20,
+    "n_features": 9,
+    "best_epoch": 16
+  },
+  "tasks": {
+    "n_per_difficulty": 20,
+    "difficulties": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "seed": 42
+  },
+  "split": {
+    "train": 36,
+    "val": 12,
+    "test": 12,
+    "fractions": "60/20/20"
+  },
+  "results": {
+    "linucb_bandit": {
+      "success_rate": 0.33,
+      "mean_bytes": 3934,
+      "mean_steps": 1.83
+    },
+    "always_retrieve": {
+      "success_rate": 1.0,
+      "mean_bytes": 10017,
+      "mean_steps": 5.0
+    },
+    "heuristic": {
+      "success_rate": 1.0,
+      "mean_bytes": 9237,
+      "mean_steps": 4.67
+    },
+    "fixed_budget_10kb": {
+      "success_rate": 0.67,
+      "mean_bytes": 8256,
+      "mean_steps": 4.25
+    }
+  },
+  "finding": "Bandit reduces data 60.7% but success drops to 33%. Val-test gap (75% -> 33%) indicates poor generalisation on small synthetic task pool.",
+  "limitations": [
+    "12 test tasks only",
+    "3 synthetic archetypes",
+    "features may not discriminate task difficulty adequately"
+  ]
+}

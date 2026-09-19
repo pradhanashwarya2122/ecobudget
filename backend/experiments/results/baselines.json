@@ -1,0 +1,182 @@
+[
+  {
+    "policy": "fixed_budget_10kb",
+    "task_id": "easy-1",
+    "difficulty": "easy",
+    "final_bytes_used": 2500,
+    "final_resources_seen": 2,
+    "stopped_at_step": 2,
+    "ground_truth_correct_at_step": 1,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_budget_10kb",
+    "task_id": "medium-1",
+    "difficulty": "medium",
+    "final_bytes_used": 7900,
+    "final_resources_seen": 4,
+    "stopped_at_step": 4,
+    "ground_truth_correct_at_step": 4,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_budget_10kb",
+    "task_id": "hard-1",
+    "difficulty": "hard",
+    "final_bytes_used": 12000,
+    "final_resources_seen": 5,
+    "stopped_at_step": 5,
+    "ground_truth_correct_at_step": 6,
+    "reached_sufficient_evidence": false
+  },
+  {
+    "policy": "fixed_budget_25kb",
+    "task_id": "easy-1",
+    "difficulty": "easy",
+    "final_bytes_used": 2500,
+    "final_resources_seen": 2,
+    "stopped_at_step": 2,
+    "ground_truth_correct_at_step": 1,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_budget_25kb",
+    "task_id": "medium-1",
+    "difficulty": "medium",
+    "final_bytes_used": 7900,
+    "final_resources_seen": 4,
+    "stopped_at_step": 4,
+    "ground_truth_correct_at_step": 4,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_budget_25kb",
+    "task_id": "hard-1",
+    "difficulty": "hard",
+    "final_bytes_used": 14100,
+    "final_resources_seen": 6,
+    "stopped_at_step": 6,
+    "ground_truth_correct_at_step": 6,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_budget_50kb",
+    "task_id": "easy-1",
+    "difficulty": "easy",
+    "final_bytes_used": 2500,
+    "final_resources_seen": 2,
+    "stopped_at_step": 2,
+    "ground_truth_correct_at_step": 1,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_budget_50kb",
+    "task_id": "medium-1",
+    "difficulty": "medium",
+    "final_bytes_used": 7900,
+    "final_resources_seen": 4,
+    "stopped_at_step": 4,
+    "ground_truth_correct_at_step": 4,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_budget_50kb",
+    "task_id": "hard-1",
+    "difficulty": "hard",
+    "final_bytes_used": 14100,
+    "final_resources_seen": 6,
+    "stopped_at_step": 6,
+    "ground_truth_correct_at_step": 6,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_threshold_0.75",
+    "task_id": "easy-1",
+    "difficulty": "easy",
+    "final_bytes_used": 1200,
+    "final_resources_seen": 1,
+    "stopped_at_step": 1,
+    "ground_truth_correct_at_step": 1,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_threshold_0.75",
+    "task_id": "medium-1",
+    "difficulty": "medium",
+    "final_bytes_used": 6100,
+    "final_resources_seen": 3,
+    "stopped_at_step": 3,
+    "ground_truth_correct_at_step": 4,
+    "reached_sufficient_evidence": false
+  },
+  {
+    "policy": "fixed_threshold_0.75",
+    "task_id": "hard-1",
+    "difficulty": "hard",
+    "final_bytes_used": 14100,
+    "final_resources_seen": 6,
+    "stopped_at_step": 6,
+    "ground_truth_correct_at_step": 6,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_threshold_0.90",
+    "task_id": "easy-1",
+    "difficulty": "easy",
+    "final_bytes_used": 1200,
+    "final_resources_seen": 1,
+    "stopped_at_step": 1,
+    "ground_truth_correct_at_step": 1,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_threshold_0.90",
+    "task_id": "medium-1",
+    "difficulty": "medium",
+    "final_bytes_used": 7900,
+    "final_resources_seen": 4,
+    "stopped_at_step": 4,
+    "ground_truth_correct_at_step": 4,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "fixed_threshold_0.90",
+    "task_id": "hard-1",
+    "difficulty": "hard",
+    "final_bytes_used": 14100,
+    "final_resources_seen": 6,
+    "stopped_at_step": 6,
+    "ground_truth_correct_at_step": 6,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "heuristic_adaptive",
+    "task_id": "easy-1",
+    "difficulty": "easy",
+    "final_bytes_used": 1200,
+    "final_resources_seen": 1,
+    "stopped_at_step": 1,
+    "ground_truth_correct_at_step": 1,
+    "reached_sufficient_evidence": true
+  },
+  {
+    "policy": "heuristic_adaptive",
+    "task_id": "medium-1",
+    "difficulty": "medium",
+    "final_bytes_used": 6100,
+    "final_resources_seen": 3,
+    "stopped_at_step": 3,
+    "ground_truth_correct_at_step": 4,
+    "reached_sufficient_evidence": false
+  },
+  {
+    "policy": "heuristic_adaptive",
+    "task_id": "hard-1",
+    "difficulty": "hard",
+    "final_bytes_used": 14100,
+    "final_resources_seen": 6,
+    "stopped_at_step": 6,
+    "ground_truth_correct_at_step": 6,
+    "reached_sufficient_evidence": true
+  }
+]

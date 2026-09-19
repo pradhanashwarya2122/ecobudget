@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: ml-retriever
+Version: 0.1.0
+Summary: EcoBudget Teammate 1: task decomposition, requirement-aware retrieval, evidence tracking, adaptive/bandit policy, answer generation. Local models only -- no LLM API dependency.
+Requires-Python: >=3.10
+Requires-Dist: sentence-transformers>=2.2
+Requires-Dist: transformers>=4.30
+Requires-Dist: torch>=2.0
+Requires-Dist: spacy>=3.5
+Requires-Dist: scikit-learn>=1.3
+Requires-Dist: xgboost>=1.7
+Requires-Dist: joblib>=1.3
+Requires-Dist: numpy>=1.24
+Provides-Extra: dev
+Requires-Dist: pytest>=7.4; extra == "dev"
+Requires-Dist: pytest-cov>=4.1; extra == "dev"
+Provides-Extra: train
+Requires-Dist: peft>=0.10; extra == "train"
+Requires-Dist: datasets>=2.18; extra == "train"

@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["ml_retriever"]
+
+[project]
+name = "ml-retriever"
+version = "0.1.0"
+description = "EcoBudget Teammate 1: task decomposition, requirement-aware retrieval, evidence tracking, adaptive/bandit policy, answer generation. Local models only -- no LLM API dependency."
+requires-python = ">=3.10"
+dependencies = [
+    "sentence-transformers>=2.2",
+    "transformers>=4.30",
+    "torch>=2.0",
+    "spacy>=3.5",
+    "scikit-learn>=1.3",
+    "xgboost>=1.7",
+    "joblib>=1.3",
+    "numpy>=1.24",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4",
+    "pytest-cov>=4.1",
+]
+train = [
+    "peft>=0.10",
+    "datasets>=2.18",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+# NOTE: en_core_web_sm is not pip-installable as a plain dependency here;
+# install separately with: python -m spacy download en_core_web_sm
+
+# Explicitly banned: openai, anthropic, or any other hosted-LLM-API client
+# package. This project must run entirely on local models. See
+# scripts/check_no_llm_api.py, which is exercised by tests/test_no_llm_api.py.

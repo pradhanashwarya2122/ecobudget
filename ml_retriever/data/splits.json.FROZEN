@@ -1,0 +1,16 @@
+This split was re-cut in 2026 to fix a train-coverage bug found in
+Phase 2: seed-level splitting had left whole answer types (list,
+narrative) and attribute slugs (top_attraction, noise_cancellation,
+first_ascent_year, summary) with zero training examples, making them
+unlearnable and tanking val exact-match. Five train seeds (T42-T46)
+were ADDED to close that; NO existing seed changed split, and the
+test seeds (T12, T15, T23, T29, T35, T40) are untouched, so the
+Phase-7 test-leakage guarantee still holds. assert_train_coverage()
+in make_splits.py now enforces the invariant. (Earlier freeze:
+2026-09-09, after the general question-type expansion.)
+
+Per plan.md, do not regenerate or edit data/splits.json (or the
+seed-to-split assignment in make_splits.py) until Phase 7's final
+run. Phase 2 decomposer training uses train only; Phase 3 recall@5
+evaluation uses a separate held-out requirement->passage set, not
+these task splits; Phase 5 bandit training/eval uses train/val only.

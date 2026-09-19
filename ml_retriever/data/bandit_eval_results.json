@@ -1,0 +1,30 @@
+{
+  "n_val": 36,
+  "conditions": {
+    "normal": {
+      "success": 0.4444444444444444,
+      "avg_bytes": 158.0,
+      "avg_retrieves": 1.1111111111111112
+    },
+    "fixed_budget@2": {
+      "success": 0.7777777777777778,
+      "avg_bytes": 280.55555555555554,
+      "avg_retrieves": 2.0
+    },
+    "fixed_budget@4": {
+      "success": 0.7777777777777778,
+      "avg_bytes": 515.6666666666666,
+      "avg_retrieves": 4.0
+    },
+    "heuristic": {
+      "success": 0.7777777777777778,
+      "avg_bytes": 294.0,
+      "avg_retrieves": 2.2222222222222223
+    },
+    "bandit": {
+      "success": 0.7777777777777778,
+      "avg_bytes": 277.44444444444446,
+      "avg_retrieves": 2.111111111111111
+    }
+  }
+}
